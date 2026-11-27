@@ -1,0 +1,455 @@
+
+> thehousebythesea@0.1.0 test:e2e
+> playwright test --output=test-results/visual-software
+
+[WebServer] (node:96956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:96989) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/resilience.spec.ts:3:1 › title credits can close, memory can skip, pause and settings remain usable (10.7s)
+  ✓  2 tests/browser/resilience.spec.ts:46:1 › a future save survives fallback play and autosave (11.5s)
+  ✓  3 tests/browser/resilience.spec.ts:100:1 › missing optional decoration keeps the mandatory environment playable (6.5s)
+  ✓  4 tests/browser/resilience.spec.ts:124:1 › missing critical models produce an honest recoverable loading error (269ms)
+  ✓  5 tests/browser/resilience.spec.ts:157:1 › a missing mandatory boardwalk cannot substitute a mismatched pier surface (356ms)
+NAV {"target":[44,4],"iteration":0,"distance":5.657,"position":[48,0],"heading":0,"difference":-2.356194490192345,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":1,"distance":5.657,"position":[48,0],"heading":-0.243,"difference":-2.113194490192345,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":2,"distance":5.657,"position":[48,0],"heading":-0.48599999999999993,"difference":-1.8701944901923448,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":3,"distance":5.657,"position":[48,0],"heading":-0.7289999999999998,"difference":-1.6271944901923452,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":4,"distance":5.657,"position":[48,0],"heading":-0.9719999999999998,"difference":-1.384194490192345,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":5,"distance":5.657,"position":[48,0],"heading":-1.2149999999999996,"difference":-1.1411944901923452,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":6,"distance":5.657,"position":[48,0],"heading":-1.4579999999999995,"difference":-0.8981944901923453,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":7,"distance":5.657,"position":[48,0],"heading":-1.7009999999999994,"difference":-0.6551944901923454,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":8,"distance":5.657,"position":[48,0],"heading":-1.9439999999999993,"difference":-0.41219449019234555,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":9,"distance":5.657,"position":[48,0],"heading":-2.1869999999999994,"difference":-0.16919449019234545,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":10,"distance":4.887,"position":[47.36101062386202,0.45252798497198043],"heading":-2.1869999999999994,"difference":-0.19617814831625457,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":11,"distance":4.122,"position":[46.722021247724044,0.905055969943961],"heading":-2.1869999999999994,"difference":-0.23321638355924978,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":12,"distance":4.122,"position":[46.722021247724044,0.905055969943961],"heading":-2.4299999999999997,"difference":0.009783616440750542,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":13,"distance":3.339,"position":[46.21069033924295,1.4980396982467785],"heading":-2.4299999999999997,"difference":0.012078055184341352,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":14,"distance":2.556,"position":[45.69935943076186,2.091023426549596],"heading":-2.4299999999999997,"difference":0.015778259019536115,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":15,"distance":1.773,"position":[45.18802852228077,2.684007154852413],"heading":-2.4299999999999997,"difference":0.022746400325539984,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":0,"distance":8.617,"position":[45.18802852228077,2.684007154852413],"heading":-2.4299999999999997,"difference":1.1759628350071332,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":1,"distance":8.617,"position":[45.18802852228077,2.684007154852413],"heading":-2.1869999999999994,"difference":0.9329628350071328,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":2,"distance":8.617,"position":[45.18802852228077,2.684007154852413],"heading":-1.9439999999999993,"difference":0.6899628350071327,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":3,"distance":8.617,"position":[45.18802852228077,2.684007154852413],"heading":-1.7009999999999994,"difference":0.44696283500713285,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":4,"distance":8.617,"position":[45.18802852228077,2.684007154852413],"heading":-1.4579999999999995,"difference":0.20396283500713297,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":5,"distance":7.852,"position":[44.41000430228655,2.5958747935860114],"heading":-1.4579999999999995,"difference":0.22416379288230948,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":6,"distance":7.852,"position":[44.41000430228655,2.5958747935860114],"heading":-1.2149999999999996,"difference":-0.018836207117690403,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":7,"distance":7.069,"position":[43.67604406519563,2.3231269789853313],"heading":-1.2149999999999996,"difference":-0.02092257294250932,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":8,"distance":6.286,"position":[42.942083828104714,2.050379164384651],"heading":-1.2149999999999996,"difference":-0.02352859970363408,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":9,"distance":5.503,"position":[42.208123591013795,1.777631349783971],"heading":-1.2149999999999996,"difference":-0.026876004259827946,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":10,"distance":4.72,"position":[41.474163353922876,1.504883535183291],"heading":-1.2149999999999996,"difference":-0.031333496720064025,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":11,"distance":3.938,"position":[40.74020311683196,1.232135720582611],"heading":-1.2149999999999996,"difference":-0.03756272984526122,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":12,"distance":3.156,"position":[40.00624287974104,0.9593879059819308],"heading":-1.2149999999999996,"difference":-0.04688107329625257,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":13,"distance":2.374,"position":[39.27228264265012,0.6866400913812507],"heading":-1.2149999999999996,"difference":-0.06234003966903723,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":14,"distance":1.593,"position":[38.5383224055592,0.41389227678057056],"heading":-1.2149999999999996,"difference":-0.09296613336372793,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":0,"distance":11.517,"position":[38.5383224055592,0.41389227678057056],"heading":-1.2149999999999996,"difference":1.0810309543011332,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":1,"distance":11.517,"position":[38.5383224055592,0.41389227678057056],"heading":-0.9719999999999998,"difference":0.8380309543011333,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":2,"distance":11.517,"position":[38.5383224055592,0.41389227678057056],"heading":-0.7289999999999998,"difference":0.5950309543011332,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":3,"distance":11.517,"position":[38.5383224055592,0.41389227678057056],"heading":-0.4859999999999997,"difference":0.35203095430113324,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":4,"distance":11.517,"position":[38.5383224055592,0.41389227678057056],"heading":-0.24299999999999972,"difference":0.10903095430113323,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":5,"distance":10.739,"position":[38.34992041713091,-0.3461035723898486],"heading":-0.24299999999999972,"difference":0.11696488373758508,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":6,"distance":9.962,"position":[38.16151842870262,-1.1060994215602677],"heading":-0.24299999999999972,"difference":0.12613749064867624,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":7,"distance":9.186,"position":[37.97311644027433,-1.8660952707306868],"heading":-0.24299999999999972,"difference":0.13686143806690076,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":8,"distance":8.411,"position":[37.78471445184604,-2.6260911199011057],"heading":-0.24299999999999972,"difference":0.14956340903179072,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":9,"distance":7.637,"position":[37.59631246341775,-3.3860869690715245],"heading":-0.24299999999999972,"difference":0.16484075369285334,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":10,"distance":6.866,"position":[37.407910474989464,-4.146082818241943],"heading":-0.24299999999999972,"difference":0.18355517815622702,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":11,"distance":6.098,"position":[37.219508486561175,-4.9060786674123635],"heading":-0.24299999999999972,"difference":0.2069946742562128,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":12,"distance":5.334,"position":[37.031106498132885,-5.666074516582784],"heading":-0.24299999999999972,"difference":0.23716824520863874,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":13,"distance":5.334,"position":[37.031106498132885,-5.666074516582784],"heading":2.914335439641036e-16,"difference":-0.00583175479136123,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":14,"distance":4.551,"position":[37.031106498132885,-6.449074516582784],"heading":2.914335439641036e-16,"difference":-0.0068350962519578,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":15,"distance":3.768,"position":[37.031106498132885,-7.232074516582784],"heading":2.914335439641036e-16,"difference":-0.008255415774815958,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":16,"distance":2.985,"position":[37.031106498132885,-8.015074516582784],"heading":2.914335439641036e-16,"difference":-0.010420820321895936,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":17,"distance":2.463,"position":[37.031106498132885,-8.537074516582782],"heading":2.914335439641036e-16,"difference":-0.012629226715630548,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":18,"distance":1.68,"position":[37.031106498132885,-9.32007451658278],"heading":2.914335439641036e-16,"difference":-0.018514478212868238,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-12],"iteration":0,"distance":2.68,"position":[37.031106498132885,-9.32007451658278],"heading":2.914335439641036e-16,"difference":-0.011606703794404996,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-12],"iteration":1,"distance":1.897,"position":[37.031106498132885,-10.103074516582778],"heading":2.914335439641036e-16,"difference":-0.01639690678704733,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":0,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":2.914335439641036e-16,"difference":-3.1385137492633093,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":1,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-0.2429999999999997,"difference":-2.895513749263309,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":2,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-0.4859999999999997,"difference":-2.652513749263309,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":3,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-0.7289999999999996,"difference":-2.409513749263309,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":4,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-0.9719999999999995,"difference":-2.1665137492633093,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":5,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-1.2149999999999994,"difference":-1.9235137492633096,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":6,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-1.4579999999999993,"difference":-1.6805137492633095,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":7,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-1.7009999999999992,"difference":-1.4375137492633097,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":8,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-1.943999999999999,"difference":-1.1945137492633098,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":9,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-2.1869999999999994,"difference":-0.9515137492633094,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":10,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-2.4299999999999997,"difference":-0.7085137492633091,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":11,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-2.673,"difference":-0.46551374926330874,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":12,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":-2.9160000000000004,"difference":-0.22251374926330844,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":13,"distance":10.103,"position":[37.031106498132885,-10.103074516582778],"heading":3.124185307179586,"difference":0.020486250736692104,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":14,"distance":9.059,"position":[37.04927885000134,-9.059232686788837],"heading":3.124185307179586,"difference":0.02284692012107683,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":15,"distance":8.277,"position":[37.06290811390269,-8.276351314443382],"heading":3.124185307179586,"difference":0.0250081477853146,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":16,"distance":7.494,"position":[37.07653737780403,-7.493469942097924],"heading":3.124185307179586,"difference":0.027620867918754646,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":17,"distance":6.711,"position":[37.09016664170537,-6.710588569752466],"heading":3.124185307179586,"difference":0.030843010832683395,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":18,"distance":5.929,"position":[37.10379590560672,-5.927707197407008],"heading":3.124185307179586,"difference":0.034915852785152766,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":19,"distance":5.146,"position":[37.11742516950806,-5.14482582506155],"heading":3.124185307179586,"difference":0.04022731927122993,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":20,"distance":4.364,"position":[37.1310544334094,-4.3619444527160915],"heading":3.124185307179586,"difference":0.047443267756682304,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":21,"distance":3.582,"position":[37.14468369731075,-3.5790630803706334],"heading":3.124185307179586,"difference":0.05781036755664839,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":22,"distance":2.801,"position":[37.15831296121209,-2.796181708025175],"heading":3.124185307179586,"difference":0.07396451702609255,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":23,"distance":2.021,"position":[37.17194222511343,-2.013300335679717],"heading":3.124185307179586,"difference":0.10260378246669634,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":24,"distance":1.244,"position":[37.18557148901478,-1.2304189633342588],"heading":3.124185307179586,"difference":0.16709891574959657,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":0,"distance":10.884,"position":[37.18557148901478,-1.2304189633342588],"heading":3.124185307179586,"difference":-1.4401004601503482,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":1,"distance":10.884,"position":[37.18557148901478,-1.2304189633342588],"heading":2.8811853071795857,"difference":-1.1971004601503479,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":2,"distance":10.884,"position":[37.18557148901478,-1.2304189633342588],"heading":2.6381853071795853,"difference":-0.9541004601503476,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":3,"distance":10.884,"position":[37.18557148901478,-1.2304189633342588],"heading":2.395185307179585,"difference":-0.7111004601503472,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":4,"distance":10.884,"position":[37.18557148901478,-1.2304189633342588],"heading":2.1521853071795847,"difference":-0.46810046015034684,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":5,"distance":10.884,"position":[37.18557148901478,-1.2304189633342588],"heading":1.9091853071795846,"difference":-0.2251004601503468,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":6,"distance":10.884,"position":[37.18557148901478,-1.2304189633342588],"heading":1.6661853071795847,"difference":0.01789953984965309,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":7,"distance":10.101,"position":[37.965011908270235,-1.1558426076250077],"heading":1.6661853071795847,"difference":0.01928694028113287,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":8,"distance":9.318,"position":[38.74445232752569,-1.0812662519157565],"heading":1.6661853071795847,"difference":0.02090745399223537,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":9,"distance":8.536,"position":[39.52389274678115,-1.0066898962065054],"heading":1.6661853071795847,"difference":0.022825210456272504,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":10,"distance":7.753,"position":[40.30333316603661,-0.9321135404972539],"heading":1.6661853071795847,"difference":0.02513023118686597,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":11,"distance":6.97,"position":[41.08277358529207,-0.8575371847880024],"heading":1.6661853071795847,"difference":0.027952960262666693,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":12,"distance":6.188,"position":[41.862214004547525,-0.782960829078751],"heading":1.6661853071795847,"difference":0.03148981374037919,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":13,"distance":5.405,"position":[42.64165442380298,-0.7083844733694995],"heading":1.6661853071795847,"difference":0.03605090203055994,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":14,"distance":4.623,"position":[43.42109484305844,-0.633808117660248],"heading":1.6661853071795847,"difference":0.04215615573209996,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":15,"distance":3.84,"position":[44.2005352623139,-0.5592317619509966],"heading":1.6661853071795847,"difference":0.05074872416506104,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":16,"distance":3.059,"position":[44.97997568156936,-0.48465540624174513],"heading":1.6661853071795847,"difference":0.06373487995098603,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":17,"distance":2.278,"position":[45.759416100824815,-0.4100790505324938],"heading":1.6661853071795847,"difference":0.08563082218117836,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":18,"distance":1.499,"position":[46.53885652008027,-0.3355026948232425],"heading":1.6661853071795847,"difference":0.1303151729221519,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":0,"distance":7.469,"position":[46.53885652008027,-0.3355026948232425],"heading":1.6661853071795847,"difference":-0.050452592174781374,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":1,"distance":6.947,"position":[47.05848346625058,-0.2857851243504083],"heading":1.6661853071795847,"difference":-0.05424180194312633,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":2,"distance":6.166,"position":[47.83792388550604,-0.21120876864115695],"heading":1.6661853071795847,"difference":-0.06112680761917021,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":3,"distance":5.384,"position":[48.617364304761495,-0.13663241293190556],"heading":1.6661853071795847,"difference":-0.07001050672717102,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":4,"distance":4.604,"position":[49.39680472401695,-0.06205605722265417],"heading":1.6661853071795847,"difference":-0.0819087140556265,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":5,"distance":3.824,"position":[50.17624514327241,0.012520298486597213],"heading":1.6661853071795847,"difference":-0.09866331522339844,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":6,"distance":3.046,"position":[50.95568556252787,0.0870966541958486],"heading":1.6661853071795847,"difference":-0.12399079024702699,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":7,"distance":2.271,"position":[51.73512598178333,0.16167300990509997],"heading":1.6661853071795847,"difference":-0.16665088873201683,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":8,"distance":1.504,"position":[52.514566401038785,0.23624936561435136],"heading":1.6661853071795847,"difference":-0.25311200873402284,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":0,"distance":20.881,"position":[62,0],"heading":0,"difference":0.2914567944778671,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":1,"distance":20.881,"position":[62,0],"heading":0.036,"difference":0.2554567944778671,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":2,"distance":20.881,"position":[62,0],"heading":0.072,"difference":0.2194567944778671,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":3,"distance":20.19,"position":[62.05092939635696,-0.7061299990300256],"heading":0.072,"difference":0.22709043927003492,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":4,"distance":19.835,"position":[62.08654823618739,-1.0666339575189787],"heading":0.12020594616968175,"difference":0.18252372876808362,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":5,"distance":19.02,"position":[62.18610304034284,-1.8908430758535895],"heading":0.12020594616968175,"difference":0.19044677876268248,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":6,"distance":17.895,"position":[62.32355404573266,-3.028792900852917],"heading":0.12020594616968175,"difference":0.20257183342798415,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":7,"distance":16.68,"position":[62.47255696209884,-4.262380404432221],"heading":0.12020594616968175,"difference":0.21755963412462184,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":8,"distance":15.441,"position":[62.625081251131924,-5.525121171741315],"heading":0.12020594616968175,"difference":0.2353410065995257,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":9,"distance":14.934,"position":[62.702203066512034,-6.03687542322312],"heading":0.17364469330454,"difference":0.1889896565499171,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":10,"distance":14.068,"position":[62.85469343264908,-6.906205889293397],"heading":0.17364469330454,"difference":0.20077598916213188,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":11,"distance":12.932,"position":[63.05548981344479,-8.050923524409397],"heading":0.17364469330454,"difference":0.21870007742090605,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":12,"distance":11.717,"position":[63.2710113319267,-9.279587517134619],"heading":0.17364469330454,"difference":0.2418001560465495,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":13,"distance":11.218,"position":[63.373935094017305,-9.779899343969182],"heading":0.22685615025837538,"difference":0.19819416190978043,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":14,"distance":10.071,"position":[63.63779995034659,-10.923014754881361],"heading":0.22685615025837538,"difference":0.2211335416805689,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":15,"distance":9.57,"position":[63.76718478979488,-11.417133258340705],"heading":0.2800672214553646,"difference":0.1781017380373403,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":16,"distance":8.418,"position":[64.09147274691864,-12.544592907506741],"heading":0.2800672214553646,"difference":0.20279481689781662,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":17,"distance":6.87,"position":[64.53041984921047,-14.070690732235736],"heading":0.2800672214553646,"difference":0.24936722827879407,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":18,"distance":6.274,"position":[64.71764271282795,-14.652793038643706],"heading":0.3366720610378954,"difference":0.21386557717406784,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":19,"distance":5.099,"position":[65.11704509955972,-15.7939528101876],"heading":0.3366720610378954,"difference":0.26420894602753386,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":20,"distance":4.596,"position":[65.30299715406971,-16.27901437376761],"heading":0.39017654563263915,"difference":0.23700626012490345,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":21,"distance":4.441,"position":[65.36654339265053,-16.424081043521163],"heading":0.43151244319332543,"difference":0.20325487392340696,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":22,"distance":3.421,"position":[65.80472675287004,-17.37571670982835],"heading":0.43151244319332543,"difference":0.2651052899596655,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":23,"distance":2.957,"position":[66.01804094908255,-17.806058679018086],"heading":0.48369667815843365,"difference":0.2509817730843755,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":0,"distance":92.163,"position":[66.04515601245001,-17.857675101316254],"heading":0.48369667815843365,"difference":-0.4624843766537854,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":1,"distance":92.067,"position":[66.09236065230252,-17.95247989288875],"heading":0.4441285625412277,"difference":-0.4234070232514356,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":2,"distance":92.038,"position":[66.10563614900347,-17.981908344977587],"heading":0.407040892732097,"difference":-0.3864569373104747,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":3,"distance":92.034,"position":[66.10718742786551,-17.985506617925637],"heading":0.371040892732097,"difference":-0.3504729845258886,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":4,"distance":92.034,"position":[66.10718742786551,-17.985506617925637],"heading":0.335040892732097,"difference":-0.3144729845258885,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":5,"distance":92.034,"position":[66.10718742786551,-17.985506617925637],"heading":0.29904089273209694,"difference":-0.2784729845258885,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":6,"distance":92.034,"position":[66.10718742786551,-17.985506617925637],"heading":0.2630408927320969,"difference":-0.24247298452588845,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":7,"distance":92.034,"position":[66.10718742786551,-17.985506617925637],"heading":0.22704089273209693,"difference":-0.20647298452588847,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":8,"distance":91.064,"position":[66.33032008719039,-18.951347767828484],"heading":0.22704089273209693,"difference":-0.2087046214997821,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":9,"distance":89.561,"position":[66.67615128048728,-20.448295809485707],"heading":0.22704089273209693,"difference":-0.21225890386227242,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":10,"distance":87.909,"position":[67.05678640699097,-22.09589445949084],"heading":0.22704089273209693,"difference":-0.21631127559749852,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":11,"distance":86.216,"position":[67.44729380928678,-23.786225761148494],"heading":0.22704089273209693,"difference":-0.2206301002129471,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":12,"distance":85.58,"position":[67.57285133226445,-24.42105207831395],"heading":0.16923428790469885,"difference":-0.16424304729013492,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":13,"distance":84.375,"position":[67.77862549038056,-25.6253347651438],"heading":0.16923428790469885,"difference":-0.16661058562349806,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":14,"distance":82.796,"position":[68.04840379393231,-27.204198424332397],"heading":0.16923428790469885,"difference":-0.16981890436467298,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":15,"distance":81.111,"position":[68.33633713104955,-28.88931348458074],"heading":0.16923428790469885,"difference":-0.17338090800847283,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":16,"distance":79.398,"position":[68.62942021653886,-30.604567182560924],"heading":0.16923428790469885,"difference":-0.17716178459816231,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":17,"distance":77.677,"position":[68.92396404888937,-32.32836982648697],"heading":0.16923428790469885,"difference":-0.1811294994166039,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":18,"distance":75.955,"position":[69.21892222796875,-34.05459741335289],"heading":0.16923428790469885,"difference":-0.1852828904149403,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":19,"distance":74.234,"position":[69.51399793816617,-35.78151284504773],"heading":0.16923428790469885,"difference":-0.18963066141273024,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":20,"distance":72.514,"position":[69.80910698653845,-37.508623386697906],"heading":0.16923428790469885,"difference":-0.19418527703589508,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":21,"distance":70.795,"position":[70.10422549141825,-39.23578927207251],"heading":0.16923428790469885,"difference":-0.1989612586944068,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":22,"distance":69.079,"position":[70.39934667867448,-40.962970855917405],"heading":0.16923428790469885,"difference":-0.20397479414241582,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":23,"distance":67.364,"position":[70.69446862679759,-42.6901568926966],"heading":0.16923428790469885,"difference":-0.20924375188495575,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":24,"distance":65.651,"position":[70.98959079074366,-44.41734419256855],"heading":0.16923428790469885,"difference":-0.21478783468227802,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":25,"distance":63.94,"position":[71.28471301590875,-46.144531850721826],"heading":0.16923428790469885,"difference":-0.22062879688211498,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":26,"distance":63.3,"position":[71.37391113983172,-46.789734434225046],"heading":0.1112855939265184,"difference":-0.1646109911163443,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":27,"distance":62.094,"position":[71.50975910104053,-48.00540566891081],"heading":0.1112855939265184,"difference":-0.16783917859531847,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":28,"distance":60.515,"position":[71.68768998076769,-49.59766697575621],"heading":0.1112855939265184,"difference":-0.1722620203790458,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":29,"distance":58.831,"position":[71.87755784977944,-51.29674957290953],"heading":0.1112855939265184,"difference":-0.17724332514890268,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":30,"distance":57.119,"position":[72.07081169386603,-53.02613245917459],"heading":0.1112855939265184,"difference":-0.18261488241782142,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":31,"distance":55.4,"position":[72.26502598341627,-54.7641101444503],"heading":0.1112855939265184,"difference":-0.18834744610164927,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":32,"distance":53.681,"position":[72.45951270718949,-56.504525779072345],"heading":0.1112855939265184,"difference":-0.19445572141363981,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":33,"distance":51.963,"position":[72.65407670802699,-58.24563294784287],"heading":0.1112855939265184,"difference":-0.20097062090340617,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":34,"distance":50.248,"position":[72.84866262881494,-59.98693627305907],"heading":0.1112855939265184,"difference":-0.20793148332614864,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":35,"distance":48.534,"position":[73.0432547672851,-61.728295238840914],"heading":0.1112855939265184,"difference":-0.21538435023102948,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":36,"distance":46.824,"position":[73.23784866942589,-63.469669987293244],"heading":0.1112855939265184,"difference":-0.22338218306843446,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":37,"distance":46.185,"position":[73.2895292439068,-64.1189540964537],"heading":0.05333695022120443,"difference":-0.16811810586941703,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":38,"distance":44.979,"position":[73.35474207003703,-65.34045203215508],"heading":0.05333695022120452,"difference":-0.17266866916886886,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":39,"distance":43.402,"position":[73.4401565243129,-66.94034557715543],"heading":0.05333695022120461,"difference":-0.1790111061317022,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":40,"distance":41.721,"position":[73.53130125175413,-68.64757256034329],"heading":0.0533369502212047,"difference":-0.1863076862793247,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":41,"distance":40.012,"position":[73.62407139425164,-70.38524510545108],"heading":0.05333695022120479,"difference":-0.19436362213638653,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":42,"distance":38.298,"position":[73.7173025922746,-72.13155365678651],"heading":0.05333695022120488,"difference":-0.20318324730111395,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":43,"distance":36.584,"position":[73.81066457055381,-73.88031184606129],"heading":0.05333695022120497,"difference":-0.2128428189765103,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":44,"distance":34.874,"position":[73.90406364517929,-75.62976488500102],"heading":0.05333695022120506,"difference":-0.22345503586921442,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":45,"distance":34.235,"position":[73.91805277927814,-76.28088692385232],"heading":-0.004609490577777278,"difference":-0.16913130182136077,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":46,"distance":33.029,"position":[73.91241440494281,-77.50408812288312],"heading":-0.004609490577777278,"difference":-0.1753651495877068,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":47,"distance":31.453,"position":[73.90502926498857,-79.10623645674562],"heading":-0.004609490577777278,"difference":-0.1842523586884527,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":48,"distance":29.774,"position":[73.8971486479332,-80.81587467123367],"heading":-0.004609490577777278,"difference":-0.19477277678043423,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":49,"distance":28.069,"position":[73.889127486803,-82.55600282316914],"heading":-0.004609490577777278,"difference":-0.20677196924583624,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":50,"distance":26.36,"position":[73.88106645978016,-84.30477956862931],"heading":-0.004609490577777278,"difference":-0.2203928529150816,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":51,"distance":25.721,"position":[73.85736012637082,-84.95485537336697],"heading":-0.06253016600941051,"difference":-0.1672126379382955,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":52,"distance":24.516,"position":[73.78093919023108,-86.17540718911236],"heading":-0.06253016600941051,"difference":-0.17551508199357152,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":53,"distance":22.94,"position":[73.68082562506694,-87.77436422777545],"heading":-0.06253016600941051,"difference":-0.1877101212509414,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":54,"distance":21.263,"position":[73.57399155028163,-89.48065743156768],"heading":-0.06253016600941051,"difference":-0.20271492940721908,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":55,"distance":19.562,"position":[73.46525117588214,-91.21739697078783],"heading":-0.06253016600941051,"difference":-0.22062556304215708,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":56,"distance":18.925,"position":[73.40417599080436,-91.86292124533375],"heading":-0.12038002898244567,"difference":-0.1692067901671819,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":57,"distance":17.722,"position":[73.25740338570132,-93.07626986019015],"heading":-0.12038002898244567,"difference":-0.18082105572870147,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":58,"distance":16.148,"position":[73.06503492512991,-94.66655304016429],"heading":-0.12038002898244567,"difference":-0.19866141295156436,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":59,"distance":14.476,"position":[72.8597330165632,-96.36375522726102],"heading":-0.12038002898244567,"difference":-0.2219703170775914,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":60,"distance":13.847,"position":[72.76264947528855,-96.99734818324302],"heading":-0.17797980639191685,"difference":-0.17312669086795734,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":61,"distance":12.648,"position":[72.54673821922907,-98.19763397967996],"heading":-0.17797980639191685,"difference":-0.1897376486807137,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":62,"distance":11.08,"position":[72.2632721942335,-99.77346772630449],"heading":-0.17797980639191685,"difference":-0.21699602541616592,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":63,"distance":9.418,"position":[71.96064398701994,-101.45582716114346],"heading":-0.17797980639191685,"difference":-0.2560842857238367,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":64,"distance":8.794,"position":[71.82725815710837,-102.08273010329417],"heading":-0.2355778439440616,"difference":-0.21470690051443128,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":65,"distance":7.607,"position":[71.54261335321722,-103.26857838684147],"heading":-0.2355778439440616,"difference":-0.24887215016383823,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":66,"distance":7.098,"position":[71.40587295253978,-103.77238273705848],"heading":-0.28916820673846466,"difference":-0.21129049988444706,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":67,"distance":5.952,"position":[71.07019455344049,-104.90068638621943],"heading":-0.28916820673846466,"difference":-0.2527792749983826,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":68,"distance":5.454,"position":[70.90997809173504,-105.38670924899866],"heading":-0.34241204053910773,"difference":-0.2203339021817953,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":69,"distance":5.302,"position":[70.85427909662606,-105.53244428325972],"heading":-0.3836684838360079,"difference":-0.18485723836082396,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":70,"distance":4.277,"position":[70.4624241165302,-106.50316878037765],"heading":-0.3836684838360079,"difference":-0.22986222063235245,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":0,"distance":110.959,"position":[70.21291705566605,-107.12126125970627],"heading":-0.3836684838360079,"difference":0.34569103660309203,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":1,"distance":110.945,"position":[70.20787723750206,-107.13437427556677],"heading":-0.3470997751586646,"difference":0.30916323365865395,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":2,"distance":110.945,"position":[70.20787723750206,-107.13437427556677],"heading":-0.31109977515866455,"difference":0.2731632336586539,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":3,"distance":110.945,"position":[70.20787723750206,-107.13437427556677],"heading":-0.2750997751586646,"difference":0.2371632336586539,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":4,"distance":110.945,"position":[70.20787723750206,-107.13437427556677],"heading":-0.23909977515866457,"difference":0.2011632336586539,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":5,"distance":109.974,"position":[69.97311411898758,-108.09745453633865],"heading":-0.23909977515866457,"difference":0.20296426418900704,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":6,"distance":108.47,"position":[69.60925698725433,-109.59012350210617],"heading":-0.23909977515866457,"difference":0.20581937225158428,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":7,"distance":106.815,"position":[69.20878181887457,-111.23301243643446],"heading":-0.23909977515866457,"difference":0.20905475555015787,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":8,"distance":105.119,"position":[68.79791979695753,-112.91851186970572],"heading":-0.23909977515866457,"difference":0.21247987350922382,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":9,"distance":103.411,"position":[68.38411150221197,-114.61609794257333],"heading":-0.23909977515866457,"difference":0.2160431003080055,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":10,"distance":101.702,"position":[67.96946748531542,-116.31711243942928],"heading":-0.23909977515866457,"difference":0.2197334755992672,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":11,"distance":99.993,"position":[67.55458641246572,-118.01909942255408],"heading":-0.23909977515866457,"difference":0.2235521941757929,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":12,"distance":99.354,"position":[67.42058381555766,-118.65640681364438],"heading":-0.1811543228866318,"difference":0.1668555950655688,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":13,"distance":98.148,"position":[67.20020515687173,-119.85959451880717],"heading":-0.1811543228866318,"difference":0.16892546238669362,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":14,"distance":96.569,"position":[66.91155136583696,-121.43553973279727],"heading":-0.1811543228866318,"difference":0.17171478075516325,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":15,"distance":94.885,"position":[66.60353105860162,-123.11721911507425],"heading":-0.1811543228866318,"difference":0.17479360165170166,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":16,"distance":93.172,"position":[66.29001736106673,-124.82889041992443],"heading":-0.1811543228866318,"difference":0.17804159378309467,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":17,"distance":91.451,"position":[65.97494544125425,-126.54906905437497],"heading":-0.1811543228866318,"difference":0.1814282901153941,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":18,"distance":89.729,"position":[65.65943152541851,-128.27166082712134],"heading":-0.1811543228866318,"difference":0.18494985551658744,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":19,"distance":88.008,"position":[65.34379223563108,-129.99493709626188],"heading":-0.1811543228866318,"difference":0.1886106621199975,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":20,"distance":86.287,"position":[65.02811738301747,-131.71840752556074],"heading":-0.1811543228866318,"difference":0.19241792487008474,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":21,"distance":84.568,"position":[64.712432442865,-133.44193302917026],"heading":-0.1811543228866318,"difference":0.19638016832454497,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":22,"distance":82.85,"position":[64.39674464134153,-135.16547415482975],"heading":-0.1811543228866318,"difference":0.20050682339644646,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":23,"distance":81.134,"position":[64.08105602817864,-136.88901971174667],"heading":-0.1811543228866318,"difference":0.20480816193504067,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":24,"distance":79.419,"position":[63.76536718479096,-138.6125665256076],"heading":-0.1811543228866318,"difference":0.2092953372170578,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":25,"distance":77.706,"position":[63.44967827609909,-140.33611369600578],"heading":-0.1811543228866318,"difference":0.21398046308766283,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":26,"distance":75.994,"position":[63.13398934888341,-142.05966096753713],"heading":-0.1811543228866318,"difference":0.2188767130494789,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":27,"distance":74.285,"position":[62.81830041641339,-143.78320826775538],"heading":-0.1811543228866318,"difference":0.22399843506308886,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":28,"distance":73.646,"position":[62.721417969739264,-144.42730182652997],"heading":-0.12320562782536539,"difference":0.16773864720392645,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":29,"distance":72.44,"position":[62.57108915896907,-145.64126743397625],"heading":-0.12320562782536539,"difference":0.1705578620261119,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":30,"distance":70.862,"position":[62.37419156025226,-147.23129473350943],"heading":-0.12320562782536539,"difference":0.1743954983544219,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":31,"distance":69.178,"position":[62.16408453732517,-148.9279934462154],"heading":-0.12320562782536539,"difference":0.17868366352579773,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":32,"distance":67.467,"position":[61.9502306080331,-150.65494993478032],"heading":-0.12320562782536539,"difference":0.18326792485252613,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":33,"distance":65.748,"position":[61.73531385366367,-152.39048916330043],"heading":-0.12320562782536539,"difference":0.18811534871227098,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":34,"distance":64.028,"position":[61.520095624681595,-154.1284629205673],"heading":-0.12320562782536539,"difference":0.1932302406873697,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":35,"distance":62.31,"position":[61.304791881211756,-155.8671272417158],"heading":-0.12320562782536539,"difference":0.19862949331064628,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":36,"distance":60.593,"position":[61.08946388121313,-157.60598744408983],"heading":-0.12320562782536539,"difference":0.20433548452504005,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":37,"distance":58.879,"position":[60.874129000752454,-159.34490320896228],"heading":-0.12320562782536539,"difference":0.21037421089447422,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":38,"distance":57.166,"position":[60.65879216862103,-161.08383473436112],"heading":-0.12320562782536539,"difference":0.21677501825728746,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":39,"distance":55.456,"position":[60.443454782890306,-162.82277073029672],"heading":-0.12320562782536539,"difference":0.22357085801391588,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":40,"distance":54.817,"position":[60.38403848806929,-163.4713937829811],"heading":-0.06525694726373749,"difference":0.16788620629980905,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":41,"distance":53.611,"position":[60.304270362428596,-164.69202801101872],"heading":-0.06525694726373749,"difference":0.17169886416949645,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":42,"distance":52.033,"position":[60.19979169427623,-166.29078989018137],"heading":-0.06525694726373749,"difference":0.1769597587037032,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":43,"distance":50.351,"position":[60.088303781243425,-167.99680920011656],"heading":-0.06525694726373749,"difference":0.18293706535848442,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":44,"distance":48.641,"position":[59.97482766767756,-169.73325251216232],"heading":-0.06525694726373749,"difference":0.18944525227060127,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":45,"distance":46.925,"position":[59.860787593025,-171.47832571490903],"heading":-0.06525694726373749,"difference":0.19646337728036653,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":46,"distance":45.209,"position":[59.74658754853941,-173.2258468209013],"heading":-0.06525694726373749,"difference":0.20402497825071214,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":47,"distance":43.495,"position":[59.63234212796657,-174.9740622845056],"heading":-0.06525694726373749,"difference":0.2121862185494735,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":48,"distance":41.783,"position":[59.51808383628387,-176.72247470544247],"heading":-0.06525694726373749,"difference":0.2210175241875769,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":49,"distance":41.144,"position":[59.49633348688541,-177.3734316427822],"heading":-0.007308891564890064,"difference":0.16604612661342105,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":50,"distance":39.938,"position":[59.487393101842514,-178.59663023107905],"heading":-0.007308891564890053,"difference":0.17110852040828625,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":51,"distance":38.36,"position":[59.475683117871625,-180.19875763313448],"heading":-0.0073088915648900415,"difference":0.17822036773736255,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":52,"distance":36.679,"position":[59.46318752601304,-181.90836971896934],"heading":-0.00730889156489003,"difference":0.18648368903581033,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":53,"distance":34.97,"position":[59.45046909331385,-183.64847026814527],"heading":-0.007308891564890019,"difference":0.19570968211952333,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":54,"distance":33.257,"position":[59.43768745091297,-185.39721899270967],"heading":-0.007308891564890008,"difference":0.20593564783856141,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":55,"distance":31.544,"position":[59.42488787882567,-187.14842080704491],"heading":-0.007308891564889996,"difference":0.21728815300498228,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":56,"distance":29.836,"position":[59.41208322091064,-188.90031845017097],"heading":-0.007308891564889985,"difference":0.22994726485045017,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":57,"distance":29.198,"position":[59.42806820497286,-189.5513945475757],"heading":0.05063754920760964,"difference":0.17639053132345073,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":58,"distance":27.994,"position":[59.489982306360076,-190.77304081713996],"heading":0.05063754920760964,"difference":0.18405807253293424,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":59,"distance":26.421,"position":[59.571077366172396,-192.37315250543242],"heading":0.05063754920760964,"difference":0.19515666402293788,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":60,"distance":24.746,"position":[59.65761318207412,-194.08061743363805],"heading":0.05063754920760964,"difference":0.208554682100078,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":61,"distance":23.046,"position":[59.74569229034781,-195.81853354060286],"heading":0.05063754920760964,"difference":0.22418862967136197,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":62,"distance":22.41,"position":[59.799086506879,-196.46473999450765],"heading":0.10848746302583295,"difference":0.17187089503980846,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":63,"distance":21.207,"position":[59.931419302740345,-197.67974880245512],"heading":0.10848746302583295,"difference":0.18172752373413353,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":64,"distance":19.634,"position":[60.10486207453834,-199.27220737659582],"heading":0.10848746302583295,"difference":0.19647337137193388,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":65,"distance":17.96,"position":[60.28996585654008,-200.97173109671854],"heading":0.10848746302583295,"difference":0.21505609609520426,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":66,"distance":16.264,"position":[60.47837733103917,-202.70162427659687],"heading":0.10848746302583295,"difference":0.23789001237993315,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":67,"distance":15.63,"position":[60.56904351004006,-203.3436570163203],"heading":0.16633718635827224,"difference":0.18852933328084212,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":68,"distance":14.431,"position":[60.77140332829749,-204.54898019101205],"heading":0.16633718635827224,"difference":0.20440198278209232,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":69,"distance":12.867,"position":[61.03662777889076,-206.12874627079907],"heading":0.16633718635827224,"difference":0.2296746876864974,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":70,"distance":12.265,"position":[61.15728122148727,-206.73163722918758],"heading":0.2230557959690655,"difference":0.18284173304935608,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":71,"distance":11.077,"position":[61.424998929447476,-207.91189309554247],"heading":0.2230557959690655,"difference":0.20270858367465797,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":72,"distance":9.517,"position":[61.77860091388416,-209.47077696492084],"heading":0.2230557959690655,"difference":0.2365304870663606,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":73,"distance":8.916,"position":[61.93302104483967,-210.06506455869854],"heading":0.27974666328827896,"difference":0.19388325786114927,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":74,"distance":7.733,"position":[62.26710160796725,-211.22797353922613],"heading":0.27974666328827896,"difference":0.22403521313457103,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":75,"distance":7.224,"position":[62.425224224789,-211.72303866824953],"heading":0.3332585863871006,"difference":0.18443804325647797,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":76,"distance":6.071,"position":[62.810036449891996,-212.83466705719175],"heading":0.3332585863871006,"difference":0.21998120258037704,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":77,"distance":4.534,"position":[63.32979471216418,-214.3361215382036],"heading":0.3332585863871006,"difference":0.29653066429378694,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":0,"distance":8.544,"position":[55,-220],"heading":1.5707963267948966,"difference":2.782821983319221,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":1,"distance":8.544,"position":[55,-220],"heading":1.8137963267948964,"difference":2.5398219833192206,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":2,"distance":8.544,"position":[55,-220],"heading":2.0567963267948963,"difference":2.296821983319221,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":3,"distance":8.544,"position":[55,-220],"heading":2.2997963267948967,"difference":2.053821983319221,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":4,"distance":8.544,"position":[55,-220],"heading":2.542796326794897,"difference":1.8108219833192207,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":5,"distance":8.544,"position":[55,-220],"heading":2.7857963267948973,"difference":1.5678219833192204,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":6,"distance":8.544,"position":[55,-220],"heading":3.0287963267948976,"difference":1.32482198331922,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":7,"distance":8.544,"position":[55,-220],"heading":-3.0113889803846887,"difference":1.0818219833192197,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":8,"distance":8.544,"position":[55,-220],"heading":-2.7683889803846884,"difference":0.8388219833192194,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":9,"distance":8.544,"position":[55,-220],"heading":-2.525388980384688,"difference":0.5958219833192191,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":10,"distance":8.544,"position":[55,-220],"heading":-2.2823889803846877,"difference":0.35282198331921877,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":11,"distance":8.544,"position":[55,-220],"heading":-2.0393889803846874,"difference":0.10982198331921844,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":12,"distance":7.766,"position":[54.30140366278617,-219.64637285506984],"heading":-2.0393889803846874,"difference":0.12087238962348823,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":13,"distance":6.99,"position":[53.60280732557234,-219.29274571013968],"heading":-2.0393889803846874,"difference":0.13438051565426698,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":14,"distance":6.214,"position":[52.904210988358514,-218.93911856520953],"heading":-2.0393889803846874,"difference":0.15126179313546362,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":15,"distance":5.442,"position":[52.205614651144685,-218.58549142027937],"heading":-2.0393889803846874,"difference":0.17294543711332347,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":16,"distance":4.672,"position":[51.50701831393086,-218.2318642753492],"heading":-2.0393889803846874,"difference":0.20178775031423135,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":17,"distance":3.908,"position":[50.80842197671703,-217.87823713041905],"heading":-2.0393889803846874,"difference":0.24195074024950913,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":18,"distance":3.908,"position":[50.80842197671703,-217.87823713041905],"heading":-1.7963889803846875,"difference":-0.0010492597504907497,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":19,"distance":3.125,"position":[50.04526185692749,-217.70309252855307],"heading":-1.7963889803846875,"difference":-0.001312130818542645,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":20,"distance":2.342,"position":[49.28210173713795,-217.5279479266871],"heading":-1.7963889803846875,"difference":-0.0017507448222675581,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":21,"distance":1.559,"position":[48.51894161734841,-217.3528033248211],"heading":-1.7963889803846875,"difference":-0.002629835294191141,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":0,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":-1.7963889803846875,"difference":2.917252815314529,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":1,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":-1.5533889803846876,"difference":2.6742528153145297,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":2,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":-1.3103889803846878,"difference":2.4312528153145294,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":3,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":-1.0673889803846879,"difference":2.18825281531453,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":4,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":-0.824388980384688,"difference":1.9452528153145299,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":5,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":-0.5813889803846882,"difference":1.7022528153145304,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":6,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":-0.33838898038468823,"difference":1.45925281531453,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":7,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":-0.09538898038468833,"difference":1.2162528153145302,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":8,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":0.14761101961531162,"difference":0.9732528153145302,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":9,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":0.39061101961531164,"difference":0.7302528153145302,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":10,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":0.6336110196153115,"difference":0.4872528153145303,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":11,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":0.8766110196153114,"difference":0.24425281531453047,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":12,"distance":6.087,"position":[48.51894161734841,-217.3528033248211],"heading":1.1196110196153113,"difference":0.0012528153145305865,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":13,"distance":5.304,"position":[49.22358751373972,-217.6942167995096],"heading":1.1196110196153113,"difference":0.00143776688798436,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":14,"distance":4.521,"position":[49.928233410131035,-218.0356302741981],"heading":1.1196110196153113,"difference":0.0016867847851933513,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":15,"distance":3.738,"position":[50.63287930652235,-218.3770437488866],"heading":1.1196110196153113,"difference":0.002040130555790887,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":16,"distance":2.955,"position":[51.33752520291366,-218.7184572235751],"heading":1.1196110196153113,"difference":0.0025807409182456724,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":17,"distance":2.172,"position":[52.04217109930497,-219.05987069826358],"heading":1.1196110196153113,"difference":0.0035111537845746725,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":18,"distance":1.389,"position":[52.746816995696285,-219.40128417295207],"heading":1.1196110196153113,"difference":0.005490642198894946,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":0,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":1.1196110196153113,"difference":-3.0862028733300035,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":1,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":0.8766110196153112,"difference":-2.8432028733300037,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":2,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":0.6336110196153113,"difference":-2.6002028733300033,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":3,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":0.39061101961531136,"difference":-2.3572028733300034,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":4,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":0.14761101961531112,"difference":-2.1142028733300036,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":5,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":-0.09538898038468878,"difference":-1.8712028733300035,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":6,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":-0.33838898038468873,"difference":-1.6282028733300036,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":7,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":-0.5813889803846887,"difference":-1.3852028733300035,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":8,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":-0.8243889803846887,"difference":-1.1422028733300036,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":9,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":-1.0673889803846885,"difference":-0.8992028733300037,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":10,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":-1.3103889803846884,"difference":-0.6562028733300038,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":11,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":-1.5533889803846883,"difference":-0.41320287333000394,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":12,"distance":6.228,"position":[52.746816995696285,-219.40128417295207],"heading":-1.7963889803846882,"difference":-0.17020287333000408,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":13,"distance":5.458,"position":[51.983656875906746,-219.2261395710861],"heading":-1.7963889803846882,"difference":-0.1945035743191008,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":14,"distance":4.692,"position":[51.22049675611721,-219.0509949692201],"heading":-1.7963889803846882,"difference":-0.22676045402015824,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":15,"distance":4.692,"position":[51.22049675611721,-219.0509949692201],"heading":-2.0393889803846883,"difference":0.016239545979841896,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":16,"distance":3.91,"position":[50.52190041890338,-218.69736782428996],"heading":-2.0393889803846883,"difference":0.019491818068809952,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":17,"distance":3.127,"position":[49.82330408168955,-218.3437406793598],"heading":-2.0393889803846883,"difference":0.0243726350684903,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":18,"distance":2.605,"position":[49.357573190213664,-218.10798924940636],"heading":-2.0393889803846883,"difference":0.029256138090035133,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":19,"distance":1.822,"position":[48.658976852999835,-217.7543621044762],"heading":-2.0393889803846883,"difference":0.04182443357882182,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":0,"distance":11.873,"position":[48.658976852999835,-217.7543621044762],"heading":-2.0393889803846883,"difference":0.6588726470463959,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":1,"distance":11.873,"position":[48.658976852999835,-217.7543621044762],"heading":-1.7963889803846884,"difference":0.41587264704639604,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":2,"distance":11.873,"position":[48.658976852999835,-217.7543621044762],"heading":-1.5533889803846885,"difference":0.17287264704639616,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":3,"distance":11.103,"position":[47.876095480654385,-217.76799136837752],"heading":-1.5533889803846885,"difference":0.1850038083433283,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":4,"distance":10.334,"position":[47.093214108308935,-217.78162063227884],"heading":-1.5533889803846885,"difference":0.19894187319732115,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":5,"distance":9.568,"position":[46.310332735963485,-217.79524989618017],"heading":-1.5533889803846885,"difference":0.21511616526820987,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":6,"distance":8.804,"position":[45.527451363618034,-217.8088791600815],"heading":-1.5533889803846885,"difference":0.2341008643514764,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":7,"distance":8.804,"position":[45.527451363618034,-217.8088791600815],"heading":-1.3103889803846887,"difference":-0.008899135648523515,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":8,"distance":8.021,"position":[44.77085006993276,-218.0104814477515],"heading":-1.3103889803846887,"difference":-0.009767793777325284,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":9,"distance":7.239,"position":[44.01424877624749,-218.2120837354215],"heading":-1.3103889803846887,"difference":-0.010824370363718305,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":10,"distance":6.456,"position":[43.25764748256222,-218.4136860230915],"heading":-1.3103889803846887,"difference":-0.01213723702779479,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":11,"distance":5.673,"position":[42.50104618887695,-218.61528831076149],"heading":-1.3103889803846887,"difference":-0.013812508905280962,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":12,"distance":4.89,"position":[41.74444489519168,-218.81689059843148],"heading":-1.3103889803846887,"difference":-0.016024256599006748,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":13,"distance":4.107,"position":[40.987843601506405,-219.01849288610148],"heading":-1.3103889803846887,"difference":-0.019079265214190233,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":14,"distance":3.324,"position":[40.231242307821134,-219.22009517377148],"heading":-1.3103889803846887,"difference":-0.023573269967134713,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":15,"distance":2.541,"position":[39.47464101413586,-219.42169746144148],"heading":-1.3103889803846887,"difference":-0.03083577898547984,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":16,"distance":1.759,"position":[38.71803972045059,-219.62329974911148],"heading":-1.3103889803846887,"difference":-0.044561399087434284,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":0,"distance":14.082,"position":[38.71803972045059,-219.62329974911148],"heading":-1.3103889803846887,"difference":0.8130924717613146,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":1,"distance":14.082,"position":[38.71803972045059,-219.62329974911148],"heading":-1.0673889803846888,"difference":0.5700924717613148,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":2,"distance":14.082,"position":[38.71803972045059,-219.62329974911148],"heading":-0.8243889803846889,"difference":0.32709247176131484,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":3,"distance":14.082,"position":[38.71803972045059,-219.62329974911148],"heading":-0.581388980384689,"difference":0.08409247176131496,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":4,"distance":13.042,"position":[38.14469033198954,-220.49577122643967],"heading":-0.581388980384689,"difference":0.09081590369563491,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":5,"distance":12.263,"position":[37.71467829064375,-221.15012483443581],"heading":-0.581388980384689,"difference":0.0966066929535979,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":6,"distance":11.484,"position":[37.284666249297956,-221.80447844243196],"heading":-0.581388980384689,"difference":0.10318346656515381,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":7,"distance":10.705,"position":[36.854654207952166,-222.4588320504281],"heading":-0.581388980384689,"difference":0.11071719247617928,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":8,"distance":9.927,"position":[36.424642166606375,-223.11318565842424],"heading":-0.581388980384689,"difference":0.11943204237617833,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":9,"distance":9.15,"position":[35.994630125260585,-223.76753926642039],"heading":-0.581388980384689,"difference":0.129627703708113,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":10,"distance":8.116,"position":[35.42128073679953,-224.64001074374858],"heading":-0.581388980384689,"difference":0.14625579436518865,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":11,"distance":7.085,"position":[34.84793134833848,-225.51248222107677],"heading":-0.581388980384689,"difference":0.16773171259679096,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":12,"distance":6.058,"position":[34.27458195987742,-226.38495369840496],"heading":-0.581388980384689,"difference":0.19650501153337963,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":13,"distance":5.038,"position":[33.70123257141637,-227.25742517573315],"heading":-0.581388980384689,"difference":0.2369714654570346,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":14,"distance":5.038,"position":[33.70123257141637,-227.25742517573315],"heading":-0.338388980384689,"difference":-0.006028534542965425,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":15,"distance":4.255,"position":[33.44130173407998,-227.99602179080907],"heading":-0.338388980384689,"difference":-0.00713776410472905,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":16,"distance":3.473,"position":[33.18137089674359,-228.734618405885],"heading":-0.338388980384689,"difference":-0.008747210199075093,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":17,"distance":2.69,"position":[32.921440059407196,-229.4732150209609],"heading":-0.338388980384689,"difference":-0.011293724890519276,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":18,"distance":1.907,"position":[32.661509222070805,-230.21181163603683],"heading":-0.338388980384689,"difference":-0.01593167865538492,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":0,"distance":13.232,"position":[32.661509222070805,-230.21181163603683],"heading":-0.338388980384689,"difference":-0.27913371565646067,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":1,"distance":13.232,"position":[32.661509222070805,-230.21181163603683],"heading":-0.581388980384689,"difference":-0.03613371565646062,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":2,"distance":12.449,"position":[32.231497180725015,-230.86616524403297],"heading":-0.581388980384689,"difference":-0.038405826888527894,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":3,"distance":11.406,"position":[31.65814779226396,-231.73863672136116],"heading":-0.581388980384689,"difference":-0.041920191220259584,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":4,"distance":10.624,"position":[31.22813575091817,-232.3929903293573],"heading":-0.581388980384689,"difference":-0.04500884110275915,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":5,"distance":9.842,"position":[30.79812370957238,-233.04734393735345],"heading":-0.581388980384689,"difference":-0.04858844499902715,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":6,"distance":9.06,"position":[30.36811166822659,-233.7016975453496],"heading":-0.581388980384689,"difference":-0.052786050258463835,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":7,"distance":8.018,"position":[29.794762279765536,-234.57416902267778],"heading":-0.581388980384689,"difference":-0.05965641670173628,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":8,"distance":6.976,"position":[29.22141289130448,-235.44664050000597],"heading":-0.581388980384689,"difference":-0.0685795867271304,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":9,"distance":5.935,"position":[28.648063502843428,-236.31911197733416],"heading":-0.581388980384689,"difference":-0.08063484165505552,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":10,"distance":4.895,"position":[28.074714114382374,-237.19158345466235],"heading":-0.581388980384689,"difference":-0.09781588235079842,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":11,"distance":3.857,"position":[27.50136472592132,-238.06405493199054],"heading":-0.581388980384689,"difference":-0.12425310735024177,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":12,"distance":2.824,"position":[26.928015337460266,-238.93652640931873],"heading":-0.581388980384689,"difference":-0.17008542951246156,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":13,"distance":1.804,"position":[26.354665948999212,-239.80899788664692],"heading":-0.581388980384689,"difference":-0.268211936891947,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":0,"distance":9.636,"position":[26.354665948999212,-239.80899788664692],"heading":-0.581388980384689,"difference":3.0970336828653964,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":1,"distance":9.636,"position":[26.354665948999212,-239.80899788664692],"heading":-0.338388980384689,"difference":2.8540336828653965,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":2,"distance":9.636,"position":[26.354665948999212,-239.80899788664692],"heading":-0.09538898038468901,"difference":2.611033682865396,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":3,"distance":9.636,"position":[26.354665948999212,-239.80899788664692],"heading":0.147611019615311,"difference":2.3680336828653963,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":4,"distance":9.636,"position":[26.354665948999212,-239.80899788664692],"heading":0.3906110196153111,"difference":2.1250336828653964,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":5,"distance":9.636,"position":[26.354665948999212,-239.80899788664692],"heading":0.6336110196153111,"difference":1.8820336828653963,"mode":"walk","keys":[],"panel":null}
+  ✘  6 tests/browser/voyage.spec.ts:23:1 › First Voyage through real movement and contextual interactions (6.3m)
+
+
+  1) tests/browser/voyage.spec.ts:23:1 › First Voyage through real movement and contextual interactions 
+
+    Test was interrupted.
+
+    Error: page.evaluate: Test ended.
+
+       at input.ts:36
+
+      34 |     blockedFrames = 0;
+      35 |   for (let i = 0; i < 350; i++) {
+    > 36 |     const sample = await page.evaluate(() => ({
+         |                               ^
+      37 |       state: (window as any).voyage.getState(),
+      38 |       keys: [...((window as any).__voyageTestKeys ?? [])],
+      39 |       panel:
+        at navigate (/Users/vincyvincent/3dfun/thehousebythesea/tests/browser/input.ts:36:31)
+        at /Users/vincyvincent/3dfun/thehousebythesea/tests/browser/voyage.spec.ts:102:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/visual-software/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/visual-software/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/visual-software/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/visual-software/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/visual-software/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Slow test file: tests/browser/voyage.spec.ts (6.3m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  1 interrupted
+    tests/browser/voyage.spec.ts:23:1 › First Voyage through real movement and contextual interactions 
+  5 passed (6.9m)

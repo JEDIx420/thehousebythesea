@@ -44,7 +44,9 @@ export function parseSave(raw: unknown): GameState {
     isRecord(inventory) &&
     count(inventory.sardine) &&
     count(inventory.bream) &&
-    ["available", "active", "complete"].includes(String(value.delivery)) &&
+    (value.delivery === "available" ||
+      value.delivery === "active" ||
+      value.delivery === "complete") &&
     Array.isArray(discoveries) &&
     discoveries.length > 0 &&
     discoveries.length <= 2 &&

@@ -10,9 +10,14 @@ export default defineConfig({
     // CI uses software rasterisation; CSS/input coverage stays full size.
     deviceScaleFactor: process.env.CI ? 0.5 : 1,
     channel: process.env.CI ? undefined : "chrome",
-    trace: "retain-on-failure",
+    // Hosted CI has no hardware GPU. Per-action DOM/canvas snapshots and video
+    // readbacks can freeze a software WebGL frame; retain actions/sources plus
+    // the explicit gameplay checkpoint and failure screenshots instead.
+    trace: process.env.CI
+      ? { mode: "retain-on-failure", screenshots: false, snapshots: false, sources: true }
+      : "retain-on-failure",
     screenshot: "only-on-failure",
-    video: "on",
+    video: process.env.CI ? "off" : "on",
     launchOptions: { args: ["--enable-webgl", "--ignore-gpu-blocklist"] },
   },
   webServer: {

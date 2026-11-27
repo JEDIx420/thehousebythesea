@@ -6,6 +6,7 @@ import {
   TERRAIN_STEP,
   triangleHeight,
   groundHeight,
+  seaFloorHeight,
 } from "./surface";
 describe("authored terrain collision", () => {
   it("matches the rendered triangle planes, including diagonal seams", () => {
@@ -40,6 +41,7 @@ describe("authored terrain collision", () => {
     mesh.updateMatrixWorld();
     for (const [x, z] of [
       [0.3, 0.9],
+      [0.5, 0.5], // exact u+v=1 triangle diagonal at the new1m grid
       [-14.3, -11.8],
       [38.3, 12.6],
       [48.1, 5.8],
@@ -62,5 +64,17 @@ describe("authored terrain collision", () => {
     expect(groundHeight(62, 0)).toBeNull();
     expect(groundHeight(55, -220)).toBe(1.68);
     expect(groundHeight(62, -220)).toBeNull();
+  });
+  it("keeps raw shallows available for boat collision instead of filtering them as walking water", () => {
+    let shallow: [number, number] | undefined;
+    for (let x = -54; x < 54 && !shallow; x += 0.25) {
+      const h = seaFloorHeight(x, 18);
+      if (h > 0.02 && h < 0.3) shallow = [x, 18];
+    }
+    expect(shallow).toBeDefined();
+    expect(groundHeight(...shallow!)).toBeNull();
+    expect(seaFloorHeight(...shallow!)).toBeGreaterThan(0);
+    expect(seaFloorHeight(62, 0)).toBeLessThan(-0.15);
+    expect(seaFloorHeight(62, -220)).toBeLessThan(-0.15);
   });
 });

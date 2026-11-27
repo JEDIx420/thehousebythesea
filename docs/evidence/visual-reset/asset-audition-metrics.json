@@ -1,0 +1,408 @@
+[
+  {
+    "file": "rowan-casual",
+    "size": [
+      0.5963977343964,
+      1.8159395239497913,
+      0.6427059401632528
+    ],
+    "clips": [
+      {
+        "name": "Death",
+        "seconds": 1.0666667222976685,
+        "tracks": 108
+      },
+      {
+        "name": "Gun_Shoot",
+        "seconds": 0.6000000238418579,
+        "tracks": 108
+      },
+      {
+        "name": "HitRecieve",
+        "seconds": 0.5666666626930237,
+        "tracks": 108
+      },
+      {
+        "name": "HitRecieve_2",
+        "seconds": 0.5666666626930237,
+        "tracks": 108
+      },
+      {
+        "name": "Idle",
+        "seconds": 1.6666666269302368,
+        "tracks": 108
+      },
+      {
+        "name": "Idle_Gun",
+        "seconds": 1.6666666269302368,
+        "tracks": 108
+      },
+      {
+        "name": "Idle_Gun_Pointing",
+        "seconds": 1.6666666269302368,
+        "tracks": 108
+      },
+      {
+        "name": "Idle_Gun_Shoot",
+        "seconds": 0.6666666865348816,
+        "tracks": 108
+      },
+      {
+        "name": "Idle_Neutral",
+        "seconds": 1.6666666269302368,
+        "tracks": 108
+      },
+      {
+        "name": "Idle_Sword",
+        "seconds": 1.6666666269302368,
+        "tracks": 108
+      },
+      {
+        "name": "Interact",
+        "seconds": 1.2666666507720947,
+        "tracks": 108
+      },
+      {
+        "name": "Kick_Left",
+        "seconds": 0.9333333373069763,
+        "tracks": 116
+      },
+      {
+        "name": "Kick_Right",
+        "seconds": 0.9333333373069763,
+        "tracks": 116
+      },
+      {
+        "name": "Punch_Left",
+        "seconds": 0.8333333134651184,
+        "tracks": 116
+      },
+      {
+        "name": "Punch_Right",
+        "seconds": 0.8333333134651184,
+        "tracks": 116
+      },
+      {
+        "name": "Roll",
+        "seconds": 1.3333333730697632,
+        "tracks": 116
+      },
+      {
+        "name": "Run",
+        "seconds": 0.800000011920929,
+        "tracks": 116
+      },
+      {
+        "name": "Run_Back",
+        "seconds": 0.8333333134651184,
+        "tracks": 116
+      },
+      {
+        "name": "Run_Left",
+        "seconds": 0.800000011920929,
+        "tracks": 124
+      },
+      {
+        "name": "Run_Right",
+        "seconds": 0.800000011920929,
+        "tracks": 124
+      },
+      {
+        "name": "Run_Shoot",
+        "seconds": 0.8333333134651184,
+        "tracks": 116
+      },
+      {
+        "name": "Sword_Slash",
+        "seconds": 1.0333333015441895,
+        "tracks": 108
+      },
+      {
+        "name": "Walk",
+        "seconds": 1.3333333730697632,
+        "tracks": 116
+      },
+      {
+        "name": "Wave",
+        "seconds": 1.6666666269302368,
+        "tracks": 108
+      }
+    ],
+    "materials": 9,
+    "skins": 10
+  },
+  {
+    "file": "mira-family-traveller",
+    "size": [
+      1.712985237083435,
+      1.746829890012741,
+      0.5597829803824425
+    ],
+    "clips": [
+      {
+        "name": "Idle",
+        "seconds": 2.5,
+        "tracks": 23
+      },
+      {
+        "name": "Walk",
+        "seconds": 1.333299994468689,
+        "tracks": 23
+      },
+      {
+        "name": "Run",
+        "seconds": 0.9333000183105469,
+        "tracks": 23
+      }
+    ],
+    "materials": 1,
+    "skins": 8
+  },
+  {
+    "file": "mira-casual",
+    "size": [
+      0.5242449722249407,
+      1.8094860222054063,
+      0.6194891158009288
+    ],
+    "clips": [
+      {
+        "name": "Death",
+        "seconds": 1.3333333730697632,
+        "tracks": 108
+      },
+      {
+        "name": "Gun_Shoot",
+        "seconds": 0.75,
+        "tracks": 108
+      },
+      {
+        "name": "HitRecieve",
+        "seconds": 0.7083333134651184,
+        "tracks": 108
+      },
+      {
+        "name": "HitRecieve_2",
+        "seconds": 0.7083333134651184,
+        "tracks": 108
+      },
+      {
+        "name": "Idle",
+        "seconds": 2.0833332538604736,
+        "tracks": 108
+      },
+      {
+        "name": "Idle_Gun",
+        "seconds": 2.0833332538604736,
+        "tracks": 108
+      },
+      {
+        "name": "Idle_Gun_Pointing",
+        "seconds": 2.0833332538604736,
+        "tracks": 108
+      },
+      {
+        "name": "Idle_Gun_Shoot",
+        "seconds": 0.8333333134651184,
+        "tracks": 108
+      },
+      {
+        "name": "Idle_Neutral",
+        "seconds": 2.0833332538604736,
+        "tracks": 108
+      },
+      {
+        "name": "Idle_Sword",
+        "seconds": 2.0833332538604736,
+        "tracks": 108
+      },
+      {
+        "name": "Interact",
+        "seconds": 1.5833333730697632,
+        "tracks": 108
+      },
+      {
+        "name": "Kick_Left",
+        "seconds": 1.1666666269302368,
+        "tracks": 116
+      },
+      {
+        "name": "Kick_Right",
+        "seconds": 1.1666666269302368,
+        "tracks": 116
+      },
+      {
+        "name": "Punch_Left",
+        "seconds": 1.0416666269302368,
+        "tracks": 116
+      },
+      {
+        "name": "Punch_Right",
+        "seconds": 1.0416666269302368,
+        "tracks": 116
+      },
+      {
+        "name": "Roll",
+        "seconds": 1.6666666269302368,
+        "tracks": 116
+      },
+      {
+        "name": "Run",
+        "seconds": 1,
+        "tracks": 116
+      },
+      {
+        "name": "Run_Back",
+        "seconds": 1.0416666269302368,
+        "tracks": 116
+      },
+      {
+        "name": "Run_Left",
+        "seconds": 1,
+        "tracks": 124
+      },
+      {
+        "name": "Run_Right",
+        "seconds": 1,
+        "tracks": 124
+      },
+      {
+        "name": "Run_Shoot",
+        "seconds": 1.0416666269302368,
+        "tracks": 116
+      },
+      {
+        "name": "Sword_Slash",
+        "seconds": 1.2916666269302368,
+        "tracks": 108
+      },
+      {
+        "name": "Walk",
+        "seconds": 1.6666666269302368,
+        "tracks": 116
+      },
+      {
+        "name": "Wave",
+        "seconds": 2.0833332538604736,
+        "tracks": 108
+      }
+    ],
+    "materials": 7,
+    "skins": 9
+  },
+  {
+    "file": "older-woman-basket",
+    "size": [
+      1.8056444811820986,
+      1.5894909438967706,
+      0.427085893094359
+    ],
+    "clips": [
+      {
+        "name": "Idle",
+        "seconds": 2.5,
+        "tracks": 44
+      },
+      {
+        "name": "Walk",
+        "seconds": 1.333299994468689,
+        "tracks": 44
+      },
+      {
+        "name": "Run",
+        "seconds": 0.9333000183105469,
+        "tracks": 44
+      }
+    ],
+    "materials": 1,
+    "skins": 8
+  },
+  {
+    "file": "rowan-flannel",
+    "size": [
+      1.6606175880050658,
+      1.738614820241928,
+      0.3692007943987846
+    ],
+    "clips": [
+      {
+        "name": "Idle",
+        "seconds": 2.5,
+        "tracks": 23
+      },
+      {
+        "name": "Walk",
+        "seconds": 1.333299994468689,
+        "tracks": 23
+      },
+      {
+        "name": "Run",
+        "seconds": 0.9333000183105469,
+        "tracks": 23
+      }
+    ],
+    "materials": 1,
+    "skins": 8
+  },
+  {
+    "file": "mira-cardigan",
+    "size": [
+      1.6338835553741455,
+      1.78713991522789,
+      0.4769249841570854
+    ],
+    "clips": [
+      {
+        "name": "Idle",
+        "seconds": 2.5,
+        "tracks": 23
+      },
+      {
+        "name": "Walk",
+        "seconds": 1.333299994468689,
+        "tracks": 23
+      },
+      {
+        "name": "Run",
+        "seconds": 0.9333000183105469,
+        "tracks": 23
+      }
+    ],
+    "materials": 1,
+    "skins": 7
+  },
+  {
+    "file": "caique-fishing-boat",
+    "size": [
+      2.6880502700805664,
+      4.910000026226044,
+      7.319487571716309
+    ],
+    "clips": [
+      {
+        "name": "tick",
+        "seconds": 35.20000076293945,
+        "tracks": 1
+      }
+    ],
+    "materials": 1,
+    "skins": 0
+  },
+  {
+    "file": "small-fishing-boat",
+    "size": [
+      2.3641395568847656,
+      2.853609323501587,
+      6.84283447265625
+    ],
+    "clips": [
+      {
+        "name": "tick",
+        "seconds": 12.800000190734863,
+        "tracks": 1
+      }
+    ],
+    "materials": 1,
+    "skins": 0
+  }
+]

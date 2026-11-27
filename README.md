@@ -6,7 +6,7 @@ A boy who dreamed of the ocean grows into a man, saves for years and finally buy
 
 ## Project status
 
-**First Voyage implementation — 27 November 2026.** Stage 0 and Stage 1 now have a playable two-island approval build. See [execution status](docs/progress.md), [player guide](docs/player-guide.md), [terrain proof](docs/terrain-spike.md) and [test evidence](docs/test-evidence.md). **WAITING FOR CREATOR APPROVAL** before any Stage 2 work.
+**First Voyage implementation — 27 November 2026.** Stage 0 and Stage 1 now have a playable two-island approval build. See [execution status](docs/progress.md), [player guide](docs/player-guide.md), [terrain proof](docs/terrain-spike.md) and [test evidence](docs/test-evidence.md). **Creator requested a Stage 1 visual reset in [Issue #4](https://github.com/JEDIx420/thehousebythesea/issues/4).** The corrected visual build and independent reviews are ready for hands-on review; the creator has not yet approved its appearance. See [actual comparisons, gameplay recording and final regression evidence](docs/visual-reset-evidence.md), [reset progress](docs/visual-reset-progress.md) and [PR #5 checks](https://github.com/JEDIx420/thehousebythesea/pull/5/checks). No Stage 2.
 
 **Current authorised delivery:** Stage 0 (foundation and integration proof) **plus** Stage 1 (the First Voyage playable vertical slice). **Stop for the creator's explicit hands-on approval before Stage 2.** Follow the gates in [docs/roadmap.md](docs/roadmap.md) and the acceptance contract in [docs/first-voyage.md](docs/first-voyage.md).
 
@@ -42,7 +42,7 @@ Use [prompts/00-foundation.md](prompts/00-foundation.md) then [prompts/01-first-
 
 ## Developer orientation
 
-Requirements: Node.js 22+ and npm. Use a desktop WebGL2 browser with hardware acceleration.
+Requirements: Node.js 22.12+ and npm. Use a desktop WebGL2 browser with hardware acceleration.
 
 ```sh
 npm ci
@@ -59,7 +59,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Local browser tests use installed Google Chrome for hardware rendering; CI uses downloaded Chromium at half render scale for software rasterisation (the CSS viewport and complete gameplay assertions stay unchanged). To use Chromium locally, set `CI=1 npm run test:e2e`. Successful runs retain video in `test-results/`; failures retain screenshots and traces. Nine in-game screenshots and per-scene measurements are written to `docs/evidence/`. Read the [playtest route and controls](docs/player-guide.md).
+Local browser tests use installed Google Chrome for hardware rendering; CI uses downloaded Chromium at half render scale for software rasterisation (the CSS viewport and complete gameplay assertions stay unchanged). To use Chromium locally, set `CI=1 npm run test:e2e`. Local runs retain video in `test-results/` and failure traces. CI avoids per-action canvas/DOM snapshots and video encoding; it retains trace actions/sources, failure screenshots and the nine explicit gameplay checkpoints under `test-results/checkpoints/`. Nine in-game screenshots and per-scene measurements are written to `docs/evidence/`. Read the [playtest route and controls](docs/player-guide.md).
 
 Vite builds `/thehousebythesea/` into `dist/`. The workflow verifies pull requests and deploys **main only** using official Pages Actions. Pages source is configured to GitHub Actions; the deployment is not live until a successful main build/deploy. No runtime accounts, secrets or remote APIs are used.
 

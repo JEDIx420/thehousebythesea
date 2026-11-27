@@ -1,0 +1,677 @@
+[
+  {
+    "id": "boathouse",
+    "file": "assets/models/boathouse.glb",
+    "source": "https://polyfork.dev/asset/boathouse-cf20e6",
+    "license": "CC-BY-4.0",
+    "credit": "Boathouse by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 95628,
+    "triangles": 823,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -2,
+        0,
+        -4
+      ],
+      "max": [
+        2,
+        5.300000190734863,
+        4
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "village-shopfront",
+    "file": "assets/models/village-shopfront.glb",
+    "source": "https://polyfork.dev/asset/village-shopfront-d3088e",
+    "license": "CC-BY-4.0",
+    "credit": "Village Shopfront by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 254236,
+    "triangles": 2208,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -2,
+        0,
+        -2
+      ],
+      "max": [
+        2,
+        3,
+        2.3900001072883605
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "kafeneio",
+    "file": "assets/models/kafeneio.glb",
+    "source": "https://polyfork.dev/asset/kafeneio-25e357",
+    "license": "CC-BY-4.0",
+    "credit": "Kafeneio by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 223492,
+    "triangles": 1920,
+    "animations": 1,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -4,
+        0,
+        -2
+      ],
+      "max": [
+        4,
+        3,
+        2
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "taverna-table-set",
+    "file": "assets/models/taverna-table-set.glb",
+    "source": "https://polyfork.dev/asset/taverna-table-set-6b4bc1",
+    "license": "CC-BY-4.0",
+    "credit": "Taverna Table Set by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 40724,
+    "triangles": 336,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -0.46050000190734863,
+        0,
+        -0.9140000067949294
+      ],
+      "max": [
+        0.46050000190734863,
+        0.9200000166893005,
+        0.9140000067949294
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "olive-tree",
+    "file": "assets/models/olive-tree.glb",
+    "source": "https://polyfork.dev/asset/olive-tree-3cb4a4",
+    "license": "CC-BY-4.0",
+    "credit": "Olive Tree by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 136924,
+    "triangles": 884,
+    "animations": 1,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -2.7553603733594474,
+        0,
+        -1.7685466861724852
+      ],
+      "max": [
+        2.7299548387527466,
+        3.9311338782310488,
+        1.6647619462013243
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "pencil-cypress",
+    "file": "assets/models/pencil-cypress.glb",
+    "source": "https://polyfork.dev/asset/pencil-cypress-73f3f4",
+    "license": "CC-BY-4.0",
+    "credit": "Pencil Cypress by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 102412,
+    "triangles": 509,
+    "animations": 1,
+    "skins": 1,
+    "worldBounds": {
+      "min": [
+        -0.656215488910675,
+        0,
+        -0.6890872120857239
+      ],
+      "max": [
+        0.6777975559234619,
+        7.9999999298095705,
+        0.6516048908233643
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "bougainvillea",
+    "file": "assets/models/bougainvillea.glb",
+    "source": "https://polyfork.dev/asset/bougainvillea-cb4728",
+    "license": "CC-BY-4.0",
+    "credit": "Bougainvillea by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 244936,
+    "triangles": 1612,
+    "animations": 1,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -1.8349489974975586,
+        0,
+        0.008000000369455666
+      ],
+      "max": [
+        1.8881591296195983,
+        2.950350778102875,
+        0.43402060866355896
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "harbour-quay",
+    "file": "assets/models/harbour-quay.glb",
+    "source": "https://polyfork.dev/asset/harbour-quay-edge-run-95df75",
+    "license": "CC-BY-4.0",
+    "credit": "Harbour Quay Edge Run by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 120136,
+    "triangles": 1036,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -2,
+        0,
+        -2
+      ],
+      "max": [
+        2,
+        1.2000000476837158,
+        2
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "harbour-lamp",
+    "file": "assets/models/harbour-lamp.glb",
+    "source": "https://polyfork.dev/asset/harbour-lamp-post-3d8032",
+    "license": "CC-BY-4.0",
+    "credit": "Harbour Lamp Post by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 87316,
+    "triangles": 754,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -0.25,
+        0,
+        -0.25
+      ],
+      "max": [
+        0.25,
+        3.5,
+        0.6350000035762786
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "fish-crate",
+    "file": "assets/models/fish-crate.glb",
+    "source": "https://polyfork.dev/asset/fish-crate-3c3f7b",
+    "license": "CC-BY-4.0",
+    "credit": "Fish Crate by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 82388,
+    "triangles": 717,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -0.20000000298023224,
+        0,
+        -0.3190883696079254
+      ],
+      "max": [
+        0.20000000298023224,
+        0.25930097699165344,
+        0.3190883696079254
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "fishing-net",
+    "file": "assets/models/fishing-net.glb",
+    "source": "https://polyfork.dev/asset/fishing-net-heap-d0ce10",
+    "license": "CC-BY-4.0",
+    "credit": "Fishing Net Heap by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 106652,
+    "triangles": 923,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -0.9959999918937683,
+        -1.8477439578390431e-9,
+        -0.7459999918937683
+      ],
+      "max": [
+        0.9959999918937683,
+        0.6076158881187439,
+        0.7459999918937683
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "boardwalk-deck",
+    "file": "assets/models/boardwalk-deck.glb",
+    "source": "https://polyfork.dev/asset/boardwalk-deck-run-c1f678",
+    "license": "CC-BY-4.0",
+    "credit": "Boardwalk Deck Run by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 97044,
+    "triangles": 840,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -2,
+        0,
+        -2
+      ],
+      "max": [
+        2,
+        1.9600000381469727,
+        2
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "boardwalk-railing",
+    "file": "assets/models/boardwalk-railing.glb",
+    "source": "https://polyfork.dev/asset/boardwalk-railing-run-4851f1",
+    "license": "CC-BY-4.0",
+    "credit": "Boardwalk Railing Run by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 71200,
+    "triangles": 568,
+    "animations": 1,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -2,
+        1.2000000476837158,
+        -0.23968849778175355
+      ],
+      "max": [
+        2,
+        2.5,
+        0.12831549644470214
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "pier-head",
+    "file": "assets/models/pier-head.glb",
+    "source": "https://polyfork.dev/asset/pier-head-platform-63662b",
+    "license": "CC-BY-4.0",
+    "credit": "Pier Head Platform by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 223356,
+    "triangles": 1868,
+    "animations": 1,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -2,
+        0,
+        -2
+      ],
+      "max": [
+        2,
+        2.4800000190734863,
+        1.9950000047683716
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "harbourmaster-hut",
+    "file": "assets/models/harbourmaster-hut.glb",
+    "source": "https://polyfork.dev/asset/harbour-master-s-hut-226f34",
+    "license": "CC-BY-4.0",
+    "credit": "Harbour Master’s Hut by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 172008,
+    "triangles": 1468,
+    "animations": 1,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -2,
+        0,
+        -2
+      ],
+      "max": [
+        2,
+        3.789808988571167,
+        2
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "boat-shed",
+    "file": "assets/models/boat-shed.glb",
+    "source": "https://polyfork.dev/asset/boat-shed-74c94f",
+    "license": "CC-BY-4.0",
+    "credit": "Boat Shed by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 164668,
+    "triangles": 1408,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -4,
+        0,
+        -4
+      ],
+      "max": [
+        4,
+        7.3161702156066895,
+        4
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "lifebuoy-post",
+    "file": "assets/models/lifebuoy-post.glb",
+    "source": "https://polyfork.dev/asset/lifebuoy-on-a-post-57421b",
+    "license": "CC-BY-4.0",
+    "credit": "Lifebuoy on a Post by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 103012,
+    "triangles": 837,
+    "animations": 1,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -0.5133609771728516,
+        0,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        1.553229570388794,
+        0.5
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "mooring-bollard",
+    "file": "assets/models/mooring-bollard.glb",
+    "source": "https://polyfork.dev/asset/mooring-bollard-2d4bc9",
+    "license": "CC-BY-4.0",
+    "credit": "Mooring Bollard by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 90416,
+    "triangles": 770,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -0.30000001192092896,
+        0,
+        -0.30000001192092896
+      ],
+      "max": [
+        0.5174583792686462,
+        0.6399999856948853,
+        0.30000001192092896
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "dune-grass",
+    "file": "assets/models/dune-grass.glb",
+    "source": "https://polyfork.dev/asset/marram-grass-tuft-8c7a99",
+    "license": "CC-BY-4.0",
+    "credit": "Marram Grass Tuft by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 202380,
+    "triangles": 574,
+    "animations": 1,
+    "skins": 1,
+    "worldBounds": {
+      "min": [
+        -0.6616791970546994,
+        0,
+        -0.5647220604941148
+      ],
+      "max": [
+        0.5016965795769659,
+        0.9282954935740169,
+        0.5116687318830722
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "tamarisk-bush",
+    "file": "assets/models/tamarisk-bush.glb",
+    "source": "https://polyfork.dev/asset/tamarisk-bush-ba4337",
+    "license": "CC-BY-4.0",
+    "credit": "Tamarisk Bush by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 343920,
+    "triangles": 748,
+    "animations": 1,
+    "skins": 1,
+    "worldBounds": {
+      "min": [
+        -0.9023923648873473,
+        0,
+        -0.9202064958568187
+      ],
+      "max": [
+        0.9028415679931641,
+        1.8102510897339403,
+        0.9201191699507613
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "rock-pool",
+    "file": "assets/models/rock-pool.glb",
+    "source": "https://polyfork.dev/asset/rock-pool-937f01",
+    "license": "CC-BY-4.0",
+    "credit": "Rock Pool by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 152860,
+    "triangles": 860,
+    "animations": 1,
+    "skins": 1,
+    "worldBounds": {
+      "min": [
+        -0.699999988079071,
+        0,
+        -0.6000000238418579
+      ],
+      "max": [
+        0.699999988079071,
+        0.3499999940395355,
+        0.6000000238418579
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "rock-armour",
+    "file": "assets/models/rock-armour.glb",
+    "source": "https://polyfork.dev/asset/rock-armour-revetment-aea1ca",
+    "license": "CC-BY-4.0",
+    "credit": "Rock Armour Revetment by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 221808,
+    "triangles": 1931,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -2,
+        0,
+        -0.9710000157356262
+      ],
+      "max": [
+        2,
+        1.1926003694534302,
+        0.9600963592529297
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "wayfinding-post",
+    "file": "assets/models/wayfinding-post.glb",
+    "source": "https://polyfork.dev/asset/seafront-wayfinding-post-67fc84",
+    "license": "CC-BY-4.0",
+    "credit": "Seafront Wayfinding Post by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 78352,
+    "triangles": 658,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -0.5,
+        0,
+        -0.0949999988079071
+      ],
+      "max": [
+        0.5,
+        2.5999999046325684,
+        0.09799999743700027
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "rowing-dinghy",
+    "file": "assets/models/rowing-dinghy.glb",
+    "source": "https://polyfork.dev/asset/rowing-dinghy-022673",
+    "license": "CC-BY-4.0",
+    "credit": "Rowing Dinghy by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 260196,
+    "triangles": 2265,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -0.727008581161499,
+        0,
+        -1.7956424951553345
+      ],
+      "max": [
+        0.727008581161499,
+        0.8949999809265137,
+        1.785359501838684
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "painted-rowboat",
+    "file": "assets/models/painted-rowboat.glb",
+    "source": "https://polyfork.dev/asset/painted-rowing-boat-ca5c1a",
+    "license": "CC-BY-4.0",
+    "credit": "Painted Rowing Boat by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 293712,
+    "triangles": 2559,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -0.7197901010513306,
+        -0.26999998092651367,
+        -1.8014999628067017
+      ],
+      "max": [
+        0.7197901010513306,
+        0.711870014667511,
+        1.8458799123764038
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "lane-paving",
+    "file": "assets/models/lane-paving.glb",
+    "source": "https://polyfork.dev/asset/lane-paving-tile-4cca8b",
+    "license": "CC-BY-4.0",
+    "credit": "Lane Paving Tile by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 187892,
+    "triangles": 1637,
+    "animations": 0,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -2,
+        0,
+        -2
+      ],
+      "max": [
+        2,
+        0.05000000074505806,
+        2
+      ]
+    },
+    "materials": 1
+  },
+  {
+    "id": "flowering-agave",
+    "file": "assets/models/flowering-agave.glb",
+    "source": "https://polyfork.dev/asset/flowering-agave-84b67c",
+    "license": "CC-BY-4.0",
+    "credit": "Flowering Agave by Polyfork",
+    "modified": "Scene placement, instance scale/rotation; GLB source file unchanged",
+    "bytes": 99508,
+    "triangles": 837,
+    "animations": 1,
+    "skins": 0,
+    "worldBounds": {
+      "min": [
+        -0.686534583568573,
+        0,
+        -0.75
+      ],
+      "max": [
+        0.686534583568573,
+        2.0290295988321305,
+        0.75
+      ]
+    },
+    "materials": 1
+  }
+]

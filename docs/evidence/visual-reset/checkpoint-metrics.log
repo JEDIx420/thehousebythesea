@@ -1,0 +1,7 @@
+checkpoint harbour {"frames":111,"p50":16.7,"p95":16.7,"drawCalls":124,"triangles":361135,"webgl":true,"viewport":[1440,900]}
+checkpoint characters {"frames":107,"p50":16.7,"p95":16.8,"drawCalls":119,"triangles":348689,"webgl":true,"viewport":[1440,900]}
+checkpoint sailing {"frames":106,"p50":16.7,"p95":16.7,"drawCalls":131,"triangles":304411,"webgl":true,"viewport":[1440,900]}
+checkpoint docking {"frames":107,"p50":16.7,"p95":16.7,"drawCalls":98,"triangles":286988,"webgl":true,"viewport":[1440,900]}
+checkpoint saltglass {"frames":105,"p50":16.7,"p95":16.7,"drawCalls":86,"triangles":268827,"webgl":true,"viewport":[1440,900]}
+checkpoint home {"frames":128,"p50":16.7,"p95":16.8,"drawCalls":97,"triangles":255942,"webgl":true,"viewport":[1440,900]}
+checkpoint harbour-boat {"frames":108,"p50":16.7,"p95":16.7,"drawCalls":140,"triangles":396619,"webgl":true,"viewport":[1440,900]}

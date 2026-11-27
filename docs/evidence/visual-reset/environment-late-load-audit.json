@@ -1,0 +1,20 @@
+{
+  "elapsedMs": 10152.600000023842,
+  "warnings": [
+    "Fish Crate by Polyfork could not load; reload to retry."
+  ],
+  "deadlineReturned": true,
+  "lateGeometryDisposed": true,
+  "noLateSceneAdditions": true,
+  "noLateColliderChanges": true,
+  "before": {
+    "children": 241,
+    "blocked": true,
+    "disposals": 0
+  },
+  "after": {
+    "children": 241,
+    "blocked": true,
+    "disposals": 2
+  }
+}

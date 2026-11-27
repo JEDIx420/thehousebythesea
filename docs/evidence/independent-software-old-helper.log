@@ -1,0 +1,59 @@
+
+> thehousebythesea@0.1.0 test:e2e
+> playwright test --output=test-results-software
+
+[WebServer] (node:84197) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:84199) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/resilience.spec.ts:3:1 › title credits can close, memory can skip, pause and settings remain usable (3.6s)
+  ✓  2 tests/browser/resilience.spec.ts:35:1 › a future save survives fallback play and autosave (7.8s)
+  ✓  3 tests/browser/resilience.spec.ts:89:1 › missing optional props fall back to a playable original environment (2.9s)
+NAV 44 4 0 6 walk
+NAV 44 4 50 6 walk
+NAV 44 4 100 6 walk
+NAV 43 -11 0 14 walk
+  ✘  4 tests/browser/voyage.spec.ts:74:1 › First Voyage through real movement and contextual interactions (1.3m)
+
+
+  1) tests/browser/voyage.spec.ts:74:1 › First Voyage through real movement and contextual interactions 
+
+    Test was interrupted.
+
+    Error: page.evaluate: Test ended.
+
+      12 |   await page.waitForTimeout(ms);
+      13 |   // A slow software renderer must observe held input for an actual frame.
+    > 14 |   await page.evaluate(
+         |              ^
+      15 |     () =>
+      16 |       new Promise<void>((resolve) => requestAnimationFrame(() => resolve())),
+      17 |   );
+        at hold (/Users/vincyvincent/3dfun/thehousebythesea/tests/browser/voyage.spec.ts:14:14)
+        at navigate (/Users/vincyvincent/3dfun/thehousebythesea/tests/browser/voyage.spec.ts:43:7)
+        at /Users/vincyvincent/3dfun/thehousebythesea/tests/browser/voyage.spec.ts:90:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results-software/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results-software/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-software/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results-software/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results-software/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 interrupted
+    tests/browser/voyage.spec.ts:74:1 › First Voyage through real movement and contextual interactions 
+  3 passed (1.6m)

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>First Voyage — real GLB asset audition</title>
+    <style>
+      body {
+        margin: 0;
+        background: #e8dfcf;
+        color: #213f42;
+        font: 14px Arial;
+      }
+      header {
+        padding: 24px 32px;
+      }
+      h1 {
+        font: 32px Georgia;
+        margin: 0 0 8px;
+      }
+      p {
+        margin: 4px 0;
+      }
+      #stage {
+        position: relative;
+        width: 1440px;
+        height: 920px;
+      }
+      canvas {
+        position: absolute;
+        inset: 0;
+      }
+      #labels {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+      article {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 1px solid #fff7;
+      }
+      h2 {
+        font: 20px Georgia;
+        margin: 8px 0;
+      }
+      small {
+        font-size: 11px;
+      }
+      button {
+        padding: 10px 16px;
+        border: 1px solid #758b7b;
+        color: #213f42;
+        background: #fff8e7;
+        margin: 8px 4px 0 0;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>People of the coast. A boat with a life ahead.</h1>
+      <p>
+        V0 asset audition · actual local licensed GLB meshes · live skinning and
+        embedded animation · no catalogue thumbnails
+      </p>
+      <button id="idle">Idle clips</button><button id="walk">Walk clips</button>
+    </header>
+    <div id="stage">
+      <canvas></canvas>
+      <div id="labels"></div>
+    </div>
+    <script type="module" src="./model-showroom.ts"></script>
+  </body>
+</html>

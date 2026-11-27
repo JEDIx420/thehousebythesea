@@ -1,0 +1,22 @@
+{
+  "base": "http://localhost:4181/thehousebythesea/",
+  "browser": "159.0.8154.6",
+  "renderScale": 0.5,
+  "result": "PASS",
+  "before": {
+    "x": 48,
+    "z": 0,
+    "heading": 0,
+    "mode": "walk",
+    "island": "havenport"
+  },
+  "elapsedMs": 15968,
+  "after": {
+    "x": 45.18802852228077,
+    "z": 2.684007154852413,
+    "heading": -2.4299999999999997,
+    "mode": "walk",
+    "island": "havenport"
+  },
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)"
+}

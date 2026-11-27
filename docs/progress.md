@@ -1,3 +1,13 @@
+# Current status — Stage 1B visual baseline reset
+
+**2026-11-27: creator rejected the prior visual baseline. Issue #4 corrective work is ACTIVE on `fix/stage1-visual-baseline`. PR #3 is preserved and unmerged. No visual approval and no Stage 2.**
+
+Follow [art direction](art-direction.md), [corrective board](visual-reset-progress.md) and [review evidence](visual-reset-evidence.md). V0–V3 are implemented and independently reviewed: creator-selected **Polyfork Family Traveller is Mira**, Quaternius people are Rowan and the neighbours, and the real Polyfork caique and coastal models are in the game. Six matched comparisons, Mira front/three-quarter/walking views and a verified 31.92-second gameplay recording are complete. Strict typecheck, build, 33 unit tests and the six-case hardware browser suite passed. The same six-case software Chromium suite passed in7.2 minutes and, with final continuous real-key navigation, in4.2 minutes. Hosted Linux verification is tracked separately in [PR #5 checks](https://github.com/JEDIx420/thehousebythesea/pull/5/checks); source-reviewed real-key helper follow-up `71902b3` preserves all assertions and the original graphics/gameplay. [PR #5](https://github.com/JEDIx420/thehousebythesea/pull/5) preserves #3 unmerged. **Creator visual/gameplay approval is still required; no Stage 2.**
+
+The historical First Voyage reports below establish gameplay and local tests only. They do **not** grant visual approval. Linux CI timeouts, measured causes and corrective test-input changes are documented in the new review and logs; current hosted status is linked above.
+
+---
+
 # Execution status
 
 **Last updated: 2026-11-27.** Stage 0 and Stage 1 are implemented and independently reviewed. **WAITING FOR CREATOR APPROVAL.** No Stage 2 work is authorised. Production deployment remains separate from local proof.

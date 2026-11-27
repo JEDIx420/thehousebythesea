@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { initialState } from "../state/game";
 import { stopBoat, updateMovement } from "./movement";
+import { parseSave } from "../state/persistence";
 
 describe("physical movement constraints", () => {
   it("walks north, turns east, and rejects water instead of dropping off the surface", () => {
@@ -100,5 +101,39 @@ describe("physical movement constraints", () => {
     expect(updateMovement(s, { forward: 0, turn: 0 }, 0.05, water).speed).toBe(
       0,
     );
+  });
+  it("blocks rendered shallows even where the walking surface is filtered out", () => {
+    const s = initialState();
+    s.player.mode = "boat";
+    s.boat.x = 0;
+    s.boat.z = 0;
+    const coast = {
+      groundHeight: () => null,
+      seaFloorHeight: (_x: number, z: number) => (z < -3 ? 0.2 : -12),
+      blocked: () => false,
+    };
+    for (let i = 0; i < 20; i++)
+      updateMovement(s, { forward: 1, turn: 0 }, 0.05, coast);
+    expect(s.boat.x).toBe(0);
+    expect(s.boat.z).toBe(0);
+  });
+  it("keeps long-running walking and sailing turns finite, wrapped and saveable", () => {
+    const s = initialState();
+    const land = { groundHeight: () => 1, blocked: () => false };
+    for (let i = 0; i < 80000; i++)
+      updateMovement(s, { forward: 0, turn: 1 }, 0.05, land);
+    expect(Math.abs(s.player.heading)).toBeLessThanOrEqual(Math.PI);
+    expect(() => parseSave(s)).not.toThrow();
+    s.player.mode = "boat";
+    const water = {
+      groundHeight: () => null,
+      seaFloorHeight: () => -12,
+      blocked: () => false,
+    };
+    for (let i = 0; i < 80000; i++)
+      updateMovement(s, { forward: 0, turn: -1 }, 0.05, water);
+    expect(Math.abs(s.boat.heading)).toBeLessThanOrEqual(Math.PI);
+    expect(s.player.heading).toBe(s.boat.heading);
+    expect(() => parseSave(s)).not.toThrow();
   });
 });

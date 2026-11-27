@@ -1,0 +1,41 @@
+NAV {"target":[44,4],"iteration":0,"distance":5.657,"position":[48,0],"heading":0,"difference":-2.356194490192345,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":1,"distance":5.657,"position":[48,0],"heading":-0.243,"difference":-2.113194490192345,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":2,"distance":5.657,"position":[48,0],"heading":-0.486,"difference":-1.8701944901923448,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":3,"distance":5.657,"position":[48,0],"heading":-0.7289999999999999,"difference":-1.627194490192345,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":4,"distance":5.657,"position":[48,0],"heading":-0.9719999999999998,"difference":-1.384194490192345,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":5,"distance":5.657,"position":[48,0],"heading":-1.2149999999999996,"difference":-1.1411944901923452,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":6,"distance":5.657,"position":[48,0],"heading":-1.4579999999999995,"difference":-0.8981944901923453,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":7,"distance":5.657,"position":[48,0],"heading":-1.7009999999999994,"difference":-0.6551944901923454,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":8,"distance":5.657,"position":[48,0],"heading":-1.9439999999999993,"difference":-0.41219449019234555,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":9,"distance":5.657,"position":[48,0],"heading":-2.1869999999999994,"difference":-0.16919449019234545,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":10,"distance":5.143,"position":[47.57400708257468,0.30168532331465364],"heading":-2.1869999999999994,"difference":-0.1862860729981515,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":11,"distance":4.631,"position":[47.14801416514936,0.6033706466293073],"heading":-2.1869999999999994,"difference":-0.20716381615660004,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":12,"distance":4.122,"position":[46.722021247724044,0.905055969943961],"heading":-2.1869999999999994,"difference":-0.23321638355924978,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":13,"distance":4.122,"position":[46.722021247724044,0.905055969943961],"heading":-2.4299999999999997,"difference":0.009783616440750542,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":14,"distance":3.6,"position":[46.381133975403316,1.3003784554791726],"heading":-2.4299999999999997,"difference":0.011202341526979076,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":15,"distance":3.078,"position":[46.04024670308259,1.6957009410143844],"heading":-2.4299999999999997,"difference":0.013102284027145306,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":16,"distance":2.817,"position":[45.86980306692222,1.8933621837819903],"heading":-2.4299999999999997,"difference":0.014316306525163469,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":17,"distance":2.295,"position":[45.528915794601495,2.2886846693172016],"heading":-2.4299999999999997,"difference":0.01757271909700187,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[44,4],"iteration":18,"distance":1.773,"position":[45.18802852228077,2.684007154852413],"heading":-2.4299999999999997,"difference":0.022746400325539984,"mode":"walk","keys":[],"panel":null}
+{
+  "base": "http://localhost:4181/thehousebythesea/",
+  "browser": "159.0.8154.6",
+  "renderScale": 0.5,
+  "result": "PASS",
+  "before": {
+    "x": 48,
+    "z": 0,
+    "heading": 0,
+    "mode": "walk",
+    "island": "havenport"
+  },
+  "elapsedMs": 15968,
+  "after": {
+    "x": 45.18802852228077,
+    "z": 2.684007154852413,
+    "heading": -2.4299999999999997,
+    "mode": "walk",
+    "island": "havenport"
+  },
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)"
+}

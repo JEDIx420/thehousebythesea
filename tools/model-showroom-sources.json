@@ -1,0 +1,167 @@
+[
+  {
+    "file": "tools/model-showroom-assets/rowan-flannel.glb",
+    "source": "https://polyfork.dev/asset/player-in-flannel-d0bae4",
+    "download": "https://polyfork.dev/cdn/player-in-flannel-d0bae4.glb",
+    "license": "CC-BY-4.0",
+    "credit": "player-in-flannel-d0bae4 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 1045608,
+    "triangles": 4933,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/mira-cardigan.glb",
+    "source": "https://polyfork.dev/asset/player-in-a-cardigan-b558c9",
+    "download": "https://polyfork.dev/cdn/player-in-a-cardigan-b558c9.glb",
+    "license": "CC-BY-4.0",
+    "credit": "player-in-a-cardigan-b558c9 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 985356,
+    "triangles": 4670,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/fisherman-in-waders.glb",
+    "source": "https://polyfork.dev/asset/fisherman-in-waders-6dc25e",
+    "download": "https://polyfork.dev/cdn/fisherman-in-waders-6dc25e.glb",
+    "license": "CC-BY-4.0",
+    "credit": "fisherman-in-waders-6dc25e by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 996104,
+    "triangles": 4503,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/taverna-waiter.glb",
+    "source": "https://polyfork.dev/asset/taverna-waiter-ead76a",
+    "download": "https://polyfork.dev/cdn/taverna-waiter-ead76a.glb",
+    "license": "CC-BY-4.0",
+    "credit": "taverna-waiter-ead76a by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 1480256,
+    "triangles": 7570,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/hiker-visitor.glb",
+    "source": "https://polyfork.dev/asset/hiker-visitor-d10aa5",
+    "download": "https://polyfork.dev/cdn/hiker-visitor-d10aa5.glb",
+    "license": "CC-BY-4.0",
+    "credit": "hiker-visitor-d10aa5 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 973484,
+    "triangles": 4563,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/family-road-tripper.glb",
+    "source": "https://polyfork.dev/asset/family-road-tripper-247570",
+    "download": "https://polyfork.dev/cdn/family-road-tripper-247570.glb",
+    "license": "CC-BY-4.0",
+    "credit": "family-road-tripper-247570 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 1040428,
+    "triangles": 4807,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/backpacker.glb",
+    "source": "https://polyfork.dev/asset/backpacker-f56207",
+    "download": "https://polyfork.dev/cdn/backpacker-f56207.glb",
+    "license": "CC-BY-4.0",
+    "credit": "backpacker-f56207 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 806760,
+    "triangles": 3681,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/gas-station-attendant.glb",
+    "source": "https://polyfork.dev/asset/gas-station-attendant-38bd86",
+    "download": "https://polyfork.dev/cdn/gas-station-attendant-38bd86.glb",
+    "license": "CC-BY-4.0",
+    "credit": "gas-station-attendant-38bd86 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 726344,
+    "triangles": 3231,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/diner-waitress.glb",
+    "source": "https://polyfork.dev/asset/diner-waitress-60f6a1",
+    "download": "https://polyfork.dev/cdn/diner-waitress-60f6a1.glb",
+    "license": "CC-BY-4.0",
+    "credit": "diner-waitress-60f6a1 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 931512,
+    "triangles": 4365,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/passenger.glb",
+    "source": "https://polyfork.dev/asset/passenger-ac425a",
+    "download": "https://polyfork.dev/cdn/passenger-ac425a.glb",
+    "license": "CC-BY-4.0",
+    "credit": "passenger-ac425a by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 760828,
+    "triangles": 3393,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/front-desk-clerk.glb",
+    "source": "https://polyfork.dev/asset/front-desk-clerk-99f0c2",
+    "download": "https://polyfork.dev/cdn/front-desk-clerk-99f0c2.glb",
+    "license": "CC-BY-4.0",
+    "credit": "front-desk-clerk-99f0c2 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 940720,
+    "triangles": 4411,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/pool-guest.glb",
+    "source": "https://polyfork.dev/asset/pool-guest-78b655",
+    "download": "https://polyfork.dev/cdn/pool-guest-78b655.glb",
+    "license": "CC-BY-4.0",
+    "credit": "pool-guest-78b655 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 1018884,
+    "triangles": 4859,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/older-woman-basket.glb",
+    "source": "https://polyfork.dev/asset/older-woman-with-a-f345d0",
+    "download": "https://polyfork.dev/cdn/older-woman-with-a-f345d0.glb",
+    "license": "CC-BY-4.0",
+    "credit": "older-woman-with-a-f345d0 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 1449644,
+    "triangles": 4975,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/holidaymaker.glb",
+    "source": "https://polyfork.dev/asset/holidaymaker-in-a-sun-2ba5e5",
+    "download": "https://polyfork.dev/cdn/holidaymaker-in-a-sun-2ba5e5.glb",
+    "license": "CC-BY-4.0",
+    "credit": "holidaymaker-in-a-sun-2ba5e5 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 949788,
+    "triangles": 4431,
+    "clips": ["Idle", "Walk", "Run"]
+  },
+  {
+    "file": "tools/model-showroom-assets/small-fishing-boat.glb",
+    "source": "https://polyfork.dev/asset/small-fishing-boat-4ac0e3",
+    "download": "https://polyfork.dev/cdn/small-fishing-boat-4ac0e3.glb",
+    "license": "CC-BY-4.0",
+    "credit": "small-fishing-boat-4ac0e3 by Polyfork",
+    "modified": "None; audition only, not included in Vite public assets",
+    "bytes": 350988,
+    "triangles": 2999,
+    "clips": ["tick"]
+  }
+]

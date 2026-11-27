@@ -1,6 +1,23 @@
 import { chromium } from "@playwright/test";
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+function summarize(raw) {
+  const intervals = raw.frames,
+    sorted = [...intervals].sort((a, b) => a - b),
+    quantile = (q) =>
+      sorted[Math.min(sorted.length - 1, Math.floor(sorted.length * q))] ?? 0;
+  return {
+    ...raw,
+    frames: intervals.length,
+    intervals,
+    meanMs:
+      intervals.reduce((a, b) => a + b, 0) / Math.max(1, intervals.length),
+    medianMs: quantile(0.5),
+    p95Ms: quantile(0.95),
+    p99Ms: quantile(0.99),
+  };
+}
 const browser = await chromium.launch({
   headless: true,
   channel: "chrome",
@@ -47,7 +64,12 @@ try {
   fs.writeFileSync(
     "docs/evidence/terrain-metrics.json",
     JSON.stringify(
-      { LIVE: live, BAKED: baked, viewport: "512x384 page;320x240 canvas" },
+      {
+        LIVE: summarize(live),
+        BAKED: summarize(baked),
+        host: `${os.platform()} ${os.release()} ${os.arch()}`,
+        viewport: "512x384 page;320x240 canvas",
+      },
       null,
       2,
     ),

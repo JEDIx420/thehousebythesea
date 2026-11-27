@@ -1,15 +1,149 @@
-Polyfork free low-poly GLB meshes — Creative Commons Attribution 4.0 International
+The House by the Sea — Stage1B local asset credits
+
+Polyfork free low-poly GLB mesh files: CC BY4.0
 https://polyfork.dev/licensing
 https://creativecommons.org/licenses/by/4.0/
 
-Beach Hut by Polyfork https://polyfork.dev/asset/beach-hut-fc7649
-Seafront Lamp Post by Polyfork https://polyfork.dev/asset/seafront-lamp-post-28bada
-Back-to-Back Promenade Bench by Polyfork https://polyfork.dev/asset/back-to-back-promenade-8c153b
-Small Fishing Boat by Polyfork https://polyfork.dev/asset/small-fishing-boat-4ac0e3
-Holidaymaker in a Sun Hat by Polyfork https://polyfork.dev/asset/holidaymaker-in-a-sun-2ba5e5
+Shaded Bench by Polyfork
+https://polyfork.dev/asset/shaded-bench-1078c2
+Scene placement, instance scale/rotation; GLB source file unchanged
 
-Files unmodified. Hut, lamp and bench instances scaled/rotated in game.
-Boat and holidaymaker retained as verified integration references, not rendered.
-All other game geometry and procedural audio are original for this project.
-ProceduralTerrains 2.1.0 MIT — https://github.com/ZyFou/ProceduralTerrains
-Three.js MIT — https://github.com/mrdoob/three.js
+Boathouse by Polyfork
+https://polyfork.dev/asset/boathouse-cf20e6
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Village Shopfront by Polyfork
+https://polyfork.dev/asset/village-shopfront-d3088e
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Kafeneio by Polyfork
+https://polyfork.dev/asset/kafeneio-25e357
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Taverna Table Set by Polyfork
+https://polyfork.dev/asset/taverna-table-set-6b4bc1
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Olive Tree by Polyfork
+https://polyfork.dev/asset/olive-tree-3cb4a4
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Pencil Cypress by Polyfork
+https://polyfork.dev/asset/pencil-cypress-73f3f4
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Bougainvillea by Polyfork
+https://polyfork.dev/asset/bougainvillea-cb4728
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Harbour Quay Edge Run by Polyfork
+https://polyfork.dev/asset/harbour-quay-edge-run-95df75
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Harbour Lamp Post by Polyfork
+https://polyfork.dev/asset/harbour-lamp-post-3d8032
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Fish Crate by Polyfork
+https://polyfork.dev/asset/fish-crate-3c3f7b
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Fishing Net Heap by Polyfork
+https://polyfork.dev/asset/fishing-net-heap-d0ce10
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Boardwalk Deck Run by Polyfork
+https://polyfork.dev/asset/boardwalk-deck-run-c1f678
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Boardwalk Railing Run by Polyfork
+https://polyfork.dev/asset/boardwalk-railing-run-4851f1
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Pier Head Platform by Polyfork
+https://polyfork.dev/asset/pier-head-platform-63662b
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Harbour Master’s Hut by Polyfork
+https://polyfork.dev/asset/harbour-master-s-hut-226f34
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Boat Shed by Polyfork
+https://polyfork.dev/asset/boat-shed-74c94f
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Lifebuoy on a Post by Polyfork
+https://polyfork.dev/asset/lifebuoy-on-a-post-57421b
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Mooring Bollard by Polyfork
+https://polyfork.dev/asset/mooring-bollard-2d4bc9
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Marram Grass Tuft by Polyfork
+https://polyfork.dev/asset/marram-grass-tuft-8c7a99
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Tamarisk Bush by Polyfork
+https://polyfork.dev/asset/tamarisk-bush-ba4337
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Rock Pool by Polyfork
+https://polyfork.dev/asset/rock-pool-937f01
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Rock Armour Revetment by Polyfork
+https://polyfork.dev/asset/rock-armour-revetment-aea1ca
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Seafront Wayfinding Post by Polyfork
+https://polyfork.dev/asset/seafront-wayfinding-post-67fc84
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Rowing Dinghy by Polyfork
+https://polyfork.dev/asset/rowing-dinghy-022673
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Painted Rowing Boat by Polyfork
+https://polyfork.dev/asset/painted-rowing-boat-ca5c1a
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Lane Paving Tile by Polyfork
+https://polyfork.dev/asset/lane-paving-tile-4cca8b
+Source GLB unchanged; runtime vertices conform to exact terrain triangles with0.035m inset and original stone relief
+
+Flowering Agave by Polyfork
+https://polyfork.dev/asset/flowering-agave-84b67c
+Scene placement, instance scale/rotation; GLB source file unchanged
+
+Beach Hut by Polyfork
+https://polyfork.dev/asset/beach-hut-fc7649
+Legacy reference file, not requested by Stage1B gameplay. Unmodified.
+
+Seafront Lamp Post by Polyfork
+https://polyfork.dev/asset/seafront-lamp-post-28bada
+Legacy reference file, not requested by Stage1B gameplay. Unmodified.
+
+Back-to-Back Promenade Bench by Polyfork
+https://polyfork.dev/asset/back-to-back-promenade-8c153b
+Legacy reference file, not requested by Stage1B gameplay. Unmodified.
+
+Caique Fishing Boat by Polyfork
+https://polyfork.dev/asset/caique-fishing-boat-262c24
+Source GLB unchanged; runtime scale0.94, facing correction and deck alignment.
+
+Quaternius Ultimate Modular Men and Women — CC0-1.0
+https://quaternius.com/packs/ultimatemodularcharacters.html
+https://quaternius.com/packs/ultimatemodularwomen.html
+See LICENSE-Quaternius.txt. Pinned convertedGLB URLs and measurements in src/data/assets.ts and docs/asset-audition.md. Runtime wardrobe retint, height/facing normalisation and cloned animation root-motion removal.
+
+ProceduralTerrains2.1.0 — MIT — https://github.com/ZyFou/ProceduralTerrains
+Three.js — MIT — https://github.com/mrdoob/three.js
+Full software notices: ../THIRD_PARTY_NOTICES.txt
+
+Terrain, depth-aware sea shader, soft foam wake and synthesised ambience are original project work.
+
+Creator-selected Mira: Family Traveller by Polyfork — CC BY4.0
+https://polyfork.dev/asset/family-traveller-9af47e
+https://polyfork.dev/cdn/family-traveller-9af47e.glb
+GLB face, hair and outfit colours preserved. Ground/facing alignment only; real Idle/Walk/Run clips plus a small authored greeting on named bones. No fake interaction clip. The Quaternius female source retained under legacyfilename mira-casual.glb is now used for Nessa only.

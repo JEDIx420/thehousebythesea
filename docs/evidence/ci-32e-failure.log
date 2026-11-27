@@ -1,0 +1,66 @@
+verify	Run npm run test:e2e	﻿2026-11-27T13:12:51.9652246Z ##[group]Run npm run test:e2e
+verify	Run npm run test:e2e	2026-11-27T13:12:51.9652582Z ^[[36;1mnpm run test:e2e^[[0m
+verify	Run npm run test:e2e	2026-11-27T13:12:51.9684875Z shell: /usr/bin/bash -e {0}
+verify	Run npm run test:e2e	2026-11-27T13:12:51.9685146Z ##[endgroup]
+verify	Run npm run test:e2e	2026-11-27T13:12:52.0699852Z 
+verify	Run npm run test:e2e	2026-11-27T13:12:52.0700355Z > thehousebythesea@0.1.0 test:e2e
+verify	Run npm run test:e2e	2026-11-27T13:12:52.0700756Z > playwright test
+verify	Run npm run test:e2e	2026-11-27T13:12:52.0700917Z 
+verify	Run npm run test:e2e	2026-11-27T13:12:53.4333908Z 
+verify	Run npm run test:e2e	2026-11-27T13:12:53.4334749Z Running 4 tests using 1 worker
+verify	Run npm run test:e2e	2026-11-27T13:12:53.4335142Z 
+verify	Run npm run test:e2e	2026-11-27T13:13:07.8798994Z   ✓  1 tests/browser/resilience.spec.ts:3:1 › title credits can close, memory can skip, pause and settings remain usable (13.7s)
+verify	Run npm run test:e2e	2026-11-27T13:13:22.8910345Z   ✓  2 tests/browser/resilience.spec.ts:35:1 › a future save survives fallback play and autosave (15.0s)
+verify	Run npm run test:e2e	2026-11-27T13:13:31.8745864Z   ✓  3 tests/browser/resilience.spec.ts:89:1 › missing optional props fall back to a playable original environment (9.0s)
+verify	Run npm run test:e2e	2026-11-27T13:13:40.3096473Z NAV 44 4 0 6 walk
+verify	Run npm run test:e2e	2026-11-27T13:15:12.9037431Z NAV 44 4 50 3 walk
+verify	Run npm run test:e2e	2026-11-27T13:16:45.2680872Z NAV 44 4 100 3 walk
+verify	Run npm run test:e2e	2026-11-27T13:18:16.6556043Z NAV 44 4 150 3 walk
+verify	Run npm run test:e2e	2026-11-27T13:19:49.5556772Z NAV 44 4 200 3 walk
+verify	Run npm run test:e2e	2026-11-27T13:21:22.3016962Z NAV 44 4 250 3 walk
+verify	Run npm run test:e2e	2026-11-27T13:22:55.4185537Z NAV 44 4 300 3 walk
+verify	Run npm run test:e2e	2026-11-27T13:23:39.0726281Z NAV 43 -11 0 14 walk
+verify	Run npm run test:e2e	2026-11-27T13:24:05.7311852Z   ✘  4 tests/browser/voyage.spec.ts:77:1 › First Voyage through real movement and contextual interactions (10.3m)
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0300757Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0305922Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0318972Z   1) tests/browser/voyage.spec.ts:77:1 › First Voyage through real movement and contextual interactions 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0319848Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0320141Z     Test timeout of 600000ms exceeded.
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0320476Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0320829Z     Error: keyboard.down: Test timeout of 600000ms exceeded.
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0321269Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0321427Z        9 |   );
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0322027Z       10 | async function hold(page: Page, key: string, ms: number) {
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0322834Z     > 11 |   await page.keyboard.down(key);
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0323417Z          |                       ^
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0323959Z       12 |   await page.waitForTimeout(ms);
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0325038Z       13 |   // A slow software renderer must observe held input for an actual frame.
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0325831Z       14 |   await page.evaluate(
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0326751Z         at hold (/home/runner/work/thehousebythesea/thehousebythesea/tests/browser/voyage.spec.ts:11:23)
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0328209Z         at navigate (/home/runner/work/thehousebythesea/thehousebythesea/tests/browser/voyage.spec.ts:46:13)
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0329575Z         at /home/runner/work/thehousebythesea/thehousebythesea/tests/browser/voyage.spec.ts:93:3
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0330300Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0331182Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0332498Z     test-results/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/test-failed-1.png
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0334013Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0336360Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0337474Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0338723Z     test-results/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/video.webm
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0340122Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0340674Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0341476Z     Error Context: test-results/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/error-context.md
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0342364Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0343154Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0344606Z     test-results/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/trace.zip
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0345877Z     Usage:
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0346086Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0346937Z         npx playwright show-trace test-results/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/trace.zip
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0347899Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0348580Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0349077Z 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0349395Z   Slow test file: tests/browser/voyage.spec.ts (10.3m)
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0350423Z   Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0351259Z   1 failed
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0352223Z     tests/browser/voyage.spec.ts:77:1 › First Voyage through real movement and contextual interactions 
+verify	Run npm run test:e2e	2026-11-27T13:24:06.0353084Z   3 passed (11.2m)
+verify	Run npm run test:e2e	2026-11-27T13:24:06.7706120Z ##[error]Process completed with exit code 1.
