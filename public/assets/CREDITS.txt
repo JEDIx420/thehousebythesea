@@ -1,0 +1,15 @@
+Polyfork free low-poly GLB meshes — Creative Commons Attribution 4.0 International
+https://polyfork.dev/licensing
+https://creativecommons.org/licenses/by/4.0/
+
+Beach Hut by Polyfork https://polyfork.dev/asset/beach-hut-fc7649
+Seafront Lamp Post by Polyfork https://polyfork.dev/asset/seafront-lamp-post-28bada
+Back-to-Back Promenade Bench by Polyfork https://polyfork.dev/asset/back-to-back-promenade-8c153b
+Small Fishing Boat by Polyfork https://polyfork.dev/asset/small-fishing-boat-4ac0e3
+Holidaymaker in a Sun Hat by Polyfork https://polyfork.dev/asset/holidaymaker-in-a-sun-2ba5e5
+
+Files unmodified. Hut, lamp and bench instances scaled/rotated in game.
+Boat and holidaymaker retained as verified integration references, not rendered.
+All other game geometry and procedural audio are original for this project.
+ProceduralTerrains 2.1.0 MIT — https://github.com/ZyFou/ProceduralTerrains
+Three.js MIT — https://github.com/mrdoob/three.js

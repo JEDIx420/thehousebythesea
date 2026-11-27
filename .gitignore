@@ -1,0 +1,11 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.env
+.DS_Store
+
+test-results-independent/
+test-results-independent-final/
+test-results-reviewed/
+test-results-software/

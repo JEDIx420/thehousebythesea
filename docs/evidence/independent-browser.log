@@ -1,0 +1,42 @@
+
+> thehousebythesea@0.1.0 test:e2e
+> playwright test --output=test-results-reviewed
+
+[WebServer] (node:82457) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:82459) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/resilience.spec.ts:3:1 › title credits can close, memory can skip, pause and settings remain usable (749ms)
+  ✓  2 tests/browser/resilience.spec.ts:35:1 › a future save survives fallback play and autosave (6.0s)
+  ✓  3 tests/browser/resilience.spec.ts:89:1 › missing optional props fall back to a playable original environment (1.2s)
+NAV 44 4 0 6 walk
+NAV 43 -11 0 14 walk
+NAV 37 -12 0 6 walk
+NAV 47 -2 0 13 walk
+NAV 54 0 0 8 walk
+NAV 68 -20 0 21 boat
+NAV 68 -110 0 92 boat
+NAV 66 -218 0 109 boat
+NAV 47 -217 0 9 walk
+NAV 54 -220 0 6 walk
+NAV 47 -217 0 6 walk
+NAV 38 -232 0 18 walk
+NAV 25 -241 0 17 walk
+NAV 39 -229 0 17 walk
+NAV 48 -222 0 13 walk
+NAV 54 -220 0 7 walk
+NAV 70 -195 0 26 boat
+NAV 70 -195 50 11 boat
+NAV 70 -100 0 97 boat
+NAV 66 -3 0 100 boat
+NAV 45 -10 0 14 walk
+NAV 37 -12 0 9 walk
+NAV 33 -28 0 17 walk
+NAV 24 -31 0 10 walk
+BROWSER_METRICS {"frames":72,"p50":16.7,"p95":16.8,"drawCalls":190,"triangles":69007,"webgl":true,"viewport":[1440,900]}
+  ✓  4 tests/browser/voyage.spec.ts:68:1 › First Voyage through real movement and contextual interactions (1.7m)
+
+  4 passed (1.8m)

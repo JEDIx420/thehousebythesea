@@ -9,9 +9,13 @@ Decisions here state choices that are *actually made*, and identify hypotheses t
 - **D-004:** Single personal cottage build, not village construction. Fishing/deliveries/exploration/relationship are primary loops.
 - **D-005:** Only Stage 0 + Stage 1 authorised. First experience must be played and explicitly approved before expanding.
 - **D-006:** Three.js + Vite + TypeScript are the proposed core; selected free Polyfork GLBs preferred for assets, respecting their actual licences.
-- **D-007 (candidate, not confirmed integration):** ProceduralTerrains for island authoring; live runtime versus authored/exported terrain is **OPEN** pending Stage 0 measurement.
+- **D-007 (candidate, not confirmed integration):** ProceduralTerrains for island authoring; live runtime versus authored/exported terrain is **OPEN at planning baseline; superseded by D-008** after the Stage 0 measurement.
 
-## Technical risks
+## Initial planning risks (historical baseline)
+
+The OPEN entries below describe the original planning baseline. D-008 through D-011 and the independent review reports supersede them: terrain choice, collisions, asset checks, Pages setup, docking/recovery and save/reward protection were implemented and verified. Creator visual approval and actual main-branch deployment remain pending.
+
+### Baseline risk register
 
 | Risk | Why it matters | Mitigation / owner | Status |
 | --- | --- | --- | --- |
@@ -32,3 +36,19 @@ Decisions here state choices that are *actually made*, and identify hypotheses t
 
 ## Change procedure
 Write: ID/date/status; motivation; observed evidence; decision; rejected alternatives; consequence; how to reverse. For Stage 0 terrain choice include screenshots/metrics and the version tested. No tech decision is "done" merely because a library appeared in an earlier conversation.
+
+## D-008 — 2026-11-27 — CONFIRMED: measured terrain production approach
+
+Tested `procedural-terrains@2.1.0` with its `three ~0.185.1` peer, real finite runtime and real GLB/collision export in installed Chrome. [Terrain report](terrain-spike.md) records screenshots, source verification, exact small-proof timings and a failed default-detail software-rendered attempt. Both reduced-detail runtime and exported GLB succeeded. Chose a compact authored finite heightfield in plain Three.js whose mesh indices and collision sampler share exact triangle data. This is an explicit variation of export-first; production does not falsely claim to load the proof GLB. Hand-authored harbour ramps make dock reliability straightforward, while avoiding runtime shader complexity. Reversal: replace the mesh/collider pair with the preserved GLB export workflow after visual review. Live runtime is a dev-only dependency.
+
+## D-009 — 2026-11-27 — CONFIRMED: two-island data and save boundaries
+
+World/rendering, original avatar/boat controllers, domain state/actions, IndexedDB persistence, synthesised audio, fishing view and UI are separated. A single animation loop updates serialisable checkpoints independently of scene objects. Stable delivery action pays once; fish sale clears inventory atomically. Versioned JSON snapshots include settings, discoveries, relationship milestones, wallet/inventory and boat/player checkpoints. Unsupported/corrupt saves disable writes for that session to preserve the original snapshot; storage failure shows a visible warning. No cloud or backend. Recovery returns to the current known island dock without changing earnings. Tests and independent browser preservation checks support this choice.
+
+## D-010 — 2026-11-27 — CONFIRMED: original motion and licensed prop scope
+
+Three selected Polyfork free CC BY 4.0 GLBs (hut, lamp, bench) are loaded locally. Two additional boat/character GLBs were inspected as integration references, with actual animation/skin counts in the manifest, and are disclosed as unused references. Gameplay people and sailboat are original articulated geometry with procedural animation, not a claimed rigged Polyfork character. Surf audio is original synthesised filtered noise, adjustable and muted in settings. No external fonts, audio recordings or runtime hotlinks. The manifest generates readable in-game source, licence, author and modification credits.
+
+## D-011 — 2026-11-27 — CONFIRMED: publishing and approval gate
+
+One focused implementation PR targets main; least-privilege GitHub Actions verifies the built project-path site before deployment. Pages was configured through the GitHub API with `build_type=workflow`. Production deployment remains main-only. Opening a PR or enabling Pages is not a claim of a live game, and no auto-merge is enabled. Local preview remains available for creator playtesting while PR approval/merge is pending. Stages 2–5 remain locked regardless of CI or deployment success.

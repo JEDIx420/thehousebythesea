@@ -1,0 +1,362 @@
+{
+  "01-havenport": {
+    "frames": 67,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 245,
+    "triangles": 72555,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "memory": 18732307,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-B9p-1-bv.js",
+        "bytes": 184422
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/beach-hut.glb",
+        "bytes": 80680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/seafront-lamp.glb",
+        "bytes": 88436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/promenade-bench.glb",
+        "bytes": 91548
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "02-mira": {
+    "frames": 498,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 226,
+    "triangles": 71607,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "memory": 14130323,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-B9p-1-bv.js",
+        "bytes": 184422
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/beach-hut.glb",
+        "bytes": 80680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/seafront-lamp.glb",
+        "bytes": 88436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/promenade-bench.glb",
+        "bytes": 91548
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "03-sailing": {
+    "frames": 1448,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 293,
+    "triangles": 60700,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "memory": 16120371,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-B9p-1-bv.js",
+        "bytes": 184422
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/beach-hut.glb",
+        "bytes": 80680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/seafront-lamp.glb",
+        "bytes": 88436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/promenade-bench.glb",
+        "bytes": 91548
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "04-landing": {
+    "frames": 2044,
+    "p50": 16.7,
+    "p95": 16.8,
+    "drawCalls": 193,
+    "triangles": 57659,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "memory": 16102884,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-B9p-1-bv.js",
+        "bytes": 184422
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/beach-hut.glb",
+        "bytes": 80680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/seafront-lamp.glb",
+        "bytes": 88436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/promenade-bench.glb",
+        "bytes": 91548
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "05-fishing": {
+    "frames": 2551,
+    "p50": 16.7,
+    "p95": 16.8,
+    "drawCalls": 190,
+    "triangles": 57729,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "memory": 19499809,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-B9p-1-bv.js",
+        "bytes": 184422
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/beach-hut.glb",
+        "bytes": 80680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/seafront-lamp.glb",
+        "bytes": 88436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/promenade-bench.glb",
+        "bytes": 91548
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "06-saltglass": {
+    "frames": 3295,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 141,
+    "triangles": 55818,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "memory": 21284021,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-B9p-1-bv.js",
+        "bytes": 184422
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/beach-hut.glb",
+        "bytes": 80680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/seafront-lamp.glb",
+        "bytes": 88436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/promenade-bench.glb",
+        "bytes": 91548
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "07-home-fund": {
+    "frames": 3600,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 189,
+    "triangles": 69005,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "memory": 16784295,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-B9p-1-bv.js",
+        "bytes": 184422
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/beach-hut.glb",
+        "bytes": 80680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/seafront-lamp.glb",
+        "bytes": 88436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/promenade-bench.glb",
+        "bytes": 91548
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "08-journal": {
+    "frames": 3600,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 188,
+    "triangles": 69003,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "memory": 20963981,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-B9p-1-bv.js",
+        "bytes": 184422
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/beach-hut.glb",
+        "bytes": 80680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/seafront-lamp.glb",
+        "bytes": 88436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/promenade-bench.glb",
+        "bytes": 91548
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "09-credits": {
+    "frames": 66,
+    "p50": 16.7,
+    "p95": 16.8,
+    "drawCalls": 191,
+    "triangles": 69009,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "memory": 53535300,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-B9p-1-bv.js",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/beach-hut.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/seafront-lamp.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/promenade-bench.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  }
+}
