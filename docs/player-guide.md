@@ -23,7 +23,7 @@ This is the Stage 0 + Stage 1 approval build. Later islands, house construction 
 3. Walk out onto the wooden pier. E boards the boat. The bow points north initially. Hold W, steer gently into the open channel on the east side of the islands, and head north toward Saltglass, about 220 metres away. The objective shows your distance.
 4. Approach the east pier at Saltglass; E ties up and places you on its verified walk surface. Walk inland to Nessa near the pier, E, and hand over the parcel for 120 coins. Reopening her conversation never pays again.
 5. On the pier, F casts. Space after the bite puts a fish in your creel. Try a second cast for the other species. Cancel a cast with F, or let one escape; there is no penalty. Nessa or Tomas buys your catch. A delivery plus both fish takes 25 starting coins to 195.
-6. Follow the path south to the shell arch and take in the view. If Mira came along, her sketch is part of the shared afternoon. Reboard at the pier and sail south to Havenport.
+6. Follow the path northwest inland to the shell arch and take in the view. If Mira came along, her sketch is part of the shared afternoon. Reboard at the pier and sail south to Havenport.
 7. Speak to Mira again to remember the crossing. Visit the notice by the north beach (near the end of the waterfront path) to see the home fund. The first milestone is 150 coins; 500 is an early aspiration, not a construction purchase in this build.
 8. Open journal, chart, settings and credits. Save, refresh, continue: your coins, parcel, fish inventory, discoveries, shared memory, player and boat positions should remain.
 

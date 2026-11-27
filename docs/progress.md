@@ -34,7 +34,7 @@ D-008 through D-011 appended to [decisions](decisions.md): measured terrain fall
 
 ## Current deployment state
 
-GitHub API configured Pages `build_type=workflow` successfully. A PR is being prepared; deployment workflow publishes only main. No live game is claimed before an actual successful deployment and page visit. Local built preview: http://localhost:4180/thehousebythesea/ (open in the app browser). A separate test preview uses port4173.
+GitHub API configured Pages `build_type=workflow` successfully. [PR #3](https://github.com/JEDIx420/thehousebythesea/pull/3) is open with independent review reports and test evidence; remote verification is in progress. Deployment workflow publishes only main. No live game is claimed before an actual successful deployment and page visit. Local built preview: http://localhost:4180/thehousebythesea/ (open in the app browser). A separate test preview uses port4173.
 
 ## Known limits to disclose at creator gate
 

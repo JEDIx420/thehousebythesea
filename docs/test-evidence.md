@@ -56,4 +56,8 @@ GitHub Pages source was configured successfully through the API with `build_type
 
 ## Final gameplay measurements
 
-Across nine real route snapshots: p50=16.7ms; p95=16.7–16.8ms;141–293 draw calls; estimated JS heap14.1–53.5MB. Initial asset resource transfer measured about445KB including compressed JS/CSS and three GLBs (HTTP header overhead included). These Apple M4/Chrome158 samples are vsync-limited; no universal minimum-FPS claim is made. Final reload screenshot has72 frame samples; sailing and landing snapshots contain much longer accumulated histories.
+Across nine real route snapshots: p50=16.7ms; p95=16.7–16.8ms;141–293 draw calls; estimated JS heap14.1–53.5MB. Initial asset resource transfer measured447,640bytes including compressed JS/CSS and three GLBs (HTTP header overhead included). These Apple M4/Chrome158 samples are vsync-limited; no universal minimum-FPS claim is made. Final reload screenshot has72 frame samples; sailing and landing snapshots contain much longer accumulated histories.
+
+## Handoff
+
+[PR #3](https://github.com/JEDIx420/thehousebythesea/pull/3) contains the pushed implementation and evidence. Public Pages returned HTTP404 on verification before merge, as expected for this main-only deployment setup. The confirmed playable local preview is http://localhost:4180/thehousebythesea/ . Remote CI status is recorded separately after completion.

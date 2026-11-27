@@ -9,9 +9,13 @@ Decisions here state choices that are *actually made*, and identify hypotheses t
 - **D-004:** Single personal cottage build, not village construction. Fishing/deliveries/exploration/relationship are primary loops.
 - **D-005:** Only Stage 0 + Stage 1 authorised. First experience must be played and explicitly approved before expanding.
 - **D-006:** Three.js + Vite + TypeScript are the proposed core; selected free Polyfork GLBs preferred for assets, respecting their actual licences.
-- **D-007 (candidate, not confirmed integration):** ProceduralTerrains for island authoring; live runtime versus authored/exported terrain is **OPEN** pending Stage 0 measurement.
+- **D-007 (candidate, not confirmed integration):** ProceduralTerrains for island authoring; live runtime versus authored/exported terrain is **OPEN at planning baseline; superseded by D-008** after the Stage 0 measurement.
 
-## Technical risks
+## Initial planning risks (historical baseline)
+
+The OPEN entries below describe the original planning baseline. D-008 through D-011 and the independent review reports supersede them: terrain choice, collisions, asset checks, Pages setup, docking/recovery and save/reward protection were implemented and verified. Creator visual approval and actual main-branch deployment remain pending.
+
+### Baseline risk register
 
 | Risk | Why it matters | Mitigation / owner | Status |
 | --- | --- | --- | --- |
