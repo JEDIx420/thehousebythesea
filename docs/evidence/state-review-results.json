@@ -1,0 +1,27 @@
+{
+  "base": "http://localhost:4173/thehousebythesea/",
+  "browser": "158.0.8127.37",
+  "viewport": [
+    1280,
+    800
+  ],
+  "checks": [
+    {
+      "name": "Title Credits/Escape and memory Escape/reload",
+      "result": "PASS"
+    },
+    {
+      "name": "Newer snapshot retained",
+      "result": "PASS"
+    },
+    {
+      "name": "Corrupt snapshot retained",
+      "result": "PASS"
+    },
+    {
+      "name": "Unavailable storage warns on title and Pause; play starts",
+      "result": "PASS"
+    }
+  ],
+  "errors": []
+}
