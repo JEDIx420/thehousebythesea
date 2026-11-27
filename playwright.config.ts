@@ -7,6 +7,8 @@ export default defineConfig({
   use: {
     baseURL: "http://localhost:4173/thehousebythesea/",
     viewport: { width: 1440, height: 900 },
+    // CI uses software rasterisation; CSS/input coverage stays full size.
+    deviceScaleFactor: process.env.CI ? 0.5 : 1,
     channel: process.env.CI ? undefined : "chrome",
     trace: "retain-on-failure",
     screenshot: "only-on-failure",

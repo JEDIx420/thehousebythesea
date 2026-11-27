@@ -56,3 +56,7 @@ Creator plays the First Voyage and provides feedback or explicit approval. Apply
 ## Final local result
 
 Clean `npm ci`, typecheck,29 unit tests, production build and asset audit passed. Final exact-bundle independent browser suite:4/4 passed. On Apple M4 / Chrome158 /1440×900, measured scene p50 was16.7ms and p95 was16.7–16.8ms; scene draw calls141–293; estimated JS heap14.1–53.5MB. These are this hardware's observed samples, not universal guarantees. Delivery plus fish sales restores195coins, completed work, discoveries, shared outing and checkpoints after refresh. All reported P0/P1 review findings are closed. Initial failed attempts and untested areas remain in test-evidence.md.
+
+## Remote CI follow-up
+
+First Linux verification passed build/unit and3browser resilience cases, but the full route timed out in its initial walking helper under slow software rendering. Test-only render-scale/input-timing fixes are under independent review and retry. Production code and local creator preview remain unchanged. See test-evidence.md for the failed run and corrective measurements.

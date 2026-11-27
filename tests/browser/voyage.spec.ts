@@ -10,6 +10,11 @@ const state = (page: Page) =>
 async function hold(page: Page, key: string, ms: number) {
   await page.keyboard.down(key);
   await page.waitForTimeout(ms);
+  // A slow software renderer must observe held input for an actual frame.
+  await page.evaluate(
+    () =>
+      new Promise<void>((resolve) => requestAnimationFrame(() => resolve())),
+  );
   await page.keyboard.up(key);
 }
 async function navigate(page: Page, x: number, z: number, tolerance = 2) {
@@ -28,7 +33,10 @@ async function navigate(page: Page, x: number, z: number, tolerance = 2) {
       Math.cos(desired - p.heading),
     );
     const rate = p.mode === "boat" ? 1.0 : 2.7;
-    if (Math.abs(diff) > 0.1) {
+    // At the 45 ms simulation clamp, one walking turn frame is ~0.12 rad.
+    // Allow a coarse heading before advancing so slow frames cannot oscillate
+    // forever around a smaller threshold. Position tolerances stay unchanged.
+    if (Math.abs(diff) > 0.22) {
       await hold(
         page,
         diff > 0 ? "d" : "a",
@@ -54,6 +62,7 @@ async function snapshot(page: Page, name: string) {
   metrics[name] = await page.evaluate(() => ({
     ...(window as any).voyage.metrics(),
     userAgent: navigator.userAgent,
+    renderScale: devicePixelRatio,
     memory: (performance as any).memory?.usedJSHeapSize,
     transfer: performance
       .getEntriesByType("resource")
@@ -111,12 +120,12 @@ test("First Voyage through real movement and contextual interactions", async ({
   await page.keyboard.press("Escape");
   await navigate(page, 54, -220);
   await page.keyboard.press("f");
-  await page.waitForTimeout(3100);
+  await expect(page.locator("#hint")).toContainText("A bite!");
   await snapshot(page, "05-fishing");
   await page.keyboard.press("Space");
   expect((await state(page)).inventory.sardine).toBe(1);
   await page.keyboard.press("f");
-  await page.waitForTimeout(3100);
+  await expect(page.locator("#hint")).toContainText("A bite!");
   await page.keyboard.press("Space");
   expect((await state(page)).inventory.bream).toBe(1);
   await page.keyboard.press("f");

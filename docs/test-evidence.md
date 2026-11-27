@@ -61,3 +61,9 @@ Across nine real route snapshots: p50=16.7ms; p95=16.7–16.8ms;141–293 draw c
 ## Handoff
 
 [PR #3](https://github.com/JEDIx420/thehousebythesea/pull/3) contains the pushed implementation and evidence. Public Pages returned HTTP404 on verification before merge, as expected for this main-only deployment setup. The confirmed playable local preview is http://localhost:4180/thehousebythesea/ . Remote CI status is recorded separately after completion.
+
+## CI software-renderer corrective round
+
+The first Linux Actions run [46002980135](https://github.com/JEDIx420/thehousebythesea/actions/runs/46002980135) passed install/typecheck/unit/build and all three resilience browser tests, then failed the voyage after its600s timeout. Logs show the initial walking helper oscillating3m from its target over150 iterations; it did not progress to the sailing section. This is not reported as a Linux gameplay pass. A local software-renderer probe at1440×900 measured DPR1 p50/p9550/83.3ms versus DPR0.5 p50/p9516.7/33.4ms with identical244draw calls/71,931triangles.
+
+Corrective test infrastructure keeps the1440×900 CSS viewport, real keyboard route and full assertions; CI uses0.5 render scale, key holds span an animation frame, and fishing waits for visible bite feedback. Local hardware visual evidence remains at full render scale. Workflow verification is bounded20minutes. This changes test execution only; the production B9bundle is unchanged. Corrected software/remote outcomes are recorded after execution.
