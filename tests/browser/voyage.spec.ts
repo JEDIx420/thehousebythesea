@@ -70,6 +70,8 @@ test("First Voyage through real movement and contextual interactions", async ({
   await page.keyboard.press("Escape");
   await navigate(page, 54, -220);
   await page.keyboard.press("f");
+  // A new cast must leave the previous bite frame before its own bite is ready.
+  await expect(page.locator("#hint")).toContainText("Watching the float");
   await expect(page.locator("#hint")).toContainText("A bite!");
   // The visible bite is the ready signal; do not spend its short reel window
   // on an unrelated screenshot-settling delay on software renderers.
@@ -77,6 +79,8 @@ test("First Voyage through real movement and contextual interactions", async ({
   await page.keyboard.press("Space");
   expect((await state(page)).inventory.sardine).toBe(1);
   await page.keyboard.press("f");
+  // A new cast must leave the previous bite frame before its own bite is ready.
+  await expect(page.locator("#hint")).toContainText("Watching the float");
   await expect(page.locator("#hint")).toContainText("A bite!");
   await page.keyboard.press("Space");
   expect((await state(page)).inventory.bream).toBe(1);
