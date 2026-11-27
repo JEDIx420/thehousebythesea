@@ -25,7 +25,9 @@ async function snapshot(page: Page, name: string, settleMs = 1000) {
 test("First Voyage through real movement and contextual interactions", async ({
   page,
 }) => {
-  test.setTimeout(process.env.CI ? 600000 : 240000);
+  // Hosted software rendering completed Saltglass and reached the return sea
+  // at 600s. Allow measured finite headroom; local budget/assertions stay fixed.
+  test.setTimeout(process.env.CI ? 900000 : 240000);
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await installInputProbe(page);

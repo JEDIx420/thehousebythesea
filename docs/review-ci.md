@@ -1,6 +1,6 @@
 # Stage 1B — functional / CI review
 
-**Latest local result:** final helper `71902b3` passes all six cases on native Chrome (**2.0 min**) and software Chromium (**4.2 min**) against the unchanged original BY game. Hosted run status is separate and was still pending when this report was completed. No experimental graphics or physics change ships.
+**Latest local result:** final helper `71902b3` passes all six cases on native Chrome (**2.0 min**) and software Chromium (**4.2 min**) against the unchanged original BY game. Hosted71902b3 later failed its600s route budget while making verified return-voyage progress; the evidence-backed CI-only900s budget described below now awaits hosted verification. No experimental graphics or physics change ships.
 
 Scope: movement and test automation only. The visual reset is creator feedback in Issue #4; the earlier First Voyage's visual baseline was **not approved**. Stage 2 remains locked.
 
@@ -115,3 +115,16 @@ Final artifact paths under `docs/evidence/visual-reset/`:
 The original pre-reset nine numbered images and metrics in `docs/evidence/` have been restored again. Final native DPR1 harbour/sea/landing p50/p95 were16.7/16.7 ms. Final software DPR.5 sea/landing p50/p95 were66.7/83.4 ms. These are distinct honest environments; software functional success is not a30 FPS or native-art-quality claim.
 
 **Final local technical conclusion: READY FOR CREATOR VISUAL AND GAMEPLAY REVIEW.** The actual hosted run for71902b3 (`46019041111`) was still pending/in progress when this review finished; do not infer remote green from these local results. The coordinator will record that separate observed conclusion. No further local reruns or application changes are required by this review. Creator approval remains absent and Stage2 remains locked.
+
+
+## Final hosted-budget review — measured, finite headroom
+
+Observed run **[46019041111](https://github.com/JEDIx420/thehousebythesea/actions/runs/46019041111)** for71902b3 **FAILED at the600-second route budget**; the failure remains a failure. Its five resilience cases passed. The actual full-route log advanced through delivery, both species, sale to195 coins, the landmark and reboarding, then steadily sailed back toward Havenport. At timeout the player was `(76.43,-131.62)`, targeting `(70,-100)`, distance32.265m; W was held and no modal was open.
+
+Independent timing extraction from `visual-reset/linux-continuous-600s-failure.log` found the first26m return leg took125.88 seconds /176 feedback reads. Its slow stationary steering progressed monotonically in approximately.018-radian increments; it was **not** the earlier alternating-heading limit cycle. The next return-sea leg advanced approximately66m in24.34 seconds (about2.7m/s). Roughly32m plus the final100m crossing, the short town route and save/credits remained. A further2–3 minutes is supported by this measured progress;300 seconds of additional finite headroom gives margin without skipping or accelerating the game.
+
+The only functional-test policy change is **CI900000 ms instead of600000 ms**. Local timeout remains **240000 ms**. The20-minute verify-job ceiling, all six cases, destination tolerances, blocked-surface fail-fast, input handling, screenshots, renderer, application clock and every story/economy/save assertion are unchanged. No graphics experiment or timeline prototype is shipped. Typecheck and `playwright test --list` passed after this narrow change; no redundant local gameplay rerun was claimed.
+
+Patch fingerprint at independent handoff: `tests/browser/voyage.spec.ts` SHA-256 **`a9aca8aae69800965f9ffd6b468538f7517e029609c017d144e969a799eef100`**. A separate state-system reviewer inspected the exact diff and approved this finite CI-only budget change. The prior full suite took10.9 minutes including the600-second case, leaving approximately54 seconds of other suite work; the proposed15-minute case remains inside the existing20-minute job budget with setup/artifact headroom.
+
+**Conclusion:** the900-second CI budget is justified by observed late-route forward progress and unchanged assertions, not a blind timeout increase or a claim that the600-second run passed. The application is still the unchanged original BY bundle; local native6/6 and software6/6 results remain valid. The new900-second hosted run is **UNVERIFIED/PENDING** until its actual conclusion is observed. Do not claim hosted CI green yet. Creator approval and Stage2 authorisation remain absent.
