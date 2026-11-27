@@ -1,0 +1,7 @@
+before harbour {"frames":108,"p50":16.7,"p95":16.8,"drawCalls":244,"triangles":71931,"webgl":true,"viewport":[1440,900]}
+before characters {"frames":107,"p50":16.7,"p95":16.8,"drawCalls":220,"triangles":71241,"webgl":true,"viewport":[1440,900]}
+before sailing {"frames":105,"p50":16.7,"p95":16.8,"drawCalls":275,"triangles":60338,"webgl":true,"viewport":[1440,900]}
+before docking {"frames":106,"p50":16.7,"p95":16.8,"drawCalls":191,"triangles":57655,"webgl":true,"viewport":[1440,900]}
+before saltglass {"frames":105,"p50":16.7,"p95":16.8,"drawCalls":149,"triangles":56644,"webgl":true,"viewport":[1440,900]}
+before home {"frames":128,"p50":16.7,"p95":16.7,"drawCalls":164,"triangles":57999,"webgl":true,"viewport":[1440,900]}
+before harbour-boat {"frames":104,"p50":16.7,"p95":16.8,"drawCalls":282,"triangles":74242,"webgl":true,"viewport":[1440,900]}

@@ -1,0 +1,10 @@
+after harbour {"frames":111,"p50":16.7,"p95":16.7,"drawCalls":124,"triangles":360222,"webgl":true,"viewport":[1440,900]}
+after characters {"frames":108,"p50":16.7,"p95":16.8,"drawCalls":119,"triangles":347776,"webgl":true,"viewport":[1440,900]}
+after sailing {"frames":106,"p50":16.7,"p95":16.7,"drawCalls":146,"triangles":381411,"webgl":true,"viewport":[1440,900]}
+after docking {"frames":106,"p50":16.7,"p95":16.7,"drawCalls":93,"triangles":280453,"webgl":true,"viewport":[1440,900]}
+after saltglass {"frames":107,"p50":16.7,"p95":16.7,"drawCalls":80,"triangles":257804,"webgl":true,"viewport":[1440,900]}
+after home {"frames":131,"p50":16.7,"p95":16.7,"drawCalls":97,"triangles":256308,"webgl":true,"viewport":[1440,900]}
+after harbour-boat {"frames":105,"p50":16.7,"p95":16.8,"drawCalls":140,"triangles":395706,"webgl":true,"viewport":[1440,900]}
+after mira-front {"frames":133,"p50":16.7,"p95":16.7,"drawCalls":142,"triangles":387463,"webgl":true,"viewport":[1440,900]}
+after mira-three-quarter {"frames":131,"p50":16.7,"p95":16.7,"drawCalls":145,"triangles":390206,"webgl":true,"viewport":[1440,900]}
+after mira-walking {"frames":581,"p50":16.7,"p95":16.8,"drawCalls":138,"triangles":312796,"webgl":true,"viewport":[1440,900]}

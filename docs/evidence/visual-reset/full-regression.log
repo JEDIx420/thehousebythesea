@@ -1,0 +1,50 @@
+Application source: 5ecd019efb9a0e32915d71ddfa47918bccc463cd
+Bundle: index-BYtek1mE.js sha256 27c91750a9e80e55c7e0665a516f544998b2985763463891a387c1a64a464706
+Harness correction: fresh Watching-the-float state required before each bite.
+
+> thehousebythesea@0.1.0 test:e2e
+> playwright test --output=test-results/visual-hardware-corrected
+
+
+Running 6 tests using 1 worker
+
+(node:96193) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/resilience.spec.ts:3:1 › title credits can close, memory can skip, pause and settings remain usable (1.0s)
+  ✓  2 tests/browser/resilience.spec.ts:46:1 › a future save survives fallback play and autosave (6.2s)
+  ✓  3 tests/browser/resilience.spec.ts:100:1 › missing optional decoration keeps the mandatory environment playable (1.4s)
+  ✓  4 tests/browser/resilience.spec.ts:124:1 › missing critical models produce an honest recoverable loading error (285ms)
+  ✓  5 tests/browser/resilience.spec.ts:157:1 › a missing mandatory boardwalk cannot substitute a mismatched pier surface (402ms)
+NAV {"target":[44,4],"iteration":0,"distance":5.657,"position":[48,0],"heading":0,"difference":-2.356194490192345,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":0,"distance":8.425,"position":[44.761621591944966,3.2779067530094035],"heading":-2.42946,"difference":1.2582641954302072,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":0,"distance":11.663,"position":[38.40957043376251,0.5777643255209826],"heading":-1.0791900000000014,"difference":0.9580381792042946,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-12],"iteration":0,"distance":2.311,"position":[37.18444361727566,-9.6966005380191],"heading":0.0013500000000004682,"difference":-0.0812540361189092,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":0,"distance":10.859,"position":[37.186010399799756,-10.857179480440736],"heading":0.0013500000000004654,"difference":-3.1258118505144803,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":0,"distance":10.98,"position":[37.14580505134032,-1.6565611069599917],"heading":3.0448053071795944,"difference":-1.3225582272058576,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":0,"distance":7.661,"position":[46.35569256499975,-0.5085615724045711],"heading":1.6948053071795957,"difference":-0.05757872935716368,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":0,"distance":20.881,"position":[62,0],"heading":1.6948053071795957,"difference":-1.4033485127017284,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":0,"distance":91.57,"position":[66.55433065351582,-18.441824404093932],"heading":0.49603916689531413,"difference":-0.4802508529189812,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":0,"distance":108.339,"position":[69.54218190539648,-109.71922516075311],"heading":-0.1912911115228617,"difference":0.15858983853667546,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":0,"distance":8.544,"position":[55,-220],"heading":1.5707963267948966,"difference":2.782821983319221,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":0,"distance":6.015,"position":[48.61761482215049,-217.3144451956644],"heading":-1.7440089803846899,"difference":2.851996009996732,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":0,"distance":6.194,"position":[52.69256210200595,-219.44119433181393],"heading":1.2249110196153263,"difference":3.0823598935203473,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":0,"distance":11.827,"position":[48.54563284887434,-217.43385466853238],"heading":-1.8188142875642757,"difference":0.46672397721149905,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":0,"distance":13.781,"position":[38.450425973490965,-219.82203156473963],"heading":-1.2788142875642756,"difference":0.7917055877493349,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":0,"distance":12.451,"position":[32.69378922771353,-231.21098840559134],"heading":-0.4680042875642875,"difference":-0.19811797209546084,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":0,"distance":10.484,"position":[25.4023496753235,-240.14826939943592],"heading":-0.7380042875642876,"difference":-3.084215767250277,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":0,"distance":14.121,"position":[30.957875670373305,-232.76304529579383],"heading":2.2603610196153054,"difference":0.4390832466222862,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,-220],"iteration":0,"distance":11.995,"position":[36.06261028003586,-221.1701860125195],"heading":2.8000910196152895,"difference":-1.1315799254869943,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":0,"distance":7.608,"position":[46.39208636354125,-219.92922199256444],"heading":1.4500910196152916,"difference":0.11140236698004458,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[70,-195],"iteration":0,"distance":26.249,"position":[62,-220],"heading":1.7198210196152754,"difference":1.1120686894320617,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[70,-195],"iteration":50,"distance":26.249,"position":[62,-220],"heading":1.99996000000001,"difference":0.8319297090473272,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[70,-100],"iteration":0,"distance":97.167,"position":[70.46294558970162,-197.1656971181723],"heading":2.9200400000000144,"difference":0.22631711368690535,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-3],"iteration":0,"distance":101.286,"position":[72.25320198833683,-104.09298992700171],"heading":-2.803005307179562,"difference":-0.27681011530184607,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":0,"distance":18,"position":[55,0],"heading":1.5707963267948966,"difference":-3.141592653589793,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":0,"distance":11.29,"position":[38.90884593707258,0.12796752476720308],"heading":-1.7137536732051415,"difference":1.5438711355333652,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-12],"iteration":0,"distance":1.904,"position":[37.314858843868535,-10.122669147674298],"heading":-0.09456367320514984,"difference":-0.0716060220952385,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[33,-28],"iteration":0,"distance":18.391,"position":[37.314858843868535,-10.122669147674298],"heading":-0.09456367320514984,"difference":-0.14226611470162862,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[24,-31],"iteration":0,"distance":9.875,"position":[32.938744199637625,-26.803674332473662],"heading":-0.36429367320513417,"difference":-0.7675893969760091,"mode":"walk","keys":[],"panel":null}
+BROWSER_METRICS {"frames":79,"p50":16.7,"p95":16.8,"drawCalls":104,"triangles":317222,"webgl":true,"viewport":[1440,900]}
+  ✓  6 tests/browser/voyage.spec.ts:23:1 › First Voyage through real movement and contextual interactions (1.9m)
+
+  6 passed (2.1m)

@@ -59,7 +59,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Local browser tests use installed Google Chrome for hardware rendering; CI uses downloaded Chromium at half render scale for software rasterisation (the CSS viewport and complete gameplay assertions stay unchanged). To use Chromium locally, set `CI=1 npm run test:e2e`. Successful runs retain video in `test-results/`; failures retain screenshots and traces. Nine in-game screenshots and per-scene measurements are written to `docs/evidence/`. Read the [playtest route and controls](docs/player-guide.md).
+Local browser tests use installed Google Chrome for hardware rendering; CI uses downloaded Chromium at half render scale for software rasterisation (the CSS viewport and complete gameplay assertions stay unchanged). To use Chromium locally, set `CI=1 npm run test:e2e`. Local runs retain video in `test-results/` and failure traces. CI avoids per-action canvas/DOM snapshots and video encoding; it retains trace actions/sources, failure screenshots and the nine explicit gameplay checkpoints under `test-results/checkpoints/`. Nine in-game screenshots and per-scene measurements are written to `docs/evidence/`. Read the [playtest route and controls](docs/player-guide.md).
 
 Vite builds `/thehousebythesea/` into `dist/`. The workflow verifies pull requests and deploys **main only** using official Pages Actions. Pages source is configured to GitHub Actions; the deployment is not live until a successful main build/deploy. No runtime accounts, secrets or remote APIs are used.
 

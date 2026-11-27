@@ -1,0 +1,66 @@
+
+> thehousebythesea@0.1.0 test:e2e
+> playwright test --output=test-results/visual-hardware-final
+
+
+Running 6 tests using 1 worker
+
+(node:95306) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/resilience.spec.ts:3:1 › title credits can close, memory can skip, pause and settings remain usable (1.1s)
+  ✓  2 tests/browser/resilience.spec.ts:46:1 › a future save survives fallback play and autosave (6.4s)
+  ✓  3 tests/browser/resilience.spec.ts:100:1 › missing optional decoration keeps the mandatory environment playable (1.7s)
+  ✓  4 tests/browser/resilience.spec.ts:124:1 › missing critical models produce an honest recoverable loading error (478ms)
+  ✓  5 tests/browser/resilience.spec.ts:157:1 › a missing mandatory boardwalk cannot substitute a mismatched pier surface (500ms)
+NAV {"target":[44,4],"iteration":0,"distance":5.657,"position":[48,0],"heading":0,"difference":-2.356194490192345,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":0,"distance":8.423,"position":[44.759093518936126,3.2770352266059115],"heading":-2.4289199999999984,"difference":1.2577456472756952,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":0,"distance":11.664,"position":[38.40453290034869,0.5786905933706983],"heading":-1.0794599999999988,"difference":0.9587465145569698,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-12],"iteration":0,"distance":2.313,"position":[37.17244603864787,-9.693873190379797],"heading":0.0005400000000010952,"difference":-0.07517843385897913,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":0,"distance":10.855,"position":[37.173072125417434,-10.853293021336375],"heading":0.0005400000000010952,"difference":-3.126187496937324,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":0,"distance":10.973,"position":[37.152781776878314,-1.6537579394914308],"heading":3.042645307179596,"difference":-1.3205548437843795,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":0,"distance":7.655,"position":[46.363095517285224,-0.5233790916391192],"heading":1.6929153071795984,"difference":-0.053693088777595266,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":0,"distance":20.881,"position":[62,0],"heading":1.6929153071795984,"difference":-1.4014585127017312,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":0,"distance":91.566,"position":[66.55492975194085,-18.445099120998908],"heading":0.4961324930959623,"difference":-0.48035015646741575,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":0,"distance":108.319,"position":[69.53725844681234,-109.73861577098148],"heading":-0.1915061271225918,"difference":0.15884443016200198,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":0,"distance":8.544,"position":[55,-220],"heading":1.5707963267948966,"difference":2.782821983319221,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":0,"distance":6.015,"position":[48.61192563580692,-217.32672258755574],"heading":-1.7418489803846597,"difference":2.852084774681153,"mode":"walk","keys":[],"panel":null}
+  ✘  6 tests/browser/voyage.spec.ts:23:1 › First Voyage through real movement and contextual interactions (51.3s)
+
+
+  1) tests/browser/voyage.spec.ts:23:1 › First Voyage through real movement and contextual interactions 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      80 |   await expect(page.locator("#hint")).toContainText("A bite!");
+      81 |   await page.keyboard.press("Space");
+    > 82 |   expect((await state(page)).inventory.bream).toBe(1);
+         |                                               ^
+      83 |   await page.keyboard.press("f");
+      84 |   await page.keyboard.press("f");
+      85 |   expect((await state(page)).inventory.bream).toBe(1);
+        at /Users/vincyvincent/3dfun/thehousebythesea/tests/browser/voyage.spec.ts:82:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/visual-hardware-final/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/visual-hardware-final/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/visual-hardware-final/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/visual-hardware-final/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/visual-hardware-final/voyage-First-Voyage-throug-cc2fb-and-contextual-interactions/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/browser/voyage.spec.ts:23:1 › First Voyage through real movement and contextual interactions 
+  5 passed (1.1m)
