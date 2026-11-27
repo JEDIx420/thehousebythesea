@@ -1,5 +1,7 @@
 # Independent visual and functional review — Issue #4
 
+**Final verification:** helper `71902b3`, unchanged original BY application, native **6/6 PASS in2.0 min** and software **6/6 PASS in4.2 min**. No experimental graphics/physics change ships. Hosted CI remains a separate pending outcome.
+
 Reviewed application: `5ecd019efb9a0e32915d71ddfa47918bccc463cd`; final harness correction: `5a55a3ec8a6462f56ab5a0d820823e04540fa805`. Tested bundle `index-BYtek1mE.js`, SHA-256 `27c91750a9e80e55c7e0665a516f544998b2985763463891a387c1a64a464706`. An independent git diff of application/config/assets/tools/test inputs against final HEAD returned exit 0. Reviewer owns movement/test plumbing, **not the replacement models, environment, camera or lighting implementation**. Movement fixes received a separate state-owner review.
 
 ## Art review
@@ -57,3 +59,6 @@ These are measured samples on the M4 browser, not a promise for all devices. Fir
 **No Stage 2. Stop for the creator's explicit approval.**
 
 Final frozen chain: app `5ecd019efb9a0e32915d71ddfa47918bccc463cd` → fresh-cast harness `5a55a3ec8a6462f56ab5a0d820823e04540fa805` → CI capture configuration `20e6c416ed8905843f2f9faaae287f37255e54fd` → CI artifact destination `0a9519881de2b1a7a2d358c15d4a5fc95e9759d2`. No later gameplay/visual code change is included in this review. Hosted run `46014107025` for `0a95198` was still pending/in progress when the reviewer finished; it is **not claimed passing** here.
+
+
+Final helper verification: `71902b31a084708ba416bd380c5c6f79a5a1b8c9` preserves the original BY app/visuals and passes all six cases in2.0 min native /4.2 min software. The final helper keeps real W held through forward feedback, releases it before turning/arrival/failure, and retains all existing assertions. Native screenshots/metrics are in `hardware-continuous-*`; software screenshots/metrics are in `software-continuous-*` under the visual-reset evidence directory. All experimental graphics and input-timeline application changes were rejected and are not shipped. See the final section of `docs/review-ci.md` for precise commands and the independently pending hosted-CI gate. Art judgement and the disclosed P3 foam note are unchanged.

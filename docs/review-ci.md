@@ -1,5 +1,7 @@
 # Stage 1B — functional / CI review
 
+**Latest local result:** final helper `71902b3` passes all six cases on native Chrome (**2.0 min**) and software Chromium (**4.2 min**) against the unchanged original BY game. Hosted run status is separate and was still pending when this report was completed. No experimental graphics or physics change ships.
+
 Scope: movement and test automation only. The visual reset is creator feedback in Issue #4; the earlier First Voyage's visual baseline was **not approved**. Stage 2 remains locked.
 
 ## Remote failure evidence
@@ -75,3 +77,41 @@ Environment: Playwright Chromium 159.0.8154.6 / SwiftShader on the Apple M4, CSS
 Final artifacts: `visual-reset/software-regression.log`, `software-metrics.json`, nine distinctly named `software-*.png` files; full-scale art proof remains the `after-*` and `regression-*` images. The original nine pre-reset images/metrics have again been restored. The playable application bundle remains unchanged at SHA-256 `27c91750a9e80e55c7e0665a516f544998b2985763463891a387c1a64a464706`.
 
 **Local technical conclusion: READY FOR CREATOR REVIEW.** Native hardware and software browser suites both pass. The actual current remote GitHub Actions conclusion must still be checked separately before claiming remote CI green; historical failed runs remain failed. Creator visual/gameplay approval and Stage 2 authorisation are still absent.
+
+## Further hosted bottleneck and rejected graphics experiments
+
+Hosted low-capture run `46013674327` still reached its 600-second limit while progressing monotonically through the first sea crossing. The capture fix removed one bottleneck but was not by itself enough on the hosted software renderer; this failure is not relabelled a pass.
+
+Controlled five-second local SwiftShader measurements at CSS1440×900 showed DPR.5 mean71.45 ms versus DPR.25 mean59.92 ms: cutting 75% of canvas pixels improved mean time only about16%. Software-only BasicShadowMap512 measured62.50 ms; turning real-time shadows off measured55.34 ms. These conditional low-quality prototypes were measured, but the gain was insufficient to justify changing the game's appearance for CI. **Both graphics experiments were reverted. The original `index-BYtek1mE.js` bundle, native look and software look are preserved.** Historical benchmark JSONs retain their experimental bundle identifiers. The generic benchmark script can measure the shipping app without expecting prototype-only metadata.
+
+A bounded input-timeline prototype was also considered and tested outside the shipping tree, then set aside in favour of a narrower driver correction; no unused timeline module or altered game clock is shipped.
+
+## Continuous real-forward input correction
+
+The remaining harness was releasing W after every200/250 ms pulse, then spending protocol/feedback time stationary (or letting the boat decelerate). Slow hosted rendering made that forward duty cycle very low even though the actual controller worked. The corrected helper holds **real W** while polling position/heading at80 ms plus one real animation frame, releases it before every atomic100 ms steering pulse, and guarantees release on arrival/error in finally. It does not write positions, synthesize rewards, replace the renderer, alter physics time, loosen destination tolerances or remove any assertion.
+
+Focused command: `CI=1 node docs/evidence/visual-reset/continuous-input-diagnostic.mjs` on the original frozen BY application. **PASS**: first approach5.173 seconds; actual Ellis/Mira conversations, boarding and110 m sea route completed, open-sea portion20.066 seconds; full focused path49.613 seconds. Recorded key feedback shows `["w"]` throughout forward polls and `[]` after arrival. This is not a claim that the earlier historic approach sample was a strictly controlled A/B; the upcoming complete same-bundle suite is the relevant paired comparison with the7.2-minute pulsed-input run.
+
+Evidence: `continuous-input-diagnostic.json` / `.log`; local source/action trace under ignored `test-results/continuous-input-diagnostic/`. Full six-case software verification with this final helper is running; its result will be appended rather than assumed.
+
+
+## Final verification — continuous real input, original application
+
+Final reviewed helper commit: **`71902b31a084708ba416bd380c5c6f79a5a1b8c9`**. Application source remains the original approved-for-review code at `5ecd019`; bundle remains **`index-BYtek1mE.js` SHA-256 `27c91750a9e80e55c7e0665a516f544998b2985763463891a387c1a64a464706`**. Independent source/config/test/assets/tools diff against the final helper commit returned exit0. All graphics-preset and timeline prototypes were removed from shipping source; only the test driver's real forward-input duty cycle changed.
+
+| Exact command | Observed result |
+| --- | --- |
+| `CI=1 npm run test:e2e -- --output=test-results/visual-software-continuous` | **PASS, 6/6, 4.2 min total / 3.8 min full route, exit0** |
+| `npm run test:e2e -- --output=test-results/visual-hardware-continuous` | **PASS, 6/6, 2.0 min total / 1.8 min full route, exit0** |
+
+The complete same-bundle software route improved from7.2 to4.2 minutes with every position, collision, reward, two-species fishing, date, checkpoint/reload and manifest-credit assertion retained. Driver feedback records actual W held through forward polls and released before turning/arrival; no application state or clock was written by the driver. Both final suites completed with zero page errors and the expected195-coin wallet, parcel completion, Mira memory and home progress surviving refresh.
+
+Final artifact paths under `docs/evidence/visual-reset/`:
+
+- Native: `hardware-continuous-regression.log`, `hardware-continuous-metrics.json`, nine `hardware-continuous-*.png` files.
+- Software: `software-continuous-regression.log`, `software-continuous-metrics.json`, nine `software-continuous-*.png` files.
+- CI-generated checkpoints use **`test-results/checkpoints/`** (nine images and `gameplay-metrics.json`), covered by the browser-evidence uploader; local full native video is retained under ignored `test-results/visual-hardware-continuous/`.
+
+The original pre-reset nine numbered images and metrics in `docs/evidence/` have been restored again. Final native DPR1 harbour/sea/landing p50/p95 were16.7/16.7 ms. Final software DPR.5 sea/landing p50/p95 were66.7/83.4 ms. These are distinct honest environments; software functional success is not a30 FPS or native-art-quality claim.
+
+**Final local technical conclusion: READY FOR CREATOR VISUAL AND GAMEPLAY REVIEW.** The actual hosted run for71902b3 (`46019041111`) was still pending/in progress when this review finished; do not infer remote green from these local results. The coordinator will record that separate observed conclusion. No further local reruns or application changes are required by this review. Creator approval remains absent and Stage2 remains locked.

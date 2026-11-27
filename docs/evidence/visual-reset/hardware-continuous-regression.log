@@ -1,0 +1,55 @@
+Application: original index-BYtek1mE.js sha256 27c91750a9e80e55c7e0665a516f544998b2985763463891a387c1a64a464706
+Final helper: 71902b3, continuous real forward input, all six cases unchanged.
+
+> thehousebythesea@0.1.0 test:e2e
+> playwright test --output=test-results/visual-hardware-continuous
+
+[WebServer] (node:2680) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:2683) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/resilience.spec.ts:3:1 › title credits can close, memory can skip, pause and settings remain usable (1.0s)
+  ✓  2 tests/browser/resilience.spec.ts:46:1 › a future save survives fallback play and autosave (6.2s)
+  ✓  3 tests/browser/resilience.spec.ts:100:1 › missing optional decoration keeps the mandatory environment playable (1.4s)
+  ✓  4 tests/browser/resilience.spec.ts:124:1 › missing critical models produce an honest recoverable loading error (264ms)
+  ✓  5 tests/browser/resilience.spec.ts:157:1 › a missing mandatory boardwalk cannot substitute a mismatched pier surface (355ms)
+NAV {"target":[44,4],"iteration":0,"distance":5.657,"position":[48,0],"heading":0,"difference":-2.356194490192345,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":0,"distance":8.507,"position":[45.05376996509677,2.739743263803485],"heading":-2.47428,"difference":1.2313848321481549,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":0,"distance":11.584,"position":[38.536760367727815,0.48115751251136624],"heading":-1.1248199999999995,"difference":0.991760224025824,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-12],"iteration":0,"distance":2.785,"position":[37.48599174124601,-9.257264740406834],"heading":-0.04427999999999999,"difference":-0.13109208846656925,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,0],"iteration":0,"distance":10.425,"position":[37.43464372491857,-10.416127709536157],"heading":-0.04427999999999999,"difference":-3.055608890943793,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,0],"iteration":0,"distance":11.195,"position":[36.9497544678398,-1.7921749343629176],"heading":2.999445307179585,"difference":-1.2678647928612787,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,0],"iteration":0,"distance":7.922,"position":[46.100539235763804,-0.6004433805816715],"heading":1.649985307179588,"difference":-0.0033241825086398617,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[68,-20],"iteration":0,"distance":20.881,"position":[62,0],"heading":1.649985307179588,"difference":-1.3585285127017208,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":0,"distance":92.3,"position":[66.24008989256961,-17.717187973856895],"heading":0.4719740332659048,"difference":-0.45290551164716836,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[68,-110],"iteration":50,"distance":36.182,"position":[72.08994557188593,-74.04996327978675],"heading":0.06223153629263441,"difference":-0.17551197420193637,"mode":"boat","keys":["w"],"panel":null}
+NAV {"target":[66,-218],"iteration":0,"distance":107.854,"position":[68.97323724087859,-110.18747120275485],"heading":-0.2177684637073656,"difference":0.1901976065449363,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-218],"iteration":50,"distance":52.805,"position":[62.497183972864576,-165.31139639339457],"heading":-0.07776846370736568,"difference":0.14415225192027298,"mode":"boat","keys":["w"],"panel":null}
+NAV {"target":[47,-217],"iteration":0,"distance":8.544,"position":[55,-220],"heading":1.5707963267948966,"difference":2.782821983319221,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":0,"distance":6.015,"position":[48.61543512965863,-217.3197755534818],"heading":-1.742928980384686,"difference":2.8518707918190755,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[47,-217],"iteration":0,"distance":5.618,"position":[52.15022914451929,-219.2435657689111],"heading":1.226801019615299,"difference":3.074752829992456,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":0,"distance":11.854,"position":[48.56197123845894,-217.38301915468296],"heading":-1.8174642875642941,"difference":0.46926111056989583,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":0,"distance":13.699,"position":[38.49516559214823,-219.93867003575562],"heading":-1.5477342875642897,"difference":1.053754142739998,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[25,-241],"iteration":0,"distance":12.959,"position":[33.009761608006734,-230.81288792336352],"heading":-0.4671942875642775,"difference":-0.19911487398568972,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[32,-232],"iteration":0,"distance":9.973,"position":[25.727255739886203,-239.75374813954534],"heading":-0.4671942875642772,"difference":2.9285851969049737,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-220],"iteration":0,"distance":14.715,"position":[30.56647252311114,-233.2340117904781],"heading":2.503075712435718,"difference":0.18602204715826434,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[48,-220],"iteration":0,"distance":11.873,"position":[36.19215830507838,-221.24280746564122],"heading":2.5028057124357224,"difference":-0.8271427695976348,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[54,-220],"iteration":0,"distance":7.446,"position":[46.55397253087808,-219.97225802291467],"heading":1.6928057124357236,"difference":-0.1257351103763178,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[70,-195],"iteration":0,"distance":26.249,"position":[62,-220],"heading":1.4230757124357198,"difference":1.4088139966116173,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[70,-195],"iteration":50,"distance":26.249,"position":[62,-220],"heading":2.00644,"difference":0.8254497090473372,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[70,-100],"iteration":0,"distance":98.217,"position":[70.10056214222003,-198.21682822731165],"heading":2.926499999999988,"difference":0.21611653217450777,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[70,-100],"iteration":50,"distance":36.935,"position":[75.11539287068658,-136.57892648773245],"heading":3.0664999999999885,"difference":0.2140369172278647,"mode":"boat","keys":["w"],"panel":null}
+NAV {"target":[66,-3],"iteration":0,"distance":100.871,"position":[71.94491757252366,-103.69531351072851],"heading":-2.7968253071796045,"difference":-0.2857971258207641,"mode":"boat","keys":[],"panel":null}
+NAV {"target":[66,-3],"iteration":50,"distance":42.745,"position":[63.20761042789352,-45.653953043859744],"heading":-3.0768253071796057,"difference":-0.13014019882268915,"mode":"boat","keys":["w"],"panel":null}
+NAV {"target":[37,0],"iteration":0,"distance":18,"position":[55,0],"heading":1.5707963267948966,"difference":-3.141592653589793,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-11],"iteration":0,"distance":11.354,"position":[38.890034317653864,0.19556863351104464],"heading":-1.399473673205118,"difference":1.232230732195439,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[37,-12],"iteration":0,"distance":2.569,"position":[37.328092405554706,-9.451902102307542],"heading":-0.04947367320511824,"difference":-0.07858148342932404,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[33,-28],"iteration":0,"distance":18.476,"position":[37.299409379412346,-10.031192430218614],"heading":-0.04947367320511824,"difference":-0.18538162456563237,"mode":"walk","keys":[],"panel":null}
+NAV {"target":[24,-31],"iteration":0,"distance":10.283,"position":[33.094772405170126,-26.20053889486278],"heading":-0.04920367320510252,"difference":-1.0360185197717728,"mode":"walk","keys":[],"panel":null}
+BROWSER_METRICS {"frames":75,"p50":16.7,"p95":16.7,"drawCalls":104,"triangles":317222,"webgl":true,"viewport":[1440,900]}
+  ✓  6 tests/browser/voyage.spec.ts:25:1 › First Voyage through real movement and contextual interactions (1.8m)
+
+  6 passed (2.0m)

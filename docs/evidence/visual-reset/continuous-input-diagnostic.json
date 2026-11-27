@@ -1,0 +1,30 @@
+{
+  "base": "http://localhost:4180/thehousebythesea/",
+  "browser": "159.0.8154.6",
+  "deviceScaleFactor": 0.5,
+  "result": "PASS",
+  "firstApproachMs": 5173,
+  "openSeaMs": 20066,
+  "totalMs": 49613,
+  "after": {
+    "x": 69.90281765075386,
+    "z": -107.02098522172386,
+    "heading": -0.3035792422934377,
+    "mode": "boat",
+    "island": "havenport"
+  },
+  "keysAfter": [],
+  "metrics": {
+    "frames": 753,
+    "p50": 66.7,
+    "p95": 83.4,
+    "drawCalls": 148,
+    "triangles": 354773,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  "bundle": "/thehousebythesea/assets/index-BYtek1mE.js"
+}

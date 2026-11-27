@@ -6,7 +6,7 @@ A boy who dreamed of the ocean grows into a man, saves for years and finally buy
 
 ## Project status
 
-**First Voyage implementation — 27 November 2026.** Stage 0 and Stage 1 now have a playable two-island approval build. See [execution status](docs/progress.md), [player guide](docs/player-guide.md), [terrain proof](docs/terrain-spike.md) and [test evidence](docs/test-evidence.md). **Creator requested a Stage 1 visual reset in [Issue #4](https://github.com/JEDIx420/thehousebythesea/issues/4).** Corrective work is active; the prior visual baseline is not approved. See [reset progress](docs/visual-reset-progress.md). No Stage 2.
+**First Voyage implementation — 27 November 2026.** Stage 0 and Stage 1 now have a playable two-island approval build. See [execution status](docs/progress.md), [player guide](docs/player-guide.md), [terrain proof](docs/terrain-spike.md) and [test evidence](docs/test-evidence.md). **Creator requested a Stage 1 visual reset in [Issue #4](https://github.com/JEDIx420/thehousebythesea/issues/4).** The corrected visual build and independent reviews are ready for hands-on review; the creator has not yet approved its appearance. See [actual comparisons, gameplay recording and final regression evidence](docs/visual-reset-evidence.md), [reset progress](docs/visual-reset-progress.md) and [PR #5 checks](https://github.com/JEDIx420/thehousebythesea/pull/5/checks). No Stage 2.
 
 **Current authorised delivery:** Stage 0 (foundation and integration proof) **plus** Stage 1 (the First Voyage playable vertical slice). **Stop for the creator's explicit hands-on approval before Stage 2.** Follow the gates in [docs/roadmap.md](docs/roadmap.md) and the acceptance contract in [docs/first-voyage.md](docs/first-voyage.md).
 

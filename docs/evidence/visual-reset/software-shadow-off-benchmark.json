@@ -1,0 +1,34 @@
+{
+  "browser": "159.0.8154.6",
+  "mode": "software",
+  "viewport": [
+    1440,
+    900
+  ],
+  "result": {
+    "devicePixelRatio": 0.5,
+    "frames": 91,
+    "durationMs": 5036.099999988079,
+    "meanMs": 55.34175824162724,
+    "p50": 50,
+    "p95": 66.69999999999982,
+    "rendererClass": "software",
+    "game": {
+      "frames": 133,
+      "p50": 50,
+      "p95": 83.3,
+      "drawCalls": 49,
+      "triangles": 236191,
+      "webgl": true,
+      "graphicsPreset": "compatibility",
+      "shadowMapSize": 0,
+      "realtimeShadows": false,
+      "renderScale": 0.5,
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    "bundle": "http://localhost:4180/thehousebythesea/assets/index-uqr7JoV7.js"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "browser": "159.0.8154.6",
+  "viewport": [
+    1440,
+    900
+  ],
+  "reports": [
+    {
+      "devicePixelRatio": 0.5,
+      "frames": 70,
+      "durationMs": 5001.300000023843,
+      "meanMs": 71.44714285748347,
+      "p50": 66.70000000000073,
+      "p95": 83.39999999999964,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+      "game": {
+        "frames": 107,
+        "p50": 66.7,
+        "p95": 83.4,
+        "drawCalls": 124,
+        "triangles": 360222,
+        "webgl": true,
+        "viewport": [
+          1440,
+          900
+        ]
+      }
+    },
+    {
+      "devicePixelRatio": 0.25,
+      "frames": 84,
+      "durationMs": 5032.9,
+      "meanMs": 59.915476190476184,
+      "p50": 66.60000000000036,
+      "p95": 66.70000000000073,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+      "game": {
+        "frames": 124,
+        "p50": 66.6,
+        "p95": 66.8,
+        "drawCalls": 124,
+        "triangles": 360222,
+        "webgl": true,
+        "viewport": [
+          1440,
+          900
+        ]
+      }
+    }
+  ]
+}

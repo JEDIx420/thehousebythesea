@@ -1,0 +1,1415 @@
+{
+  "01-havenport": {
+    "frames": 67,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 124,
+    "triangles": 360222,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "renderScale": 1,
+    "memory": 76495461,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BYtek1mE.js",
+        "bytes": 186197
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowan-casual.glb",
+        "bytes": 1612124
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-casual.glb",
+        "bytes": 1668552
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-family-traveller.glb",
+        "bytes": 892748
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/caique-fishing-boat.glb",
+        "bytes": 310508
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/shaded-bench.glb",
+        "bytes": 92612
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boathouse.glb",
+        "bytes": 95928
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/village-shopfront.glb",
+        "bytes": 254536
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/kafeneio.glb",
+        "bytes": 223792
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/taverna-table-set.glb",
+        "bytes": 41024
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/olive-tree.glb",
+        "bytes": 137224
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pencil-cypress.glb",
+        "bytes": 102712
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/bougainvillea.glb",
+        "bytes": 245236
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-quay.glb",
+        "bytes": 120436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-lamp.glb",
+        "bytes": 87616
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fish-crate.glb",
+        "bytes": 82688
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fishing-net.glb",
+        "bytes": 106952
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-deck.glb",
+        "bytes": 97344
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-railing.glb",
+        "bytes": 71500
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pier-head.glb",
+        "bytes": 223656
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbourmaster-hut.glb",
+        "bytes": 172308
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boat-shed.glb",
+        "bytes": 164968
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lifebuoy-post.glb",
+        "bytes": 103312
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mooring-bollard.glb",
+        "bytes": 90716
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/dune-grass.glb",
+        "bytes": 202680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/tamarisk-bush.glb",
+        "bytes": 344220
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-pool.glb",
+        "bytes": 153160
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-armour.glb",
+        "bytes": 222108
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/wayfinding-post.glb",
+        "bytes": 78652
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowing-dinghy.glb",
+        "bytes": 260496
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lane-paving.glb",
+        "bytes": 188192
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/painted-rowboat.glb",
+        "bytes": 294012
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/flowering-agave.glb",
+        "bytes": 99808
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "02-mira": {
+    "frames": 490,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 120,
+    "triangles": 348599,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "renderScale": 1,
+    "memory": 76399891,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BYtek1mE.js",
+        "bytes": 186197
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowan-casual.glb",
+        "bytes": 1612124
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-casual.glb",
+        "bytes": 1668552
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-family-traveller.glb",
+        "bytes": 892748
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/caique-fishing-boat.glb",
+        "bytes": 310508
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/shaded-bench.glb",
+        "bytes": 92612
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boathouse.glb",
+        "bytes": 95928
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/village-shopfront.glb",
+        "bytes": 254536
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/kafeneio.glb",
+        "bytes": 223792
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/taverna-table-set.glb",
+        "bytes": 41024
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/olive-tree.glb",
+        "bytes": 137224
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pencil-cypress.glb",
+        "bytes": 102712
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/bougainvillea.glb",
+        "bytes": 245236
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-quay.glb",
+        "bytes": 120436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-lamp.glb",
+        "bytes": 87616
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fish-crate.glb",
+        "bytes": 82688
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fishing-net.glb",
+        "bytes": 106952
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-deck.glb",
+        "bytes": 97344
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-railing.glb",
+        "bytes": 71500
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pier-head.glb",
+        "bytes": 223656
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbourmaster-hut.glb",
+        "bytes": 172308
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boat-shed.glb",
+        "bytes": 164968
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lifebuoy-post.glb",
+        "bytes": 103312
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mooring-bollard.glb",
+        "bytes": 90716
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/dune-grass.glb",
+        "bytes": 202680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/tamarisk-bush.glb",
+        "bytes": 344220
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-pool.glb",
+        "bytes": 153160
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-armour.glb",
+        "bytes": 222108
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/wayfinding-post.glb",
+        "bytes": 78652
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowing-dinghy.glb",
+        "bytes": 260496
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lane-paving.glb",
+        "bytes": 188192
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/painted-rowboat.glb",
+        "bytes": 294012
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/flowering-agave.glb",
+        "bytes": 99808
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "03-sailing": {
+    "frames": 1561,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 155,
+    "triangles": 385700,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "renderScale": 1,
+    "memory": 65821069,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BYtek1mE.js",
+        "bytes": 186197
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowan-casual.glb",
+        "bytes": 1612124
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-casual.glb",
+        "bytes": 1668552
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-family-traveller.glb",
+        "bytes": 892748
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/caique-fishing-boat.glb",
+        "bytes": 310508
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/shaded-bench.glb",
+        "bytes": 92612
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boathouse.glb",
+        "bytes": 95928
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/village-shopfront.glb",
+        "bytes": 254536
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/kafeneio.glb",
+        "bytes": 223792
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/taverna-table-set.glb",
+        "bytes": 41024
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/olive-tree.glb",
+        "bytes": 137224
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pencil-cypress.glb",
+        "bytes": 102712
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/bougainvillea.glb",
+        "bytes": 245236
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-quay.glb",
+        "bytes": 120436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-lamp.glb",
+        "bytes": 87616
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fish-crate.glb",
+        "bytes": 82688
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fishing-net.glb",
+        "bytes": 106952
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-deck.glb",
+        "bytes": 97344
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-railing.glb",
+        "bytes": 71500
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pier-head.glb",
+        "bytes": 223656
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbourmaster-hut.glb",
+        "bytes": 172308
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boat-shed.glb",
+        "bytes": 164968
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lifebuoy-post.glb",
+        "bytes": 103312
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mooring-bollard.glb",
+        "bytes": 90716
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/dune-grass.glb",
+        "bytes": 202680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/tamarisk-bush.glb",
+        "bytes": 344220
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-pool.glb",
+        "bytes": 153160
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-armour.glb",
+        "bytes": 222108
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/wayfinding-post.glb",
+        "bytes": 78652
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowing-dinghy.glb",
+        "bytes": 260496
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lane-paving.glb",
+        "bytes": 188192
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/painted-rowboat.glb",
+        "bytes": 294012
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/flowering-agave.glb",
+        "bytes": 99808
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "04-landing": {
+    "frames": 2163,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 95,
+    "triangles": 280595,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "renderScale": 1,
+    "memory": 70686845,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BYtek1mE.js",
+        "bytes": 186197
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowan-casual.glb",
+        "bytes": 1612124
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-casual.glb",
+        "bytes": 1668552
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-family-traveller.glb",
+        "bytes": 892748
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/caique-fishing-boat.glb",
+        "bytes": 310508
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/shaded-bench.glb",
+        "bytes": 92612
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boathouse.glb",
+        "bytes": 95928
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/village-shopfront.glb",
+        "bytes": 254536
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/kafeneio.glb",
+        "bytes": 223792
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/taverna-table-set.glb",
+        "bytes": 41024
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/olive-tree.glb",
+        "bytes": 137224
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pencil-cypress.glb",
+        "bytes": 102712
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/bougainvillea.glb",
+        "bytes": 245236
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-quay.glb",
+        "bytes": 120436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-lamp.glb",
+        "bytes": 87616
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fish-crate.glb",
+        "bytes": 82688
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fishing-net.glb",
+        "bytes": 106952
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-deck.glb",
+        "bytes": 97344
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-railing.glb",
+        "bytes": 71500
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pier-head.glb",
+        "bytes": 223656
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbourmaster-hut.glb",
+        "bytes": 172308
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boat-shed.glb",
+        "bytes": 164968
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lifebuoy-post.glb",
+        "bytes": 103312
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mooring-bollard.glb",
+        "bytes": 90716
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/dune-grass.glb",
+        "bytes": 202680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/tamarisk-bush.glb",
+        "bytes": 344220
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-pool.glb",
+        "bytes": 153160
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-armour.glb",
+        "bytes": 222108
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/wayfinding-post.glb",
+        "bytes": 78652
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowing-dinghy.glb",
+        "bytes": 260496
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lane-paving.glb",
+        "bytes": 188192
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/painted-rowboat.glb",
+        "bytes": 294012
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/flowering-agave.glb",
+        "bytes": 99808
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "05-fishing": {
+    "frames": 2608,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 98,
+    "triangles": 281293,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "renderScale": 1,
+    "memory": 72318984,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BYtek1mE.js",
+        "bytes": 186197
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowan-casual.glb",
+        "bytes": 1612124
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-casual.glb",
+        "bytes": 1668552
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-family-traveller.glb",
+        "bytes": 892748
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/caique-fishing-boat.glb",
+        "bytes": 310508
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/shaded-bench.glb",
+        "bytes": 92612
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boathouse.glb",
+        "bytes": 95928
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/village-shopfront.glb",
+        "bytes": 254536
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/kafeneio.glb",
+        "bytes": 223792
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/taverna-table-set.glb",
+        "bytes": 41024
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/olive-tree.glb",
+        "bytes": 137224
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pencil-cypress.glb",
+        "bytes": 102712
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/bougainvillea.glb",
+        "bytes": 245236
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-quay.glb",
+        "bytes": 120436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-lamp.glb",
+        "bytes": 87616
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fish-crate.glb",
+        "bytes": 82688
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fishing-net.glb",
+        "bytes": 106952
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-deck.glb",
+        "bytes": 97344
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-railing.glb",
+        "bytes": 71500
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pier-head.glb",
+        "bytes": 223656
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbourmaster-hut.glb",
+        "bytes": 172308
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boat-shed.glb",
+        "bytes": 164968
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lifebuoy-post.glb",
+        "bytes": 103312
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mooring-bollard.glb",
+        "bytes": 90716
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/dune-grass.glb",
+        "bytes": 202680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/tamarisk-bush.glb",
+        "bytes": 344220
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-pool.glb",
+        "bytes": 153160
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-armour.glb",
+        "bytes": 222108
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/wayfinding-post.glb",
+        "bytes": 78652
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowing-dinghy.glb",
+        "bytes": 260496
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lane-paving.glb",
+        "bytes": 188192
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/painted-rowboat.glb",
+        "bytes": 294012
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/flowering-agave.glb",
+        "bytes": 99808
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "06-saltglass": {
+    "frames": 3389,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 76,
+    "triangles": 246409,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "renderScale": 1,
+    "memory": 65344092,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BYtek1mE.js",
+        "bytes": 186197
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowan-casual.glb",
+        "bytes": 1612124
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-casual.glb",
+        "bytes": 1668552
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-family-traveller.glb",
+        "bytes": 892748
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/caique-fishing-boat.glb",
+        "bytes": 310508
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/shaded-bench.glb",
+        "bytes": 92612
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boathouse.glb",
+        "bytes": 95928
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/village-shopfront.glb",
+        "bytes": 254536
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/kafeneio.glb",
+        "bytes": 223792
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/taverna-table-set.glb",
+        "bytes": 41024
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/olive-tree.glb",
+        "bytes": 137224
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pencil-cypress.glb",
+        "bytes": 102712
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/bougainvillea.glb",
+        "bytes": 245236
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-quay.glb",
+        "bytes": 120436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-lamp.glb",
+        "bytes": 87616
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fish-crate.glb",
+        "bytes": 82688
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fishing-net.glb",
+        "bytes": 106952
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-deck.glb",
+        "bytes": 97344
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-railing.glb",
+        "bytes": 71500
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pier-head.glb",
+        "bytes": 223656
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbourmaster-hut.glb",
+        "bytes": 172308
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boat-shed.glb",
+        "bytes": 164968
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lifebuoy-post.glb",
+        "bytes": 103312
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mooring-bollard.glb",
+        "bytes": 90716
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/dune-grass.glb",
+        "bytes": 202680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/tamarisk-bush.glb",
+        "bytes": 344220
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-pool.glb",
+        "bytes": 153160
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-armour.glb",
+        "bytes": 222108
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/wayfinding-post.glb",
+        "bytes": 78652
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowing-dinghy.glb",
+        "bytes": 260496
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lane-paving.glb",
+        "bytes": 188192
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/painted-rowboat.glb",
+        "bytes": 294012
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/flowering-agave.glb",
+        "bytes": 99808
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "07-home-fund": {
+    "frames": 3600,
+    "p50": 16.7,
+    "p95": 16.8,
+    "drawCalls": 104,
+    "triangles": 317222,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "renderScale": 1,
+    "memory": 61664049,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BYtek1mE.js",
+        "bytes": 186197
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowan-casual.glb",
+        "bytes": 1612124
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-casual.glb",
+        "bytes": 1668552
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-family-traveller.glb",
+        "bytes": 892748
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/caique-fishing-boat.glb",
+        "bytes": 310508
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/shaded-bench.glb",
+        "bytes": 92612
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boathouse.glb",
+        "bytes": 95928
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/village-shopfront.glb",
+        "bytes": 254536
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/kafeneio.glb",
+        "bytes": 223792
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/taverna-table-set.glb",
+        "bytes": 41024
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/olive-tree.glb",
+        "bytes": 137224
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pencil-cypress.glb",
+        "bytes": 102712
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/bougainvillea.glb",
+        "bytes": 245236
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-quay.glb",
+        "bytes": 120436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-lamp.glb",
+        "bytes": 87616
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fish-crate.glb",
+        "bytes": 82688
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fishing-net.glb",
+        "bytes": 106952
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-deck.glb",
+        "bytes": 97344
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-railing.glb",
+        "bytes": 71500
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pier-head.glb",
+        "bytes": 223656
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbourmaster-hut.glb",
+        "bytes": 172308
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boat-shed.glb",
+        "bytes": 164968
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lifebuoy-post.glb",
+        "bytes": 103312
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mooring-bollard.glb",
+        "bytes": 90716
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/dune-grass.glb",
+        "bytes": 202680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/tamarisk-bush.glb",
+        "bytes": 344220
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-pool.glb",
+        "bytes": 153160
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-armour.glb",
+        "bytes": 222108
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/wayfinding-post.glb",
+        "bytes": 78652
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowing-dinghy.glb",
+        "bytes": 260496
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lane-paving.glb",
+        "bytes": 188192
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/painted-rowboat.glb",
+        "bytes": 294012
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/flowering-agave.glb",
+        "bytes": 99808
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "08-journal": {
+    "frames": 3600,
+    "p50": 16.7,
+    "p95": 16.8,
+    "drawCalls": 104,
+    "triangles": 317222,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "renderScale": 1,
+    "memory": 66421073,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 2122
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BYtek1mE.js",
+        "bytes": 186197
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowan-casual.glb",
+        "bytes": 1612124
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-casual.glb",
+        "bytes": 1668552
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-family-traveller.glb",
+        "bytes": 892748
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/caique-fishing-boat.glb",
+        "bytes": 310508
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/shaded-bench.glb",
+        "bytes": 92612
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boathouse.glb",
+        "bytes": 95928
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/village-shopfront.glb",
+        "bytes": 254536
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/kafeneio.glb",
+        "bytes": 223792
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/taverna-table-set.glb",
+        "bytes": 41024
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/olive-tree.glb",
+        "bytes": 137224
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pencil-cypress.glb",
+        "bytes": 102712
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/bougainvillea.glb",
+        "bytes": 245236
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-quay.glb",
+        "bytes": 120436
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-lamp.glb",
+        "bytes": 87616
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fish-crate.glb",
+        "bytes": 82688
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fishing-net.glb",
+        "bytes": 106952
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-deck.glb",
+        "bytes": 97344
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-railing.glb",
+        "bytes": 71500
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pier-head.glb",
+        "bytes": 223656
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbourmaster-hut.glb",
+        "bytes": 172308
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boat-shed.glb",
+        "bytes": 164968
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lifebuoy-post.glb",
+        "bytes": 103312
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mooring-bollard.glb",
+        "bytes": 90716
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/dune-grass.glb",
+        "bytes": 202680
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/tamarisk-bush.glb",
+        "bytes": 344220
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-pool.glb",
+        "bytes": 153160
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-armour.glb",
+        "bytes": 222108
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/wayfinding-post.glb",
+        "bytes": 78652
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowing-dinghy.glb",
+        "bytes": 260496
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lane-paving.glb",
+        "bytes": 188192
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/painted-rowboat.glb",
+        "bytes": 294012
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/flowering-agave.glb",
+        "bytes": 99808
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  },
+  "09-credits": {
+    "frames": 68,
+    "p50": 16.7,
+    "p95": 16.7,
+    "drawCalls": 104,
+    "triangles": 317222,
+    "webgl": true,
+    "viewport": [
+      1440,
+      900
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "renderScale": 1,
+    "memory": 67656576,
+    "transfer": [
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BYtek1mE.js",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/index-BgZVQJGY.css",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowan-casual.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-casual.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mira-family-traveller.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/caique-fishing-boat.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/shaded-bench.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boathouse.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/village-shopfront.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pencil-cypress.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/kafeneio.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/bougainvillea.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/taverna-table-set.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/olive-tree.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-quay.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbour-lamp.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fishing-net.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-deck.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boardwalk-railing.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/fish-crate.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/pier-head.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/harbourmaster-hut.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/boat-shed.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lifebuoy-post.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/mooring-bollard.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/tamarisk-bush.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-pool.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rock-armour.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/wayfinding-post.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/dune-grass.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/painted-rowboat.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/rowing-dinghy.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/lane-paving.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/thehousebythesea/assets/models/flowering-agave.glb",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:4173/favicon.ico",
+        "bytes": 432
+      }
+    ]
+  }
+}
