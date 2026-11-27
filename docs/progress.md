@@ -13,6 +13,11 @@
 | 4 — Love & home | LOCKED | Stage 3 approved | — |
 | 5 — Polish / release | LOCKED | Stage 4 approved | — |
 
+## GitHub stage tickets
+
+- [#1 — Stage 0: foundation and terrain spike](https://github.com/JEDIx420/thehousebythesea/issues/1)
+- [#2 — Stage 1: the First Voyage approval build](https://github.com/JEDIx420/thehousebythesea/issues/2)
+
 ## Next authorised work
 Follow prompts/00-foundation.md, then prompts/01-first-voyage.md. Validate locally and in browser, open PR(s), get independent review and verify actual Pages deployment. Collect the creator's feedback, then update the stage state. **Do not start Stage 2 on agent initiative.**
 
