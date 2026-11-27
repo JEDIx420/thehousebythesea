@@ -1,7 +1,12 @@
 import * as THREE from "three";
 import { createWorld } from "./world/world";
-import { createAvatar } from "./player/avatar";
-import { createBoat } from "./boat/boat";
+import {
+  createAvatar,
+  preloadCharacters,
+  type CharacterRole,
+} from "./player/avatar";
+import { disposeModelAssets } from "./assets/models";
+import { createBoat, preloadBoat } from "./boat/boat";
 import { updateMovement } from "./player/movement";
 import {
   initialState,
@@ -17,7 +22,7 @@ import "./ui/style.css";
 import { createFishingView } from "./activities/fishing-view";
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
-app.innerHTML = `<canvas id="sea" aria-label="Third-person sailing and island world"></canvas><div id="hud"><header><a class="wordmark" href="#">THE HOUSE<br><i>by the sea</i></a><div class="location"><span id="region">HAVENPORT</span><small>FIRST VOYAGE · LATE AFTERNOON</small></div><button id="fund" class="fund"><span>YOUR LITTLE FUTURE</span><strong id="coins">25 coins</strong></button></header><aside class="objective"><small>YOUR FIRST VOYAGE</small><p id="objective"></p><span id="distance"></span></aside><nav><button data-panel="chart">M <span>Chart</span></button><button data-panel="journal">J <span>Journal</span></button><button data-panel="pause">Esc <span>Pause</span></button></nav><div id="hint"></div><footer><span>W A S D / arrows · move & steer</span><span>Drag · look around</span><span>F · fishing</span></footer></div><div id="overlay"></div><div id="toast" role="status"></div>`;
+app.innerHTML = `<canvas id="sea" aria-label="Third-person sailing and island world"></canvas><div id="hud"><header><a class="wordmark" href="#">THE HOUSE<br><i>by the sea</i></a><div class="location"><span id="region">HAVENPORT</span><small>FIRST VOYAGE · LATE AFTERNOON</small></div><button id="fund" class="fund"><span>YOUR LITTLE FUTURE</span><strong id="coins">25 coins</strong></button></header><aside class="objective"><small>YOUR FIRST VOYAGE</small><p id="objective"></p><span id="distance"></span></aside><nav><button data-panel="chart">M <span>Chart</span></button><button data-panel="journal">J <span>Journal</span></button><button data-panel="pause">Esc <span>Pause</span></button></nav><div id="hint"></div><footer><span>W A S D / arrows · move & steer</span><span>Drag · look · scroll · zoom</span><span>F · fishing</span></footer></div><div id="overlay"></div><div id="toast" role="status"></div>`;
 const overlay = document.querySelector<HTMLDivElement>("#overlay")!;
 const hint = document.querySelector<HTMLDivElement>("#hint")!;
 let state: GameState = initialState(),
@@ -33,9 +38,15 @@ let fishing: { start: number; phase: "waiting" | "bite" } | null = null,
   lastSave = 0;
 const keys = new Set<string>();
 const audio = new Ambience();
+const referenceLight =
+  new URLSearchParams(location.search).get("light") === "reference";
 const scene = new THREE.Scene();
 scene.background = new THREE.Color("#a9d5d4");
-scene.fog = new THREE.Fog("#aecfcd", 130, 490);
+scene.fog = new THREE.Fog(
+  referenceLight ? "#aecfcd" : "#adc9cf",
+  referenceLight ? 130 : 180,
+  referenceLight ? 490 : 520,
+);
 function fatalRenderError() {
   app.innerHTML =
     '<div class="fatal"><h1>The harbour needs WebGL2.</h1><p>Enable hardware acceleration in your browser, then reload to begin. Your saved voyage is kept.</p><button onclick="location.reload()">Try again</button></div>';
@@ -56,16 +67,18 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.15;
+renderer.toneMappingExposure = referenceLight ? 1.15 : 0.95;
 const camera = new THREE.PerspectiveCamera(
   48,
   innerWidth / innerHeight,
   0.1,
   650,
 );
-scene.add(new THREE.HemisphereLight("#cce9ed", "#557056", 2.7));
-const sun = new THREE.DirectionalLight("#ffdfa3", 3.4);
-sun.position.set(-70, 110, 45);
+scene.add(
+  new THREE.HemisphereLight("#c4dfed", "#58634b", referenceLight ? 2.7 : 1.35),
+);
+const sun = new THREE.DirectionalLight("#ffd3a0", referenceLight ? 3.4 : 2.1);
+sun.position.set(-70, 65, 45);
 sun.castShadow = true;
 sun.shadow.mapSize.set(2048, 2048);
 sun.shadow.camera.left = -100;
@@ -75,12 +88,23 @@ sun.shadow.camera.bottom = -100;
 sun.shadow.camera.far = 260;
 sun.shadow.bias = -0.001;
 scene.add(sun);
+scene.add(sun.target);
+let zoom = 1;
 let orbit = 0.8,
-  pitch = 0.48,
+  pitch = 0.3,
   drag = false,
   lastMouseX = 0,
   lastMouseY = 0;
 const canvas = renderer.domElement;
+canvas.addEventListener(
+  "wheel",
+  (e) => {
+    if (panel) return;
+    e.preventDefault();
+    zoom = THREE.MathUtils.clamp(zoom + e.deltaY * 0.001, 0.55, 1.5);
+  },
+  { passive: false },
+);
 canvas.addEventListener("pointerdown", (e) => {
   if (panel) return;
   drag = true;
@@ -120,11 +144,13 @@ function dispatch(action: Action) {
 let saveQueue = Promise.resolve();
 function persist() {
   if (saveProtected) return Promise.resolve();
+  lastSave = performance.now();
   const snapshot = structuredClone(state);
   saveQueue = saveQueue
     .then(() => saveGame(snapshot))
     .then(() => {
       lastSave = performance.now();
+      savedWarning = "";
     })
     .catch(() => {
       savedWarning =
@@ -174,7 +200,11 @@ function showTitle() {
           "Existing unreadable save preserved. This voyage runs without saving.",
         );
       }
-      audio.start(state.settings.muted ? 0 : state.settings.volume);
+      try {
+        audio.start(state.settings.muted ? 0 : state.settings.volume);
+      } catch {
+        toast("Audio is unavailable. Your voyage can continue in silence.");
+      }
       if (!state.story.prologueSeen) showMemory();
       else close();
     },
@@ -533,6 +563,9 @@ function updateHUD() {
       ? `${Math.round(Math.hypot(state.player.x - 62, state.player.z + 220))} m to Saltglass pier · north ↑`
       : "Home fund · first milestone 150 coins";
 }
+function setHint(markup: string) {
+  if (hint.innerHTML !== markup) hint.innerHTML = markup;
+}
 function updateHint(now: number) {
   if (panel || !started) {
     hint.textContent = "";
@@ -545,30 +578,39 @@ function updateHint(now: number) {
       fishing = null;
       toast("The fish slipped away. No harm done. F to try again.");
     }
-    hint.innerHTML = fishing
-      ? fishing.phase === "bite"
-        ? '<kbd>SPACE</kbd> A bite! Reel it in <span class="bite">●</span>'
-        : "Watching the float… <small>F to cancel</small>"
-      : "";
+    setHint(
+      fishing
+        ? fishing.phase === "bite"
+          ? '<kbd>SPACE</kbd> A bite! Reel it in <span class="bite">●</span>'
+          : "Watching the float… <small>F to cancel</small>"
+        : "",
+    );
     return;
   }
   if (state.player.mode === "boat") {
-    hint.innerHTML = dockNear()
-      ? "<kbd>E</kbd> Tie up & step ashore"
-      : "<kbd>F</kbd> Cast a line <span>· W sail · S slow/reverse · A/D steer</span>";
+    setHint(
+      dockNear()
+        ? "<kbd>E</kbd> Tie up & step ashore"
+        : "<kbd>F</kbd> Cast a line <span>· W sail · S slow/reverse · A/D steer</span>",
+    );
     return;
   }
   const p = nearby();
-  hint.innerHTML = p
-    ? `<kbd>E</kbd> ${p.name}`
-    : Math.hypot(state.player.x - state.boat.x, state.player.z - state.boat.z) <
-        12
-      ? "<kbd>E</kbd> Board your boat"
-      : state.player.x > 49
-        ? "<kbd>F</kbd> Fish from the pier"
-        : "";
+  setHint(
+    p
+      ? `<kbd>E</kbd> ${p.name}`
+      : Math.hypot(
+            state.player.x - state.boat.x,
+            state.player.z - state.boat.z,
+          ) < 12
+        ? "<kbd>E</kbd> Board your boat"
+        : state.player.x > 49
+          ? "<kbd>F</kbd> Fish from the pier"
+          : "",
+  );
 }
 addEventListener("keydown", (e) => {
+  if (panel === "loading") return;
   if (e.key === "Tab" && panel) {
     const focusable = Array.from(
       overlay.querySelectorAll<HTMLElement>("button,a[href],input"),
@@ -588,8 +630,12 @@ addEventListener("keydown", (e) => {
     }
     return;
   }
-  if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " "].includes(e.key))
+  if (
+    !panel &&
+    ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " "].includes(e.key)
+  )
     e.preventDefault();
+  if (panel === "error") return;
   if (e.repeat) return;
   const key = e.key.toLowerCase();
   if (key === "escape") {
@@ -622,11 +668,15 @@ document.addEventListener("visibilitychange", () => {
     void persist();
   }
 });
-document
-  .querySelectorAll<HTMLButtonElement>("[data-panel]")
-  .forEach((b) => (b.onclick = () => showPanel(b.dataset.panel!)));
-document.querySelector<HTMLButtonElement>("#fund")!.onclick = () =>
-  showPanel("fund");
+document.querySelectorAll<HTMLButtonElement>("[data-panel]").forEach(
+  (b) =>
+    (b.onclick = () => {
+      if (panel !== "loading" && panel !== "error") showPanel(b.dataset.panel!);
+    }),
+);
+document.querySelector<HTMLButtonElement>("#fund")!.onclick = () => {
+  if (panel !== "loading" && panel !== "error") showPanel("fund");
+};
 
 async function boot() {
   try {
@@ -634,26 +684,54 @@ async function boot() {
     state = result.state ?? initialState();
     savedWarning = result.warning ?? "";
     saveProtected = !!result.warning && !result.state;
+    panel = "loading";
+    modal(
+      "FIRST VOYAGE",
+      "Opening the harbour…",
+      "<p>The boats are coming in. Your afternoon will be ready in a moment.</p>",
+    );
+    await Promise.all([preloadCharacters(), preloadBoat()]);
     const world = await createWorld(scene);
+    if (world.warnings.length)
+      toast(
+        "Some harbour details could not be loaded. You can continue, or reload to retry.",
+      );
+    if (
+      state.player.mode === "walk" &&
+      (world.groundHeight(state.player.x, state.player.z) === null ||
+        world.blocked(state.player.x, state.player.z))
+    ) {
+      dispatch({ type: "RECOVER" });
+      toast(
+        "Your saved voyage is safe. We moved you to the dock to keep you clear of the harbour changes.",
+      );
+    }
     const fishingView = createFishingView(scene);
     const avatar = createAvatar(scene);
     const boat = createBoat(scene);
-    const companion = createAvatar(scene, {
-      shirt: 0xb7604d,
-      trousers: 0x415f62,
-      hair: 0x382a24,
-    });
-    companion.root.scale.setScalar(0.95);
+    const companion = createAvatar(
+      scene,
+      {
+        shirt: 0xb7604d,
+        trousers: 0x415f62,
+        hair: 0x382a24,
+      },
+      "mira",
+    );
     const npcs = points
       .filter((p) => ["ellis", "mira", "seller", "nessa"].includes(p.id))
       .map((p, i) => {
-        const model = createAvatar(scene, {
-          shirt: [0x436c7a, 0xb7604d, 0x73835b, 0xc59c55][i],
-          hair: [0x6b665b, 0x382a24, 0x46352a, 0x42332b][i],
-        });
+        const model = createAvatar(
+          scene,
+          {
+            shirt: [0x436c7a, 0xb7604d, 0x73835b, 0xc59c55][i],
+            hair: [0x6b665b, 0x382a24, 0x46352a, 0x42332b][i],
+          },
+          p.id as CharacterRole,
+        );
         model.root.position.set(p.x, world.groundHeight(p.x, p.z) ?? 1, p.z);
         model.root.rotation.y = i;
-        return { p, model };
+        return { p, model, clock: i * 5 };
       });
     let previous = performance.now(),
       elapsed = 0;
@@ -688,14 +766,22 @@ async function boot() {
           toast("Open water ends here. Turn back toward the island lights.");
         if (now - lastSave > 5000) void persist();
       }
+      const lightX = Math.round(state.player.x / 8) * 8,
+        lightZ = Math.round(state.player.z / 8) * 8;
+      sun.target.position.set(lightX, 0, lightZ);
+      sun.position.set(lightX - 70, 65, lightZ + 45);
       world.update(dt, elapsed);
       avatar.root.visible = true;
       if (state.player.mode === "boat") {
         const h = state.boat.heading;
         avatar.root.position.set(
-          state.boat.x - Math.cos(h) * 0.45 - Math.sin(h) * 1.8,
-          1.05,
-          state.boat.z - Math.sin(h) * 0.45 + Math.cos(h) * 1.8,
+          state.boat.x +
+            Math.cos(h) * boat.seats.rowan.x -
+            Math.sin(h) * boat.seats.rowan.z,
+          0.2 + boat.seats.rowan.y,
+          state.boat.z +
+            Math.sin(h) * boat.seats.rowan.x +
+            Math.cos(h) * boat.seats.rowan.z,
         );
       } else
         avatar.root.position.set(
@@ -718,27 +804,69 @@ async function boot() {
         state.player.mode === "boat";
       companion.root.position.set(
         state.boat.x +
-          Math.cos(state.boat.heading) * 0.55 -
-          Math.sin(state.boat.heading) * 0.9,
-        1.05,
+          Math.cos(state.boat.heading) * boat.seats.mira.x -
+          Math.sin(state.boat.heading) * boat.seats.mira.z,
+        0.2 + boat.seats.mira.y,
         state.boat.z +
-          Math.sin(state.boat.heading) * 0.55 +
-          Math.cos(state.boat.heading) * 0.9,
+          Math.sin(state.boat.heading) * boat.seats.mira.x +
+          Math.cos(state.boat.heading) * boat.seats.mira.z,
       );
       companion.root.rotation.y = -state.boat.heading;
       companion.update(dt, elapsed, false);
       for (const n of npcs) {
         n.model.root.visible = !(n.p.id === "mira" && companion.root.visible);
-        n.model.update(dt, elapsed, false);
+        if (!panel) n.clock += dt;
+        const phase = n.clock % 28,
+          progress =
+            phase < 3
+              ? phase / 3
+              : phase < 13
+                ? 1
+                : phase < 16
+                  ? 1 - (phase - 13) / 3
+                  : 0;
+        const conversing = activeDialog === n.p.id;
+        const x = n.p.x,
+          z = n.p.z + progress * 1.25;
+        const walking =
+          !panel && !conversing && (phase < 3 || (phase >= 13 && phase < 16));
+        if (!conversing && !world.blocked(x, z)) {
+          n.model.root.position.set(x, world.groundHeight(x, z) ?? 1.6, z);
+          n.model.root.rotation.y = phase < 13 ? Math.PI : 0;
+        }
+        if (conversing)
+          n.model.root.rotation.y = Math.atan2(
+            n.model.root.position.x - state.player.x,
+            n.model.root.position.z - state.player.z,
+          );
+        n.model.update(dt, elapsed, walking, conversing);
       }
       const isBoat = state.player.mode === "boat",
-        radius = isBoat ? 23 : 16;
-      target.set(state.player.x, isBoat ? 1 : 2.2, state.player.z);
+        radius = (isBoat ? 14 : 8.5) * zoom;
+      target.set(
+        state.player.x,
+        isBoat
+          ? 1.4
+          : (world.groundHeight(state.player.x, state.player.z) ?? 1.6) + 1.3,
+        state.player.z,
+      );
       const desired = new THREE.Vector3(
         target.x + Math.sin(orbit) * radius * Math.cos(pitch),
         target.y + radius * Math.sin(pitch),
         target.z + Math.cos(orbit) * radius * Math.cos(pitch),
       );
+      for (let fraction = 0.12; fraction <= 1; fraction += 0.06) {
+        const sample = target.clone().lerp(desired, fraction);
+        if (
+          world.blocked(sample.x, sample.z) &&
+          sample.y < (world.groundHeight(sample.x, sample.z) ?? 0) + 6
+        ) {
+          desired.copy(
+            target.clone().lerp(desired, Math.max(0.18, fraction - 0.08)),
+          );
+          break;
+        }
+      }
       camera.position.lerp(desired, 1 - Math.exp(-dt * 5));
       camera.position.y = Math.max(
         camera.position.y,
@@ -778,8 +906,9 @@ async function boot() {
         }),
       },
     });
-    addEventListener("pagehide", () => {
+    addEventListener("pagehide", (event) => {
       void persist();
+      if (event.persisted) return;
       disposed = true;
       world.dispose();
       fishingView.dispose();
@@ -788,6 +917,7 @@ async function boot() {
       companion.dispose();
       npcs.forEach((n) => n.model.dispose());
       audio.dispose();
+      disposeModelAssets();
       renderer.dispose();
     });
   } catch (error) {

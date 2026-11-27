@@ -2,6 +2,8 @@ import type { GameState } from "../state/game";
 
 export interface MovementSurface {
   groundHeight(x: number, z: number): number | null;
+  /** Unfiltered rendered terrain, including submerged and non-walkable shallows. */
+  seaFloorHeight?(x: number, z: number): number;
   blocked(x: number, z: number): boolean;
 }
 export interface MovementInput {
@@ -10,6 +12,8 @@ export interface MovementInput {
 }
 const velocities = new WeakMap<object, number>();
 const clamp = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
+const wrapHeading = (angle: number) =>
+  Math.atan2(Math.sin(angle), Math.cos(angle));
 
 /** Collision queries use the same baked triangle surface as rendering. No scene graph state is authoritative. */
 export function updateMovement(
@@ -23,7 +27,7 @@ export function updateMovement(
     turn = clamp(input.turn, -1, 1);
   let boundary = false;
   if (state.player.mode === "walk") {
-    state.player.heading += turn * 2.7 * dt;
+    state.player.heading = wrapHeading(state.player.heading + turn * 2.7 * dt);
     const distance = forward * 5.8 * dt;
     const dx = Math.sin(state.player.heading) * distance,
       dz = -Math.cos(state.player.heading) * distance;
@@ -55,9 +59,10 @@ export function updateMovement(
   const target = forward * (forward < 0 ? 4 : 13);
   speed += (target - speed) * (1 - Math.exp(-dt * (forward === 0 ? 2.4 : 1.6)));
   if (Math.abs(speed) < 0.025) speed = 0;
-  const candidateHeading =
+  const candidateHeading = wrapHeading(
     state.boat.heading +
-    turn * dt * 1.0 * (0.4 + Math.min(1, Math.abs(speed) / 6));
+      turn * dt * 1.0 * (0.4 + Math.min(1, Math.abs(speed) / 6)),
+  );
 
   // Boat clearance samples a short bow/stern footprint and hull sides. Docks are
   // deliberately approached from their seaward side; landing itself is explicit.
@@ -80,9 +85,13 @@ export function updateMovement(
       // Model rotates by -heading about Y: local -Z bow turns toward +X.
       const sx = cx + ox * Math.cos(heading) - oz * Math.sin(heading);
       const sz = cz + oz * Math.cos(heading) + ox * Math.sin(heading);
-      const h = world.groundHeight(sx, sz);
-      // A dock surface may be over water. Keep its margin clear to avoid hull clipping.
-      if (h !== null && h > -0.15) return false;
+      // Walking deliberately hides shallow/unwalkable terrain. Hull collision must
+      // still see those rendered triangles, and the elevated pier surface.
+      const h = Math.max(
+        world.seaFloorHeight?.(sx, sz) ?? -12,
+        world.groundHeight(sx, sz) ?? -12,
+      );
+      if (h > -0.15) return false;
     }
     return true;
   };

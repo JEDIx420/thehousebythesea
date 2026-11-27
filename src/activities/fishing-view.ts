@@ -40,6 +40,7 @@ export function createFishingView(scene: THREE.Scene) {
         new THREE.Vector3(x + 2, y + 2, z - 2),
         new THREE.Vector3(fx, fy, fz),
       ]);
+      geometry.computeBoundingSphere();
     },
     dispose() {
       root.removeFromParent();

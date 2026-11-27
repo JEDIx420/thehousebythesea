@@ -6,7 +6,7 @@ A boy who dreamed of the ocean grows into a man, saves for years and finally buy
 
 ## Project status
 
-**First Voyage implementation — 27 November 2026.** Stage 0 and Stage 1 now have a playable two-island approval build. See [execution status](docs/progress.md), [player guide](docs/player-guide.md), [terrain proof](docs/terrain-spike.md) and [test evidence](docs/test-evidence.md). **WAITING FOR CREATOR APPROVAL** before any Stage 2 work.
+**First Voyage implementation — 27 November 2026.** Stage 0 and Stage 1 now have a playable two-island approval build. See [execution status](docs/progress.md), [player guide](docs/player-guide.md), [terrain proof](docs/terrain-spike.md) and [test evidence](docs/test-evidence.md). **Creator requested a Stage 1 visual reset in [Issue #4](https://github.com/JEDIx420/thehousebythesea/issues/4).** Corrective work is active; the prior visual baseline is not approved. See [reset progress](docs/visual-reset-progress.md). No Stage 2.
 
 **Current authorised delivery:** Stage 0 (foundation and integration proof) **plus** Stage 1 (the First Voyage playable vertical slice). **Stop for the creator's explicit hands-on approval before Stage 2.** Follow the gates in [docs/roadmap.md](docs/roadmap.md) and the acceptance contract in [docs/first-voyage.md](docs/first-voyage.md).
 
@@ -42,7 +42,7 @@ Use [prompts/00-foundation.md](prompts/00-foundation.md) then [prompts/01-first-
 
 ## Developer orientation
 
-Requirements: Node.js 22+ and npm. Use a desktop WebGL2 browser with hardware acceleration.
+Requirements: Node.js 22.12+ and npm. Use a desktop WebGL2 browser with hardware acceleration.
 
 ```sh
 npm ci

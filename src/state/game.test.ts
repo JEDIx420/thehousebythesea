@@ -16,6 +16,14 @@ function atSaltglass(state: GameState): GameState {
   });
 }
 
+it("rejects a coerced array delivery flag while preserving valid snapshots", () => {
+  expect(() => parseSave({ ...initialState(), delivery: ["active"] })).toThrow(
+    SaveError,
+  );
+  expect(parseSave({ ...initialState(), delivery: "active" }).delivery).toBe(
+    "active",
+  );
+});
 describe("the First Voyage domain", () => {
   it("pays a parcel only once, including after restoring the save", () => {
     let state = reduce(initialState(), { type: "ACCEPT_DELIVERY" });

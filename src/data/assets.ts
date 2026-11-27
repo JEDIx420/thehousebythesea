@@ -1,3 +1,4 @@
+import environmentAssets from "../world/environment-assets.json" with { type: "json" };
 export interface AssetRecord {
   id: string;
   file: string;
@@ -12,15 +13,54 @@ export interface AssetRecord {
 }
 export const assets: AssetRecord[] = [
   {
-    id: "small-fishing-boat",
-    file: "assets/models/small-fishing-boat.glb",
-    source: "https://polyfork.dev/asset/small-fishing-boat-4ac0e3",
+    id: "mira-family-traveller",
+    file: "assets/models/mira-family-traveller.glb",
+    source: "https://polyfork.dev/asset/family-traveller-9af47e",
     license: "CC-BY-4.0",
-    credit: "Small Fishing Boat by Polyfork",
+    credit: "Family Traveller by Polyfork — creator-selected Mira",
     modified:
-      "None; inspected reference asset, original sailboat used in gameplay",
-    bytes: 350988,
-    triangles: 2999,
+      "Source GLB, face, hair and outfit palette preserved. Runtime ground/facing alignment only; real Idle/Walk/Run clips and a small authored greeting on named bones. No interaction clip is claimed.",
+    bytes: 892448,
+    triangles: 4137,
+    animations: 3,
+    skins: 8,
+  },
+  {
+    id: "rowan-casual",
+    file: "assets/models/rowan-casual.glb",
+    source: "https://quaternius.com/packs/ultimatemodularcharacters.html",
+    license: "CC0-1.0",
+    credit: "Ultimate Modular Characters by Quaternius",
+    modified:
+      "Converted GLB source unchanged; runtime height/facing normalisation, wardrobe retint and cloned animation root-motion removal. Converted source: https://raw.githubusercontent.com/LuanDucate/Ducz.CharacterCreator/fcd215b58eec5c9ed97d0ba5f696d0e7dc085e08/public/models/Male/Casual_2.glb",
+    bytes: 1611824,
+    triangles: 5776,
+    animations: 24,
+    skins: 1,
+  },
+  {
+    id: "mira-casual",
+    file: "assets/models/mira-casual.glb",
+    source: "https://quaternius.com/packs/ultimatemodularwomen.html",
+    license: "CC0-1.0",
+    credit: "Ultimate Modular Women by Quaternius — Nessa",
+    modified:
+      "Used for Nessa, not the creator-selected Mira. Legacy filename mira-casual is retained for cache compatibility. Converted GLB source unchanged; runtime height/facing normalisation, wardrobe retint and cloned animation root-motion removal. Converted source: https://raw.githubusercontent.com/LuanDucate/Ducz.CharacterCreator/fcd215b58eec5c9ed97d0ba5f696d0e7dc085e08/public/models/Female/Casual.glb",
+    bytes: 1668252,
+    triangles: 6424,
+    animations: 24,
+    skins: 1,
+  },
+  {
+    id: "caique-fishing-boat",
+    file: "assets/models/caique-fishing-boat.glb",
+    source: "https://polyfork.dev/asset/caique-fishing-boat-262c24",
+    license: "CC-BY-4.0",
+    credit: "Caique Fishing Boat by Polyfork",
+    modified:
+      "GLB unchanged; runtime scale0.94, bow facing correction, deck alignment. Gameplay uses separate invisible simple hull.",
+    bytes: 310208,
+    triangles: 2636,
     animations: 1,
     skins: 0,
   },
@@ -30,24 +70,11 @@ export const assets: AssetRecord[] = [
     source: "https://polyfork.dev/asset/beach-hut-fc7649",
     license: "CC-BY-4.0",
     credit: "Beach Hut by Polyfork",
-    modified: "Instance scaling and rotation in scene; source file unchanged",
+    modified: "Legacy audited reference; not loaded by Stage1B; GLB unchanged",
     bytes: 80380,
     triangles: 652,
     animations: 1,
     skins: 0,
-  },
-  {
-    id: "holidaymaker",
-    file: "assets/models/holidaymaker.glb",
-    source: "https://polyfork.dev/asset/holidaymaker-in-a-sun-2ba5e5",
-    license: "CC-BY-4.0",
-    credit: "Holidaymaker in a Sun Hat by Polyfork",
-    modified:
-      "None; inspected rig reference, original procedural people used in gameplay",
-    bytes: 949788,
-    triangles: 4431,
-    animations: 3,
-    skins: 8,
   },
   {
     id: "seafront-lamp",
@@ -55,7 +82,7 @@ export const assets: AssetRecord[] = [
     source: "https://polyfork.dev/asset/seafront-lamp-post-28bada",
     license: "CC-BY-4.0",
     credit: "Seafront Lamp Post by Polyfork",
-    modified: "Instance scaling; source file unchanged",
+    modified: "Legacy audited reference; not loaded by Stage1B; GLB unchanged",
     bytes: 88136,
     triangles: 758,
     animations: 0,
@@ -67,12 +94,13 @@ export const assets: AssetRecord[] = [
     source: "https://polyfork.dev/asset/back-to-back-promenade-8c153b",
     license: "CC-BY-4.0",
     credit: "Back-to-Back Promenade Bench by Polyfork",
-    modified: "Instance rotation; source file unchanged",
+    modified: "Legacy audited reference; not loaded by Stage1B; GLB unchanged",
     bytes: 91248,
     triangles: 786,
     animations: 0,
     skins: 0,
   },
+  ...environmentAssets,
 ];
 export const assetManifest = assets;
 export const LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/";

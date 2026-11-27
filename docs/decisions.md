@@ -52,3 +52,11 @@ Three selected Polyfork free CC BY 4.0 GLBs (hut, lamp, bench) are loaded locall
 ## D-011 — 2026-11-27 — CONFIRMED: publishing and approval gate
 
 One focused implementation PR targets main; least-privilege GitHub Actions verifies the built project-path site before deployment. Pages was configured through the GitHub API with `build_type=workflow`. Production deployment remains main-only. Opening a PR or enabling Pages is not a claim of a live game, and no auto-merge is enabled. Local preview remains available for creator playtesting while PR approval/merge is pending. Stages 2–5 remain locked regardless of CI or deployment success.
+
+## D-012 — 2026-11-27 — Stage 1B visual reset, no expansion
+
+Creator rejected the blockout appearance in #3 and authorised Issue #4 V0–V4 remediation only. Preserve domain/state/save/Pages architecture. Select coherent real model people after actual auditions, rejecting blocklike rigged Polyfork v2 people and an age-inappropriate grandmother. Free CC0 Quaternius matching people provide embedded Idle/Walk/Interact; Polyfork supplies vetted caique and Mediterranean/coast environment. The API key is used only in local official-service requests via authorization headers; no client/API dependency at runtime. See asset-audition.md for exact licence, pinned conversion provenance and measured dimensions. New render meshes remain separate from existing serialised checkpoints and steering hull.
+
+## D-013 — 2026-11-27 — Creator-selected Mira supersedes V0 audition
+
+Issue #4 now explicitly selects Polyfork Family Traveller `9af47e` as Mira. Integrated that real CC BY 4.0 GLB with original face/hair/outfit appearance and measured adult height; kept the Quaternius woman only for Nessa. Verified three embedded clips (Idle/Walk/Run),31 bones and8 skins. There is no genuine interaction clip: dialogue adds a bounded authored gesture on the existing arm/head bones over Idle. Other neighbours use their legitimate Wave clip rather than a pickup/crouch interaction. This is a visual/animation correction only; relationship flags, save schema and story actions remain unchanged. See asset-audition.md and independent review-visual-models.md. Final styling still requires creator approval.

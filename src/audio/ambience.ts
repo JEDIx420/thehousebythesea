@@ -23,7 +23,7 @@ export class Ambience {
       source.connect(filter).connect(this.gain).connect(ctx.destination);
       source.start();
     }
-    void this.context.resume();
+    void this.context.resume().catch(() => {});
     this.setVolume(volume);
   }
   setVolume(value: number) {
