@@ -1,5 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
-import { writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { assets } from "../../src/data/assets";
 const metrics: Record<string, unknown> = {};
 import { state, navigate, installInputProbe } from "./input";
@@ -14,11 +14,13 @@ async function snapshot(page: Page, name: string, settleMs = 1000) {
       .getEntriesByType("resource")
       .map((r: any) => ({ name: r.name, bytes: r.transferSize })),
   }));
+  const evidenceDirectory = process.env.CI ? "test-results/checkpoints" : "docs/evidence";
+  mkdirSync(evidenceDirectory, { recursive: true });
   writeFileSync(
-    "docs/evidence/gameplay-metrics.json",
+    `${evidenceDirectory}/gameplay-metrics.json`,
     JSON.stringify(metrics, null, 2),
   );
-  await page.screenshot({ path: `docs/evidence/${name}.png` });
+  await page.screenshot({ path: `${evidenceDirectory}/${name}.png` });
 }
 test("First Voyage through real movement and contextual interactions", async ({
   page,
