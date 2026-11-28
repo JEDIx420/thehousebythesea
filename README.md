@@ -2,6 +2,10 @@
 
 # The House by the Sea
 
+Pixel reboot implementation in progress on `feat/pixel-first-voyage`: Phaser/TypeScript/Vite, original offline-generated sprites, bounded PixelFX water effects and a real in-engine golden sample. **The complete First Voyage is not yet ready.** See [current progress](docs/progress.md), [style guide](assets/style-guide.md) and [independent review](docs/review-pixel.md). Earlier planning statements below remain historical until checkpoint completion.
+
+Reproducible local commands (Node22.12+): `npm ci --ignore-scripts`, `npm run assets:build`, `npm run assets:check`, `npm run typecheck`, `npm test`, `npm run build`, `npm run preview -- --port 4190`. Preview: `http://localhost:4190/thehousebythesea/`. No credentials or external runtime services. Real browser sample: `node tools/capture-sample.mjs`. Initial dependency audit: zero reported vulnerabilities. Pages publishing is not yet claimed.
+
 *A cosy single-player sailing, fishing, island-life and romance adventure.*
 
 A boy who dreamed of the ocean grows into a man, saves for years and finally buys his first little boat. He earns a living among twelve distinct islands, builds a meaningful relationship with a woman he loves, and works toward a modest beach home they can imagine sharing. The game celebrates honest work, exploration, little adventures and a life built over time—not combat, survival pressure or saving the world.

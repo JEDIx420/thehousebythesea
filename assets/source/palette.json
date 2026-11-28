@@ -1,0 +1,8 @@
+{
+  "ink":"#263447", "deep":"#153b52", "sea":"#20596b", "seaLight":"#2c7480", "teal":"#428f91", "foam":"#a1d4c4", "glint":"#d9e6bd",
+  "sandShade":"#b99c6b", "sand":"#d6bd87", "sandLight":"#e8d7a7", "cream":"#f1e1b4", "plaster":"#d7c59c", "wallShade":"#b2aa8d",
+  "grassShade":"#526c52", "grass":"#71845a", "grassLight":"#93a16b", "leafDark":"#315c55", "leaf":"#537b59", "leafLight":"#87a363",
+  "woodDark":"#65514a", "wood":"#94715a", "woodLight":"#bb926a", "coralDark":"#894f4c", "coral":"#b96d58", "coralLight":"#dc9671",
+  "blueDark":"#304e64", "blue":"#4f7883", "blueLight":"#78a3a5", "skinShade":"#aa7360", "skin":"#d49a78", "skinLight":"#edb891",
+  "hairDark":"#493b3e", "hair":"#694c43", "auburn":"#975848", "auburnLight":"#bf7d56", "gold":"#d6ac66", "lavender":"#9c92a6"
+}
