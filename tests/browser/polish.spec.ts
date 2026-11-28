@@ -112,7 +112,7 @@ test("missing music retries are bounded and surfaced while gameplay and ambience
   page,
 }) => {
   let requests = 0;
-  await page.route("**/audio/*.mp3", (route) => {
+  await page.route("**/audio/*.mp3*", (route) => {
     requests++;
     return route.fulfill({ status: 404, body: "" });
   });
@@ -297,7 +297,8 @@ test("portraits, release-debounced dialogue, raised walking and compact responsi
     [-40, -72],
     [-42, -84],
   ])
-    await walk(page, x, z);
+    await test.step(`Walk the lighthouse route to ${x},${z}`, () =>
+      walk(page, x, z));
   expect((await metrics(page)).elevation).toBe(24);
   await page.keyboard.press("r");
   expect((await state(page)).wallet).toBe(25);

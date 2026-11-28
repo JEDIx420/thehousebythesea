@@ -1,3 +1,4 @@
+import { resourceUrl } from "../data/resource-url";
 import type { Dialogue, Beat } from "../game/dialogue";
 import type { Settings } from "../state/game";
 const escape = (s: string) =>
@@ -105,7 +106,7 @@ export class DialogueView {
         f.id === `portrait-${beat.speakerId}-${beat.expressionId}-${blink}`,
     );
     return f
-      ? `<div class="portrait" role="img" aria-label="${escape(beat.speakerId)} · ${beat.expressionId}" style="width:${f.width}px;height:${f.height}px;background-image:url('${import.meta.env.BASE_URL}assets/atlas.png');background-position:-${f.x}px -${f.y}px"></div>`
+      ? `<div class="portrait" role="img" aria-label="${escape(beat.speakerId)} · ${beat.expressionId}" style="width:${f.width}px;height:${f.height}px;background-image:url('${resourceUrl("assets/atlas.png")}');background-position:-${f.x}px -${f.y}px"></div>`
       : "";
   }
   private render() {

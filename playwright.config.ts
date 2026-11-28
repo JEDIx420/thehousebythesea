@@ -10,7 +10,14 @@ export default defineConfig({
       "http://localhost:4191/thehousebythesea/",
     viewport: { width: 1440, height: 900 },
     channel: process.env.CI ? undefined : "chrome",
-    trace: "retain-on-failure",
+    trace: {
+      mode: "retain-on-failure",
+      // Avoid continuous canvas screencast readbacks on software CI renderers.
+      // DOM snapshots, actions, sources, network and failure/checkpoint PNGs remain.
+      screenshots: !process.env.CI,
+      snapshots: true,
+      sources: true,
+    },
     screenshot: "only-on-failure",
     // The committed native gameplay excerpt supplies motion evidence. CI keeps
     // screenshots + failure traces without continuous software-GPU readbacks.

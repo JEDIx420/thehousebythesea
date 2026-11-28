@@ -186,7 +186,7 @@ for (const [name, raw] of [
 test("missing and stalled art are bounded, input-locked and recover through retry", async ({
   page,
 }) => {
-  await page.route("**/assets/atlas.png", (r) => r.abort());
+  await page.route("**/assets/atlas.png*", (r) => r.abort());
   await page.goto("./", { waitUntil: "domcontentloaded" });
   await page.keyboard.press("e");
   await expect(
@@ -198,13 +198,13 @@ test("missing and stalled art are bounded, input-locked and recover through retr
   await expect(
     page.getByRole("button", { name: "Begin your voyage", exact: true }),
   ).toHaveCount(0);
-  await page.unroute("**/assets/atlas.png");
+  await page.unroute("**/assets/atlas.png*");
   await page.getByRole("button", { name: "Try again", exact: true }).click();
   await ready(page);
   await expect(
     page.getByRole("button", { name: "Begin your voyage", exact: true }),
   ).toBeVisible();
-  await page.route("**/assets/atlas.png", () => {});
+  await page.route("**/assets/atlas.png*", () => {});
   const start = Date.now();
   await page.reload({ waitUntil: "domcontentloaded" });
   await expect(
@@ -223,7 +223,7 @@ test("malformed metadata and a missing required animated frame show an honest re
 }) => {
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
-  await page.route("**/assets/manifest.json", (r) =>
+  await page.route("**/assets/manifest.json*", (r) =>
     r.fulfill({ contentType: "application/json", body: '{"frames":[]}' }),
   );
   await page.goto("./");
@@ -236,8 +236,8 @@ test("malformed metadata and a missing required animated frame show an honest re
   await expect(
     page.getByRole("button", { name: "Try again", exact: true }),
   ).toBeVisible();
-  await page.unroute("**/assets/manifest.json");
-  await page.route("**/assets/manifest.json", async (r) => {
+  await page.unroute("**/assets/manifest.json*");
+  await page.route("**/assets/manifest.json*", async (r) => {
     const response = await r.fetch(),
       json = await response.json();
     json.frames = json.frames.filter((f: { id: string }) => f.id !== "tree-1");

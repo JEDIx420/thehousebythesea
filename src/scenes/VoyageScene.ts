@@ -1,3 +1,4 @@
+import { resourceUrl } from "../data/resource-url";
 import { navigation } from "../data/navigation";
 import WORLD from "../../assets/source/world.json" with { type: "json" };
 import { Locomotion } from "../player/locomotion";
@@ -114,13 +115,12 @@ export class VoyageScene extends Phaser.Scene {
         ),
       12000,
     );
-    const base = import.meta.env.BASE_URL;
     this.load.atlas(
       "coast",
-      `${base}assets/atlas.png`,
-      `${base}assets/atlas.json`,
+      resourceUrl("assets/atlas.png"),
+      resourceUrl("assets/atlas.json"),
     );
-    this.load.json("manifest", `${base}assets/manifest.json`);
+    this.load.json("manifest", resourceUrl("assets/manifest.json"));
     this.load.on("loaderror", () => {
       this.failed = true;
     });

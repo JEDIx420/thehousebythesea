@@ -1,3 +1,4 @@
+import { resourceUrl } from "../data/resource-url";
 import type { Settings } from "../state/game";
 import { DEFAULT_SETTINGS } from "../data/navigation";
 export type Track = "havenport" | "sailing" | "saltglass";
@@ -177,7 +178,7 @@ export class Ambience {
           reject(Error("Music took too long to load; the sea continues."));
         }, 10000);
       });
-      const request = fetch(`${import.meta.env.BASE_URL}audio/${track}.mp3`, {
+      const request = fetch(resourceUrl(`audio/${track}.mp3`), {
         signal: controller.signal,
       })
         .then((r) => {
