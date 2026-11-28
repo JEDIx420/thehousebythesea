@@ -1,0 +1,510 @@
+{
+  "samples": [
+    {
+      "at": 37136,
+      "player": {
+        "x": 47.93913538782958,
+        "z": -0.06086461217042985,
+        "heading": -0.7853981633974231,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "start",
+        "speed": 2.9994000000000085,
+        "distance": 0.08607555999999328,
+        "direction": "n",
+        "velocity": [
+          -2.1208960794909366,
+          -2.1208960794909366
+        ]
+      }
+    },
+    {
+      "at": 37178,
+      "player": {
+        "x": 47.84087740070716,
+        "z": -0.1591225992928449,
+        "heading": -0.7853981633974335,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "start",
+        "speed": 6.0005999999999915,
+        "distance": 0.3195055619999987,
+        "direction": "n",
+        "velocity": [
+          -4.243064951187991,
+          -4.243064951187991
+        ]
+      }
+    },
+    {
+      "at": 37222,
+      "player": {
+        "x": 47.61952600160066,
+        "z": -0.3804739983993404,
+        "heading": -0.7853981633974312,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "start",
+        "speed": 6.6,
+        "distance": 0.5380714886666652,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37267,
+      "player": {
+        "x": 47.386180763809094,
+        "z": -0.613819236190901,
+        "heading": -0.7853981633974855,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 0.86807148866667,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37312,
+      "player": {
+        "x": 47.23067949734481,
+        "z": -0.7693205026551957,
+        "heading": -0.7853981633974154,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 1.197939488666669,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37354,
+      "player": {
+        "x": 46.997380928600805,
+        "z": -1.0026190713991987,
+        "heading": -0.7853981633974526,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 1.417917488666663,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37400,
+      "player": {
+        "x": 46.76403569080924,
+        "z": -1.2359643091907593,
+        "heading": -0.7853981633974526,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 1.747917488666668,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37444,
+      "player": {
+        "x": 46.608441086249826,
+        "z": -1.3915589137501725,
+        "heading": -0.7853981633974526,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 2.077983488666666,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37489,
+      "player": {
+        "x": 46.37500251036314,
+        "z": -1.6249974896368484,
+        "heading": -0.7853981633974526,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 2.2980934886666735,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37534,
+      "player": {
+        "x": 46.14165727257157,
+        "z": -1.858342727428409,
+        "heading": -0.7853981633974526,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 2.6280934886666785,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37577,
+      "player": {
+        "x": 45.90831203478002,
+        "z": -2.09168796521997,
+        "heading": -0.7853981633974141,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 2.9580934886666737,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37621,
+      "player": {
+        "x": 45.752764099268155,
+        "z": -2.2472359007318268,
+        "heading": -0.7853981633974826,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 3.178071488666681,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37666,
+      "player": {
+        "x": 45.519512199571714,
+        "z": -2.480487800428273,
+        "heading": -0.7853981633974826,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 3.5079394886666804,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37711,
+      "player": {
+        "x": 45.3639175950123,
+        "z": -2.6360824049876843,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 3.838005488666679,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37755,
+      "player": {
+        "x": 45.13061902626831,
+        "z": -2.8693809737316878,
+        "heading": -0.7853981633974141,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 4.0579174886666705,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37800,
+      "player": {
+        "x": 44.89732045752431,
+        "z": -3.102679542475692,
+        "heading": -0.7853981633974141,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 6.6,
+        "distance": 4.387851488666674,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -4.666904755831213
+        ]
+      }
+    },
+    {
+      "at": 37844,
+      "player": {
+        "x": 44.74167918391733,
+        "z": -3.258320816082663,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 4.678798516713451,
+        "distance": 4.690571584623823,
+        "direction": "n",
+        "velocity": [
+          -4.666904755831213,
+          -0.3333999999999942
+        ]
+      }
+    },
+    {
+      "at": 37888,
+      "player": {
+        "x": 44.50838061517332,
+        "z": -3.2972097328425654,
+        "heading": -1.5173001497321184,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 4.666904755831213,
+        "distance": 4.846493405068802,
+        "direction": "w",
+        "velocity": [
+          -4.666904755831213,
+          0
+        ]
+      }
+    },
+    {
+      "at": 37933,
+      "player": {
+        "x": 44.274942039286636,
+        "z": -3.299062325509232,
+        "heading": -1.5707963267948966,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 4.666904755831213,
+        "distance": 5.079954035789477,
+        "direction": "w",
+        "velocity": [
+          -4.666904755831213,
+          0
+        ]
+      }
+    },
+    {
+      "at": 37977,
+      "player": {
+        "x": 44.119347434727224,
+        "z": -3.299062325509232,
+        "heading": -1.5707963267948966,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 4.666904755831213,
+        "distance": 5.3132992735810305,
+        "direction": "w",
+        "velocity": [
+          -4.666904755831213,
+          0
+        ]
+      }
+    },
+    {
+      "at": 38022,
+      "player": {
+        "x": 43.88609553503078,
+        "z": -3.299062325509232,
+        "heading": -1.5707963267948966,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 4.666904755831213,
+        "distance": 5.468800540045329,
+        "direction": "w",
+        "velocity": [
+          -4.666904755831213,
+          0
+        ]
+      }
+    },
+    {
+      "at": 38067,
+      "player": {
+        "x": 43.65279696628678,
+        "z": -3.299062325509232,
+        "heading": -1.5707963267948966,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 4.666904755831213,
+        "distance": 5.702099108789334,
+        "direction": "w",
+        "velocity": [
+          -4.666904755831213,
+          0
+        ]
+      }
+    },
+    {
+      "at": 38110,
+      "player": {
+        "x": 43.49724903077493,
+        "z": -3.299062325509232,
+        "heading": -1.5707963267948966,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 4.666904755831213,
+        "distance": 5.935397677533338,
+        "direction": "w",
+        "velocity": [
+          -4.666904755831213,
+          0
+        ]
+      }
+    },
+    {
+      "at": 38154,
+      "player": {
+        "x": 43.26390379298336,
+        "z": -3.299062325509232,
+        "heading": -1.5707963267948966,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 4.666904755831213,
+        "distance": 6.090992282092749,
+        "direction": "w",
+        "velocity": [
+          -4.666904755831213,
+          0
+        ]
+      }
+    },
+    {
+      "at": 38200,
+      "player": {
+        "x": 43.03055855519181,
+        "z": -3.299062325509232,
+        "heading": -1.5707963267948966,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "locomotion": {
+        "phase": "walk",
+        "speed": 4.666904755831213,
+        "distance": 6.324337519884303,
+        "direction": "w",
+        "velocity": [
+          -4.666904755831213,
+          0
+        ]
+      }
+    }
+  ],
+  "recording": {
+    "audio": true,
+    "fps": 20,
+    "source": "actual CDP composited browser + live WebAudio",
+    "path": "docs/evidence/p15/after/movement-after.webm"
+  }
+}

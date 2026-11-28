@@ -1,0 +1,152 @@
+{
+  "hardware": "Apple M4 / macOS26.5.2, native Chrome158.0.8127.37,1440x900 CSS viewport;640x360 logical2x",
+  "baseline": {
+    "source": "90693e3 docs,262e536 game",
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 732,
+      "sampleKind": "raw render callback interval",
+      "p50": 16.69999998807907,
+      "p95": 17.099999964237213,
+      "stallsOver50ms": 1,
+      "assets": 280,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 799003,
+      "heap": 16676899
+    }
+  },
+  "after": {
+    "elapsedSeconds": 568.997,
+    "checkpoints": 42,
+    "p50Range": [
+      16.600000023841858,
+      16.69999998807907
+    ],
+    "p95Range": [
+      16.899999976158142,
+      18.5
+    ],
+    "heapRange": [
+      15613383,
+      28903501
+    ],
+    "firstTransferBytes": 2017576,
+    "hudCoverage": 0.048521715799967446,
+    "atlas": {
+      "width": 2048,
+      "height": 4096,
+      "bytes": 866951,
+      "decodedRGBABytes": 33554432
+    },
+    "frames": 541,
+    "finalBundle": "/thehousebythesea/assets/index-CEto77Ge.js"
+  },
+  "clips": [
+    {
+      "file": "before/movement-surf.webm",
+      "bytes": 1445750,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "codec_type": "video"
+          },
+          {
+            "codec_name": "opus",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "6.800000"
+        }
+      },
+      "meanDb": -37.2,
+      "peakDb": -22.6
+    },
+    {
+      "file": "after/movement-after.webm",
+      "bytes": 1579094,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "codec_type": "video"
+          },
+          {
+            "codec_name": "opus",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "6.350000"
+        }
+      },
+      "meanDb": -35.9,
+      "peakDb": -21.6
+    },
+    {
+      "file": "after/audible-town-sea-arrival-dialogue.webm",
+      "bytes": 11369509,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "codec_type": "video"
+          },
+          {
+            "codec_name": "opus",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "88.200000"
+        }
+      },
+      "meanDb": -35.6,
+      "peakDb": -17.7
+    },
+    {
+      "file": "after/mira-expressions-audible.webm",
+      "bytes": 1510684,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "codec_type": "video"
+          },
+          {
+            "codec_name": "opus",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "25.950000"
+        }
+      },
+      "meanDb": -39.5,
+      "peakDb": -24.6
+    }
+  ],
+  "caveats": [
+    "Agent-driven real-time reading/exploration, not measured human playtime.",
+    "Render callbacks use rolling1200-sample windows; checkpoints overlap, are not disjoint/full-session FPS measurements.",
+    "CDP recording adds capture work;20fps clips are capture cadence, not game FPS.",
+    "Local resource transfer counters depend on compression/cache/server headers; payload sizes are reported separately.",
+    "Audio levels prove non-silent output/headroom; no human listening or subjective loop/mix approval is claimed.",
+    "Chrome/Chromium tested; Safari/Firefox/touch-only unverified."
+  ]
+}

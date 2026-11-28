@@ -1,0 +1,13 @@
+
+> thehousebythesea-pixel@0.2.0 build
+> tsc --noEmit && vite build
+
+vite v7.3.8 building client environment for production...
+transforming...
+✓ 27 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.67 kB │ gzip:   0.38 kB
+dist/assets/index-DuwpRdEL.css     13.09 kB │ gzip:   3.52 kB
+dist/assets/index-DC-Ta7Uk.js   1,298.80 kB │ gzip: 363.76 kB
+✓ built in 1.54s

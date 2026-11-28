@@ -1,0 +1,132 @@
+{
+  "baselineRef": "90693e37ce009c5f44b19ac683c0c017aef0843c",
+  "worldJsonSha256": "9fd33ac56cd986a76a3f9175619c219a1293343f4857123c5e909af22caa5609",
+  "currentHead": "88563aa39f9425a4b9a813ce492aadc0a70c92b3",
+  "note": "Working-tree world data; baseline immutable. No random seed. Logical square units; radius0.7; cell0.25; BFS0.5.",
+  "islands": [
+    {
+      "id": "havenport",
+      "before": {
+        "bounds": [
+          -57,
+          59,
+          -66,
+          49
+        ],
+        "firstCenter": [
+          -56.875,
+          -65.875
+        ],
+        "cells": 112404,
+        "area": 7025.25
+      },
+      "after": {
+        "bounds": [
+          -103,
+          59,
+          -113,
+          82
+        ],
+        "firstCenter": [
+          -102.875,
+          -112.875
+        ],
+        "cells": 320042,
+        "area": 20002.625
+      },
+      "ratio": 2.8472474289171203,
+      "reachableHalfUnitCells": 79963,
+      "targets": [
+        {
+          "id": "ellis",
+          "height": 0,
+          "distance": 0
+        },
+        {
+          "id": "mira",
+          "height": 0,
+          "distance": 0
+        },
+        {
+          "id": "seller",
+          "height": 0,
+          "distance": 0
+        },
+        {
+          "id": "home",
+          "height": 0,
+          "distance": 0
+        }
+      ],
+      "levels": [
+        {
+          "id": "lighthouse-meadow",
+          "height": 24,
+          "reachableCells": 14862
+        }
+      ],
+      "paths": {
+        "samples": 6515,
+        "blocked": []
+      },
+      "berthClear": true
+    },
+    {
+      "id": "saltglass-bay",
+      "before": {
+        "bounds": [
+          -43,
+          59,
+          -49,
+          30
+        ],
+        "firstCenter": [
+          -42.875,
+          -48.875
+        ],
+        "cells": 68947,
+        "area": 4309.1875
+      },
+      "after": {
+        "bounds": [
+          -76,
+          59,
+          -84,
+          49
+        ],
+        "firstCenter": [
+          -75.875,
+          -83.875
+        ],
+        "cells": 169686,
+        "area": 10605.375
+      },
+      "ratio": 2.4611078074462993,
+      "reachableHalfUnitCells": 42424,
+      "targets": [
+        {
+          "id": "nessa",
+          "height": 0,
+          "distance": 0
+        },
+        {
+          "id": "arch",
+          "height": 28,
+          "distance": 0
+        }
+      ],
+      "levels": [
+        {
+          "id": "shell-cliffs",
+          "height": 28,
+          "reachableCells": 8249
+        }
+      ],
+      "paths": {
+        "samples": 3643,
+        "blocked": []
+      },
+      "berthClear": true
+    }
+  ]
+}

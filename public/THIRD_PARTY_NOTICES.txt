@@ -104,3 +104,20 @@ https://github.com/rehan-remade/hollow-crown, Copyright (c) 2026 rehan-remade, M
 
 **Patch Pixel.** The font in `gallery/fonts` is Patch's own and is not covered by this repository's MIT license. See
 `gallery/fonts/NOTICE.md`.
+
+
+P1.5 ORIGINAL PROJECT ART AND MUSIC
+All original character portraits, sprites, architecture, terrain recipes and the
+score "The Afternoon We Kept" are authored for this project by The House by the
+Sea contributors, copyright2026, under the project MIT license above.
+Sources: assets/source/portraits.mjs, sprites.mjs, architecture.mjs, land.mjs,
+world.json, music-score.json and tools/generate-music.mjs.
+Three96-second tracks: Havenport, Sailing, Saltglass. No third-party samples,
+copyrighted game themes, remote model/API assets or streaming services.
+Rebuild: npm run assets:build; npm run music:build (local FFmpeg with libmp3lame).
+Check: npm run assets:check; npm run music:check.
+FFmpeg is a local development encoder, not bundled into the game. Encoded MP3
+hashes are recorded in public/audio/manifest.json; encoder version/platform may
+change compressed bytes. The fixed source score/seed and synthesis remain
+available and free to reproduce. PixelFX's separate utility credits above do
+not claim ownership or authorship of this original art/music.

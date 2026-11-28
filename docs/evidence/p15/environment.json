@@ -1,0 +1,7 @@
+{
+  "node": "v22.23.1",
+  "architecture": "arm64",
+  "macOS": "26.5.2",
+  "ffmpeg": "ffmpeg version 8.1.1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "chrome": "158.0.8127.37"
+}

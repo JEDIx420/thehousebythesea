@@ -1,0 +1,54 @@
+
+> thehousebythesea-pixel@0.2.0 test:e2e
+> playwright test --grep portraits, release|title credits --output=test-results/p15-narrow-final
+
+[WebServer] (node:47719) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:47722) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:47722) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/browser/polish.spec.ts:197:1 › portraits, release-debounced dialogue, raised walking and compact responsive HUD (13.4s)
+(node:47745) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:47745) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 tests/browser/resilience.spec.ts:49:1 › title credits return, native keyboard menus, settings, picking and laptop layout (3.7s)
+
+
+  1) tests/browser/polish.spec.ts:197:1 › portraits, release-debounced dialogue, raised walking and compact responsive HUD 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThanOrEqual[2m([22m[32mexpected[39m[2m)[22m
+
+    Expected: >= [32m406.40625[39m
+    Received:    [31m384.40625[39m
+
+      279 |   const name = await page.locator("#dialogue-name").boundingBox(),
+      280 |     strip = await page.locator(".dialogue-strip").boundingBox();
+    > 281 |   expect(name!.y).toBeGreaterThanOrEqual(strip!.y);
+          |                   ^
+      282 |   await page.setViewportSize({ width: 1280, height: 720 });
+      283 |   await page.keyboard.press("Escape");
+      284 |   for (const [x, z] of [
+        at /Users/vincyvincent/3dfun/thehousebythesea-pixel/tests/browser/polish.spec.ts:281:19
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/p15-narrow-final/polish-portraits-release-d-c7c94--and-compact-responsive-HUD/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/p15-narrow-final/polish-portraits-release-d-c7c94--and-compact-responsive-HUD/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/p15-narrow-final/polish-portraits-release-d-c7c94--and-compact-responsive-HUD/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/p15-narrow-final/polish-portraits-release-d-c7c94--and-compact-responsive-HUD/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/browser/polish.spec.ts:197:1 › portraits, release-debounced dialogue, raised walking and compact responsive HUD 
+  1 passed (19.5s)

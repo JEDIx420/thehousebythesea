@@ -1,0 +1,7 @@
+
+> thehousebythesea-pixel@0.2.0 music:build
+> node tools/generate-music.mjs --all
+
+havenport: 96s, 768670 bytes
+sailing: 96s, 768670 bytes
+saltglass: 96s, 768670 bytes

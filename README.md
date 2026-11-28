@@ -2,7 +2,7 @@
 
 A Phaser/TypeScript pixel-isometric reboot implementing [PR #6's direction](docs/pixel-isometric-reboot.md). Only **Havenport ↔ Saltglass Bay** is built. Rowan owns his first boat, earns a living, meets Mira on her own creative path, and starts saving for a beach home. Main and earlier3D PRs remain untouched.
 
-**First Voyage verified — WAITING FOR CREATOR APPROVAL:** [implementation PR #7](https://github.com/JEDIx420/thehousebythesea/pull/7). [Play the First Voyage](https://jedix420.github.io/thehousebythesea/preview/pixel/) — independently opened and tested live. Current tests, screenshots, review findings and publishing proof are in [progress](docs/progress.md) and the [evidence index](docs/evidence/pixel/README.md). Stop after the First Voyage for creator visual and gameplay approval; further islands and construction remain locked.
+**First Voyage P1.5 polish — final verification active; creator playtest required:** [implementation PR #7](https://github.com/JEDIx420/thehousebythesea/pull/7). [Play the First Voyage](https://jedix420.github.io/thehousebythesea/preview/pixel/). The link currently serves the previously verified P1 build until the P1.5 checks and Pages deployment complete. Current tests, screenshots, review findings and publishing proof are in [progress](docs/progress.md) and the [P1.5 evidence index](docs/evidence/p15/README.md). Stop after the First Voyage for creator visual and gameplay approval; further islands and construction remain locked.
 
 ## Run locally
 
@@ -12,13 +12,14 @@ Node 22.12+ and npm. No credentials, accounts, paid APIs or external runtime ser
 npm ci --ignore-scripts
 npm run assets:build
 npm run assets:check
+npm run music:check
 npm run typecheck
 npm test
 npm run build
 npm run preview -- --port 4190
 ```
 
-Open `http://localhost:4190/thehousebythesea/`. Original art sources, palette, contact sheets and recipes are checked in; compiled art is deterministic. Read the [style guide](assets/style-guide.md), [free-tool audit](docs/pixel-tool-audit.md), [architecture](docs/architecture.md) and [notices](public/THIRD_PARTY_NOTICES.txt).
+Open `http://localhost:4190/thehousebythesea/`. Original art sources, palette, complete pose sheets and recipes are checked in;541 atlas frames reproduce exactly. Three original96-second coastal arrangements and their score/seed/synthesis source are local and free. Regenerate music with `npm run music:build` using optional local FFmpeg/libmp3lame. Audio settings separate master, music, ambience and effects; dialogue also supports instant text and reduced motion. Read the [style guide](assets/style-guide.md), [free-tool audit](docs/pixel-tool-audit.md), [architecture](docs/architecture.md) and [notices](public/THIRD_PARTY_NOTICES.txt).
 
 ## Play the checkpoint
 
@@ -26,7 +27,9 @@ WASD/arrows walk relative to the screen. E talks, boards or ties up. At sea W ac
 
 Skip or watch the 30-second childhood memory. Take Ellis's 120-coin parcel at Havenport, talk with Mira and optionally invite her across. Board at the pier and wait for her to walk aboard. Sail north through the continuous channel; slow beside Saltglass's pier and E to step ashore. Give Nessa the parcel once, fish/sell a catch, and follow the pale path to the shell arch. Return to Havenport, share the crossing with Mira and read the beachfront plot notice. The wallet/home-fund tracker and journal record progress. No romance purchase or mandatory affection grind.
 
-Saving is local IndexedDB, automatic after story/economy changes and periodically during movement; manual Save is in pause. Only confirmed commits report saved. Unknown/corrupt snapshots are protected and offer temporary play. The optional original3D save import makes a COPY into a separate pixel database, retaining progress and resetting only coordinates to safe pixel docks. Saves are specific to your browser/device/origin; there is no cloud service.
+P1.5 expands the two existing islands into distinct districts with real raised paths and ramps. Walking uses acceleration, planted12-pose cycles and a smooth camera. Conversations show original expressive busts and typed beats: first confirm reveals the line, next advances, then choose; Esc leaves safely.
+
+Saving is local IndexedDB, automatic after story/economy changes and periodically during movement; manual Save is in pause. Only confirmed commits report saved. Unknown/corrupt snapshots are protected and offer temporary play. The optional original3D save import makes a COPY into a separate pixel database, retaining progress and resetting only coordinates to safe pixel docks. Existing pixel world-v1 saves migrate to the larger world while preserving progress and old master volume; the first successful write keeps an atomic original snapshot backup. Valid Saltglass local coordinates translate, midsea checkpoints remain, and tagged docks/invalid positions repair safely. Saves are specific to your browser/device/origin; there is no cloud service.
 
 ## Browser tests and Pages package
 
@@ -37,9 +40,9 @@ PIXEL_PAGES_PREVIEW=1 npm run build
 node tools/package-pages.mjs
 ```
 
-Local tests use installed Google Chrome; CI uses Playwright Chromium (`CI=1` locally selects it). Recording requires Playwright's ffmpeg dependency. Eight isolated browser cases exercise native menus/layout, protected corrupt/future saves, stalled/missing/malformed art, legacy COPY import, failed writes and the full journey through both fish species and exact save/reload. They drive real keys and buttons; only storage-fault tests seed their own disposable IndexedDB fixtures. Screenshots/metrics are saved alongside checkpoint evidence; native videos and failure traces are under ignored `test-results/`; CI uploads checkpoint images/metrics and an HTML report with failure traces, without continuously recording video. `PIXEL_TEST_BASE_URL` runs the same journey against a verified remote/static nested base without starting a local server.
+Local tests use installed Google Chrome; CI uses Playwright Chromium (`CI=1` locally selects it). Recording requires Playwright's ffmpeg dependency. Seventeen isolated browser cases exercise native menus/layout, protected corrupt/future saves, stalled/missing/malformed art, legacy COPY import, failed writes and the full journey through both fish species and exact save/reload. They drive real keys and buttons; only storage-fault tests seed their own disposable IndexedDB fixtures. Screenshots/metrics are saved alongside checkpoint evidence; native videos and failure traces are under ignored `test-results/`; CI uploads checkpoint images/metrics and an HTML report with failure traces, without continuously recording video. `PIXEL_TEST_BASE_URL` runs the same journey against a verified remote/static nested base without starting a local server.
 
-The exact implementation branch's workflow verifies assets, 41 unit tests, build and all browser tests before deploying a complete Pages landing plus `/thehousebythesea/preview/pixel/` review game. PRs run checks with read-only permissions. No merge to main is needed for review publishing. See [independent source/review records](docs/review-pixel.md) and [deployment review](docs/review-pixel-deployment.md). Chromium/Chrome are tested; Firefox/Safari and touch-only play are not claimed.
+The exact implementation branch's workflow verifies assets/music,60 unit tests, build and all browser tests before deploying a complete Pages landing plus `/thehousebythesea/preview/pixel/` review game. PRs run checks with read-only permissions. No merge to main is needed for review publishing. See [independent source/review records](docs/review-pixel.md) and [deployment review](docs/review-pixel-deployment.md). Chromium/Chrome are tested; Firefox/Safari and touch-only play are not claimed.
 
 ---
 

@@ -1,0 +1,41 @@
+
+> thehousebythesea-pixel@0.2.0 test:e2e
+> playwright test --output=test-results/p15-integrated
+
+[WebServer] (node:44188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 16 tests using 1 worker
+
+(node:44190) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:44190) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/polish.spec.ts:51:3 › historical world-v1 walk migration preserves progress and first-only backup (2.2s)
+  ✓   2 tests/browser/polish.spec.ts:51:3 › historical world-v1 midsea migration preserves progress and first-only backup (1.9s)
+  ✓   3 tests/browser/polish.spec.ts:51:3 › historical world-v1 saltglass migration preserves progress and first-only backup (1.8s)
+  ✓   4 tests/browser/polish.spec.ts:51:3 › historical world-v1 complete migration preserves progress and first-only backup (1.8s)
+  ✓   5 tests/browser/polish.spec.ts:111:1 › missing music retries are bounded and surfaced while gameplay and ambience survive (3.5s)
+  ✓   6 tests/browser/polish.spec.ts:131:1 › mixer, continuous96s loop, ducking and two-state crossfade are real browser audio (1.8m)
+  ✓   7 tests/browser/polish.spec.ts:197:1 › portraits, release-debounced dialogue, raised walking and compact responsive HUD (35.3s)
+  ✓   8 tests/browser/polish.spec.ts:277:1 › actual IndexedDBv1 upgrade retains snapshots and failed migration write rolls back backup too (724ms)
+  ✓   9 tests/browser/resilience.spec.ts:49:1 › title credits return, native keyboard menus, settings, picking and laptop layout (2.3s)
+  ✓  10 tests/browser/resilience.spec.ts:149:3 › future snapshot survives temporary play, recovery and autosave (11.9s)
+  ✓  11 tests/browser/resilience.spec.ts:149:3 › corrupt snapshot survives temporary play, recovery and autosave (11.9s)
+  ✓  12 tests/browser/resilience.spec.ts:165:1 › missing and stalled art are bounded, input-locked and recover through retry (13.7s)
+  ✓  13 tests/browser/resilience.spec.ts:200:1 › malformed metadata and a missing required animated frame show an honest retry state (847ms)
+  ✓  14 tests/browser/resilience.spec.ts:261:1 › explicit legacy import copies progress to a safe pixel dock and preserves its source (647ms)
+  ✓  15 tests/browser/resilience.spec.ts:298:1 › a failed import write says temporary and never reports durable success (600ms)
+Checkpoint 01-havenport
+Checkpoint 02-mira-dialogue
+Checkpoint 03-sailing
+Checkpoint 04-docking
+Checkpoint 05-fishing
+Checkpoint 06-saltglass
+Checkpoint 06b-saltglass-vista
+Checkpoint 07-home-fund
+Checkpoint 08-journal
+Checkpoint 09-credits
+  ✓  16 tests/browser/voyage.spec.ts:6:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return (3.4m)
+
+  16 passed (6.7m)

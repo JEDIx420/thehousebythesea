@@ -1,16 +1,18 @@
-## P1.5 ACTIVE — creator polish, 28 November 2026
+## P1.5 LOCAL READY — publishing verification, 28 November 2026
 
 Pulled creator instructions90693e3 on existing PR #7 branch. Previous First Voyage remains the historical baseline, not approved for expansion. One implementer; independent review batches≤5 systems. Stage2 locked.
 
 | Gate | Work / observed state |
 | --- | --- |
 | A baseline / golden | Fresh1440×900 browser captures + actual composited movement/surf recording captured before source changes. Baseline usable area H7025.25/S4309.19. Original Mira portrait/five-face identity family, compact HUD, street/elevation and audible music prototype internally reviewed GO for B/C production. Four expressions/baked96s music are original; subjective listening remains creator gate.51 unit tests and298-frame audit PASS; before/after actual captures retained. |
-| B feel / music | ACTIVE: transient locomotion, planted-foot cycles, camera, original96s arrangements and independent mixer. |
-| C islands / saves | Versioned v1→v2 migration authored before geography changes; expanded district/elevation authoring follows golden. |
-| D HUD / dialogue | Dedicated character-led beat view and compact navigational UI; preserve actions/accessibility. |
-| E regression / live | Rerun all existing8 browser scenarios plus movement/audio/height/portrait/migration tests, actual audible two-island capture and deployed verification. |
+| B feel / music | Implemented and source-reviewed: transient110ms/88ms locomotion,12 planted walk poses,4 independent idle poses, fishing/seated poses, camera lookahead/dead zone/anchored zoom,3 original96s loops, independent mixer, district/material ambience/SFX. Actual96s browser music loop/mute/duck/crossfade PASS. Fresh held throttle across safe pier step corrected. |
+| C islands / saves | Implemented and independently audited: Havenport2.847× / Saltglass2.461× sampled usable area; zero blocked painted routes; real24px/28px plateaus and ramp-only edge access. First-only atomic original-v1 backup, true DB1→2 upgrade/rollback and progress-preserving fixture migrations PASS in browser. |
+| D HUD / dialogue | Implemented: compact original pixel HUD, chart/book/pause, dedicated expressive dialogue with34 distinct portrait frames, stable speaker sides, native choices and release guards. Browser coverage<10%, dialogue/height/resize cases PASS. Final visual review closed actor-overlapping prompt, clipped chart heading and narrow speaker tab using corrected actual captures; no open art/layout P2. |
+| E regression / live | Local PASS: clean locked install/audit,541-frame exact reproduction, music rebuild/hash checks, types/build,60 units; full17 cases6.8min, strengthened narrow/repeated-key checks2/2, final native3viewports, actual569s relaxed voyage/audio. Nested static package4 browser cases + native audio/viewport smoke PASS; all3 MP3 hashes/MIMEs correct. Hosted CI/public publication next; existing live stays P1 until deploy verified. |
 
-Independent preflights: [world](review-p15-world.md), [state](review-p15-state.md), [art/audio](review-p15-art.md). New evidence under `docs/evidence/p15/`. No current P1.5 completion or new live gameplay is claimed.
+Independent preflights: [world](review-p15-world.md), [state](review-p15-state.md), [art/audio](review-p15-art.md). New evidence under `docs/evidence/p15/`. Local checkpoint GO for creator presentation after publishing. No creator approval or upgraded public gameplay is claimed until hosted/live verification completes. Stage2 locked.
+
+Historical progress entries below are retained; this P1.5 board is authoritative.
 
 ---
 

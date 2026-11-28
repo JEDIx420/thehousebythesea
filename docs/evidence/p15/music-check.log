@@ -1,0 +1,5 @@
+
+> thehousebythesea-pixel@0.2.0 music:check
+> node tools/check-music.mjs
+
+PASS: three original96s loops, 2306010 bytes total, SHA256/score provenance/seek-header presence (decoded looping verified separately).
