@@ -1,5 +1,9 @@
 # Execution status
 
+## Creator feedback — P1.5 (2026-11-28)
+
+**P1 prototype playable; CREATOR APPROVAL WITHHELD / P1.5 REQUIRED.** The creator likes the pixel direction but requested smoother walking, continuous music, larger more distinctive islands with elevation, a cleaner game-like HUD and expressive portrait dialogue. [Active polish plan](first-voyage-polish.md) and [handoff](../prompts/first-voyage-polish-kickoff.md) are committed to PR #7. Implementation and new tests are NOT started by this documentation update. Prior P1 test/deployment results below remain historical evidence, not verification of these improvements. Stage 2 remains locked; stop after the updated playable P1.5 preview for creator approval.
+
 ## Current pixel reboot — 2026-11-28
 
 Implementation [PR #7](https://github.com/JEDIx420/thehousebythesea/pull/7), branch `feat/pixel-first-voyage`, based on the unmerged PR #6 plan. Main and prior3D branches remain untouched. **P0 COMPLETE · P1 FIRST VOYAGE COMPLETE · WAITING FOR CREATOR VISUAL AND GAMEPLAY APPROVAL. No P2/Stage 2 expansion.**
