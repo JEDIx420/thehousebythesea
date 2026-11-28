@@ -1,0 +1,19 @@
+{
+  "zipBytes": 1519160,
+  "entries": 12,
+  "jpegResources": 0,
+  "eventTypes": {
+    "context-options": 2,
+    "before": 3910,
+    "after": 3910,
+    "event": 1,
+    "frame-snapshot": 3510,
+    "log": 972,
+    "console": 5,
+    "input": 16
+  },
+  "domSnapshots": true,
+  "networkFiles": 1,
+  "sourceFiles": 2,
+  "note": "Native local actual selected regression with trace retained on purpose; screenshots:false, snapshots/sources/network retained. Not a hosted same-hardware speed comparison."
+}

@@ -1,0 +1,60 @@
+name: Pixel First Voyage
+on:
+  push:
+    branches: [feat/pixel-first-voyage]
+  pull_request:
+    branches: [main, plan/isometric-pixel-reboot]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pixel-first-voyage-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run assets:check && npm run music:check
+      - run: npm run typecheck && npm test
+      - run: npm run build
+      - run: npx --no-install playwright install --with-deps chromium
+      - run: npm run test:e2e -- --output=test-results/pixel-ci
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: pixel-browser-evidence-${{ github.run_id }}
+          path: |
+            test-results/checkpoints/
+            playwright-report/
+          retention-days: 14
+      - run: PIXEL_PAGES_PREVIEW=1 npm run build && node tools/package-pages.mjs
+        if: github.event_name == 'push' && github.ref == 'refs/heads/feat/pixel-first-voyage'
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        if: github.event_name == 'push' && github.ref == 'refs/heads/feat/pixel-first-voyage'
+        with:
+          path: dist-pages
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/feat/pixel-first-voyage'
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy reviewed branch preview
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

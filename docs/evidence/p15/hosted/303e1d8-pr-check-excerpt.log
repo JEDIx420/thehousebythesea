@@ -1,0 +1,33 @@
+Fetched by independent reviewer using gh run view46139119871 --log; excerpt only. Full source run URL in proof JSON.
+verify	Run npm run assets:check && npm run music:check	2026-11-28T11:17:13.5454329Z PASS: 541 frames; bounds, alpha, four facings, shared anchors, distinct animations, sources and exact-byte reproducibility.
+verify	Run npm run assets:check && npm run music:check	2026-11-28T11:17:13.6568611Z PASS: three original96s loops, 2306010 bytes total, SHA256/score provenance/seek-header presence (decoded looping verified separately).
+verify	Run npm run typecheck && npm test	2026-11-28T11:17:16.0515214Z  ^[[32m✓^[[39m src/state/game.test.ts ^[[2m(^[[22m^[[2m24 tests^[[22m^[[2m)^[[22m^[[32m 15^[[2mms^[[22m^[[39m
+verify	Run npm run typecheck && npm test	2026-11-28T11:17:16.0609250Z  ^[[32m✓^[[39m src/state/migrate-world.test.ts ^[[2m(^[[22m^[[2m11 tests^[[22m^[[2m)^[[22m^[[32m 20^[[2mms^[[22m^[[39m
+verify	Run npm run typecheck && npm test	2026-11-28T11:17:16.1791506Z  ^[[32m✓^[[39m src/game/session.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 7^[[2mms^[[22m^[[39m
+verify	Run npm run typecheck && npm test	2026-11-28T11:17:16.2631549Z  ^[[32m✓^[[39m src/player/locomotion.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 74^[[2mms^[[22m^[[39m
+verify	Run npm run typecheck && npm test	2026-11-28T11:17:16.3200792Z  ^[[32m✓^[[39m src/world/height.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 24^[[2mms^[[22m^[[39m
+verify	Run npm run typecheck && npm test	2026-11-28T11:17:16.4113179Z  ^[[32m✓^[[39m src/world/projection.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 38^[[2mms^[[22m^[[39m
+verify	Run npm run typecheck && npm test	2026-11-28T11:17:16.4422017Z  ^[[32m✓^[[39m src/activities/fishing.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[32m 3^[[2mms^[[22m^[[39m
+verify	Run npm run typecheck && npm test	2026-11-28T11:17:16.5460187Z  ^[[32m✓^[[39m src/player/movement.test.ts ^[[2m(^[[22m^[[2m6 tests^[[22m^[[2m)^[[22m^[[33m 514^[[2mms^[[22m^[[39m
+verify	Run npm run typecheck && npm test	2026-11-28T11:17:16.5461384Z    ^[[33m^[[2m✓^[[22m^[[39m normalizes foot travel and keeps stable headings over extended turns^[[33m 408^[[2mms^[[22m^[[39m
+verify	Run npm run typecheck && npm test	2026-11-28T11:17:16.5505020Z ^[[2m      Tests ^[[22m ^[[1m^[[32m60 passed^[[39m^[[22m^[[90m (60)^[[39m
+verify	Run npm run build	2026-11-28T11:17:21.1493403Z ^[[32m✓^[[39m 27 modules transformed.
+verify	Run npm run build	2026-11-28T11:17:21.7636260Z ^[[32m✓ built in 3.25s^[[39m
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:18:14.9876067Z   ✓   1 tests/browser/polish.spec.ts:51:3 › historical world-v1 walk migration preserves progress and first-only backup (6.0s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:18:20.0660604Z   ✓   2 tests/browser/polish.spec.ts:51:3 › historical world-v1 midsea migration preserves progress and first-only backup (5.1s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:18:26.9641570Z   ✓   3 tests/browser/polish.spec.ts:51:3 › historical world-v1 saltglass migration preserves progress and first-only backup (6.9s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:18:32.7721798Z   ✓   4 tests/browser/polish.spec.ts:51:3 › historical world-v1 complete migration preserves progress and first-only backup (5.8s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:18:37.6248295Z   ✓   5 tests/browser/polish.spec.ts:111:1 › missing music retries are bounded and surfaced while gameplay and ambience survive (4.8s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:20:31.3391110Z   ✓   6 tests/browser/polish.spec.ts:131:1 › mixer, continuous96s loop, ducking and two-state crossfade are real browser audio (1.9m)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:21:50.6501541Z   ✓   7 tests/browser/polish.spec.ts:197:1 › portraits, release-debounced dialogue, raised walking and compact responsive HUD (1.3m)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:21:52.7572045Z   ✓   8 tests/browser/polish.spec.ts:307:1 › actual IndexedDBv1 upgrade retains snapshots and failed migration write rolls back backup too (2.1s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:22:02.9027268Z   ✓   9 tests/browser/polish.spec.ts:366:1 › safe pier step cannot replay E or fishing and recovery clears transient motion (10.1s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:22:10.8578966Z   ✓  10 tests/browser/resilience.spec.ts:49:1 › title credits return, native keyboard menus, settings, picking and laptop layout (7.9s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:22:24.5256033Z   ✓  11 tests/browser/resilience.spec.ts:170:3 › future snapshot survives temporary play, recovery and autosave (13.7s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:22:38.0824070Z   ✓  12 tests/browser/resilience.spec.ts:170:3 › corrupt snapshot survives temporary play, recovery and autosave (13.5s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:22:52.3224245Z   ✓  13 tests/browser/resilience.spec.ts:186:1 › missing and stalled art are bounded, input-locked and recover through retry (14.2s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:22:53.6088079Z   ✓  14 tests/browser/resilience.spec.ts:221:1 › malformed metadata and a missing required animated frame show an honest retry state (1.3s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:22:55.5907891Z   ✓  15 tests/browser/resilience.spec.ts:282:1 › explicit legacy import copies progress to a safe pixel dock and preserves its source (2.0s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:22:57.1339742Z   ✓  16 tests/browser/resilience.spec.ts:319:1 › a failed import write says temporary and never reports durable success (1.5s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:27:54.3665628Z   ✓  17 tests/browser/voyage.spec.ts:6:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return (5.0m)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:27:54.7133587Z   17 passed (9.8m)

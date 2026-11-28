@@ -1,0 +1,82 @@
+{
+  "url": "http://localhost:4190/thehousebythesea/",
+  "bundle": "/thehousebythesea/assets/index-DF9pH0Nz.js",
+  "results": [
+    "Reached pier using real walking",
+    "Cycle1: one E boards and remains aboard",
+    "Cycle1: second E docks and remains ashore",
+    "Cycle2: one E boards and remains aboard",
+    "Cycle2: second E docks and remains ashore",
+    "Cycle3: one E boards and remains aboard",
+    "Cycle3: second E docks and remains ashore",
+    "Held W sails north away from berth",
+    "R recovery returns both actors safely and preserves wallet",
+    "Pause clears held movement without stale replay",
+    "Wheel zoom selects integer2",
+    "Wheel zoom returns integer1",
+    "Pointer picking returns finite logical coordinates",
+    "No browser page errors"
+  ],
+  "metrics": {
+    "renderer": "WebGL",
+    "frames": 594,
+    "sampleKind": "raw render callback interval",
+    "p50": 16.69999998807907,
+    "p95": 18.30000001192093,
+    "stallsOver50ms": 1,
+    "assets": 280,
+    "viewport": [
+      640,
+      360
+    ],
+    "scene": "first-voyage",
+    "zoom": 1,
+    "companionReady": true,
+    "loadBytes": 799843,
+    "heap": 15703876,
+    "lastPick": {
+      "x": 41.125,
+      "z": -35.625
+    }
+  },
+  "state": {
+    "schemaVersion": 2,
+    "worldVersion": "pixel-first-voyage-v1",
+    "wallet": 25,
+    "inventory": {
+      "sardine": 0,
+      "bream": 0
+    },
+    "delivery": "available",
+    "discoveries": [
+      "havenport"
+    ],
+    "story": {
+      "metMira": false,
+      "outingInvited": false,
+      "outingVisitedSaltglass": false,
+      "outingComplete": false,
+      "homeSeen": false,
+      "prologueSeen": true
+    },
+    "player": {
+      "x": 47.38712509690147,
+      "z": 0.6128749030985039,
+      "heading": -2.356194490192345,
+      "mode": "walk",
+      "island": "havenport"
+    },
+    "boat": {
+      "x": 63,
+      "z": 0,
+      "heading": 0,
+      "docked": "havenport"
+    },
+    "settings": {
+      "muted": false,
+      "volume": 0.35,
+      "reducedMotion": false
+    }
+  },
+  "errors": []
+}

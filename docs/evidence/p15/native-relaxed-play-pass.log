@@ -1,0 +1,59 @@
+
+Running 1 test using 1 worker
+
+(node:45457) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45457) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Captured 01-harbour
+Captured 02-ellis-ellis-neutral
+Captured 02-ellis-ellis-thoughtful
+Captured 02-ellis-ellis-thoughtful
+Captured 02-ellis-rowan-happy
+Captured 02-ellis-choices
+Captured 03-cafe-square
+Captured 04-tomas-tomas-neutral
+Captured 04-tomas-tomas-thoughtful
+Captured 04-tomas-choices
+Captured 05-garden-street
+Captured 06-hill-foot
+Captured 07-lighthouse-meadow
+Captured 08-mira-intro-mira-neutral
+Captured 08-mira-intro-rowan-happy
+Captured 08-mira-intro-mira-thoughtful
+Captured 08-mira-intro-mira-thoughtful
+Captured 08-mira-intro-mira-happy
+Captured 08-mira-intro-choices
+Captured 09-mira-invite-mira-neutral
+Captured 09-mira-invite-mira-thoughtful
+Captured 09-mira-invite-mira-thoughtful
+Captured 09-mira-invite-choices
+Captured 10-mira-ready-mira-neutral
+Captured 10-mira-ready-choices
+Captured 11-sailing
+Captured 12-saltglass-quay
+Captured 13-nessa-nessa-neutral
+Captured 13-nessa-nessa-thoughtful
+Captured 13-nessa-nessa-thoughtful
+Captured 13-nessa-choices
+Captured 14-fishing
+Captured 15-tide-pools
+Captured 16-sheltered-cove
+Captured 17-shell-cliff
+Captured 18-arch-memory
+Captured 19-mira-return-mira-happy
+Captured 19-mira-return-mira-thoughtful
+Captured 19-mira-return-choices
+Captured 20-shared-memory-mira-happy
+Captured 20-shared-memory-choices
+Captured 21-quiet-home-shore
+Captured 22-home-fund
+Captured 23-chart
+Captured 24-journal
+Captured 25-return-saved
+{"elapsedSeconds":569.001,"errors":[],"wallet":163,"kind":"agent-driven real-time reading/exploration, not a human duration claim"}
+  ✓  1 tools/capture-p15.spec.ts:19:1 › relaxed actual two-island First Voyage, district stills and audible crossing (9.5m)
+
+  Slow test file: tools/capture-p15.spec.ts (9.5m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  1 passed (9.5m)

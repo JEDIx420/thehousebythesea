@@ -1,0 +1,199 @@
+{
+  "browser": "158.0.8127.37",
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:4192/thehousebythesea/preview/pixel/",
+    "http://127.0.0.1:4192/thehousebythesea/preview/pixel/assets/index-CEY2Ra4G.js",
+    "http://127.0.0.1:4192/thehousebythesea/preview/pixel/assets/index-DuwpRdEL.css",
+    "http://127.0.0.1:4192/thehousebythesea/preview/pixel/assets/atlas.png?v=00d3130eaac76f05",
+    "http://127.0.0.1:4192/thehousebythesea/preview/pixel/assets/atlas.json?v=00d3130eaac76f05",
+    "http://127.0.0.1:4192/thehousebythesea/preview/pixel/assets/manifest.json?v=00d3130eaac76f05",
+    "blob:http://127.0.0.1:4192/2358daa9-2a7a-478b-8a8e-151dc659e1a3",
+    "http://127.0.0.1:4192/thehousebythesea/preview/pixel/audio/havenport.mp3?v=00d3130eaac76f05",
+    "http://127.0.0.1:4192/thehousebythesea/preview/pixel/assets/atlas.png?v=00d3130eaac76f05"
+  ],
+  "hud": {
+    "coverage": 0.048521715799967446,
+    "app": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "expressions": [
+    "mira · neutral",
+    "rowan · happy",
+    "mira · thoughtful",
+    "mira · thoughtful",
+    "mira · happy",
+    "mira · happy"
+  ],
+  "recording": {
+    "audio": true,
+    "fps": 20,
+    "source": "actual CDP composited browser + live WebAudio",
+    "path": "docs/evidence/p15/release-nested/mira-expressions-audible.webm"
+  },
+  "state": {
+    "schemaVersion": 2,
+    "worldVersion": "pixel-first-voyage-v2",
+    "wallet": 25,
+    "inventory": {
+      "sardine": 0,
+      "bream": 0
+    },
+    "delivery": "available",
+    "discoveries": [
+      "havenport"
+    ],
+    "story": {
+      "metMira": false,
+      "outingInvited": false,
+      "outingVisitedSaltglass": false,
+      "outingComplete": false,
+      "homeSeen": false,
+      "prologueSeen": true
+    },
+    "player": {
+      "x": 33.61191915546657,
+      "z": -11.449798425359267,
+      "heading": 1.8925468811915083,
+      "mode": "walk",
+      "island": "havenport"
+    },
+    "boat": {
+      "x": 63,
+      "z": 0,
+      "heading": 0,
+      "docked": "havenport"
+    },
+    "settings": {
+      "muted": false,
+      "volume": 0.35,
+      "music": 0.7,
+      "ambience": 0.35,
+      "sfx": 0.55,
+      "reducedMotion": false,
+      "instantText": false
+    }
+  },
+  "metrics": {
+    "renderer": "WebGL",
+    "frames": 1200,
+    "sampleKind": "raw render callback interval",
+    "p50": 16.69999998807907,
+    "p95": 16.899999976158142,
+    "stallsOver50ms": 1,
+    "assets": 541,
+    "viewport": [
+      640,
+      360
+    ],
+    "scene": "first-voyage",
+    "zoom": 1,
+    "companionReady": true,
+    "loadBytes": 3248699,
+    "heap": 19340285,
+    "npcs": [
+      {
+        "id": "ellis",
+        "x": 43.29567883631116,
+        "z": 2.647839418155578,
+        "walking": true
+      },
+      {
+        "id": "mira",
+        "x": 35,
+        "z": -12,
+        "walking": false
+      },
+      {
+        "id": "seller",
+        "x": 25,
+        "z": 18,
+        "walking": false
+      },
+      {
+        "id": "nessa",
+        "x": 44,
+        "z": -337,
+        "walking": false
+      }
+    ],
+    "audio": {
+      "rms": 0.012980528623565251,
+      "musicRms": 0.0371876239463611,
+      "musicLooping": true,
+      "musicTime": 39.349333333333334,
+      "musicPosition": 39.349333333333334,
+      "gains": {
+        "master": 0.35006436705589294,
+        "music": 0.45510002970695496,
+        "ambience": 0.08751609176397324,
+        "sfx": 0.22003218531608582
+      },
+      "state": "running",
+      "track": "havenport",
+      "target": "havenport",
+      "status": "Music follows the coast",
+      "error": null,
+      "voices": 1,
+      "decodedTracks": 1,
+      "retryAfter": null,
+      "loopSeconds": 96,
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "screenActors": [
+      {
+        "x": 326,
+        "y": 175,
+        "width": 32,
+        "height": 64
+      },
+      {
+        "x": 309,
+        "y": 223,
+        "width": 32,
+        "height": 64
+      },
+      {
+        "x": 334,
+        "y": 177,
+        "width": 32,
+        "height": 64
+      },
+      {
+        "x": 174,
+        "y": 217,
+        "width": 32,
+        "height": 64
+      },
+      {
+        "x": 1670,
+        "y": -455,
+        "width": 32,
+        "height": 64
+      }
+    ],
+    "locomotion": {
+      "phase": "idle",
+      "speed": 0,
+      "distance": 31.073172652657288,
+      "direction": "e",
+      "velocity": [
+        0,
+        0
+      ]
+    },
+    "gangway": null,
+    "elevation": 0
+  },
+  "bundle": "/thehousebythesea/preview/pixel/assets/index-CEY2Ra4G.js"
+}

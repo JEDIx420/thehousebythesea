@@ -1,0 +1,916 @@
+{
+  "projection": {
+    "x": 4,
+    "y": 2
+  },
+  "havenport": {
+    "shore": [
+      [-100, -25],
+      [-92, -65],
+      [-73, -95],
+      [-35, -113],
+      [4, -105],
+      [28, -85],
+      [39, -57],
+      [35, -38],
+      [45, -28],
+      [53, -20],
+      [52, -9],
+      [43, -8],
+      [35, -3],
+      [34, 6],
+      [40, 12],
+      [48, 14],
+      [47, 23],
+      [36, 38],
+      [22, 58],
+      [-5, 76],
+      [-42, 82],
+      [-77, 59],
+      [-94, 23],
+      [-103, -4]
+    ],
+    "grass": [
+      [-89, -27],
+      [-79, -66],
+      [-58, -90],
+      [-29, -99],
+      [0, -88],
+      [21, -64],
+      [24, -36],
+      [31, -21],
+      [28, -2],
+      [30, 19],
+      [18, 45],
+      [-9, 62],
+      [-40, 67],
+      [-65, 46],
+      [-81, 12]
+    ],
+    "paths": [
+      [
+        [55, 0],
+        [40, 0],
+        [32, -1],
+        [32, -12],
+        [24, -24],
+        [24, -45],
+        [18, -62],
+        [20, -74]
+      ],
+      [
+        [32, -1],
+        [22, -7],
+        [10, -12],
+        [-14, -16],
+        [-28, -24],
+        [-28, -28],
+        [-28, -44],
+        [-28, -60],
+        [-40, -72],
+        [-42, -84]
+      ],
+      [
+        [22, -7],
+        [26, 4],
+        [26, 19],
+        [22, 23],
+        [3, 23],
+        [-18, 17],
+        [-34, 17],
+        [-37, 5],
+        [-37, -12],
+        [-32, -16]
+      ],
+      [
+        [3, 23],
+        [-9, 34],
+        [-27, 47],
+        [-42, 58],
+        [-53, 57]
+      ],
+      [
+        [-34, 17],
+        [-47, 25],
+        [-50, 42],
+        [-53, 57]
+      ],
+      [
+        [-28, -60],
+        [-48, -60],
+        [-63, -70],
+        [-62, -83]
+      ],
+      [
+        [-28, -24],
+        [-54, -26],
+        [-70, -37],
+        [-78, -47]
+      ],
+      [
+        [24, -45],
+        [8, -48],
+        [-10, -42],
+        [-18, -36],
+        [-18, -26],
+        [-28, -24]
+      ]
+    ],
+    "dock": {
+      "minX": 32,
+      "maxX": 59,
+      "minZ": -4,
+      "maxZ": 4,
+      "x": 63,
+      "z": 0,
+      "landingX": 55,
+      "landingZ": 0
+    },
+    "landmarks": [
+      {
+        "kind": "shop",
+        "x": 0,
+        "z": -22
+      },
+      {
+        "kind": "cafe",
+        "x": 4,
+        "z": 15
+      },
+      {
+        "kind": "market-stall",
+        "x": 20,
+        "z": 34
+      },
+      {
+        "kind": "hut",
+        "x": 42,
+        "z": 23
+      },
+      {
+        "kind": "garden-house",
+        "x": -45,
+        "z": 10
+      },
+      {
+        "kind": "cottage",
+        "x": -62,
+        "z": 49
+      },
+      {
+        "kind": "beacon",
+        "x": -44,
+        "z": -87
+      },
+      {
+        "kind": "bench",
+        "x": -36,
+        "z": -78
+      },
+      {
+        "kind": "bench",
+        "x": 16,
+        "z": -76
+      },
+      {
+        "kind": "sign-home",
+        "x": 22,
+        "z": -73
+      },
+      {
+        "kind": "sign-light",
+        "x": -21,
+        "z": -26
+      },
+      {
+        "kind": "sign-market",
+        "x": -33,
+        "z": 18
+      },
+      {
+        "kind": "bench",
+        "x": 11,
+        "z": 18
+      },
+      {
+        "kind": "net",
+        "x": 39,
+        "z": 5
+      },
+      {
+        "kind": "crate",
+        "x": 38,
+        "z": 4
+      },
+      {
+        "kind": "crate",
+        "x": 36,
+        "z": 8
+      },
+      {
+        "kind": "crate",
+        "x": 32,
+        "z": 12
+      },
+      {
+        "kind": "bollard",
+        "x": 54,
+        "z": 3
+      },
+      {
+        "kind": "bollard",
+        "x": 46,
+        "z": -3
+      },
+      {
+        "kind": "lamp",
+        "x": 36,
+        "z": -6
+      },
+      {
+        "kind": "lamp",
+        "x": 23,
+        "z": 12
+      },
+      {
+        "kind": "lamp",
+        "x": -3,
+        "z": -13
+      },
+      {
+        "kind": "pot",
+        "x": 8,
+        "z": 13
+      },
+      {
+        "kind": "pot",
+        "x": -39,
+        "z": 9
+      },
+      {
+        "kind": "pot",
+        "x": -60,
+        "z": 50
+      },
+      {
+        "kind": "pot",
+        "x": -6,
+        "z": -22
+      },
+      {
+        "kind": "tree",
+        "x": -87,
+        "z": -28,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -79,
+        "z": -54,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -78,
+        "z": -83,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -67,
+        "z": -94,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -17,
+        "z": -88,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": 4,
+        "z": -75,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -70,
+        "z": 0,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -84,
+        "z": 29,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -69,
+        "z": 58,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -39,
+        "z": 68,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -9,
+        "z": 57,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "z": -43,
+        "solid": 1.2
+      },
+      {
+        "kind": "rock",
+        "x": -91,
+        "z": -8,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": -80,
+        "z": 50,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": -40,
+        "z": 72,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": 14,
+        "z": 54,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": 30,
+        "z": -61,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": 48,
+        "z": -16,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": 44,
+        "z": 20,
+        "solid": 2
+      }
+    ],
+    "id": "havenport",
+    "name": "Havenport",
+    "offsetZ": 0,
+    "tone": "warm",
+    "safe": {
+      "x": 48,
+      "z": 0
+    },
+    "companionRoute": [
+      [35, -12],
+      [32, -12],
+      [32, -1],
+      [40, 0],
+      [55, 0]
+    ],
+    "levels": [
+      {
+        "id": "lighthouse-meadow",
+        "height": 24,
+        "polygon": [
+          [-82, -82],
+          [-61, -104],
+          [-28, -105],
+          [-7, -84],
+          [-4, -63],
+          [-14, -44],
+          [-48, -44],
+          [-77, -54],
+          [-90, -68]
+        ]
+      }
+    ],
+    "ramps": [
+      {
+        "id": "meadow-stairs",
+        "rect": [-34, -44, -22, -28],
+        "axis": "z",
+        "from": 24,
+        "to": 0
+      }
+    ],
+    "districts": [
+      {
+        "name": "Havenport · working harbour",
+        "rect": [30, -20, 60, 17]
+      },
+      {
+        "name": "Havenport · market square",
+        "rect": [4, -7, 30, 35]
+      },
+      {
+        "name": "Havenport · garden street",
+        "rect": [-80, -15, -30, 58]
+      },
+      {
+        "name": "Havenport · lighthouse meadow",
+        "rect": [-92, -108, -3, -40]
+      },
+      {
+        "name": "Havenport · the quiet shore",
+        "rect": [0, -88, 32, -40]
+      }
+    ]
+  },
+  "saltglass": {
+    "id": "saltglass-bay",
+    "name": "Saltglass Bay",
+    "offsetZ": -340,
+    "tone": "cool",
+    "shore": [
+      [-72, -20],
+      [-64, -49],
+      [-43, -75],
+      [-12, -84],
+      [20, -69],
+      [33, -48],
+      [35, -31],
+      [46, -24],
+      [51, -14],
+      [46, -7],
+      [37, -4],
+      [36, 8],
+      [43, 14],
+      [41, 25],
+      [21, 43],
+      [-7, 49],
+      [-35, 41],
+      [-60, 22],
+      [-76, 0]
+    ],
+    "grass": [
+      [-60, -23],
+      [-50, -49],
+      [-32, -65],
+      [-10, -70],
+      [13, -58],
+      [23, -36],
+      [27, -9],
+      [29, 12],
+      [13, 29],
+      [-8, 35],
+      [-32, 28],
+      [-52, 9]
+    ],
+    "paths": [
+      [
+        [55, 0],
+        [42, 0],
+        [30, -1],
+        [16, -2],
+        [0, -5],
+        [-12, -10],
+        [-12, -31],
+        [-12, -45],
+        [-5, -45],
+        [-2, -53]
+      ],
+      [
+        [30, -1],
+        [30, 11],
+        [25, 24],
+        [3, 32],
+        [-21, 25],
+        [-34, 16],
+        [-34, 0],
+        [-24, -9],
+        [-12, -10]
+      ],
+      [
+        [-12, -45],
+        [-32, -48],
+        [-36, -59]
+      ],
+      [
+        [-34, 16],
+        [-58, 16],
+        [-61, 2]
+      ],
+      [
+        [-2, -53],
+        [7, -57],
+        [10, -50]
+      ],
+      [
+        [25, 24],
+        [29, 30],
+        [16, 38]
+      ]
+    ],
+    "dock": {
+      "minX": 36,
+      "maxX": 59,
+      "minZ": -4,
+      "maxZ": 4,
+      "x": 63,
+      "z": 0,
+      "landingX": 55,
+      "landingZ": 0
+    },
+    "landmarks": [
+      {
+        "kind": "fishing-hut",
+        "x": 20,
+        "z": -13
+      },
+      {
+        "kind": "net-shed",
+        "x": -5,
+        "z": 11
+      },
+      {
+        "kind": "fishing-hut",
+        "x": -43,
+        "z": 7
+      },
+      {
+        "kind": "arch",
+        "x": -2,
+        "z": -57
+      },
+      {
+        "kind": "bench",
+        "x": 9,
+        "z": -53
+      },
+      {
+        "kind": "sign-cliff",
+        "x": -21,
+        "z": -9
+      },
+      {
+        "kind": "lamp",
+        "x": 35,
+        "z": -6
+      },
+      {
+        "kind": "bollard",
+        "x": 54,
+        "z": 3
+      },
+      {
+        "kind": "bollard",
+        "x": 46,
+        "z": -3
+      },
+      {
+        "kind": "crate",
+        "x": 39,
+        "z": 3
+      },
+      {
+        "kind": "crate",
+        "x": 27,
+        "z": -12
+      },
+      {
+        "kind": "net",
+        "x": 41,
+        "z": 3
+      },
+      {
+        "kind": "net",
+        "x": 24,
+        "z": -12
+      },
+      {
+        "kind": "net",
+        "x": -4,
+        "z": 15
+      },
+      {
+        "kind": "pot",
+        "x": -42,
+        "z": 9
+      },
+      {
+        "kind": "tree",
+        "x": -61,
+        "z": -17,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -57,
+        "z": -43,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -35,
+        "z": -67,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -2,
+        "z": -67,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": 22,
+        "z": -36,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": -31,
+        "z": 30,
+        "solid": 1.2
+      },
+      {
+        "kind": "tree",
+        "x": 13,
+        "z": 32,
+        "solid": 1.2
+      },
+      {
+        "kind": "rock",
+        "x": -67,
+        "z": 3,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": -56,
+        "z": 26,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": -27,
+        "z": 40,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": 34,
+        "z": 27,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": 40,
+        "z": 15,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": 38,
+        "z": -22,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": -43,
+        "z": -45,
+        "solid": 2
+      },
+      {
+        "kind": "rock",
+        "x": -21,
+        "z": -64,
+        "solid": 2
+      },
+      {
+        "kind": "tidepool",
+        "x": 10,
+        "z": 42
+      },
+      {
+        "kind": "tidepool",
+        "x": 23,
+        "z": 37
+      }
+    ],
+    "safe": {
+      "x": 48,
+      "z": 0
+    },
+    "companionRoute": [],
+    "levels": [
+      {
+        "id": "shell-cliffs",
+        "height": 28,
+        "polygon": [
+          [-49, -60],
+          [-30, -74],
+          [-4, -70],
+          [20, -59],
+          [18, -40],
+          [4, -31],
+          [-25, -31],
+          [-48, -44]
+        ]
+      }
+    ],
+    "ramps": [
+      {
+        "id": "cliff-stairs",
+        "rect": [-18, -31, -6, -10],
+        "axis": "z",
+        "from": 28,
+        "to": 0
+      }
+    ],
+    "districts": [
+      {
+        "name": "Saltglass · the tide pools",
+        "rect": [4, 28, 36, 49]
+      },
+      {
+        "name": "Saltglass · net-mending quay",
+        "rect": [25, -20, 65, 15]
+      },
+      {
+        "name": "Saltglass · sheltered cove",
+        "rect": [-60, -12, 25, 38]
+      },
+      {
+        "name": "Saltglass · shell cliffs",
+        "rect": [-52, -78, 22, -30]
+      }
+    ]
+  },
+  "buildings": {
+    "shop": {
+      "width": 15,
+      "depth": 15
+    },
+    "cafe": {
+      "width": 15,
+      "depth": 15
+    },
+    "hut": {
+      "width": 15,
+      "depth": 15
+    },
+    "fishing-hut": {
+      "width": 12,
+      "depth": 12
+    },
+    "cottage": {
+      "width": 15,
+      "depth": 15
+    },
+    "market-stall": {
+      "width": 12,
+      "depth": 8
+    },
+    "garden-house": {
+      "width": 14,
+      "depth": 12
+    },
+    "beacon": {
+      "width": 5,
+      "depth": 5
+    },
+    "net-shed": {
+      "width": 12,
+      "depth": 9
+    }
+  },
+  "buildingOrigin": "front corner; local x/z extend negative; units logical world",
+  "boatHull": {
+    "origin": "hull pivot; fore positive, right positive; units logical world",
+    "points": [
+      [7.875, 0],
+      [4.725, -3.15],
+      [-6.825, -3.675],
+      [-8.925, -1.575],
+      [-8.925, 1.575],
+      [-6.825, 3.675],
+      [4.725, 3.15]
+    ]
+  },
+  "bounds": {
+    "minX": -165,
+    "maxX": 180,
+    "minZ": -500,
+    "maxZ": 130
+  },
+  "npcs": [
+    {
+      "id": "ellis",
+      "actor": "ellis",
+      "name": "Ellis · harbourmaster",
+      "island": "havenport",
+      "x": 44,
+      "z": 3
+    },
+    {
+      "id": "mira",
+      "actor": "mira",
+      "name": "Mira · coastal illustrator",
+      "island": "havenport",
+      "x": 35,
+      "z": -12
+    },
+    {
+      "id": "seller",
+      "actor": "tomas",
+      "name": "Tomas · fish market",
+      "island": "havenport",
+      "x": 25,
+      "z": 18
+    },
+    {
+      "id": "nessa",
+      "actor": "nessa",
+      "name": "Nessa · Saltglass fisher",
+      "island": "saltglass-bay",
+      "x": 44,
+      "z": 3
+    }
+  ],
+  "interactions": [
+    {
+      "id": "home",
+      "name": "The little beachfront plot",
+      "island": "havenport",
+      "x": 20,
+      "z": -74
+    },
+    {
+      "id": "arch",
+      "name": "The shell arch",
+      "island": "saltglass-bay",
+      "x": -2,
+      "z": -53
+    }
+  ],
+  "archPillars": [
+    {
+      "x": -7.875,
+      "z": 7.375,
+      "radius": 1.8
+    },
+    {
+      "x": 5.5,
+      "z": -5.5,
+      "radius": 1.8
+    }
+  ],
+  "version": "pixel-first-voyage-v2",
+  "decorativeBoats": [
+    {
+      "island": "havenport",
+      "x": 80,
+      "z": -28,
+      "direction": 2
+    },
+    {
+      "island": "saltglass-bay",
+      "x": 84,
+      "z": -14,
+      "direction": 6
+    }
+  ],
+  "routines": {
+    "ellis": [
+      [44, 3, 7],
+      [40, 1, 5],
+      [41, 2, 7]
+    ],
+    "seller": [
+      [25, 18, 8],
+      [24, 21, 6],
+      [23, 18, 6]
+    ],
+    "nessa": [
+      [44, 3, 8],
+      [42, 2, 9],
+      [43, 1, 6]
+    ],
+    "mira": [
+      [35, -12, 12],
+      [40, -14, 12],
+      [35, -12, 8]
+    ]
+  }
+}

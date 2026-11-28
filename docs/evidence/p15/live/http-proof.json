@@ -1,0 +1,85 @@
+{
+  "verifiedAt": "2026-11-28T11:52:20.132Z",
+  "release": "7b42b7d1efd81e26492f0206bcb31761b5b34b10",
+  "run": "https://github.com/JEDIx420/thehousebythesea/actions/runs/46140958679",
+  "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/?p15=7b42b7d",
+  "rootStatus": 200,
+  "nestedStatus": 200,
+  "expectedBundle": "/thehousebythesea/preview/pixel/assets/index-CEY2Ra4G.js",
+  "actualBundle": "/thehousebythesea/preview/pixel/assets/index-CEY2Ra4G.js",
+  "assetRevision": "00d3130eaac76f05",
+  "resources": [
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/index-CEY2Ra4G.js",
+      "status": 200,
+      "bytes": 1298755,
+      "sha256": "c3a5eb3cb427b9c25517d361d76433820af63b4995435b49b7373d14472ebb32",
+      "mime": "application/javascript; charset=utf-8",
+      "cache": "max-age=600"
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/index-DuwpRdEL.css",
+      "status": 200,
+      "bytes": 13088,
+      "sha256": "7371e8c702bedcac2d6ff5bb4aa435860bd3033d0a2aa95324832acddc411d85",
+      "mime": "text/css; charset=utf-8",
+      "cache": "max-age=600"
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/atlas.png?v=00d3130eaac76f05",
+      "status": 200,
+      "bytes": 866951,
+      "sha256": "82112aa5567434362f17d5b628cf834b03126fa22da9631b2f556adf793dfb98",
+      "mime": "image/png",
+      "cache": "max-age=600"
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/atlas.json?v=00d3130eaac76f05",
+      "status": 200,
+      "bytes": 92280,
+      "sha256": "6ef6b985ffb7dd3bd891a62f8797a44f7b6a01acda82c20c4c52d99bfba025b7",
+      "mime": "application/json; charset=utf-8",
+      "cache": "max-age=600"
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/manifest.json?v=00d3130eaac76f05",
+      "status": 200,
+      "bytes": 206855,
+      "sha256": "d36afa9946f4e633cca8122d885cc1e11f6efcc31277f494ba3cd21c602ec19b",
+      "mime": "application/json; charset=utf-8",
+      "cache": "max-age=600"
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/audio/havenport.mp3?v=00d3130eaac76f05",
+      "status": 200,
+      "bytes": 768670,
+      "sha256": "941a3951d9d1ced64f700198f6ce2d9293b2bfa152d6147a54099c53ff7f025c",
+      "mime": "audio/mp3",
+      "cache": "max-age=600"
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/audio/sailing.mp3?v=00d3130eaac76f05",
+      "status": 200,
+      "bytes": 768670,
+      "sha256": "87fba47463dc57821d5e2272c89b37c8eb42316477adf18a8a829f9eec8143d0",
+      "mime": "audio/mp3",
+      "cache": "max-age=600"
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/audio/saltglass.mp3?v=00d3130eaac76f05",
+      "status": 200,
+      "bytes": 768670,
+      "sha256": "2bff35a58077ac3917ea365ab0c1603a203ccc7055cc6f4e76c25e1c94836919",
+      "mime": "audio/mp3",
+      "cache": "max-age=600"
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/THIRD_PARTY_NOTICES.txt?v=00d3130eaac76f05",
+      "status": 200,
+      "bytes": 6206,
+      "sha256": "6dd930c9e0df2e4e6d722cf3fa40028125d9778951ff8b04a71124c3e8a245c6",
+      "mime": "text/plain; charset=utf-8",
+      "cache": "max-age=600"
+    }
+  ]
+}

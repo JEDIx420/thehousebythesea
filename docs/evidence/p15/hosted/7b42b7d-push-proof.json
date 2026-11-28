@@ -1,0 +1,93 @@
+{
+  "commit": "7b42b7d1efd81e26492f0206bcb31761b5b34b10",
+  "pushRun": 46140958679,
+  "url": "https://github.com/JEDIx420/thehousebythesea/actions/runs/46140958679",
+  "conclusion": "success",
+  "verify": "success",
+  "deploy": "success",
+  "units": 60,
+  "browserCases": 18,
+  "browserDuration": "9.5m",
+  "fullRouteDuration": "4.6m",
+  "returningWarmCacheCase": "PASS25.1s",
+  "portraitRaisedHudCase": "PASS1.0m (same120sbudget)",
+  "browserArtifact": {
+    "id": 15262375587,
+    "bytes": 2558842,
+    "files": [
+      {
+        "file": "playwright-report/index.html",
+        "bytes": 682436,
+        "sha256": "34e2e6e5dc1acb861079b66cc3a4168bf2096d27ef7cbb5a7c6be41528b4c9c3"
+      },
+      {
+        "file": "test-results/checkpoints/08-journal.png",
+        "bytes": 238222,
+        "sha256": "9cb062b3b4000aa2ffbf9b094f418b4d199e1c23ee609a21b26e626310ef3848"
+      },
+      {
+        "file": "test-results/checkpoints/02-mira-dialogue.png",
+        "bytes": 231878,
+        "sha256": "876fdb18c38851500cda89802d52ac15db8a1d49954c37504a0d79388ae9d0a1"
+      },
+      {
+        "file": "test-results/checkpoints/01-havenport.png",
+        "bytes": 242507,
+        "sha256": "595080676ee3da8a854a2d486f736b1786ae9311b34907cc1f1cb805cc8aa560"
+      },
+      {
+        "file": "test-results/checkpoints/03-sailing.png",
+        "bytes": 191789,
+        "sha256": "ce76f75917e4276e30e4a2abfc3c07a3d8ea0ec663641b6a93580621fddd0f18"
+      },
+      {
+        "file": "test-results/checkpoints/06b-saltglass-vista.png",
+        "bytes": 210993,
+        "sha256": "899bbe6ed1c20e571dc20c2ee660774b4d2ea4f712c7ac2ff662956d0ccb60a5"
+      },
+      {
+        "file": "test-results/checkpoints/06-saltglass.png",
+        "bytes": 206651,
+        "sha256": "0dc96e46f77803ed343b9ece4a0c5204ae11e9b7d76bb6e75006d08e2670e8ed"
+      },
+      {
+        "file": "test-results/checkpoints/04-docking.png",
+        "bytes": 230175,
+        "sha256": "aa31e8201349a9325ef863c2388fd231aabf8b4e79defd631782186f162367c5"
+      },
+      {
+        "file": "test-results/checkpoints/05-fishing.png",
+        "bytes": 231521,
+        "sha256": "069ffc8befd4fab7b9691f7624e49e2997599eb2866efa3524f59e71d22fe83b"
+      },
+      {
+        "file": "test-results/checkpoints/07-home-fund.png",
+        "bytes": 232962,
+        "sha256": "21667256aa0f991a2a4362b5747bad80855ad99cbdd7a9d8c62aa10b1f795c51"
+      },
+      {
+        "file": "test-results/checkpoints/gameplay-metrics.json",
+        "bytes": 37366,
+        "sha256": "d91fa1a3bbce5c64675c52b7e8c317830b96e454771f4d783f1a44ae8dbf91ec"
+      },
+      {
+        "file": "test-results/checkpoints/09-credits.png",
+        "bytes": 268178,
+        "sha256": "38a31578aa36aa41997967135642a725420f39549606e430e956c6db9a7cde8c"
+      }
+    ]
+  },
+  "pagesArtifact": {
+    "id": 15261743986,
+    "bytes": 3160934,
+    "nestedBundle": "index-CEY2Ra4G.js"
+  },
+  "metrics": {
+    "records": 10,
+    "renderer": "WebGL",
+    "defaultBundle": "index-DV39JCTG.js",
+    "finalWallet": 195,
+    "worldVersion": "pixel-first-voyage-v2"
+  },
+  "scope": "Hosted success independently fetched; public live browser verification belongs to coordinator. Creator playtest required, Stage2 locked."
+}

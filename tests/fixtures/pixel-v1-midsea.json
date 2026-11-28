@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "worldVersion": "pixel-first-voyage-v1",
+  "wallet": 25,
+  "inventory": {
+    "sardine": 0,
+    "bream": 0
+  },
+  "delivery": "active",
+  "discoveries": [
+    "havenport"
+  ],
+  "story": {
+    "metMira": true,
+    "outingInvited": true,
+    "outingVisitedSaltglass": false,
+    "outingComplete": false,
+    "homeSeen": false,
+    "prologueSeen": true
+  },
+  "player": {
+    "x": 63,
+    "z": -96.90963096407502,
+    "heading": 0,
+    "mode": "boat",
+    "island": "havenport"
+  },
+  "boat": {
+    "x": 63,
+    "z": -96.90963096407502,
+    "heading": 0,
+    "docked": null
+  },
+  "settings": {
+    "muted": false,
+    "volume": 0.35,
+    "reducedMotion": false
+  }
+}

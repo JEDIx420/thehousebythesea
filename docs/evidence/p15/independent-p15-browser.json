@@ -1,0 +1,185 @@
+{
+  "bundle": "/thehousebythesea/preview/pixel/assets/index-CEY2Ra4G.js",
+  "diagonalDistances": [
+    1.5754853723333495,
+    1.6850886063333026
+  ],
+  "metrics": {
+    "renderer": "WebGL",
+    "frames": 3,
+    "sampleKind": "raw render callback interval",
+    "p50": 15.299999952316284,
+    "p95": 15.600000023841858,
+    "stallsOver50ms": 0,
+    "assets": 541,
+    "viewport": [
+      640,
+      360
+    ],
+    "scene": "first-voyage",
+    "zoom": 1,
+    "companionReady": true,
+    "loadBytes": 1500,
+    "heap": 31451537,
+    "npcs": [
+      {
+        "id": "ellis",
+        "x": 44,
+        "z": 3,
+        "walking": false
+      },
+      {
+        "id": "mira",
+        "x": 35,
+        "z": -12,
+        "walking": false
+      },
+      {
+        "id": "seller",
+        "x": 25,
+        "z": 18,
+        "walking": false
+      },
+      {
+        "id": "nessa",
+        "x": 44,
+        "z": -337,
+        "walking": false
+      }
+    ],
+    "audio": {
+      "rms": 0,
+      "musicRms": 0,
+      "musicLooping": false,
+      "musicTime": 0.005333333333333333,
+      "musicPosition": 0,
+      "gains": {
+        "master": 1,
+        "music": 1,
+        "ambience": 1,
+        "sfx": 1
+      },
+      "state": "running",
+      "track": null,
+      "target": "havenport",
+      "status": "Music follows the coast",
+      "error": null,
+      "voices": 0,
+      "decodedTracks": 0,
+      "retryAfter": null,
+      "loopSeconds": 0,
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "screenActors": [
+      {
+        "x": 344,
+        "y": 225,
+        "width": 32,
+        "height": 64
+      },
+      {
+        "x": 291,
+        "y": 210,
+        "width": 32,
+        "height": 64
+      },
+      {
+        "x": 315,
+        "y": 162,
+        "width": 32,
+        "height": 64
+      },
+      {
+        "x": 155,
+        "y": 202,
+        "width": 32,
+        "height": 64
+      },
+      {
+        "x": 1651,
+        "y": -470,
+        "width": 32,
+        "height": 64
+      }
+    ],
+    "locomotion": {
+      "phase": "idle",
+      "speed": 0,
+      "distance": 0,
+      "direction": "s",
+      "velocity": [
+        0,
+        0
+      ]
+    },
+    "gangway": null,
+    "elevation": 0
+  },
+  "seconds": 53.389,
+  "checks": [
+    "Cardinal/diagonal real-input distances have no large speed bonus",
+    "Real tab blur clears held movement",
+    "Actual raised24 surface reached",
+    "Cliff approach blocks descent off raised surface",
+    "Downhill beyond ramp endpoint returns height0",
+    "Recovery keeps accepted delivery",
+    "Fishing starts through realF",
+    "Fishing cancels through realF",
+    "Timed reel catches one actualfish",
+    "Complete exact snapshot survives reload",
+    "No pageerrors"
+  ],
+  "errors": [],
+  "failure": null,
+  "state": {
+    "schemaVersion": 2,
+    "worldVersion": "pixel-first-voyage-v2",
+    "wallet": 25,
+    "inventory": {
+      "sardine": 0,
+      "bream": 1
+    },
+    "delivery": "active",
+    "discoveries": [
+      "havenport"
+    ],
+    "story": {
+      "metMira": false,
+      "outingInvited": false,
+      "outingVisitedSaltglass": false,
+      "outingComplete": false,
+      "homeSeen": false,
+      "prologueSeen": true
+    },
+    "player": {
+      "x": 54.44775578930593,
+      "z": 0.0778333079573793,
+      "heading": 1.8925468811915296,
+      "mode": "walk",
+      "island": "havenport"
+    },
+    "boat": {
+      "x": 63,
+      "z": 0,
+      "heading": 0,
+      "docked": "havenport"
+    },
+    "settings": {
+      "muted": false,
+      "volume": 0.35,
+      "music": 0.7,
+      "ambience": 0.35,
+      "sfx": 0.55,
+      "reducedMotion": false,
+      "instantText": false
+    }
+  }
+}

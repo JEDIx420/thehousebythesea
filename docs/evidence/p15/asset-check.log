@@ -1,0 +1,5 @@
+
+> thehousebythesea-pixel@0.2.0 assets:check
+> node tools/check-assets.mjs
+
+PASS: 541 frames; bounds, alpha, four facings, shared anchors, distinct animations, sources and exact-byte reproducibility.

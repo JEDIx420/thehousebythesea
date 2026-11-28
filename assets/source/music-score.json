@@ -1,0 +1,10 @@
+{
+  "title":"The Afternoon We Kept", "author":"The House by the Sea contributors", "license":"MIT",
+  "seed":11282026,"bpm":80,"bars":32,"sampleRate":22050,
+  "harmony":[[50,54,57,64],[47,54,57,62],[43,50,55,59],[45,52,57,62],[42,49,54,57],[40,47,55,59],[43,50,54,59],[45,52,55,61]],
+  "motif":[[66,0,0.5],[69,0.5,0.5],[71,1,1],[69,2,0.5],[66,2.5,0.5],[64,3,1]],
+  "reply":[[74,0,1],[69,1.5,0.5],[66,2,1],[64,3,0.75]],
+  "bridge":[[73,0,1],[71,1,0.5],[69,1.5,0.5],[66,2,1],[64,3,1]],
+  "cadence":[[67,0,0.5],[66,0.5,0.5],[64,1,1],[62,2,1.75]],
+  "tracks":{"havenport":{"transpose":0,"pluck":0.55,"piano":0.3,"flute":0.38,"pad":0.13,"percussion":0.035},"sailing":{"transpose":0,"pluck":0.25,"piano":0.5,"flute":0.24,"pad":0.22,"percussion":0.015},"saltglass":{"transpose":-2,"pluck":0.45,"piano":0.23,"flute":0.3,"pad":0.18,"percussion":0.025}}
+}

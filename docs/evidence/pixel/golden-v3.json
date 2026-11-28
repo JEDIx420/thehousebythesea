@@ -1,0 +1,23 @@
+{
+  "base": "http://localhost:4190/thehousebythesea/",
+  "browser": "158.0.8127.37",
+  "metrics": {
+    "renderer": "WebGL",
+    "frames": 107,
+    "sampleKind": "raw render callback interval",
+    "stallsOver50ms": 0,
+    "p50": 16.69999998807907,
+    "p95": 16.80000001192093,
+    "assets": 199,
+    "viewport": [
+      640,
+      360
+    ],
+    "projection": {
+      "x": 20,
+      "y": 30
+    }
+  },
+  "bundle": "/thehousebythesea/assets/index-BXS9RwYF.js",
+  "errors": []
+}

@@ -1,0 +1,220 @@
+{
+  "run": 46139115650,
+  "commit": "303e1d86723316d8da38c64d53e62a1fbf9017a2",
+  "conclusion": "failure",
+  "passed": 16,
+  "failed": 1,
+  "deploy": "skipped",
+  "artifactId": 15261118854,
+  "artifactBytes": 491418874,
+  "traceBytes": 488702846,
+  "jpegResources": 4669,
+  "jpegUncompressedBytes": 491935148,
+  "screencastEvents": 4671,
+  "domSnapshots": 3051,
+  "actionMedianMs": 46.7390000000014,
+  "actionP95Ms": 94.84599999999045,
+  "last20States": [
+    {
+      "traceSeconds": 258.689949,
+      "player": {
+        "x": -27.530456673743334,
+        "z": -26.446751698574545,
+        "heading": 0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 259.07426399999997,
+      "player": {
+        "x": -26.522218697077477,
+        "z": -28.410329586232347,
+        "heading": -0.32175055439666406,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 259.642467,
+      "player": {
+        "x": -28.191135237245696,
+        "z": -29.772260718056053,
+        "heading": -2.356194490192345,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 260.042602,
+      "player": {
+        "x": -29.142434475819343,
+        "z": -27.699194035802055,
+        "heading": 2.8198420991931727,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 260.600924,
+      "player": {
+        "x": -27.51911245374907,
+        "z": -26.358485677244488,
+        "heading": 0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 261.018551,
+      "player": {
+        "x": -26.530691992822746,
+        "z": -28.538276830300333,
+        "heading": -0.3217505543966422,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 261.582897,
+      "player": {
+        "x": -28.167378306265114,
+        "z": -29.831413531765353,
+        "heading": -2.356194490192345,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 261.959591,
+      "player": {
+        "x": -29.014061600138703,
+        "z": -27.848849547140595,
+        "heading": 2.8198420991931292,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 262.45864,
+      "player": {
+        "x": -27.06558427282359,
+        "z": -25.633218854336427,
+        "heading": 1.892546881191539,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 262.93468800000005,
+      "player": {
+        "x": -25.182016389109805,
+        "z": -26.115144733247735,
+        "heading": -0.32175055439666406,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 263.345814,
+      "player": {
+        "x": -26.50167934194141,
+        "z": -28.42053899356503,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 263.83623,
+      "player": {
+        "x": -28.408158205968927,
+        "z": -28.96188400079635,
+        "heading": -2.356194490192345,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 264.239077,
+      "player": {
+        "x": -29.394456509815132,
+        "z": -26.839335675753148,
+        "heading": 2.819842099193151,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 264.752023,
+      "player": {
+        "x": -27.928887382962415,
+        "z": -25.762141851191465,
+        "heading": 0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 265.168916,
+      "player": {
+        "x": -26.980953291399658,
+        "z": -27.941914644451533,
+        "heading": -0.32175055439661493,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 265.659679,
+      "player": {
+        "x": -28.91905432336171,
+        "z": -30.108492889889316,
+        "heading": -1.2490457723982544,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 266.122003,
+      "player": {
+        "x": -30.837547154463802,
+        "z": -29.780666611802356,
+        "heading": 2.819842099193151,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 266.52669000000003,
+      "player": {
+        "x": -29.548230656884318,
+        "z": -27.46927875647533,
+        "heading": 2.356194490192345,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 266.989331,
+      "player": {
+        "x": -27.75494861118989,
+        "z": -26.79164999672209,
+        "heading": 0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "traceSeconds": 267.396694,
+      "player": {
+        "x": -26.740753070002434,
+        "z": -28.95583826969832,
+        "heading": -0.3217505543966422,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    }
+  ],
+  "diagnosis": "Timeout during waypoint(-28,-28) oscillation, not monotonic onward travel. Continuous screenshot/DOM tracing adds multiple readbacks per control update; measured positions overshoot arrival radius. CI screenshot tracing disabled in later correction; assertions/budget not raised. Improvement requires new hosted result."
+}

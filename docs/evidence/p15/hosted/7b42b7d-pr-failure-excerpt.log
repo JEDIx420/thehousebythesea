@@ -1,0 +1,14 @@
+Independent gh fetched run46140963625 log excerpt.
+verify	Run npm run typecheck && npm test	2026-11-28T11:40:35.0589560Z       Tests  60 passed (60)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:41:30.9159628Z   ✘   1 tests/browser/cache.spec.ts:7:1 › returning P1 player keeps real progress while a warm old art cache upgrades coherently (23.1s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:44:52.9974737Z   ✘   7 tests/browser/polish.spec.ts:131:1 › mixer, continuous96s loop, ducking and two-state crossfade are real browser audio (2.7m)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:46:54.6330997Z   ✘   8 tests/browser/polish.spec.ts:197:1 › portraits, release-debounced dialogue, raised walking and compact responsive HUD (2.0m)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:56:22.6151710Z   ✘  18 tests/browser/voyage.spec.ts:6:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return (7.6m)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:56:22.6552423Z     Error: Blocked walking to 40,0: {"x":36.78221475345789,"z":-3.414199738789938,"heading":2.2587944200316437,"mode":"walk","island":"havenport"}
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:56:22.6572282Z     Test timeout of 160000ms exceeded.
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:56:22.6572700Z     Error: page.waitForTimeout: Test timeout of 160000ms exceeded.
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:56:22.6586004Z     Test timeout of 120000ms exceeded.
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:56:22.6586431Z     Error: page.waitForTimeout: Test timeout of 120000ms exceeded.
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:56:22.6600296Z     Error: Walk timed out to 40,0: {"x":38.86661609074354,"z":-2.427779623313371,"heading":-1.2490457723982686,"mode":"walk","island":"havenport"}
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:56:22.6614978Z   4 failed
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:56:22.6623464Z   14 passed (15.3m)

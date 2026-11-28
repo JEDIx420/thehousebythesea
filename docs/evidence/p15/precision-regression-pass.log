@@ -1,0 +1,20 @@
+
+> thehousebythesea-pixel@0.2.0 test:e2e
+> playwright test --grep stale readbacks|portraits, release|returning P1 player --output=test-results/p15-precision
+
+[WebServer] (node:52066) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:52068) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52068) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Warm-cache upgrade retained 195 coins and loaded 541 coherent frames; canonical cache still280.
+  ✓  1 tests/browser/cache.spec.ts:7:1 › returning P1 player keeps real progress while a warm old art cache upgrades coherently (12.3s)
+All three arrivals within0.75 with250ms delayed readbacks; no drift/reward changes.
+  ✓  2 tests/browser/latency.spec.ts:3:1 › real keyboard waypoint arrivals remain precise with250ms stale readbacks (17.3s)
+  ✓  3 tests/browser/polish.spec.ts:197:1 › portraits, release-debounced dialogue, raised walking and compact responsive HUD (1.0m)
+
+  3 passed (1.5m)

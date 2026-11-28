@@ -1,0 +1,5 @@
+The House by the Sea — original pixel sprites, story and seeded surf audio, MIT.
+Phaser3.90.0 (MIT): https://github.com/phaserjs/phaser/tree/v3.90.0
+PixelFX bounded offline water/lettering subset (MIT): https://github.com/patch-gg/pixelfx/tree/5294518ce7c72e48b6100a744596e0acf57f2826
+All individual frames and anchors: manifest.json. Full notices: ../THIRD_PARTY_NOTICES.txt.
+No model APIs, Polyfork assets, hotlinked content or credentials in this build.

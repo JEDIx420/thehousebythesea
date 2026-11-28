@@ -1,0 +1,13 @@
+
+> thehousebythesea-pixel@0.2.0 test
+> vitest run
+
+
+ RUN  v5.1.2 /Users/vincyvincent/3dfun/thehousebythesea-pixel
+
+
+ Test Files  8 passed (8)
+      Tests  60 passed (60)
+   Start at  16:55:48
+   Duration  341ms (tests 67%, import 17%, transform 12%, worker 4%)
+

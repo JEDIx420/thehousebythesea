@@ -1,0 +1,315 @@
+{
+  "capturedAt": "2026-11-28T07:08:05.035Z",
+  "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/",
+  "root": "https://jedix420.github.io/thehousebythesea/",
+  "rootStatus": 200,
+  "rootPlayLink": "./preview/pixel/",
+  "browser": "158.0.8127.37",
+  "bundle": "/thehousebythesea/preview/pixel/assets/index-Da1gQADU.js",
+  "metrics": {
+    "renderer": "WebGL",
+    "frames": 3,
+    "sampleKind": "raw render callback interval",
+    "p50": 12.800000011920929,
+    "p95": 16.399999976158142,
+    "stallsOver50ms": 0,
+    "assets": 280,
+    "viewport": [
+      640,
+      360
+    ],
+    "scene": "first-voyage",
+    "zoom": 1,
+    "companionReady": true,
+    "loadBytes": 0,
+    "heap": 24101566
+  },
+  "before": {
+    "schemaVersion": 2,
+    "worldVersion": "pixel-first-voyage-v1",
+    "wallet": 25,
+    "inventory": {
+      "sardine": 0,
+      "bream": 0
+    },
+    "delivery": "available",
+    "discoveries": [
+      "havenport"
+    ],
+    "story": {
+      "metMira": false,
+      "outingInvited": false,
+      "outingVisitedSaltglass": false,
+      "outingComplete": false,
+      "homeSeen": false,
+      "prologueSeen": true
+    },
+    "player": {
+      "x": 48,
+      "z": 0,
+      "heading": 0,
+      "mode": "walk",
+      "island": "havenport"
+    },
+    "boat": {
+      "x": 63,
+      "z": 0,
+      "heading": 0,
+      "docked": "havenport"
+    },
+    "settings": {
+      "muted": false,
+      "volume": 0.35,
+      "reducedMotion": false
+    }
+  },
+  "moved": {
+    "schemaVersion": 2,
+    "worldVersion": "pixel-first-voyage-v1",
+    "wallet": 25,
+    "inventory": {
+      "sardine": 0,
+      "bream": 0
+    },
+    "delivery": "available",
+    "discoveries": [
+      "havenport"
+    ],
+    "story": {
+      "metMira": false,
+      "outingInvited": false,
+      "outingVisitedSaltglass": false,
+      "outingComplete": false,
+      "homeSeen": false,
+      "prologueSeen": true
+    },
+    "player": {
+      "x": 50.20207948044352,
+      "z": -2.20207948044348,
+      "heading": 0.7853981633974483,
+      "mode": "walk",
+      "island": "havenport"
+    },
+    "boat": {
+      "x": 63,
+      "z": 0,
+      "heading": 0,
+      "docked": "havenport"
+    },
+    "settings": {
+      "muted": false,
+      "volume": 0.35,
+      "reducedMotion": false
+    }
+  },
+  "recovered": {
+    "schemaVersion": 2,
+    "worldVersion": "pixel-first-voyage-v1",
+    "wallet": 25,
+    "inventory": {
+      "sardine": 0,
+      "bream": 0
+    },
+    "delivery": "available",
+    "discoveries": [
+      "havenport"
+    ],
+    "story": {
+      "metMira": false,
+      "outingInvited": false,
+      "outingVisitedSaltglass": false,
+      "outingComplete": false,
+      "homeSeen": false,
+      "prologueSeen": true
+    },
+    "player": {
+      "x": 48,
+      "z": 0,
+      "heading": 0,
+      "mode": "walk",
+      "island": "havenport"
+    },
+    "boat": {
+      "x": 63,
+      "z": 0,
+      "heading": 0,
+      "docked": "havenport"
+    },
+    "settings": {
+      "muted": false,
+      "volume": 0.35,
+      "reducedMotion": false
+    }
+  },
+  "saved": {
+    "schemaVersion": 2,
+    "worldVersion": "pixel-first-voyage-v1",
+    "wallet": 25,
+    "inventory": {
+      "sardine": 0,
+      "bream": 0
+    },
+    "delivery": "available",
+    "discoveries": [
+      "havenport"
+    ],
+    "story": {
+      "metMira": false,
+      "outingInvited": false,
+      "outingVisitedSaltglass": false,
+      "outingComplete": false,
+      "homeSeen": false,
+      "prologueSeen": true
+    },
+    "player": {
+      "x": 48,
+      "z": 0,
+      "heading": 0,
+      "mode": "walk",
+      "island": "havenport"
+    },
+    "boat": {
+      "x": 63,
+      "z": 0,
+      "heading": 0,
+      "docked": "havenport"
+    },
+    "settings": {
+      "muted": false,
+      "volume": 0.35,
+      "reducedMotion": false
+    }
+  },
+  "restored": {
+    "schemaVersion": 2,
+    "worldVersion": "pixel-first-voyage-v1",
+    "wallet": 25,
+    "inventory": {
+      "sardine": 0,
+      "bream": 0
+    },
+    "delivery": "available",
+    "discoveries": [
+      "havenport"
+    ],
+    "story": {
+      "metMira": false,
+      "outingInvited": false,
+      "outingVisitedSaltglass": false,
+      "outingComplete": false,
+      "homeSeen": false,
+      "prologueSeen": true
+    },
+    "player": {
+      "x": 48,
+      "z": 0,
+      "heading": 0,
+      "mode": "walk",
+      "island": "havenport"
+    },
+    "boat": {
+      "x": 63,
+      "z": 0,
+      "heading": 0,
+      "docked": "havenport"
+    },
+    "settings": {
+      "muted": false,
+      "volume": 0.35,
+      "reducedMotion": false
+    }
+  },
+  "manifestFrames": 280,
+  "manifestStatus": 200,
+  "noticesStatus": 200,
+  "errors": [
+    {
+      "type": "console",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://jedix420.github.io/favicon.ico",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "console",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://jedix420.github.io/favicon.ico",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "console",
+      "message": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://jedix420.github.io/favicon.ico",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "failed": [],
+  "pageOriginResponses": [
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/",
+      "status": 200
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/index-BEzc2E42.css",
+      "status": 200
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/index-Da1gQADU.js",
+      "status": 200
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/atlas.png",
+      "status": 200
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/manifest.json",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jedix420.github.io/f10f63e3-1d11-46aa-8e2b-f1500e380869",
+      "status": 200
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/atlas.json",
+      "status": 200
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/",
+      "status": 200
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/index-Da1gQADU.js",
+      "status": 200
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/index-BEzc2E42.css",
+      "status": 200
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/atlas.png",
+      "status": 200
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/atlas.json",
+      "status": 200
+    },
+    {
+      "url": "https://jedix420.github.io/thehousebythesea/preview/pixel/assets/manifest.json",
+      "status": 200
+    },
+    {
+      "url": "blob:https://jedix420.github.io/6e66c3d7-0261-4638-8579-7405728f9ec3",
+      "status": 200
+    }
+  ],
+  "gameplayChecks": "PASS: fresh Begin/Skip/real movement/recovery/manual save toast/reload Continue/full state equality",
+  "cleanConsole": false
+}
