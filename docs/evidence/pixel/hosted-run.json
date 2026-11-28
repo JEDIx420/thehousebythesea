@@ -1,0 +1,18 @@
+{
+  "run": 46119325130,
+  "source": "19b94d97c23cdb49576b71b3de5fd0df510fac80",
+  "url": "https://github.com/JEDIx420/thehousebythesea/actions/runs/46119325130",
+  "runner": "ubuntu-24.04",
+  "unitTests": 41,
+  "browserCases": 8,
+  "conclusion": "success",
+  "verify": "success",
+  "deploy": "success",
+  "artifact": {
+    "id": 15253705106,
+    "bytes": 2852148,
+    "inspected": "HTML report,10 actual checkpoint PNGs,gameplay-metrics.json"
+  },
+  "gameURL": "https://jedix420.github.io/thehousebythesea/preview/pixel/",
+  "bundle": "index-Da1gQADU.js"
+}

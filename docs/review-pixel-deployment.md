@@ -33,3 +33,33 @@ No blocking source defect found. Required release evidence: successful hosted ei
 2a057f8c4dce3590c868ca747a9ee13568a5f7c2ed83741aaf7f74874f3a7460 playwright.config.ts
 960ed1f0d4dc71f1c88a528b83ed2d5571869d8e12478c5c750ad0359bd68fa5 tests/browser/resilience.spec.ts
 ```
+
+
+## Hosted runner corrective review — 03ffa4e
+
+Independently inspected commit `03ffa4ef0b9a05a8f280ec7a644bcf118c7d5368`: the workflow delta contains only two `runs-on` substitutions, pinning verify/deploy from `ubuntu-latest` to `ubuntu-24.04`. Browser installation, all tests, WebGL launch settings, timeout budgets, artifact handling, branch gates and permissions are unchanged. **Narrow correction PASS.**
+
+Read `docs/evidence/pixel/failed-hosted-runner.log`: recorded run `46118787973` on `ac44` reached successful clean install, 280-frame asset checks, typecheck, 41 unit tests and build, then failed before browser cases because Playwright 1.56.1 rejected Ubuntu 26.04.1 (`ubuntu26.04-x64`). This file is a short recorded failure excerpt/summary, not a complete independently fetched hosted log. The explicit supported runner pin addresses that concrete installation mismatch without removing assertions. **Subsequent hosted install/browser success and deployment remain UNPROVEN/PENDING** in this review. No duplicate browser/build run performed.
+
+
+## Timed-input/evidence correction — 19b94d9
+
+Independently reviewed exactly the three-file delta in `19b94d97c23cdb49576b71b3de5fd0df510fac80`: `tests/browser/voyage.spec.ts`, `playwright.config.ts`, `.github/workflows/pixel-first-voyage.yml`. **Narrow correction PASS; no application code changed.** The fishing checkpoint moves from after observed “A bite!” to the waiting phase; after bite detection the next operation is real Space input, followed by the unchanged species inventory assertion. The finite game response window, both-species requirement, cancelled cast, wallet/sale, delivery idempotence, companion/return, home, save/reload equality and error assertions remain intact. No state/reward injection or timing tolerance increase was introduced.
+
+CI video capture is disabled while local video stays enabled; retained failure traces/screenshots and the HTML report remain configured. Upload now includes explicit checkpoint files and the report, avoiding the duplicate raw result tree/full videos. Playwright's HTML reporter carries referenced failure attachments in its report data; actual hosted artifact contents still require verification. Motion evidence therefore comes from the separately committed local recording, not from a claimed hosted video. This supersedes the earlier release-evidence request for a CI video artifact; inspect hosted checkpoints/report/trace and the local motion excerpt instead.
+
+These changes reduce synchronous screenshot/recording work around finite gameplay input without bypassing gameplay assertions. Capturing while waiting still consumes real time and is not a guarantee against an arbitrarily stalled runner. The reported eight-pass PR run and contrasting push failure were not independently fetched in this source-only follow-up; the new push must establish hosted success. No GPU test, build or duplicate route run performed by reviewer.
+
+
+## Independent LIVE Pages smoke — 2026-11-28
+
+**Public gameplay smoke PASS with cosmetic favicon-console qualification.** HTTP-only polling observed the nested URL change from 404 to 200 at approximately 07:07:23 UTC. Opened a fresh disposable native Chrome 158 context at `https://jedix420.github.io/thehousebythesea/preview/pixel/`; verified exact `index-Da1gQADU.js`, WebGL, title → Begin → skip memory → real held-key movement changing coordinates → R recovery → pause/manual Save with confirmed toast → reload → Continue → complete logical state equality. No debug state writes or reward injection. Root landing returned 200 and points to `./preview/pixel/`; nested manifest returned 200 with 280 frames and nested third-party notices returned 200.
+
+Fresh evidence: `docs/evidence/pixel/independent-live-smoke.png` and `.json`, containing URL, bundle/browser, metrics, before/moved/recovered/saved/restored state, same-origin page responses and error locations. Both disposable browser contexts are CLOSED. The initial smoke reached the same successful gameplay checks but its strict clean-console assertion failed; the follow-up preserves the actual result rather than suppressing it.
+
+**Cosmetic P2:** three console resource-404 messages all identify Chrome's implicit site-root `https://jedix420.github.io/favicon.ico`, not a missing game resource. No uncaught page error, failed game request or HTTP≥400 page-response event observed. Thus this is not a clean-console pass. An explicit project-relative or data favicon would remove the implicit site-root lookup; root notified. Actual public game and ancillary paths are independently proven reachable. Full hosted/public eight-case route results are separate evidence and were not rerun by this reviewer. Creator visual/gameplay approval remains PENDING; no later stage authorised.
+
+
+### Favicon follow-up — two-file source correction PASS
+
+Independently inspected the working-tree delta in `index.html` and `tools/package-pages.mjs`: each adds only `<link rel="icon" href="data:,">` to the game HTML or generated root landing HTML. This supplies a local inline empty icon instead of Chrome's implicit site-root network lookup; no third-party artwork, new network dependency, gameplay JS or route/assertion change. **Narrow source correction PASS.** The observed live favicon P2 remains awaiting post-deployment fresh-context verification; source review alone is not a zero-console live claim. No rebuild or browser run performed during the owner's public suite. Hosted eight-case successes/artifact inspection reported by the coordinator are not independently fetched in this follow-up.

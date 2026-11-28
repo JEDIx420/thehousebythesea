@@ -1,0 +1,24 @@
+
+> thehousebythesea-pixel@0.2.0 test:e2e
+> playwright test tests/browser/voyage.spec.ts --output=test-results/pixel-nested-journey
+
+
+Running 1 test using 1 worker
+
+(node:30664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Checkpoint 01-havenport
+Checkpoint 02-mira-dialogue
+Checkpoint 03-sailing
+Checkpoint 04-docking
+Checkpoint 05-fishing
+Checkpoint 06-saltglass
+Checkpoint 06b-saltglass-vista
+Checkpoint 07-home-fund
+Checkpoint 08-journal
+Checkpoint 09-credits
+  ✓  1 tests/browser/voyage.spec.ts:4:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return (2.5m)
+
+  1 passed (2.5m)

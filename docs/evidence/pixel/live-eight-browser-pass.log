@@ -1,0 +1,31 @@
+
+> thehousebythesea-pixel@0.2.0 test:e2e
+> playwright test --output=test-results/pixel-live
+
+
+Running 8 tests using 1 worker
+
+(node:31143) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31143) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/resilience.spec.ts:49:1 › title credits return, native keyboard menus, settings, picking and laptop layout (3.2s)
+  ✓  2 tests/browser/resilience.spec.ts:145:3 › future snapshot survives temporary play, recovery and autosave (12.3s)
+  ✓  3 tests/browser/resilience.spec.ts:145:3 › corrupt snapshot survives temporary play, recovery and autosave (12.2s)
+  ✓  4 tests/browser/resilience.spec.ts:161:1 › missing and stalled art are bounded, input-locked and recover through retry (14.1s)
+  ✓  5 tests/browser/resilience.spec.ts:196:1 › malformed metadata and a missing required animated frame show an honest retry state (1.3s)
+  ✓  6 tests/browser/resilience.spec.ts:257:1 › explicit legacy import copies progress to a safe pixel dock and preserves its source (1.0s)
+  ✓  7 tests/browser/resilience.spec.ts:294:1 › a failed import write says temporary and never reports durable success (964ms)
+Checkpoint 01-havenport
+Checkpoint 02-mira-dialogue
+Checkpoint 03-sailing
+Checkpoint 04-docking
+Checkpoint 05-fishing
+Checkpoint 06-saltglass
+Checkpoint 06b-saltglass-vista
+Checkpoint 07-home-fund
+Checkpoint 08-journal
+Checkpoint 09-credits
+  ✓  8 tests/browser/voyage.spec.ts:4:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return (2.5m)
+
+  8 passed (3.2m)

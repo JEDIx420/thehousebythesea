@@ -2,11 +2,11 @@
 
 A Phaser/TypeScript pixel-isometric reboot implementing [PR #6's direction](docs/pixel-isometric-reboot.md). Only **Havenport ↔ Saltglass Bay** is built. Rowan owns his first boat, earns a living, meets Mira on her own creative path, and starts saving for a beach home. Main and earlier3D PRs remain untouched.
 
-**Review build in progress:** [implementation PR #7](https://github.com/JEDIx420/thehousebythesea/pull/7). Current tests, screenshots, review findings and publishing status are in [progress](docs/progress.md). A planned URL is not a live deployment; use the verified link there once published. Stop after the First Voyage for creator visual and gameplay approval; further islands and construction remain locked.
+**First Voyage verified — WAITING FOR CREATOR APPROVAL:** [implementation PR #7](https://github.com/JEDIx420/thehousebythesea/pull/7). [Play the First Voyage](https://jedix420.github.io/thehousebythesea/preview/pixel/) — independently opened and tested live. Current tests, screenshots, review findings and publishing proof are in [progress](docs/progress.md) and the [evidence index](docs/evidence/pixel/README.md). Stop after the First Voyage for creator visual and gameplay approval; further islands and construction remain locked.
 
 ## Run locally
 
-Node22.12+ and npm. No credentials, accounts, paid APIs or external runtime services.
+Node 22.12+ and npm. No credentials, accounts, paid APIs or external runtime services.
 
 ```sh
 npm ci --ignore-scripts
@@ -24,7 +24,7 @@ Open `http://localhost:4190/thehousebythesea/`. Original art sources, palette, c
 
 WASD/arrows walk relative to the screen. E talks, boards or ties up. At sea W accelerates, A/D steer and S slows; leave the pier straight ahead before turning. M opens the chart, J the journal, F casts/puts away the rod, Space reels during a bite, Esc pauses. Mouse wheel toggles integer zoom. R or pause recovery returns both Rowan and boat safely to the current island's pier, preserving progress.
 
-Skip or watch the30-second childhood memory. Take Ellis's120-coin parcel at Havenport, talk with Mira and optionally invite her across. Board at the pier and wait for her to walk aboard. Sail north through the continuous channel; slow beside Saltglass's pier and E to step ashore. Give Nessa the parcel once, fish/sell a catch, and follow the pale path to the shell arch. Return to Havenport, share the crossing with Mira and read the beachfront plot notice. The wallet/home-fund tracker and journal record progress. No romance purchase or mandatory affection grind.
+Skip or watch the 30-second childhood memory. Take Ellis's 120-coin parcel at Havenport, talk with Mira and optionally invite her across. Board at the pier and wait for her to walk aboard. Sail north through the continuous channel; slow beside Saltglass's pier and E to step ashore. Give Nessa the parcel once, fish/sell a catch, and follow the pale path to the shell arch. Return to Havenport, share the crossing with Mira and read the beachfront plot notice. The wallet/home-fund tracker and journal record progress. No romance purchase or mandatory affection grind.
 
 Saving is local IndexedDB, automatic after story/economy changes and periodically during movement; manual Save is in pause. Only confirmed commits report saved. Unknown/corrupt snapshots are protected and offer temporary play. The optional original3D save import makes a COPY into a separate pixel database, retaining progress and resetting only coordinates to safe pixel docks. Saves are specific to your browser/device/origin; there is no cloud service.
 
@@ -37,9 +37,9 @@ PIXEL_PAGES_PREVIEW=1 npm run build
 node tools/package-pages.mjs
 ```
 
-Local tests use installed Google Chrome; CI uses Playwright Chromium (`CI=1` locally selects it). Recording requires Playwright's ffmpeg dependency. Eight isolated browser cases exercise native menus/layout, protected corrupt/future saves, stalled/missing/malformed art, legacy COPY import, failed writes and the full journey through both fish species and exact save/reload. They drive real keys and buttons; only storage-fault tests seed their own disposable IndexedDB fixtures. Screenshots/metrics are saved alongside checkpoint evidence; videos/traces are under ignored `test-results/` and uploaded by CI. `PIXEL_TEST_BASE_URL` runs the same journey against a verified remote/static nested base without starting a local server.
+Local tests use installed Google Chrome; CI uses Playwright Chromium (`CI=1` locally selects it). Recording requires Playwright's ffmpeg dependency. Eight isolated browser cases exercise native menus/layout, protected corrupt/future saves, stalled/missing/malformed art, legacy COPY import, failed writes and the full journey through both fish species and exact save/reload. They drive real keys and buttons; only storage-fault tests seed their own disposable IndexedDB fixtures. Screenshots/metrics are saved alongside checkpoint evidence; native videos and failure traces are under ignored `test-results/`; CI uploads checkpoint images/metrics and an HTML report with failure traces, without continuously recording video. `PIXEL_TEST_BASE_URL` runs the same journey against a verified remote/static nested base without starting a local server.
 
-The exact implementation branch's workflow verifies assets,41 unit tests, build and all browser tests before deploying a complete Pages landing plus `/thehousebythesea/preview/pixel/` review game. PRs run checks with read-only permissions. No merge to main is needed for review publishing. See [independent source/review records](docs/review-pixel.md) and [deployment review](docs/review-pixel-deployment.md). Chromium/Chrome are tested; Firefox/Safari and touch-only play are not claimed.
+The exact implementation branch's workflow verifies assets, 41 unit tests, build and all browser tests before deploying a complete Pages landing plus `/thehousebythesea/preview/pixel/` review game. PRs run checks with read-only permissions. No merge to main is needed for review publishing. See [independent source/review records](docs/review-pixel.md) and [deployment review](docs/review-pixel-deployment.md). Chromium/Chrome are tested; Firefox/Safari and touch-only play are not claimed.
 
 ---
 
