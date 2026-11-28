@@ -31,7 +31,7 @@ jobs:
         with:
           name: pixel-browser-evidence-${{ github.run_id }}
           path: |
-            test-results/
+            test-results/checkpoints/
             playwright-report/
           retention-days: 14
       - run: PIXEL_PAGES_PREVIEW=1 npm run build && node tools/package-pages.mjs

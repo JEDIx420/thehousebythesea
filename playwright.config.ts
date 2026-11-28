@@ -12,7 +12,11 @@ export default defineConfig({
     channel: process.env.CI ? undefined : "chrome",
     trace: "retain-on-failure",
     screenshot: "only-on-failure",
-    video: { mode: "on", size: { width: 1280, height: 800 } },
+    // The committed native gameplay excerpt supplies motion evidence. CI keeps
+    // screenshots + failure traces without continuous software-GPU readbacks.
+    video: process.env.CI
+      ? "off"
+      : { mode: "on", size: { width: 1280, height: 800 } },
     launchOptions: { args: ["--enable-webgl", "--ignore-gpu-blocklist"] },
   },
   webServer: process.env.PIXEL_TEST_BASE_URL

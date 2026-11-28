@@ -1,0 +1,6 @@
+Failed push run: https://github.com/JEDIx420/thehousebythesea/actions/runs/46118856973
+Same-source PR run: https://github.com/JEDIx420/thehousebythesea/actions/runs/46118861477 (all8PASS)
+Both source03ffa4e, Ubuntu24.04, all7resilience checksPASS.
+Push journey reached fishing screenshot, then timed out expecting inventory[fish]1 (received0).
+Original test awaited250ms + screenshot + diagnostic/state readbacks AFTER detecting A bite, BEFORE pressing Space during a real2.1-second window. This is timing-sensitive on software-rendered CI and not needed to prove a catch.
+Correction: photograph the waiting phase, then await bite and immediately press Space, preserving both-species inventory/payout assertions and unchanged gameplay timing. Stop continuous CI video readbacks (native successful motion excerpt already committed); retain every checkpoint PNG/metrics and failure traces in report, avoid uploading duplicate report/raw artifacts. Subsequent hosted run must prove resolution.

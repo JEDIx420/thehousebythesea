@@ -95,10 +95,12 @@ test("First Voyage: real walking, continuous sailing, work, fishing, Mira and sa
   for (const fish of ["bream", "sardine"] as const) {
     await page.keyboard.press("f");
     await expect(page.locator("#fishing")).toContainText("Watching the float");
+    // Capture while waiting. A GPU readback during the 2.1s bite window can
+    // consume the real player's response interval on software CI renderers.
+    if (fish === "bream") await shot("05-fishing");
     await expect(page.locator("#fishing")).toContainText("A bite!", {
       timeout: 10000,
     });
-    if (fish === "bream") await shot("05-fishing");
     await page.keyboard.press("Space");
     await expect.poll(async () => (await state(page)).inventory[fish]).toBe(1);
   }
