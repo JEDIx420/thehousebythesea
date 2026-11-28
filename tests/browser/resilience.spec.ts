@@ -109,6 +109,17 @@ test("title credits return, native keyboard menus, settings, picking and laptop 
   await expect(
     page.getByRole("heading", { name: "The Saltglass channel", exact: true }),
   ).toBeVisible();
+  const chartTitle = await page
+      .getByRole("heading", { name: "The Saltglass channel", exact: true })
+      .boundingBox(),
+    chartPanel = await page.locator("#panel").boundingBox(),
+    fold = await page
+      .getByRole("button", { name: "Fold the chart", exact: true })
+      .boundingBox();
+  expect(chartTitle!.y).toBeGreaterThanOrEqual(chartPanel!.y);
+  expect(fold!.y + fold!.height).toBeLessThanOrEqual(
+    chartPanel!.y + chartPanel!.height,
+  );
   await page.keyboard.press("Escape");
   await page.keyboard.press("j");
   await expect(

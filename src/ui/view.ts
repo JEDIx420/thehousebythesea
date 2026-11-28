@@ -55,7 +55,11 @@ export class View {
       if (event.key === "Tab") {
         const first = nodes[0],
           last = nodes.at(-1);
-        if (event.shiftKey && document.activeElement === first) {
+        if (
+          event.shiftKey &&
+          (document.activeElement === first ||
+            document.activeElement === this.modal)
+        ) {
           event.preventDefault();
           last?.focus();
         } else if (!event.shiftKey && document.activeElement === last) {
@@ -106,10 +110,14 @@ export class View {
     this.modal.dataset.panel = kind;
     this.modal.innerHTML = `<small class="eyebrow">${eyebrow}</small><h1 id="panel-title">${title}</h1><div class="panel-body">${body}</div><div class="actions">${buttons}</div>`;
     this.modal.scrollTop = 0;
-    (
-      this.modal.querySelector<HTMLElement>("button:not(:disabled),input,a") ??
-      this.modal
-    ).focus();
+    if (kind === "chart") this.modal.focus({ preventScroll: true });
+    else
+      (
+        this.modal.querySelector<HTMLElement>(
+          "button:not(:disabled),input,a",
+        ) ?? this.modal
+      ).focus();
+    this.modal.scrollTop = 0;
   }
   close() {
     this.dialogueView.hide();
@@ -359,7 +367,7 @@ export class View {
     this.show(
       "credits",
       "Made for an afternoon at sea",
-      `<p>Original pixel artwork, characters, writing and seeded surf audio: <b>The House by the Sea contributors</b>, MIT. All sprites are generated locally from committed source recipes and the shared palette.</p><p><a href="https://github.com/phaserjs/phaser/tree/v3.90.0" target="_blank" rel="noopener">Phaser3.90.0</a> · MIT, Richard Davey / Phaser Studio Inc. and contributors.</p><p><a href="https://github.com/patch-gg/pixelfx/tree/5294518ce7c72e48b6100a744596e0acf57f2826" target="_blank" rel="noopener">PixelFX water utility</a> · MIT. Offline ripple-frame generation and contact-sheet lettering; upstream notices retained. No online asset generation or paid services.</p><p><a href="${base}THIRD_PARTY_NOTICES.txt" target="_blank" rel="noopener">Full licences & notices</a> · <a href="${base}assets/manifest.json" target="_blank" rel="noopener">Individual frame manifest</a> · <a href="https://github.com/JEDIx420/thehousebythesea" target="_blank" rel="noopener">Source & reproducible asset tools</a>.</p><p class="minor">Thank you for taking the long way home.</p>`,
+      `<p>Original pixel artwork, characters, writing, coastal music and seeded sea ambience: <b>The House by the Sea contributors</b>, MIT. All sprites are generated locally from committed source recipes and the shared palette.</p><p><a href="https://github.com/phaserjs/phaser/tree/v3.90.0" target="_blank" rel="noopener">Phaser3.90.0</a> · MIT, Richard Davey / Phaser Studio Inc. and contributors.</p><p><a href="https://github.com/patch-gg/pixelfx/tree/5294518ce7c72e48b6100a744596e0acf57f2826" target="_blank" rel="noopener">PixelFX water utility</a> · MIT. Offline ripple-frame generation and contact-sheet lettering; upstream notices retained. No online asset generation or paid services.</p><p><a href="${base}THIRD_PARTY_NOTICES.txt" target="_blank" rel="noopener">Full licences & notices</a> · <a href="${base}assets/manifest.json" target="_blank" rel="noopener">Individual frame manifest</a> · <a href="https://github.com/JEDIx420/thehousebythesea" target="_blank" rel="noopener">Source & reproducible asset tools</a>.</p><p class="minor">Thank you for taking the long way home.</p>`,
       this.button("Back to the afternoon", "close"),
     );
   }

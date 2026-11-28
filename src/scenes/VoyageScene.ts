@@ -1149,7 +1149,7 @@ export class VoyageScene extends Phaser.Scene {
       foot.y -= elevationAt(person.point.x, person.point.z);
       this.setFrame(
         image,
-        `${person.actor}-${person.direction}-${person.walking ? "walk-" + (Math.floor((person.distance / 3.3) * 12) % 12) : "idle-" + this.idleFrame(visual, person.id.length * 1.37 + person.actor.charCodeAt(0) * 0.17)}`,
+        `${person.actor}-${person.direction}-${person.walking ? "walk-" + (Math.floor((person.distance / 3.3) * 12) % 12) : "idle-" + this.idleFrame(visual, person.id.length * 0.47 + person.actor.charCodeAt(0) * 0.61)}`,
       );
       image
         .setPosition(Math.round(foot.x), Math.round(foot.y))
