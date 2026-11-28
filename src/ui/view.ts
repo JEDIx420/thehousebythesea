@@ -1,3 +1,5 @@
+import { DialogueView, type PortraitFrame } from "./dialogue-view";
+import { DEFAULT_SETTINGS } from "../data/navigation";
 import type { GameState } from "../state/game";
 import type { Session } from "../game/session";
 import type { Dialogue } from "../game/dialogue";
@@ -22,9 +24,13 @@ export class View {
   private focusBefore: Element | null = null;
   private toastTimer = 0;
   private fishPhase = "";
+  private dialogueView!: DialogueView;
+  private currentSettings = { ...DEFAULT_SETTINGS };
+  private lastPlace = "";
   constructor() {
-    this.root.innerHTML = `<header id="hud"><div class="wordmark">The House <em>by the Sea</em></div><div class="place"><span id="place">HAVENPORT</span><small id="where">An unhurried afternoon</small></div><button class="fund" data-action="home"><small>YOUR LITTLE FUTURE</small><b id="coins">25 coins</b></button></header><aside class="objective"><small>YOUR FIRST VOYAGE</small><p id="objective"></p><span id="save-status" role="status"></span></aside><div class="warning" id="warning" role="alert" hidden></div><div class="context" id="context"></div><section id="fishing" class="fishing" aria-live="polite" hidden></section><div id="toast" class="toast" role="status" hidden></div><footer><span>WASD / arrows · move & steer</span><button data-action="fish">F · Fishing</button><button data-action="chart">M · Chart</button><button data-action="journal">J · Journal</button><button data-action="pause">Esc · Pause</button><span>Scroll · Zoom</span></footer><div id="cover" class="cover"><section id="panel" class="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title" tabindex="-1"></section></div>`;
+    this.root.innerHTML = `<header id="hud"><div class="place"><span id="place">HAVENPORT</span><small id="where">An unhurried afternoon</small></div><button class="fund" data-action="home" aria-label="Home fund"><span class="coin-icon" aria-hidden="true">●</span><b id="coins">25</b></button></header><aside class="objective"><p id="objective"></p><span id="save-status" role="status"></span></aside><div class="warning" id="warning" role="alert" hidden></div><div class="context" id="context"></div><section id="fishing" class="fishing" aria-live="polite" hidden></section><div id="toast" class="toast" role="status" hidden></div><footer><button data-action="fish" aria-label="F · Fishing" title="F · Fishing"><i class="icon icon-rod" aria-hidden="true"></i></button><button data-action="chart" aria-label="M · Chart" title="M · Chart"><i class="icon icon-chart" aria-hidden="true"></i></button><button data-action="journal" aria-label="J · Journal" title="J · Journal"><i class="icon icon-book" aria-hidden="true"></i></button><button data-action="pause" aria-label="Esc · Pause" title="Esc · Pause"><i class="icon icon-menu" aria-hidden="true"></i></button></footer><div id="cover" class="cover"><section id="panel" class="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title" tabindex="-1"></section></div>`;
     this.modal = this.root.querySelector<HTMLDivElement>("#panel")!;
+    this.dialogueView = new DialogueView((action) => this.onAction(action));
     this.root.addEventListener("click", (event) => {
       const b = (event.target as HTMLElement).closest<HTMLElement>(
         "[data-action]",
@@ -89,6 +95,7 @@ export class View {
     eyebrow = "THE HOUSE BY THE SEA",
   ) {
     if (!this.open) this.focusBefore = document.activeElement;
+    this.dialogueView.hide();
     this.panel = kind;
     this.onOpen();
     this.root.querySelector<HTMLElement>("#cover")!.hidden = false;
@@ -105,6 +112,7 @@ export class View {
     ).focus();
   }
   close() {
+    this.dialogueView.hide();
     this.panel = null;
     this.root.querySelector<HTMLElement>("#cover")!.hidden = true;
     for (const e of this.root.querySelectorAll<HTMLElement>(
@@ -180,14 +188,37 @@ export class View {
       "HAVENPORT · MANY SUMMERS AGO",
     );
   }
-  dialogue(d: Dialogue) {
-    this.show(
-      "dialogue",
-      escapeHTML(d.title),
-      d.paragraphs.map((p) => `<p>${escapeHTML(p)}</p>`).join(""),
-      d.choices.map((c, i) => this.button(c.label, c.action, i > 0)).join(""),
-      `${escapeHTML(d.speaker)} · ${escapeHTML(d.role)}`,
-    );
+  audioStatus(message: string) {
+    const e = this.root.querySelector("#audio-status");
+    if (e) e.textContent = message;
+  }
+  configurePortraits(frames: PortraitFrame[]) {
+    this.dialogueView.configure(frames);
+  }
+  advanceDialogue() {
+    this.dialogueView.next();
+  }
+  dialogue(source: Dialogue | Omit<Dialogue, "beats">) {
+    const d: Dialogue =
+      "beats" in source
+        ? source
+        : {
+            ...source,
+            beats: source.paragraphs.map((text) => ({
+              speakerId: source.speaker.toLowerCase(),
+              expressionId: "happy",
+              text,
+            })),
+          };
+    if (!this.open) this.focusBefore = document.activeElement;
+    this.panel = "dialogue";
+    this.onOpen();
+    this.root.querySelector<HTMLElement>("#cover")!.hidden = true;
+    for (const e of this.root.querySelectorAll<HTMLElement>(
+      "header,footer,.context",
+    ))
+      e.inert = true;
+    this.dialogueView.show(d, this.currentSettings);
   }
   pause(session: Session) {
     this.show(
@@ -207,10 +238,11 @@ export class View {
     );
   }
   settings(s: GameState) {
+    this.currentSettings = s.settings;
     this.show(
       "settings",
       "Make yourself comfortable",
-      `<label class="setting"><span>Sound off</span><input type="checkbox" data-setting="muted" ${s.settings.muted ? "checked" : ""}></label><label class="setting"><span>Sea & harbour volume</span><input type="range" min="0" max="1" step="0.05" value="${s.settings.volume}" data-setting="volume" aria-label="Sea and harbour volume"></label><label class="setting"><span>Reduced decorative motion</span><input type="checkbox" data-setting="motion" ${s.settings.reducedMotion ? "checked" : ""}></label><dl><dt>Walking</dt><dd>WASD or arrows · follow the screen directions</dd><dt>Sailing</dt><dd>W / Up to sail, S / Down to slow, A / D to steer</dd><dt>At the pier</dt><dd>E to board or tie up and step ashore</dd><dt>Fishing</dt><dd>F to cast or cancel; Space when a fish bites</dd><dt>Finding your way</dt><dd>M chart · J journal · Esc pause · R return to a safe pier</dd><dt>Closer look</dt><dd>Scroll to switch between crisp pixel zoom levels</dd></dl>`,
+      `<label class="setting"><span>Sound off</span><input type="checkbox" data-setting="muted" ${s.settings.muted ? "checked" : ""}></label><label class="setting"><span>Master volume</span><input type="range" min="0" max="1" step="0.05" value="${s.settings.volume}" data-setting="volume" aria-label="Master volume"></label>${(["music", "ambience", "sfx"] as const).map((id) => `<label class="setting"><span>${id === "sfx" ? "Sound effects" : id === "music" ? "Music" : "Ambience"}</span><input type="range" min="0" max="1" step="0.05" value="${s.settings[id]}" data-setting="${id}" aria-label="${id === "sfx" ? "Sound effects" : id === "music" ? "Music" : "Ambience"} volume"></label>`).join("")}<label class="setting"><span>Instant dialogue text</span><input type="checkbox" data-setting="text" ${s.settings.instantText ? "checked" : ""}></label><label class="setting"><span>Reduced decorative motion</span><input type="checkbox" data-setting="motion" ${s.settings.reducedMotion ? "checked" : ""}></label><p id="audio-status" class="minor" role="status">Original coastal music and sea ambience.</p><dl><dt>Walking</dt><dd>WASD or arrows · follow the screen directions</dd><dt>Sailing</dt><dd>W / Up to sail, S / Down to slow, A / D to steer</dd><dt>At the pier</dt><dd>E to board or tie up and step ashore</dd><dt>Fishing</dt><dd>F to cast or cancel; Space when a fish bites</dd><dt>Finding your way</dt><dd>M chart · J journal · Esc pause · R return to a safe pier</dd><dt>Closer look</dt><dd>Scroll to switch between crisp pixel zoom levels</dd></dl>`,
       this.button("Back to the afternoon", "close"),
     );
   }
@@ -293,7 +325,16 @@ export class View {
       const e = this.root.querySelector<HTMLElement>(id)!;
       if (e.textContent !== value) e.textContent = value;
     };
-    text("#coins", `${s.wallet} coins`);
+    this.currentSettings = s.settings;
+    this.root.classList.toggle("reduced-motion", s.settings.reducedMotion);
+    if (this.lastPlace !== place) {
+      this.lastPlace = place;
+      const node = this.root.querySelector<HTMLElement>(".place")!;
+      node.classList.remove("arrived");
+      void node.offsetWidth;
+      node.classList.add("arrived");
+    }
+    text("#coins", `${s.wallet}`);
     text("#place", place.toUpperCase());
     text("#objective", objective);
     text(
@@ -312,9 +353,10 @@ export class View {
     warning.hidden = !session.warning;
     if (session.warning) warning.textContent = session.warning;
     const e = this.root.querySelector<HTMLElement>("#context")!,
-      html = context
-        ? `<button data-action="interact" ${actionable ? "" : "disabled"}><kbd>${actionable ? "E" : "W"}</kbd> ${escapeHTML(context)}</button>`
-        : "";
+      html =
+        context && actionable
+          ? `<button data-action="interact" ${actionable ? "" : "disabled"}><kbd>${actionable ? "E" : "W"}</kbd> ${escapeHTML(context)}</button>`
+          : "";
     if (e.innerHTML !== html) e.innerHTML = html;
   }
   fishing(state: FishingState) {

@@ -11,3 +11,7 @@ Original authored raster art; warm late-afternoon coastal storybook, with crisp 
 - tools/generate-assets.mjs regenerates source PNGs, a padded atlas and metadata/contact sheet locally. No credentials, API, editor or paid service required. Source recipes and seed are committed. tools/check-assets.mjs validates alpha, anchors, names, dimensions, frame distinctness, licences and byte reproducibility.
 
 Visual approval belongs to the creator. An independent golden-sample review permits producing this checkpoint's remaining assets, not Stage2 expansion.
+
+## P1.5 direction approved for production
+
+Original96×128 three-quarter busts, shared face anatomy across expression/blink frames; four lead expressions and three per supporting adult. Distinct hair/jaw/cheek silhouettes rather than enlarged walk sprites. A compact navy/cream pixel kit replaces the old HUD panels. Raised terrain uses shared authored height zones/ramps and separately foot-sorted top/front-wall images, not a flat painted illusion. The reviewed urban18px terrace is a prototype; final islands need natural coastal forms, paths, planting and open districts. Music is an original96s32-barAABA coastal arrangement; no game-theme copying or external samples. Renderer/input/music source review is not creator acceptance.

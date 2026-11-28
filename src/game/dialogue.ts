@@ -4,7 +4,9 @@ export interface Choice {
   label: string;
   action: string;
 }
+export interface Beat { speakerId:string; expressionId:'neutral'|'happy'|'thoughtful'|'surprised'; text:string; }
 export interface Dialogue {
+  beats:Beat[];
   speaker: string;
   role: string;
   title: string;
@@ -12,7 +14,7 @@ export interface Dialogue {
   choices: Choice[];
 }
 const close: Choice = { label: "See you soon", action: "close" };
-export function conversation(id: string, s: GameState): Dialogue {
+function conversationData(id: string, s: GameState): Omit<Dialogue,"beats"> {
   if (id === "ellis")
     return {
       speaker: "Ellis",
@@ -149,4 +151,10 @@ export function conversation(id: string, s: GameState): Dialogue {
     ],
     choices: [{ label: "Sell my catch", action: "sell" }, close],
   };
+}
+
+export function conversation(id:string,s:GameState):Dialogue {
+ const d=conversationData(id,s),speakerId=id==='seller'?'tomas':id;
+ const expressions:Beat['expressionId'][]= id==='mira' ? (s.story.outingVisitedSaltglass?['happy','thoughtful','happy']:['neutral','thoughtful','happy']) : ['neutral','thoughtful','happy'];
+ return {...d,beats:d.paragraphs.map((text,i)=>({speakerId,expressionId:expressions[i%expressions.length],text}))};
 }

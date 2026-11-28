@@ -1,3 +1,8 @@
+import {
+  navigation,
+  WORLD_VERSION,
+  DEFAULT_SETTINGS,
+} from "../data/navigation";
 import { FISH, FIRST_DELIVERY, HOME_FUND_TARGET } from "../data/content";
 
 export type IslandId = "havenport" | "saltglass-bay";
@@ -19,10 +24,14 @@ export interface Settings {
   muted: boolean;
   volume: number;
   reducedMotion: boolean;
+  music: number;
+  ambience: number;
+  sfx: number;
+  instantText: boolean;
 }
 export interface GameState {
   schemaVersion: 2;
-  worldVersion: "pixel-first-voyage-v1";
+  worldVersion: "pixel-first-voyage-v1" | "pixel-first-voyage-v2";
   wallet: number;
   inventory: Record<FishId, number>;
   delivery: "available" | "active" | "complete";
@@ -60,7 +69,7 @@ export type Action =
 export function initialState(): GameState {
   return {
     schemaVersion: 2,
-    worldVersion: "pixel-first-voyage-v1",
+    worldVersion: WORLD_VERSION,
     wallet: 25,
     inventory: { sardine: 0, bream: 0 },
     delivery: "available",
@@ -73,9 +82,14 @@ export function initialState(): GameState {
       homeSeen: false,
       prologueSeen: false,
     },
-    player: { x: 48, z: 0, heading: 0, mode: "walk", island: "havenport" },
-    boat: { x: 63, z: 0, heading: 0, docked: "havenport" },
-    settings: { muted: false, volume: 0.35, reducedMotion: false },
+    player: {
+      ...navigation("havenport").safe,
+      heading: 0,
+      mode: "walk",
+      island: "havenport",
+    },
+    boat: { ...navigation("havenport").dock },
+    settings: { ...DEFAULT_SETTINGS },
   };
 }
 
@@ -178,6 +192,18 @@ export function reduce(state: GameState, action: Action): GameState {
         settings: {
           ...state.settings,
           ...action.settings,
+          music: Math.max(
+            0,
+            Math.min(1, action.settings.music ?? state.settings.music),
+          ),
+          ambience: Math.max(
+            0,
+            Math.min(1, action.settings.ambience ?? state.settings.ambience),
+          ),
+          sfx: Math.max(
+            0,
+            Math.min(1, action.settings.sfx ?? state.settings.sfx),
+          ),
           volume: Math.max(
             0,
             Math.min(1, action.settings.volume ?? state.settings.volume),
@@ -186,11 +212,11 @@ export function reduce(state: GameState, action: Action): GameState {
       };
     case "RECOVER": {
       const island = state.player.island;
-      const z = island === "havenport" ? 0 : -220;
+      const { safe, dock } = navigation(island);
       return {
         ...state,
-        player: { x: 48, z, heading: 0, mode: "walk", island },
-        boat: { x: 63, z, heading: 0, docked: island },
+        player: { ...safe, heading: 0, mode: "walk", island },
+        boat: { ...dock },
       };
     }
   }

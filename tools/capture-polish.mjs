@@ -1,0 +1,13 @@
+import {chromium} from '@playwright/test';
+import {installAudioCapture,record} from './record-browser.mjs';import fs from 'node:fs/promises';
+const dir=new URL('../docs/evidence/p15',import.meta.url).pathname;await fs.mkdir(dir,{recursive:true});
+const b=await chromium.launch({channel:'chrome'}),p=await b.newPage({viewport:{width:1440,height:900}}),errors=[];p.on('pageerror',e=>errors.push(e.message));await installAudioCapture(p);await p.goto('http://localhost:4190/thehousebythesea/');await p.waitForFunction(()=>window.voyage);
+await p.getByRole('button',{name:'Begin your voyage',exact:true}).click();await p.getByRole('button',{name:'Skip memory',exact:true}).click();await p.waitForTimeout(6000);await p.screenshot({path:`${dir}/golden-harbour.png`});const stop=await record(p,`${dir}/golden-audible`);
+const options=[[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]].map(([h,v])=>{const x=(h/4+v/2)/2,z=(v/2-h/4)/2,n=Math.hypot(x,z);return{h,v,x:x/n,z:z/n,keys:[...(h<0?['a']:h>0?['d']:[]),...(v<0?['w']:v>0?['s']:[])]};});
+async function walk(x,z){let held=[];for(let i=0;i<300;i++){const a=await p.evaluate(()=>window.voyage.getState().player),dx=x-a.x,dz=z-a.z;if(Math.hypot(dx,dz)<1){for(const k of held)await p.keyboard.up(k);return;}const o=options.reduce((b,o)=>o.x*dx+o.z*dz>b.x*dx+b.z*dz?o:b);for(const k of held)if(!o.keys.includes(k))await p.keyboard.up(k);for(const k of o.keys)if(!held.includes(k))await p.keyboard.down(k);held=o.keys;await p.waitForTimeout(70);}throw Error('walk timeout');}
+await walk(40,0);await walk(32,-1);await walk(32,-12);await walk(35,-12);await p.keyboard.press('e');await p.waitForTimeout(3200);await p.screenshot({path:`${dir}/golden-mira-neutral.png`});
+for(let i=0;i<12 && !(await p.getByRole('button',{name:'Tell her about the boat',exact:true}).isVisible());i++){await p.getByRole('button',{name:'Continue dialogue',exact:true}).click();await p.waitForTimeout(200);}
+await p.screenshot({path:`${dir}/golden-mira-happy.png`});await p.waitForTimeout(3000);const recording=await stop();
+await p.keyboard.press('Escape');await walk(32,-12);await walk(32,-1);await walk(22,-7);await walk(10,-12);await p.waitForTimeout(1500);await p.screenshot({path:`${dir}/golden-street.png`});
+await walk(10,-35);await walk(4,-35);await walk(-6,-35);await walk(-12,-35);await p.waitForTimeout(1000);await p.screenshot({path:`${dir}/golden-terrace.png`});
+await fs.writeFile(`${dir}/golden.json`,JSON.stringify({errors,recording,raisedCheckpoint:await p.evaluate(()=>window.voyage.getState().player),raisedHeightPixels:18,metrics:await p.evaluate(()=>window.voyage.getMetrics()),browser:b.version()},null,2));await b.close();console.log({errors,recording});

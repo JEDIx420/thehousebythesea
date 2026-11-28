@@ -1,0 +1,19 @@
+{
+  "title": "The Afternoon We Kept",
+  "author": "The House by the Sea contributors",
+  "license": "MIT",
+  "source": "assets/source/music-score.json + tools/generate-music.mjs",
+  "bpm": 80,
+  "bars": 32,
+  "tracks": [
+    {
+      "id": "havenport",
+      "file": "audio/havenport.mp3",
+      "duration": 96,
+      "bytes": 768670,
+      "sha256": "941a3951d9d1ced64f700198f6ce2d9293b2bfa152d6147a54099c53ff7f025c",
+      "loop": "32 bars, original circular room tail, 3ms de-click",
+      "license": "MIT"
+    }
+  ]
+}

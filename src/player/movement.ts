@@ -5,7 +5,7 @@ import {
   boatClear,
   dockFor,
   reachableDock,
-  groundAt,
+  groundAt, canStep,
 } from "../world/world";
 export function facing(x: number, z: number): "n" | "s" | "e" | "w" {
   const p = project(x, z);
@@ -30,8 +30,8 @@ export function moveFoot(
   for (let i = 0; i < steps; i++) {
     const nextX = x + (d.x * total) / steps,
       nextZ = z + (d.z * total) / steps;
-    if (walkable(nextX, z)) x = nextX;
-    if (walkable(x, nextZ)) z = nextZ;
+    if (canStep(x,z,nextX,z)) x = nextX;
+    if (canStep(x,z,x,nextZ)) z = nextZ;
   }
   return {
     ...player,

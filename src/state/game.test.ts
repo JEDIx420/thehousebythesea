@@ -137,7 +137,7 @@ describe("versioned snapshots", () => {
     const before = JSON.stringify(raw),
       copy = migrateLegacy(raw);
     expect(copy.schemaVersion).toBe(2);
-    expect(copy.worldVersion).toBe("pixel-first-voyage-v1");
+    expect(copy.worldVersion).toBe("pixel-first-voyage-v2");
     expect(copy.player).toEqual({
       x: 48,
       z: -220,
@@ -158,6 +158,7 @@ describe("versioned snapshots", () => {
       muted: true,
       volume: 0.6,
       reducedMotion: false,
+      music: 0.7, ambience:0.35,sfx:0.55,instantText:false,
     });
     expect(JSON.stringify(raw)).toBe(before);
     expect(migrateLegacy(raw)).toEqual(copy);

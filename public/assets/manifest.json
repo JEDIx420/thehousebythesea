@@ -72,6 +72,337 @@
       "height": 512
     },
     {
+      "id": "portrait-mira-neutral-0",
+      "anchor": [
+        48,
+        128
+      ],
+      "license": "MIT",
+      "source": "assets/source/portraits.mjs",
+      "category": "portrait",
+      "actor": "mira",
+      "expression": "neutral",
+      "index": 0,
+      "x": 1030,
+      "y": 518,
+      "width": 96,
+      "height": 128
+    },
+    {
+      "id": "portrait-mira-neutral-1",
+      "anchor": [
+        48,
+        128
+      ],
+      "license": "MIT",
+      "source": "assets/source/portraits.mjs",
+      "category": "portrait",
+      "actor": "mira",
+      "expression": "neutral",
+      "index": 1,
+      "x": 1130,
+      "y": 518,
+      "width": 96,
+      "height": 128
+    },
+    {
+      "id": "portrait-mira-happy-0",
+      "anchor": [
+        48,
+        128
+      ],
+      "license": "MIT",
+      "source": "assets/source/portraits.mjs",
+      "category": "portrait",
+      "actor": "mira",
+      "expression": "happy",
+      "index": 0,
+      "x": 1230,
+      "y": 518,
+      "width": 96,
+      "height": 128
+    },
+    {
+      "id": "portrait-mira-happy-1",
+      "anchor": [
+        48,
+        128
+      ],
+      "license": "MIT",
+      "source": "assets/source/portraits.mjs",
+      "category": "portrait",
+      "actor": "mira",
+      "expression": "happy",
+      "index": 1,
+      "x": 1330,
+      "y": 518,
+      "width": 96,
+      "height": 128
+    },
+    {
+      "id": "portrait-mira-thoughtful-0",
+      "anchor": [
+        48,
+        128
+      ],
+      "license": "MIT",
+      "source": "assets/source/portraits.mjs",
+      "category": "portrait",
+      "actor": "mira",
+      "expression": "thoughtful",
+      "index": 0,
+      "x": 1430,
+      "y": 518,
+      "width": 96,
+      "height": 128
+    },
+    {
+      "id": "portrait-mira-thoughtful-1",
+      "anchor": [
+        48,
+        128
+      ],
+      "license": "MIT",
+      "source": "assets/source/portraits.mjs",
+      "category": "portrait",
+      "actor": "mira",
+      "expression": "thoughtful",
+      "index": 1,
+      "x": 1530,
+      "y": 518,
+      "width": 96,
+      "height": 128
+    },
+    {
+      "id": "portrait-mira-surprised-0",
+      "anchor": [
+        48,
+        128
+      ],
+      "license": "MIT",
+      "source": "assets/source/portraits.mjs",
+      "category": "portrait",
+      "actor": "mira",
+      "expression": "surprised",
+      "index": 0,
+      "x": 1630,
+      "y": 518,
+      "width": 96,
+      "height": 128
+    },
+    {
+      "id": "portrait-mira-surprised-1",
+      "anchor": [
+        48,
+        128
+      ],
+      "license": "MIT",
+      "source": "assets/source/portraits.mjs",
+      "category": "portrait",
+      "actor": "mira",
+      "expression": "surprised",
+      "index": 1,
+      "x": 1730,
+      "y": 518,
+      "width": 96,
+      "height": 128
+    },
+    {
+      "id": "top-havenport-garden-terrace",
+      "anchor": [
+        86,
+        44
+      ],
+      "license": "MIT",
+      "source": "assets/source/land.mjs + world.json",
+      "category": "cliff",
+      "island": "havenport",
+      "world": [
+        -18,
+        -41
+      ],
+      "pixelOffset": [
+        0,
+        -18
+      ],
+      "depthY": -76.1,
+      "x": 1830,
+      "y": 518,
+      "width": 173,
+      "height": 89
+    },
+    {
+      "id": "cliff-havenport-garden-terrace-1-0",
+      "anchor": [
+        10,
+        24
+      ],
+      "license": "MIT",
+      "source": "assets/source/land.mjs + world.json",
+      "category": "cliff",
+      "island": "havenport",
+      "world": [
+        -8,
+        -50.16666666666667
+      ],
+      "x": 2007,
+      "y": 518,
+      "width": 21,
+      "height": 31
+    },
+    {
+      "id": "cliff-havenport-garden-terrace-1-1",
+      "anchor": [
+        10,
+        24
+      ],
+      "license": "MIT",
+      "source": "assets/source/land.mjs + world.json",
+      "category": "cliff",
+      "island": "havenport",
+      "world": [
+        -8,
+        -46.5
+      ],
+      "x": 2,
+      "y": 1034,
+      "width": 21,
+      "height": 31
+    },
+    {
+      "id": "cliff-havenport-garden-terrace-1-2",
+      "anchor": [
+        10,
+        24
+      ],
+      "license": "MIT",
+      "source": "assets/source/land.mjs + world.json",
+      "category": "cliff",
+      "island": "havenport",
+      "world": [
+        -8,
+        -42.83333333333333
+      ],
+      "x": 27,
+      "y": 1034,
+      "width": 21,
+      "height": 31
+    },
+    {
+      "id": "cliff-havenport-garden-terrace-1-3",
+      "anchor": [
+        10,
+        24
+      ],
+      "license": "MIT",
+      "source": "assets/source/land.mjs + world.json",
+      "category": "cliff",
+      "island": "havenport",
+      "world": [
+        -8,
+        -39.16666666666667
+      ],
+      "x": 52,
+      "y": 1034,
+      "width": 21,
+      "height": 31
+    },
+    {
+      "id": "cliff-havenport-garden-terrace-2-0",
+      "anchor": [
+        10,
+        24
+      ],
+      "license": "MIT",
+      "source": "assets/source/land.mjs + world.json",
+      "category": "cliff",
+      "island": "havenport",
+      "world": [
+        -10,
+        -30
+      ],
+      "x": 77,
+      "y": 1034,
+      "width": 21,
+      "height": 31
+    },
+    {
+      "id": "cliff-havenport-garden-terrace-2-1",
+      "anchor": [
+        10,
+        24
+      ],
+      "license": "MIT",
+      "source": "assets/source/land.mjs + world.json",
+      "category": "cliff",
+      "island": "havenport",
+      "world": [
+        -14,
+        -30
+      ],
+      "x": 102,
+      "y": 1034,
+      "width": 21,
+      "height": 31
+    },
+    {
+      "id": "cliff-havenport-garden-terrace-2-2",
+      "anchor": [
+        10,
+        24
+      ],
+      "license": "MIT",
+      "source": "assets/source/land.mjs + world.json",
+      "category": "cliff",
+      "island": "havenport",
+      "world": [
+        -18,
+        -30
+      ],
+      "x": 127,
+      "y": 1034,
+      "width": 21,
+      "height": 31
+    },
+    {
+      "id": "cliff-havenport-garden-terrace-2-3",
+      "anchor": [
+        10,
+        24
+      ],
+      "license": "MIT",
+      "source": "assets/source/land.mjs + world.json",
+      "category": "cliff",
+      "island": "havenport",
+      "world": [
+        -22,
+        -30
+      ],
+      "x": 152,
+      "y": 1034,
+      "width": 21,
+      "height": 31
+    },
+    {
+      "id": "cliff-havenport-garden-terrace-2-4",
+      "anchor": [
+        10,
+        24
+      ],
+      "license": "MIT",
+      "source": "assets/source/land.mjs + world.json",
+      "category": "cliff",
+      "island": "havenport",
+      "world": [
+        -26,
+        -30
+      ],
+      "x": 177,
+      "y": 1034,
+      "width": 21,
+      "height": 31
+    },
+    {
       "id": "water",
       "anchor": [
         0,
@@ -80,8 +411,8 @@
       "license": "MIT",
       "source": "assets/source/land.mjs",
       "category": "sea",
-      "x": 1030,
-      "y": 518,
+      "x": 202,
+      "y": 1034,
       "width": 512,
       "height": 256
     },
@@ -94,8 +425,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "memory",
-      "x": 1546,
-      "y": 518,
+      "x": 718,
+      "y": 1034,
       "width": 32,
       "height": 48
     },
@@ -109,8 +440,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1582,
-      "y": 518,
+      "x": 754,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -124,8 +455,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1650,
-      "y": 518,
+      "x": 822,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -139,8 +470,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1718,
-      "y": 518,
+      "x": 890,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -154,8 +485,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1786,
-      "y": 518,
+      "x": 958,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -169,8 +500,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1854,
-      "y": 518,
+      "x": 1026,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -184,8 +515,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1922,
-      "y": 518,
+      "x": 1094,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -199,7 +530,7 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 2,
+      "x": 1162,
       "y": 1034,
       "width": 64,
       "height": 40
@@ -214,7 +545,7 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 70,
+      "x": 1230,
       "y": 1034,
       "width": 64,
       "height": 40
@@ -229,7 +560,7 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 138,
+      "x": 1298,
       "y": 1034,
       "width": 64,
       "height": 40
@@ -244,7 +575,7 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 206,
+      "x": 1366,
       "y": 1034,
       "width": 64,
       "height": 40
@@ -259,7 +590,7 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 274,
+      "x": 1434,
       "y": 1034,
       "width": 64,
       "height": 40
@@ -274,7 +605,7 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 342,
+      "x": 1502,
       "y": 1034,
       "width": 64,
       "height": 40
@@ -289,7 +620,7 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "dock",
-      "x": 410,
+      "x": 1570,
       "y": 1034,
       "width": 64,
       "height": 40
@@ -304,7 +635,7 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "dock",
-      "x": 478,
+      "x": 1638,
       "y": 1034,
       "width": 64,
       "height": 40
@@ -319,7 +650,7 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "dock",
-      "x": 546,
+      "x": 1706,
       "y": 1034,
       "width": 64,
       "height": 40
@@ -334,7 +665,7 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "dock",
-      "x": 614,
+      "x": 1774,
       "y": 1034,
       "width": 64,
       "height": 40
@@ -353,7 +684,7 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 682,
+      "x": 1842,
       "y": 1034,
       "width": 48,
       "height": 72
@@ -372,7 +703,7 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 734,
+      "x": 1894,
       "y": 1034,
       "width": 48,
       "height": 72
@@ -391,7 +722,7 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 786,
+      "x": 1946,
       "y": 1034,
       "width": 48,
       "height": 72
@@ -410,7 +741,7 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 838,
+      "x": 1998,
       "y": 1034,
       "width": 48,
       "height": 72
@@ -429,8 +760,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 890,
-      "y": 1034,
+      "x": 2,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -448,8 +779,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 942,
-      "y": 1034,
+      "x": 54,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -467,8 +798,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 994,
-      "y": 1034,
+      "x": 106,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -486,8 +817,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1046,
-      "y": 1034,
+      "x": 158,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -505,8 +836,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 1098,
-      "y": 1034,
+      "x": 210,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -524,8 +855,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 1150,
-      "y": 1034,
+      "x": 262,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -543,8 +874,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1202,
-      "y": 1034,
+      "x": 314,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -562,8 +893,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1254,
-      "y": 1034,
+      "x": 366,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -581,8 +912,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1306,
-      "y": 1034,
+      "x": 418,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -600,8 +931,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1358,
-      "y": 1034,
+      "x": 470,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -619,8 +950,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1410,
-      "y": 1034,
+      "x": 522,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -638,8 +969,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1462,
-      "y": 1034,
+      "x": 574,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -657,8 +988,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1514,
-      "y": 1034,
+      "x": 626,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -676,8 +1007,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1566,
-      "y": 1034,
+      "x": 678,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -695,8 +1026,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 1618,
-      "y": 1034,
+      "x": 730,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -714,8 +1045,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 1670,
-      "y": 1034,
+      "x": 782,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -733,8 +1064,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1722,
-      "y": 1034,
+      "x": 834,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -752,8 +1083,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1774,
-      "y": 1034,
+      "x": 886,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -771,8 +1102,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1826,
-      "y": 1034,
+      "x": 938,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -790,8 +1121,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1878,
-      "y": 1034,
+      "x": 990,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -809,8 +1140,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1930,
-      "y": 1034,
+      "x": 1042,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -828,8 +1159,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1982,
-      "y": 1034,
+      "x": 1094,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -847,8 +1178,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 2,
-      "y": 1110,
+      "x": 1146,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -866,8 +1197,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 54,
-      "y": 1110,
+      "x": 1198,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -885,8 +1216,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 106,
-      "y": 1110,
+      "x": 1250,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -904,8 +1235,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 158,
-      "y": 1110,
+      "x": 1302,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -923,8 +1254,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 210,
-      "y": 1110,
+      "x": 1354,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -942,8 +1273,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 262,
-      "y": 1110,
+      "x": 1406,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -961,8 +1292,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 314,
-      "y": 1110,
+      "x": 1458,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -980,8 +1311,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 366,
-      "y": 1110,
+      "x": 1510,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -999,8 +1330,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 418,
-      "y": 1110,
+      "x": 1562,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -1018,8 +1349,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 470,
-      "y": 1110,
+      "x": 1614,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -1037,8 +1368,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 522,
-      "y": 1110,
+      "x": 1666,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -1056,8 +1387,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 574,
-      "y": 1110,
+      "x": 1718,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -1075,8 +1406,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 626,
-      "y": 1110,
+      "x": 1770,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -1094,8 +1425,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 678,
-      "y": 1110,
+      "x": 1822,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -1113,8 +1444,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 730,
-      "y": 1110,
+      "x": 1874,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -1132,8 +1463,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 782,
-      "y": 1110,
+      "x": 1926,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -1151,8 +1482,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 834,
-      "y": 1110,
+      "x": 1978,
+      "y": 1294,
       "width": 48,
       "height": 72
     },
@@ -1170,8 +1501,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 886,
-      "y": 1110,
+      "x": 2,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1189,8 +1520,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 938,
-      "y": 1110,
+      "x": 54,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1208,8 +1539,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 990,
-      "y": 1110,
+      "x": 106,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1227,8 +1558,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1042,
-      "y": 1110,
+      "x": 158,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1246,8 +1577,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1094,
-      "y": 1110,
+      "x": 210,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1265,8 +1596,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 1146,
-      "y": 1110,
+      "x": 262,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1284,8 +1615,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 1198,
-      "y": 1110,
+      "x": 314,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1303,8 +1634,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1250,
-      "y": 1110,
+      "x": 366,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1322,8 +1653,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1302,
-      "y": 1110,
+      "x": 418,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1341,8 +1672,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1354,
-      "y": 1110,
+      "x": 470,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1360,8 +1691,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1406,
-      "y": 1110,
+      "x": 522,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1379,8 +1710,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1458,
-      "y": 1110,
+      "x": 574,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1398,8 +1729,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1510,
-      "y": 1110,
+      "x": 626,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1417,8 +1748,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1562,
-      "y": 1110,
+      "x": 678,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1436,8 +1767,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1614,
-      "y": 1110,
+      "x": 730,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1455,8 +1786,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 1666,
-      "y": 1110,
+      "x": 782,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1474,8 +1805,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 1718,
-      "y": 1110,
+      "x": 834,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1493,8 +1824,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1770,
-      "y": 1110,
+      "x": 886,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1512,8 +1843,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1822,
-      "y": 1110,
+      "x": 938,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1531,8 +1862,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1874,
-      "y": 1110,
+      "x": 990,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1550,8 +1881,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1926,
-      "y": 1110,
+      "x": 1042,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1569,8 +1900,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1978,
-      "y": 1110,
+      "x": 1094,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1588,8 +1919,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 2,
-      "y": 1186,
+      "x": 1146,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1607,8 +1938,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 54,
-      "y": 1186,
+      "x": 1198,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1626,8 +1957,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 106,
-      "y": 1186,
+      "x": 1250,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1645,8 +1976,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 158,
-      "y": 1186,
+      "x": 1302,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1664,8 +1995,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 210,
-      "y": 1186,
+      "x": 1354,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1683,8 +2014,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 262,
-      "y": 1186,
+      "x": 1406,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1702,8 +2033,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 314,
-      "y": 1186,
+      "x": 1458,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1721,8 +2052,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 366,
-      "y": 1186,
+      "x": 1510,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1740,8 +2071,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 418,
-      "y": 1186,
+      "x": 1562,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1759,8 +2090,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 470,
-      "y": 1186,
+      "x": 1614,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1778,8 +2109,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 522,
-      "y": 1186,
+      "x": 1666,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1797,8 +2128,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 574,
-      "y": 1186,
+      "x": 1718,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1816,8 +2147,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 626,
-      "y": 1186,
+      "x": 1770,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1835,8 +2166,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 678,
-      "y": 1186,
+      "x": 1822,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1854,8 +2185,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 730,
-      "y": 1186,
+      "x": 1874,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1873,8 +2204,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 782,
-      "y": 1186,
+      "x": 1926,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1892,8 +2223,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 834,
-      "y": 1186,
+      "x": 1978,
+      "y": 1370,
       "width": 48,
       "height": 72
     },
@@ -1911,8 +2242,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 886,
-      "y": 1186,
+      "x": 2,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -1930,8 +2261,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 938,
-      "y": 1186,
+      "x": 54,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -1949,8 +2280,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 990,
-      "y": 1186,
+      "x": 106,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -1968,8 +2299,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1042,
-      "y": 1186,
+      "x": 158,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -1987,8 +2318,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1094,
-      "y": 1186,
+      "x": 210,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2006,8 +2337,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1146,
-      "y": 1186,
+      "x": 262,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2025,8 +2356,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 1198,
-      "y": 1186,
+      "x": 314,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2044,8 +2375,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 1250,
-      "y": 1186,
+      "x": 366,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2063,8 +2394,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1302,
-      "y": 1186,
+      "x": 418,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2082,8 +2413,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1354,
-      "y": 1186,
+      "x": 470,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2101,8 +2432,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1406,
-      "y": 1186,
+      "x": 522,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2120,8 +2451,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1458,
-      "y": 1186,
+      "x": 574,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2139,8 +2470,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1510,
-      "y": 1186,
+      "x": 626,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2158,8 +2489,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1562,
-      "y": 1186,
+      "x": 678,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2177,8 +2508,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1614,
-      "y": 1186,
+      "x": 730,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2196,8 +2527,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1666,
-      "y": 1186,
+      "x": 782,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2215,8 +2546,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 1718,
-      "y": 1186,
+      "x": 834,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2234,8 +2565,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 1770,
-      "y": 1186,
+      "x": 886,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2253,8 +2584,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1822,
-      "y": 1186,
+      "x": 938,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2272,8 +2603,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1874,
-      "y": 1186,
+      "x": 990,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2291,8 +2622,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1926,
-      "y": 1186,
+      "x": 1042,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2310,8 +2641,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1978,
-      "y": 1186,
+      "x": 1094,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2329,8 +2660,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 2,
-      "y": 1262,
+      "x": 1146,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2348,8 +2679,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 54,
-      "y": 1262,
+      "x": 1198,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2367,8 +2698,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 106,
-      "y": 1262,
+      "x": 1250,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2386,8 +2717,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 158,
-      "y": 1262,
+      "x": 1302,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2405,8 +2736,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 210,
-      "y": 1262,
+      "x": 1354,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2424,8 +2755,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 262,
-      "y": 1262,
+      "x": 1406,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2443,8 +2774,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 314,
-      "y": 1262,
+      "x": 1458,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2462,8 +2793,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 366,
-      "y": 1262,
+      "x": 1510,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2481,8 +2812,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 418,
-      "y": 1262,
+      "x": 1562,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2500,8 +2831,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 470,
-      "y": 1262,
+      "x": 1614,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2519,8 +2850,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 522,
-      "y": 1262,
+      "x": 1666,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2538,8 +2869,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 574,
-      "y": 1262,
+      "x": 1718,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2557,8 +2888,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 626,
-      "y": 1262,
+      "x": 1770,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2576,8 +2907,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 678,
-      "y": 1262,
+      "x": 1822,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2595,8 +2926,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 730,
-      "y": 1262,
+      "x": 1874,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2614,8 +2945,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 782,
-      "y": 1262,
+      "x": 1926,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2633,8 +2964,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 834,
-      "y": 1262,
+      "x": 1978,
+      "y": 1446,
       "width": 48,
       "height": 72
     },
@@ -2652,8 +2983,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 886,
-      "y": 1262,
+      "x": 2,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2671,8 +3002,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 938,
-      "y": 1262,
+      "x": 54,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2690,8 +3021,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 990,
-      "y": 1262,
+      "x": 106,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2709,8 +3040,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1042,
-      "y": 1262,
+      "x": 158,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2728,8 +3059,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1094,
-      "y": 1262,
+      "x": 210,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2747,8 +3078,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1146,
-      "y": 1262,
+      "x": 262,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2766,8 +3097,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1198,
-      "y": 1262,
+      "x": 314,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2785,8 +3116,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 1250,
-      "y": 1262,
+      "x": 366,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2804,8 +3135,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 1302,
-      "y": 1262,
+      "x": 418,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2823,8 +3154,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1354,
-      "y": 1262,
+      "x": 470,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2842,8 +3173,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1406,
-      "y": 1262,
+      "x": 522,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2861,8 +3192,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1458,
-      "y": 1262,
+      "x": 574,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2880,8 +3211,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1510,
-      "y": 1262,
+      "x": 626,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2899,8 +3230,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1562,
-      "y": 1262,
+      "x": 678,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2918,8 +3249,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1614,
-      "y": 1262,
+      "x": 730,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2937,8 +3268,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1666,
-      "y": 1262,
+      "x": 782,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2956,8 +3287,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1718,
-      "y": 1262,
+      "x": 834,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2975,8 +3306,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 1770,
-      "y": 1262,
+      "x": 886,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -2994,8 +3325,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 1822,
-      "y": 1262,
+      "x": 938,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3013,8 +3344,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1874,
-      "y": 1262,
+      "x": 990,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3032,8 +3363,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1926,
-      "y": 1262,
+      "x": 1042,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3051,8 +3382,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1978,
-      "y": 1262,
+      "x": 1094,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3070,8 +3401,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 2,
-      "y": 1338,
+      "x": 1146,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3089,8 +3420,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 54,
-      "y": 1338,
+      "x": 1198,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3108,8 +3439,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 106,
-      "y": 1338,
+      "x": 1250,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3127,8 +3458,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 158,
-      "y": 1338,
+      "x": 1302,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3146,8 +3477,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 210,
-      "y": 1338,
+      "x": 1354,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3165,8 +3496,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 262,
-      "y": 1338,
+      "x": 1406,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3184,8 +3515,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 314,
-      "y": 1338,
+      "x": 1458,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3203,8 +3534,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 366,
-      "y": 1338,
+      "x": 1510,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3222,8 +3553,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 418,
-      "y": 1338,
+      "x": 1562,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3241,8 +3572,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 470,
-      "y": 1338,
+      "x": 1614,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3260,8 +3591,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 522,
-      "y": 1338,
+      "x": 1666,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3279,8 +3610,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 574,
-      "y": 1338,
+      "x": 1718,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3298,8 +3629,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 626,
-      "y": 1338,
+      "x": 1770,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3317,8 +3648,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 678,
-      "y": 1338,
+      "x": 1822,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3336,8 +3667,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 730,
-      "y": 1338,
+      "x": 1874,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3355,8 +3686,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 782,
-      "y": 1338,
+      "x": 1926,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3374,8 +3705,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 834,
-      "y": 1338,
+      "x": 1978,
+      "y": 1522,
       "width": 48,
       "height": 72
     },
@@ -3393,8 +3724,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 886,
-      "y": 1338,
+      "x": 2,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3412,8 +3743,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 938,
-      "y": 1338,
+      "x": 54,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3431,8 +3762,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 990,
-      "y": 1338,
+      "x": 106,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3450,8 +3781,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1042,
-      "y": 1338,
+      "x": 158,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3469,8 +3800,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1094,
-      "y": 1338,
+      "x": 210,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3488,8 +3819,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1146,
-      "y": 1338,
+      "x": 262,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3507,8 +3838,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1198,
-      "y": 1338,
+      "x": 314,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3526,8 +3857,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1250,
-      "y": 1338,
+      "x": 366,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3545,8 +3876,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 1302,
-      "y": 1338,
+      "x": 418,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3564,8 +3895,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 1354,
-      "y": 1338,
+      "x": 470,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3583,8 +3914,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1406,
-      "y": 1338,
+      "x": 522,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3602,8 +3933,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1458,
-      "y": 1338,
+      "x": 574,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3621,8 +3952,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1510,
-      "y": 1338,
+      "x": 626,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3640,8 +3971,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1562,
-      "y": 1338,
+      "x": 678,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3659,8 +3990,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1614,
-      "y": 1338,
+      "x": 730,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3678,8 +4009,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1666,
-      "y": 1338,
+      "x": 782,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3697,8 +4028,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1718,
-      "y": 1338,
+      "x": 834,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3716,8 +4047,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1770,
-      "y": 1338,
+      "x": 886,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3735,8 +4066,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 1822,
-      "y": 1338,
+      "x": 938,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3754,8 +4085,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 1874,
-      "y": 1338,
+      "x": 990,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3773,8 +4104,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1926,
-      "y": 1338,
+      "x": 1042,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3792,8 +4123,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1978,
-      "y": 1338,
+      "x": 1094,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3811,8 +4142,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 2,
-      "y": 1414,
+      "x": 1146,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3830,8 +4161,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 54,
-      "y": 1414,
+      "x": 1198,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3849,8 +4180,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 106,
-      "y": 1414,
+      "x": 1250,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3868,8 +4199,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 158,
-      "y": 1414,
+      "x": 1302,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3887,8 +4218,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 210,
-      "y": 1414,
+      "x": 1354,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3906,8 +4237,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 262,
-      "y": 1414,
+      "x": 1406,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3925,8 +4256,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 314,
-      "y": 1414,
+      "x": 1458,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3944,8 +4275,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 366,
-      "y": 1414,
+      "x": 1510,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3963,8 +4294,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 418,
-      "y": 1414,
+      "x": 1562,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -3982,8 +4313,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 470,
-      "y": 1414,
+      "x": 1614,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -4001,8 +4332,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 522,
-      "y": 1414,
+      "x": 1666,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -4020,8 +4351,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 574,
-      "y": 1414,
+      "x": 1718,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -4039,8 +4370,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 626,
-      "y": 1414,
+      "x": 1770,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -4058,8 +4389,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 678,
-      "y": 1414,
+      "x": 1822,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -4077,8 +4408,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 730,
-      "y": 1414,
+      "x": 1874,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -4096,8 +4427,8 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 782,
-      "y": 1414,
+      "x": 1926,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -4115,8 +4446,8 @@
       "animation": "sit",
       "index": 0,
       "fps": 2,
-      "x": 834,
-      "y": 1414,
+      "x": 1978,
+      "y": 1598,
       "width": 48,
       "height": 72
     },
@@ -4134,8 +4465,8 @@
       "animation": "sit",
       "index": 1,
       "fps": 2,
-      "x": 886,
-      "y": 1414,
+      "x": 2,
+      "y": 1674,
       "width": 48,
       "height": 72
     },
@@ -4154,8 +4485,8 @@
         "width": 15,
         "depth": 15
       },
-      "x": 938,
-      "y": 1414,
+      "x": 54,
+      "y": 1674,
       "width": 160,
       "height": 200
     },
@@ -4174,8 +4505,8 @@
         "width": 15,
         "depth": 15
       },
-      "x": 1102,
-      "y": 1414,
+      "x": 218,
+      "y": 1674,
       "width": 160,
       "height": 200
     },
@@ -4194,8 +4525,8 @@
         "width": 15,
         "depth": 15
       },
-      "x": 1266,
-      "y": 1414,
+      "x": 382,
+      "y": 1674,
       "width": 160,
       "height": 200
     },
@@ -4214,8 +4545,8 @@
         "width": 15,
         "depth": 15
       },
-      "x": 1430,
-      "y": 1414,
+      "x": 546,
+      "y": 1674,
       "width": 160,
       "height": 200
     },
@@ -4234,8 +4565,8 @@
         "width": 12,
         "depth": 12
       },
-      "x": 1594,
-      "y": 1414,
+      "x": 710,
+      "y": 1674,
       "width": 128,
       "height": 176
     },
@@ -4248,8 +4579,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "landmark",
-      "x": 1726,
-      "y": 1414,
+      "x": 842,
+      "y": 1674,
       "width": 192,
       "height": 160
     },
@@ -4263,8 +4594,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "foliage",
       "fps": 1,
-      "x": 1922,
-      "y": 1414,
+      "x": 1038,
+      "y": 1674,
       "width": 96,
       "height": 128
     },
@@ -4278,8 +4609,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "foliage",
       "fps": 1,
-      "x": 2,
-      "y": 1618,
+      "x": 1138,
+      "y": 1674,
       "width": 96,
       "height": 128
     },
@@ -4292,8 +4623,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 102,
-      "y": 1618,
+      "x": 1238,
+      "y": 1674,
       "width": 64,
       "height": 80
     },
@@ -4306,8 +4637,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 170,
-      "y": 1618,
+      "x": 1306,
+      "y": 1674,
       "width": 64,
       "height": 80
     },
@@ -4320,8 +4651,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 238,
-      "y": 1618,
+      "x": 1374,
+      "y": 1674,
       "width": 64,
       "height": 80
     },
@@ -4334,8 +4665,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 306,
-      "y": 1618,
+      "x": 1442,
+      "y": 1674,
       "width": 64,
       "height": 80
     },
@@ -4348,8 +4679,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 374,
-      "y": 1618,
+      "x": 1510,
+      "y": 1674,
       "width": 64,
       "height": 80
     },
@@ -4362,8 +4693,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 442,
-      "y": 1618,
+      "x": 1578,
+      "y": 1674,
       "width": 64,
       "height": 80
     },
@@ -4376,8 +4707,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 510,
-      "y": 1618,
+      "x": 1646,
+      "y": 1674,
       "width": 64,
       "height": 80
     },
@@ -4390,8 +4721,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 578,
-      "y": 1618,
+      "x": 1714,
+      "y": 1674,
       "width": 64,
       "height": 80
     },
@@ -4440,8 +4771,8 @@
           ]
         ]
       },
-      "x": 646,
-      "y": 1618,
+      "x": 1782,
+      "y": 1674,
       "width": 128,
       "height": 144
     },
@@ -4490,8 +4821,8 @@
           ]
         ]
       },
-      "x": 778,
-      "y": 1618,
+      "x": 1914,
+      "y": 1674,
       "width": 128,
       "height": 144
     },
@@ -4540,8 +4871,8 @@
           ]
         ]
       },
-      "x": 910,
-      "y": 1618,
+      "x": 2,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -4590,8 +4921,8 @@
           ]
         ]
       },
-      "x": 1042,
-      "y": 1618,
+      "x": 134,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -4640,8 +4971,8 @@
           ]
         ]
       },
-      "x": 1174,
-      "y": 1618,
+      "x": 266,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -4690,8 +5021,8 @@
           ]
         ]
       },
-      "x": 1306,
-      "y": 1618,
+      "x": 398,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -4740,8 +5071,8 @@
           ]
         ]
       },
-      "x": 1438,
-      "y": 1618,
+      "x": 530,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -4790,8 +5121,8 @@
           ]
         ]
       },
-      "x": 1570,
-      "y": 1618,
+      "x": 662,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -4840,8 +5171,8 @@
           ]
         ]
       },
-      "x": 1702,
-      "y": 1618,
+      "x": 794,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -4890,8 +5221,8 @@
           ]
         ]
       },
-      "x": 1834,
-      "y": 1618,
+      "x": 926,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -4940,8 +5271,8 @@
           ]
         ]
       },
-      "x": 2,
-      "y": 1766,
+      "x": 1058,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -4990,8 +5321,8 @@
           ]
         ]
       },
-      "x": 134,
-      "y": 1766,
+      "x": 1190,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -5040,8 +5371,8 @@
           ]
         ]
       },
-      "x": 266,
-      "y": 1766,
+      "x": 1322,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -5090,8 +5421,8 @@
           ]
         ]
       },
-      "x": 398,
-      "y": 1766,
+      "x": 1454,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -5140,8 +5471,8 @@
           ]
         ]
       },
-      "x": 530,
-      "y": 1766,
+      "x": 1586,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -5190,8 +5521,8 @@
           ]
         ]
       },
-      "x": 662,
-      "y": 1766,
+      "x": 1718,
+      "y": 1878,
       "width": 128,
       "height": 144
     },
@@ -5205,8 +5536,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 2,
-      "x": 794,
-      "y": 1766,
+      "x": 1850,
+      "y": 1878,
       "width": 40,
       "height": 32
     },
@@ -5220,8 +5551,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 2,
-      "x": 838,
-      "y": 1766,
+      "x": 1894,
+      "y": 1878,
       "width": 40,
       "height": 32
     },
@@ -5235,8 +5566,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 2,
-      "x": 882,
-      "y": 1766,
+      "x": 1938,
+      "y": 1878,
       "width": 40,
       "height": 32
     },
@@ -5250,8 +5581,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 2,
-      "x": 926,
-      "y": 1766,
+      "x": 1982,
+      "y": 1878,
       "width": 40,
       "height": 32
     },
@@ -5265,8 +5596,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 5,
-      "x": 970,
-      "y": 1766,
+      "x": 2,
+      "y": 2026,
       "width": 32,
       "height": 24
     },
@@ -5280,8 +5611,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 4,
-      "x": 1006,
-      "y": 1766,
+      "x": 38,
+      "y": 2026,
       "width": 24,
       "height": 16
     },
@@ -5295,8 +5626,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 5,
-      "x": 1034,
-      "y": 1766,
+      "x": 66,
+      "y": 2026,
       "width": 32,
       "height": 24
     },
@@ -5310,8 +5641,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 4,
-      "x": 1070,
-      "y": 1766,
+      "x": 102,
+      "y": 2026,
       "width": 24,
       "height": 16
     },
@@ -5325,8 +5656,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 5,
-      "x": 1098,
-      "y": 1766,
+      "x": 130,
+      "y": 2026,
       "width": 32,
       "height": 24
     },
@@ -5340,8 +5671,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 4,
-      "x": 1134,
-      "y": 1766,
+      "x": 166,
+      "y": 2026,
       "width": 24,
       "height": 16
     },
@@ -5355,8 +5686,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 5,
-      "x": 1162,
-      "y": 1766,
+      "x": 194,
+      "y": 2026,
       "width": 32,
       "height": 24
     },
@@ -5370,8 +5701,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 4,
-      "x": 1198,
-      "y": 1766,
+      "x": 230,
+      "y": 2026,
       "width": 24,
       "height": 16
     },
@@ -5385,8 +5716,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1226,
-      "y": 1766,
+      "x": 258,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5400,8 +5731,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1294,
-      "y": 1766,
+      "x": 326,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5415,8 +5746,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1362,
-      "y": 1766,
+      "x": 394,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5430,8 +5761,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1430,
-      "y": 1766,
+      "x": 462,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5445,8 +5776,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1498,
-      "y": 1766,
+      "x": 530,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5460,8 +5791,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1566,
-      "y": 1766,
+      "x": 598,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5475,8 +5806,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1634,
-      "y": 1766,
+      "x": 666,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5490,8 +5821,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1702,
-      "y": 1766,
+      "x": 734,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5505,8 +5836,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1770,
-      "y": 1766,
+      "x": 802,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5520,8 +5851,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1838,
-      "y": 1766,
+      "x": 870,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5535,8 +5866,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1906,
-      "y": 1766,
+      "x": 938,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5550,8 +5881,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1974,
-      "y": 1766,
+      "x": 1006,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5565,8 +5896,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 2,
-      "y": 1914,
+      "x": 1074,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5580,8 +5911,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 70,
-      "y": 1914,
+      "x": 1142,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5595,8 +5926,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 138,
-      "y": 1914,
+      "x": 1210,
+      "y": 2026,
       "width": 64,
       "height": 32
     },
@@ -5610,8 +5941,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 206,
-      "y": 1914,
+      "x": 1278,
+      "y": 2026,
       "width": 64,
       "height": 32
     }
@@ -5633,5 +5964,5 @@
       "modifications": "Offline core export adapter; project palette, seed and frame encoder. No remote/API runtime."
     }
   ],
-  "atlasSha256": "ec89f37d20475113903897877c3a936718a7b502af5e1cfbf6941af671abaa5f"
+  "atlasSha256": "cdf5f45afeefdc04d11beeabb8353dc8314f7fb89368d66beee621343651c7e0"
 }

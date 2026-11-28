@@ -1,3 +1,19 @@
+## P1.5 ACTIVE — creator polish, 28 November 2026
+
+Pulled creator instructions90693e3 on existing PR #7 branch. Previous First Voyage remains the historical baseline, not approved for expansion. One implementer; independent review batches≤5 systems. Stage2 locked.
+
+| Gate | Work / observed state |
+| --- | --- |
+| A baseline / golden | Fresh1440×900 browser captures + actual composited movement/surf recording captured before source changes. Baseline usable area H7025.25/S4309.19. Original Mira portrait/five-face identity family, compact HUD, street/elevation and audible music prototype internally reviewed GO for B/C production. Four expressions/baked96s music are original; subjective listening remains creator gate.51 unit tests and298-frame audit PASS; before/after actual captures retained. |
+| B feel / music | ACTIVE: transient locomotion, planted-foot cycles, camera, original96s arrangements and independent mixer. |
+| C islands / saves | Versioned v1→v2 migration authored before geography changes; expanded district/elevation authoring follows golden. |
+| D HUD / dialogue | Dedicated character-led beat view and compact navigational UI; preserve actions/accessibility. |
+| E regression / live | Rerun all existing8 browser scenarios plus movement/audio/height/portrait/migration tests, actual audible two-island capture and deployed verification. |
+
+Independent preflights: [world](review-p15-world.md), [state](review-p15-state.md), [art/audio](review-p15-art.md). New evidence under `docs/evidence/p15/`. No current P1.5 completion or new live gameplay is claimed.
+
+---
+
 # Execution status
 
 ## Creator feedback — P1.5 (2026-11-28)

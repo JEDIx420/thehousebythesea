@@ -1,3 +1,4 @@
+import { heightAtLocal } from "./surface.mjs";
 import { PixelCanvas, noise } from "../../tools/pixel-canvas.mjs";
 import P from "./palette.json" with { type: "json" };
 import WORLD from "./world.json" with { type: "json" };
@@ -88,6 +89,34 @@ export function land(map = WORLD.havenport) {
       }
       c.pixel(px, py, color);
     }
+  // Raised surfaces and visible shaded retaining-wall faces share the exact zone data.
+  for (const level of map.levels ?? []) {
+    const project = (p, h = 0) => [
+      anchor[0] + (p[0] - p[1]) * sx,
+      anchor[1] + (p[0] + p[1]) * sy - h,
+    ];
+    const points = level.polygon;
+    // Vertical faces are separate foot-depth overlays, never flattened into ground.
+    // Raised top is a separate occluding depth layer too.
+  }
+  for (const r of map.ramps ?? []) {
+    const [a, b, d, e] = r.rect;
+    for (let x = a; x <= d; x += 0.2)
+      for (let z = b; z <= e; z += 0.2) {
+        const h = heightAtLocal(map, x, z),
+          px = anchor[0] + (x - z) * sx,
+          py = anchor[1] + (x + z) * sy - h;
+        c.rect(
+          px,
+          py,
+          2,
+          2,
+          Math.floor((r.axis === "x" ? x : z) * 2) % 5 === 0
+            ? P.sandShade
+            : P.sandLight,
+        );
+      }
+  }
   const d = map.dock,
     screen = (x, z) => [anchor[0] + (x - z) * sx, anchor[1] + (x + z) * sy];
   for (const x of [d.minX + 3, d.maxX - 2])
@@ -116,4 +145,116 @@ export function water() {
     }
   }
   return c;
+}
+
+export function cliffFrames(map) {
+  const frames = [];
+  for (const level of map.levels ?? []) {
+    const poly = level.polygon,
+      mid = [
+        poly.reduce((n, p) => n + p[0], 0) / poly.length,
+        poly.reduce((n, p) => n + p[1], 0) / poly.length,
+      ],
+      project = ([x, z]) => [
+        (x - mid[0] - z + mid[1]) * WORLD.projection.x,
+        (x - mid[0] + z - mid[1]) * WORLD.projection.y - level.height,
+      ],
+      points = poly.map(project),
+      minX = Math.floor(Math.min(...points.map((p) => p[0]))) - 2,
+      minY = Math.floor(Math.min(...points.map((p) => p[1]))) - 2,
+      maxX = Math.ceil(Math.max(...points.map((p) => p[0]))) + 2,
+      maxY = Math.ceil(Math.max(...points.map((p) => p[1]))) + 2,
+      c = new PixelCanvas(maxX - minX + 1, maxY - minY + 1),
+      anchor = [-minX, Math.max(0, -minY)];
+    // Anchor must stay within the raster; a front-rim world position keeps it inside.
+    const rim = Math.max(...poly.map(([x, z]) => (x + z) * WORLD.projection.y));
+    c.poly(
+      points.map(([x, y]) => [x - minX, y - minY]),
+      P.grassShade,
+      P.sandLight,
+    );
+    for (let i = 0; i < points.length; i++)
+      c.line(
+        points[i][0] - minX,
+        points[i][1] - minY,
+        points[(i + 1) % points.length][0] - minX,
+        points[(i + 1) % points.length][1] - minY,
+        P.grassLight,
+      );
+    // Use image centre as placement anchor and store explicit projected offset for this top.
+    frames.push({
+      id: `top-${map.id}-${level.id}`,
+      image: c,
+      anchor: [Math.floor(c.width / 2), Math.floor(c.height / 2)],
+      world: mid,
+      pixelOffset: [
+        minX + Math.floor(c.width / 2),
+        minY + Math.floor(c.height / 2),
+      ],
+      depthY: rim - 0.1,
+    });
+  }
+  for (const level of map.levels ?? [])
+    for (let edge = 0; edge < level.polygon.length; edge++) {
+      const a = level.polygon[edge],
+        b = level.polygon[(edge + 1) % level.polygon.length],
+        dx = b[0] - a[0],
+        dz = b[1] - a[1];
+      if (dz - dx <= 0) continue; // only the two camera-facing walls of clockwise plateaus
+      const count = Math.ceil(Math.hypot(dx, dz) / 4);
+      for (let i = 0; i < count; i++) {
+        const p = [a[0] + (dx * i) / count, a[1] + (dz * i) / count],
+          q = [a[0] + (dx * (i + 1)) / count, a[1] + (dz * (i + 1)) / count],
+          mid = [(p[0] + q[0]) / 2, (p[1] + q[1]) / 2];
+        if (
+          (map.ramps ?? []).some(
+            (r) =>
+              mid[0] >= r.rect[0] - 0.1 &&
+              mid[0] <= r.rect[2] + 0.1 &&
+              mid[1] >= r.rect[1] - 0.1 &&
+              mid[1] <= r.rect[3] + 0.1,
+          )
+        )
+          continue;
+        const project = (v, h) => [
+            (v[0] - mid[0] - v[1] + mid[1]) * WORLD.projection.x,
+            (v[0] - mid[0] + v[1] - mid[1]) * WORLD.projection.y - h,
+          ],
+          points = [
+            project(p, 0),
+            project(q, 0),
+            project(q, level.height),
+            project(p, level.height),
+          ];
+        const minX = Math.floor(Math.min(...points.map((p) => p[0]))) - 2,
+          minY = Math.floor(Math.min(...points.map((p) => p[1]))) - 2,
+          maxX = Math.ceil(Math.max(...points.map((p) => p[0]))) + 2,
+          maxY = Math.ceil(Math.max(...points.map((p) => p[1]))) + 2,
+          c = new PixelCanvas(maxX - minX + 1, maxY - minY + 1),
+          anchor = [-minX, -minY];
+        c.poly(
+          points.map(([x, y]) => [x - minX, y - minY]),
+          dx === 0 ? P.wallShade : P.sandShade,
+          P.woodDark,
+        );
+        for (let h = 4; h < level.height; h += 5)
+          c.line(
+            ...project(p, h).map((v, j) => v + anchor[j]),
+            ...project(q, h).map((v, j) => v + anchor[j]),
+            P.plaster,
+          );
+        c.line(
+          ...project(p, level.height).map((v, j) => v + anchor[j]),
+          ...project(q, level.height).map((v, j) => v + anchor[j]),
+          P.sandLight,
+        );
+        frames.push({
+          id: `cliff-${map.id}-${level.id}-${edge}-${i}`,
+          image: c,
+          anchor,
+          world: mid,
+        });
+      }
+    }
+  return frames;
 }

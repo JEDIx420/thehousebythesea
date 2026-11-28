@@ -1,3 +1,5 @@
+import { heightAtLocal, traversable } from "../../assets/source/surface.mjs";
+import { navigation } from "../data/navigation";
 import WORLD from "../../assets/source/world.json" with { type: "json" };
 import type { IslandId, BoatCheckpoint } from "../state/game";
 import { contains, type Point } from "./projection";
@@ -13,6 +15,14 @@ export interface Island {
   grass: number[][];
   paths: number[][][];
   landmarks: Prop[];
+  levels: { id: string; height: number; polygon: number[][] }[];
+  ramps: {
+    id: string;
+    rect: number[];
+    axis: string;
+    from: number;
+    to: number;
+  }[];
   dock: {
     minX: number;
     maxX: number;
@@ -31,12 +41,12 @@ export const MAPS: readonly Island[] = [
 export const NPCS = WORLD.npcs.map((n) => ({
   ...n,
   island: n.island as IslandId,
-  z: n.z + (n.island === "saltglass-bay" ? -220 : 0),
+  z: n.z + navigation(n.island as IslandId).offsetZ,
 }));
 export const PLACES = WORLD.interactions.map((n) => ({
   ...n,
   island: n.island as IslandId,
-  z: n.z + (n.island === "saltglass-bay" ? -220 : 0),
+  z: n.z + navigation(n.island as IslandId).offsetZ,
 }));
 const buildings: Record<string, { width: number; depth: number }> =
   WORLD.buildings;
@@ -44,13 +54,8 @@ export function mapFor(id: IslandId) {
   return MAPS.find((m) => m.id === id)!;
 }
 export function dockFor(id: IslandId) {
-  const m = mapFor(id);
-  return {
-    x: m.dock.x,
-    z: m.dock.z + m.offsetZ,
-    landingX: m.dock.landingX,
-    landingZ: m.dock.landingZ + m.offsetZ,
-  };
+  const n = navigation(id);
+  return { ...n.dock, landingX: n.landing.x, landingZ: n.landing.z };
 }
 export function groundAt(x: number, z: number): IslandId | null {
   for (const m of MAPS) {
@@ -94,7 +99,13 @@ export function walkable(x: number, z: number, radius = 0.7) {
     if (!groundAt(x + Math.cos(a) * radius, z + Math.sin(a) * radius))
       return false;
   }
-  return true;
+  const map = mapFor(groundAt(x, z)!);
+  return traversable(
+    map,
+    { x, z: z - map.offsetZ },
+    { x, z: z - map.offsetZ },
+    radius,
+  );
 }
 export function inBounds(x: number, z: number) {
   const b = WORLD.bounds;
@@ -147,4 +158,49 @@ export function buildingFootprint(kind: string, x: number, z: number) {
         { x, z: z - b.depth },
       ]
     : [];
+}
+
+export function elevationAt(x: number, z: number) {
+  const map = MAPS.find((m) => groundAt(x, z) === m.id);
+  return map ? heightAtLocal(map, x, z - map.offsetZ) : 0;
+}
+export function canStep(
+  ax: number,
+  az: number,
+  bx: number,
+  bz: number,
+  radius = 0.7,
+) {
+  const id = groundAt(bx, bz);
+  if (!id || !walkable(bx, bz, radius)) return false;
+  const map = mapFor(id);
+  return traversable(
+    map,
+    { x: ax, z: az - map.offsetZ },
+    { x: bx, z: bz - map.offsetZ },
+    radius,
+  );
+}
+
+/** A raised top sorts at its front rim; occupants share that plane, then foot-sort. */
+export function surfaceDepth(x: number, z: number) {
+  const flat = (x + z) * WORLD.projection.y,
+    id = groundAt(x, z);
+  if (!id) return flat;
+  const map = mapFor(id),
+    h = elevationAt(x, z);
+  let result = flat;
+  for (const level of map.levels ?? [])
+    if (
+      h >= level.height - 0.01 &&
+      (contains(x, z - map.offsetZ, level.polygon) ||
+        contains(x - 0.01, z - map.offsetZ - 0.01, level.polygon))
+    )
+      result = Math.max(
+        result,
+        ...level.polygon.map(
+          ([a, b]) => (a + b + map.offsetZ) * WORLD.projection.y + 0.5 + (flat-(a+b+map.offsetZ)*WORLD.projection.y)*0.001,
+        ),
+      );
+  return result;
 }

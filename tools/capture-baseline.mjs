@@ -1,0 +1,14 @@
+import {chromium} from '@playwright/test';
+import {installAudioCapture,record} from './record-browser.mjs';
+import fs from 'node:fs/promises';
+const dir=new URL('../docs/evidence/p15/before',import.meta.url).pathname;
+const browser=await chromium.launch({channel:'chrome'}),page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[];
+page.on('pageerror',e=>errors.push(e.message));await installAudioCapture(page);
+await page.goto('http://localhost:4190/thehousebythesea/');await page.waitForFunction(()=>window.voyage);
+await page.getByRole('button',{name:'Begin your voyage',exact:true}).click();await page.getByRole('button',{name:'Skip memory',exact:true}).click();
+await page.waitForTimeout(5000);await page.screenshot({path:`${dir}/harbour.png`});const stop=await record(page,`${dir}/movement-surf`);
+const sample=[];await page.keyboard.down('w');for(let i=0;i<25;i++){await page.waitForTimeout(40);sample.push({t:i*40,state:await page.evaluate(()=>window.voyage.getState().player)});}await page.keyboard.up('w');await page.waitForTimeout(200);
+await page.keyboard.press('r');await page.keyboard.press('e');await page.screenshot({path:`${dir}/ellis-dialogue.png`});await page.keyboard.press('Escape');await page.keyboard.press('r');
+await page.keyboard.press('d',{delay:1800});await page.keyboard.press('a',{delay:1800});await page.waitForTimeout(2000);
+const result={baselineCommit:'90693e3',browser:browser.version(),sample,metrics:await page.evaluate(()=>window.voyage.getMetrics()),state:await page.evaluate(()=>window.voyage.getState()),errors,recording:await stop()};
+await fs.writeFile(`${dir}/baseline.json`,JSON.stringify(result,null,2)+'\n');await browser.close();console.log(JSON.stringify({errors,metrics:result.metrics,recording:result.recording}));

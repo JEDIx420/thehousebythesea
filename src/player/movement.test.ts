@@ -27,7 +27,8 @@ it("keeps both docks, canonical hull and recovery checkpoints valid", () => {
 });
 it("cannot walk into the cove or through the shared building footprint", () => {
   expect(walkable(44, 10)).toBe(false);
-  expect(walkable(-5, -25)).toBe(false);
+  const solid=MAPS[0].landmarks.find(p=>p.kind==='hut')!;
+  expect(walkable(solid.x-5,solid.z-5)).toBe(false);
   let p = { ...initialState().player, x: 58, z: 0 };
   for (let i = 0; i < 200; i++) p = moveFoot(p, 1, 0, 0.016);
   expect(walkable(p.x, p.z)).toBe(true);

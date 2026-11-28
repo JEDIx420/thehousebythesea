@@ -20,6 +20,8 @@ import {
   reachableDock,
   groundAt,
   hullPoints,
+  elevationAt,
+  surfaceDepth,
 } from "../world/world";
 import { People, deckSeat } from "../world/people";
 import {
@@ -60,7 +62,8 @@ export class VoyageScene extends Phaser.Scene {
   private wakeClock = 0;
   private wakeIndex = 0;
   private keys = new Set<string>();
-  private readonly nativeKeyDown = (event: KeyboardEvent) => this.keyDown(event);
+  private readonly nativeKeyDown = (event: KeyboardEvent) =>
+    this.keyDown(event);
   private readonly nativeKeyUp = (event: KeyboardEvent) =>
     this.keys.delete(event.key.toLowerCase());
   private speed = 0;
@@ -87,6 +90,7 @@ export class VoyageScene extends Phaser.Scene {
   private audio = new Ambience();
   private booted = false;
   private zoom = 1;
+  private lastAudioError = "";
   constructor(
     private session: Session,
     private view: View,
@@ -119,9 +123,14 @@ export class VoyageScene extends Phaser.Scene {
   }
   private art(id: string, x: number, z: number, layer?: number) {
     const p = project(x, z),
-      image = this.add.image(Math.round(p.x), Math.round(p.y), "coast", id);
+      image = this.add.image(
+        Math.round(p.x),
+        Math.round(p.y - (layer === undefined ? elevationAt(x, z) : 0)),
+        "coast",
+        id,
+      );
     this.setFrame(image, id);
-    return image.setDepth(layer ?? p.y);
+    return image.setDepth(layer ?? surfaceDepth(x, z));
   }
   create() {
     try {
@@ -199,6 +208,7 @@ export class VoyageScene extends Phaser.Scene {
       "saltglass-ground",
       "young-rowan",
       "tree-1",
+      ...MAPS.flatMap(m=>(m.levels??[]).map(l=>`top-${m.id}-${l.id}`)),
       ...MAPS.flatMap((map) =>
         map.landmarks.map((p) => (p.kind === "tree" ? "tree-0" : p.kind)),
       ),
@@ -220,6 +230,9 @@ export class VoyageScene extends Phaser.Scene {
       for (let i = 0; i < 2; i++) required.push(`fish-${fish}-${i}`);
     for (const id of required)
       if (!this.frames.has(id)) throw new Error(`Missing required frame ${id}`);
+    this.view.configurePortraits(
+      m.frames as unknown as import("../ui/dialogue-view").PortraitFrame[],
+    );
     const s = this.session.state;
     if (
       (s.player.mode === "walk" && !walkable(s.player.x, s.player.z)) ||
@@ -243,6 +256,35 @@ export class VoyageScene extends Phaser.Scene {
         island.offsetZ,
         -50000,
       );
+      for (const frame of m.frames as {
+        id: string;
+        category?: string;
+        island?: string;
+        world?: number[];
+        pixelOffset?: number[];
+        depthY?: number;
+      }[])
+        if (
+          frame.category === "cliff" &&
+          frame.island === island.id &&
+          frame.world
+        ) {
+          const [x, z] = frame.world,
+            image = this.art(
+              frame.id,
+              x,
+              z + island.offsetZ,
+              frame.depthY !== undefined
+                ? frame.depthY + project(0,island.offsetZ).y
+                : depth(x, z + island.offsetZ) + 0.1,
+            );
+          if (frame.pixelOffset)
+            image.setPosition(
+              image.x + frame.pixelOffset[0],
+              image.y + frame.pixelOffset[1],
+            );
+        }
+
       for (const p of island.landmarks) {
         const id = p.kind === "tree" ? "tree-0" : p.kind,
           image = this.art(id, p.x, p.z + island.offsetZ);
@@ -385,11 +427,17 @@ export class VoyageScene extends Phaser.Scene {
         performance as Performance & { memory?: { usedJSHeapSize: number } }
       ).memory?.usedJSHeapSize,
       lastPick: this.registry.get("lastPick"),
+      audio: this.audio.metrics(),
     };
   }
   private keyDown(e: KeyboardEvent) {
     const key = e.key.toLowerCase();
     if (this.view.open) {
+      if (this.view.panel === "dialogue" && key === "e" && !e.repeat) {
+        e.preventDefault();
+        this.view.advanceDialogue();
+        return;
+      }
       if (key === "escape") {
         e.preventDefault();
         if (this.view.panel === "prologue") this.finishMemory();
@@ -520,17 +568,17 @@ export class VoyageScene extends Phaser.Scene {
   }
   private startAmbience() {
     try {
-      this.audio.start(
-        this.session.state.settings.muted
-          ? 0
-          : this.session.state.settings.volume,
-      );
+      this.audio.start(this.session.state.settings);
     } catch {
       this.view.toast("Sound is unavailable here. Your voyage can continue.");
     }
   }
   private async action(action: string, value?: string) {
     const s = this.session.state;
+    if (action === "dialogue-next") {
+      this.view.advanceDialogue();
+      return;
+    }
     if (action === "retry") {
       location.reload();
       return;
@@ -618,7 +666,17 @@ export class VoyageScene extends Phaser.Scene {
       );
       return;
     }
-    if (["muted", "volume", "motion"].includes(action)) {
+    if (
+      [
+        "muted",
+        "volume",
+        "motion",
+        "music",
+        "ambience",
+        "sfx",
+        "text",
+      ].includes(action)
+    ) {
       this.session.dispatch({
         type: "SETTINGS",
         settings:
@@ -626,7 +684,9 @@ export class VoyageScene extends Phaser.Scene {
             ? { muted: value === "true" }
             : action === "motion"
               ? { reducedMotion: value === "true" }
-              : { volume: Number(value) },
+              : action === "text"
+                ? { instantText: value === "true" }
+                : { [action]: Number(value) },
       });
       this.startAmbience();
       return;
@@ -713,6 +773,7 @@ export class VoyageScene extends Phaser.Scene {
     if (action === "deliver") {
       const before = s.wallet;
       this.session.dispatch({ type: "DELIVER_PARCEL" });
+      if (s.delivery === "active") this.audio.sfx("job");
       this.view.dialogue(conversation("nessa", this.session.state));
       this.view.toast(
         this.session.state.wallet > before
@@ -749,6 +810,7 @@ export class VoyageScene extends Phaser.Scene {
   private interact() {
     const target = this.target();
     if (!target) return;
+    this.audio.sfx("interact");
     const s = this.session.state;
     if (target.id === "board") {
       const player = board(s.player, s.boat);
@@ -839,6 +901,7 @@ export class VoyageScene extends Phaser.Scene {
       this.keys.clear();
       this.game.canvas.focus();
       this.speed = 0;
+      this.audio.sfx("cast");
       this.fish = cast(this.castCount++);
       this.fishPoint = point;
       this.view.fishing(this.fish);
@@ -891,6 +954,7 @@ export class VoyageScene extends Phaser.Scene {
         .setPosition(Math.round(foot.x), Math.round(foot.y - 3))
         .setDepth(vesselDepth + 1);
     } else {
+      p.y -= elevationAt(s.player.x, s.player.z);
       const dir = facing(
         Math.sin(s.player.heading),
         -Math.cos(s.player.heading),
@@ -901,20 +965,21 @@ export class VoyageScene extends Phaser.Scene {
       );
       this.rowan
         .setPosition(Math.round(p.x), Math.round(p.y))
-        .setDepth(p.y + 1);
+        .setDepth(surfaceDepth(s.player.x, s.player.z) + .001);
     }
     for (const person of this.people.persons) {
       const image = this.personImages.get(person.id)!;
       image.setVisible(person.visible && this.memory < 0);
       if (!image.visible) continue;
       const foot = project(person.point.x, person.point.z);
+      foot.y -= elevationAt(person.point.x, person.point.z);
       this.setFrame(
         image,
         `${person.actor}-${person.direction}-${person.walking ? "walk-" + (Math.floor(time * 8) % 6) : "idle-" + (Math.floor(visual * 2) % 2)}`,
       );
       image
         .setPosition(Math.round(foot.x), Math.round(foot.y))
-        .setDepth(foot.y);
+        .setDepth(surfaceDepth(person.point.x, person.point.z));
     }
     this.passenger.setVisible(this.people.aboard && this.memory < 0);
     if (this.passenger.visible) {
@@ -987,7 +1052,28 @@ export class VoyageScene extends Phaser.Scene {
       }
     }
     let walking = false;
+    const audioStatus = this.audio.metrics();
+    this.view.audioStatus(audioStatus.status);
+    if (
+      audioStatus.error &&
+      !this.view.open &&
+      audioStatus.error !== this.lastAudioError
+    ) {
+      this.lastAudioError = audioStatus.error;
+      this.view.toast(audioStatus.error, 6000);
+    }
+    if (!audioStatus.error) this.lastAudioError = "";
     const paused = this.view.open || !this.session.started;
+    if (this.session.started)
+      this.audio.update(
+        this.session.state.settings,
+        this.session.state.player.mode === "boat"
+          ? "sailing"
+          : this.session.state.player.island === "havenport"
+            ? "havenport"
+            : "saltglass",
+        this.view.open,
+      );
     if (!paused && !this.fish) {
       const s = this.session.state,
         h =

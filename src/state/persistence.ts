@@ -1,3 +1,5 @@
+import { migrateWorld } from "./migrate-world";
+import { DEFAULT_SETTINGS, WORLD_VERSION } from "../data/navigation";
 import { initialState, reduce, type GameState } from "./game";
 export const STORAGE = {
   database: "thehousebythesea-pixel",
@@ -32,7 +34,11 @@ function decode(raw: unknown): Record<string, unknown> {
     );
   return v;
 }
-function validate(v: Record<string, unknown>, legacy: boolean): GameState {
+function validate(
+  v: Record<string, unknown>,
+  legacy: boolean,
+  historical = false,
+): GameState {
   const { inventory, story, player, boat, settings, discoveries } = v;
   const valid =
     count(v.wallet) &&
@@ -68,14 +74,28 @@ function validate(v: Record<string, unknown>, legacy: boolean): GameState {
     Number.isFinite(settings.volume) &&
     settings.volume >= 0 &&
     settings.volume <= 1 &&
-    (legacy || typeof settings.reducedMotion === "boolean");
+    (legacy || typeof settings.reducedMotion === "boolean") &&
+    (legacy || historical
+      ? (settings.instantText === undefined ||
+          typeof settings.instantText === "boolean") &&
+        [settings.music, settings.ambience, settings.sfx].every(
+          (n) =>
+            n === undefined ||
+            (typeof n === "number" && Number.isFinite(n) && n >= 0 && n <= 1),
+        )
+      : typeof settings.instantText === "boolean" &&
+        [settings.music, settings.ambience, settings.sfx].every(
+          (n) =>
+            typeof n === "number" && Number.isFinite(n) && n >= 0 && n <= 1,
+        ));
   if (!valid)
     throw new SaveError(
       "This save contains invalid progress. The original has been kept.",
     );
   const snapshot = JSON.parse(JSON.stringify(v)) as GameState;
   snapshot.schemaVersion = 2;
-  snapshot.worldVersion = "pixel-first-voyage-v1";
+  snapshot.worldVersion = historical ? "pixel-first-voyage-v1" : WORLD_VERSION;
+  snapshot.settings = { ...DEFAULT_SETTINGS, ...snapshot.settings };
   snapshot.settings.reducedMotion = legacy
     ? false
     : snapshot.settings.reducedMotion;
@@ -83,11 +103,17 @@ function validate(v: Record<string, unknown>, legacy: boolean): GameState {
 }
 export function parseSave(raw: unknown): GameState {
   const v = decode(raw);
-  if (v.schemaVersion !== 2 || v.worldVersion !== "pixel-first-voyage-v1")
+  if (
+    v.schemaVersion !== 2 ||
+    (v.worldVersion !== WORLD_VERSION &&
+      v.worldVersion !== "pixel-first-voyage-v1")
+  )
     throw new SaveError(
       "This save version is unsupported. Your original voyage has been kept.",
     );
-  return validate(v, false);
+  return v.worldVersion === "pixel-first-voyage-v1"
+    ? migrateWorld(validate(v, false, true))
+    : validate(v, false);
 }
 /** Explicit COPY import. Economy/story survive; old 3D coordinates never become pixel positions. */
 export function migrateLegacy(raw: unknown): GameState {
@@ -272,7 +298,32 @@ export async function saveGame(state: GameState): Promise<void> {
           new SaveError("Saving did not finish. Keep this tab open and retry."),
         );
       }, 5000);
-      transaction.objectStore(STORAGE.store).put(snapshot, STORAGE.slot);
+      const store = transaction.objectStore(STORAGE.store),
+        previous = store.get(STORAGE.slot);
+      previous.onsuccess = () => {
+        if (previous.result !== undefined) {
+          // Validation happens before the put: protect a future/corrupt snapshot
+          // written by another tab since this session loaded.
+          try {
+            parseSave(previous.result);
+          } catch {
+            transaction.abort();
+            return;
+          }
+          const old =
+            typeof previous.result === "string"
+              ? JSON.parse(previous.result)
+              : previous.result;
+          if (old.worldVersion === "pixel-first-voyage-v1") {
+            const backup = store.get("before-world-v2");
+            backup.onsuccess = () => {
+              if (backup.result === undefined)
+                store.put(previous.result, "before-world-v2");
+            };
+          }
+        }
+        store.put(snapshot, STORAGE.slot);
+      };
       transaction.oncomplete = () => finish();
       transaction.onabort = transaction.onerror = () =>
         finish(

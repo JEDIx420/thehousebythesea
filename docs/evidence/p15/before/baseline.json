@@ -1,0 +1,320 @@
+{
+  "baselineCommit": "90693e3",
+  "browser": "158.0.8127.37",
+  "sample": [
+    {
+      "t": 0,
+      "state": {
+        "x": 47.81618900644411,
+        "z": -0.18381099355588051,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 40,
+      "state": {
+        "x": 47.69359931800336,
+        "z": -0.30640068199662973,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 80,
+      "state": {
+        "x": 47.509714785342226,
+        "z": -0.49028521465775393,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 120,
+      "state": {
+        "x": 47.387198636006715,
+        "z": -0.6128013639932598,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 160,
+      "state": {
+        "x": 47.203350872898206,
+        "z": -0.7966491271017621,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 200,
+      "state": {
+        "x": 47.08076118445745,
+        "z": -0.9192388155425115,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 240,
+      "state": {
+        "x": 46.89695019090156,
+        "z": -1.1030498090983922,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 280,
+      "state": {
+        "x": 46.77436050246081,
+        "z": -1.2256394975391416,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 320,
+      "state": {
+        "x": 46.5905127393523,
+        "z": -1.4094872606476443,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 360,
+      "state": {
+        "x": 46.467959820464166,
+        "z": -1.5320401795357719,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 400,
+      "state": {
+        "x": 46.28411205735566,
+        "z": -1.7158879426442741,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 440,
+      "state": {
+        "x": 46.161559138467524,
+        "z": -1.838440861532402,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 480,
+      "state": {
+        "x": 45.977711375359014,
+        "z": -2.022288624640904,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 520,
+      "state": {
+        "x": 45.855195226023504,
+        "z": -2.14480477397641,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 560,
+      "state": {
+        "x": 45.671347462914994,
+        "z": -2.328652537084912,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 600,
+      "state": {
+        "x": 45.54875777447424,
+        "z": -2.451242225525662,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 640,
+      "state": {
+        "x": 45.36491001136573,
+        "z": -2.635089988634164,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 680,
+      "state": {
+        "x": 45.242320322924975,
+        "z": -2.7576796770749135,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 720,
+      "state": {
+        "x": 45.058472559816465,
+        "z": -2.9415274401834157,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 760,
+      "state": {
+        "x": 44.93591964092833,
+        "z": -3.0640803590715433,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 800,
+      "state": {
+        "x": 44.752108647372445,
+        "z": -3.247891352627424,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 840,
+      "state": {
+        "x": 44.62951895893169,
+        "z": -3.247891352627424,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 880,
+      "state": {
+        "x": 44.44563442627056,
+        "z": -3.247891352627424,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 920,
+      "state": {
+        "x": 44.323081507382426,
+        "z": -3.247891352627424,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    },
+    {
+      "t": 960,
+      "state": {
+        "x": 44.139196974721294,
+        "z": -3.247891352627424,
+        "heading": -0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      }
+    }
+  ],
+  "metrics": {
+    "renderer": "WebGL",
+    "frames": 732,
+    "sampleKind": "raw render callback interval",
+    "p50": 16.69999998807907,
+    "p95": 17.099999964237213,
+    "stallsOver50ms": 1,
+    "assets": 280,
+    "viewport": [
+      640,
+      360
+    ],
+    "scene": "first-voyage",
+    "zoom": 1,
+    "companionReady": true,
+    "loadBytes": 799003,
+    "heap": 16676899
+  },
+  "state": {
+    "schemaVersion": 2,
+    "worldVersion": "pixel-first-voyage-v1",
+    "wallet": 25,
+    "inventory": {
+      "sardine": 0,
+      "bream": 0
+    },
+    "delivery": "available",
+    "discoveries": [
+      "havenport"
+    ],
+    "story": {
+      "metMira": false,
+      "outingInvited": false,
+      "outingVisitedSaltglass": false,
+      "outingComplete": false,
+      "homeSeen": false,
+      "prologueSeen": true
+    },
+    "player": {
+      "x": 48,
+      "z": 3.247781043969558,
+      "heading": -2.356194490192345,
+      "mode": "walk",
+      "island": "havenport"
+    },
+    "boat": {
+      "x": 63,
+      "z": 0,
+      "heading": 0,
+      "docked": "havenport"
+    },
+    "settings": {
+      "muted": false,
+      "volume": 0.35,
+      "reducedMotion": false
+    }
+  },
+  "errors": [],
+  "recording": {
+    "audio": true,
+    "fps": 20,
+    "source": "actual CDP composited browser + live WebAudio",
+    "path": "/Users/vincyvincent/3dfun/thehousebythesea-pixel/docs/evidence/p15/before/movement-surf.webm"
+  }
+}

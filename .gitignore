@@ -6,3 +6,5 @@ playwright-report/
 .env.*
 .DS_Store
 dist-pages/
+docs/evidence/p15/**/*-video.webm
+docs/evidence/p15/**/*-audio.webm

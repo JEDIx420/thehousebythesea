@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "worldVersion": "pixel-first-voyage-v1",
+  "wallet": 195,
+  "inventory": {
+    "sardine": 0,
+    "bream": 0
+  },
+  "delivery": "complete",
+  "discoveries": [
+    "havenport",
+    "saltglass-bay"
+  ],
+  "story": {
+    "metMira": true,
+    "outingInvited": false,
+    "outingVisitedSaltglass": true,
+    "outingComplete": true,
+    "homeSeen": true,
+    "prologueSeen": true
+  },
+  "player": {
+    "x": 23.522948684084373,
+    "z": -30.953984361165414,
+    "heading": -0.32175055439664224,
+    "mode": "walk",
+    "island": "havenport"
+  },
+  "boat": {
+    "x": 63,
+    "z": 0,
+    "heading": 0,
+    "docked": "havenport"
+  },
+  "settings": {
+    "muted": false,
+    "volume": 0.35,
+    "reducedMotion": false
+  }
+}

@@ -1,3 +1,5 @@
+import {cafe} from "../assets/source/architecture.mjs";
+import {portrait} from "../assets/source/portraits.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -10,7 +12,7 @@ import { Painter } from "./vendor/pixelfx/src/core/painter.js";
 import { hex } from "./vendor/pixelfx/src/core/color.js";
 import { ring } from "./vendor/pixelfx/src/fx/water/_lib.js";
 import { rasterText, textWidth } from "./vendor/pixelfx/src/core/font.js";
-import { land, water } from "../assets/source/land.mjs";
+import { land, water, cliffFrames } from "../assets/source/land.mjs";
 export const ROOT = fileURLToPath(new URL("../", import.meta.url));
 const PAD = 2,
   WIDTH = 2048;
@@ -33,6 +35,9 @@ export function makeFrames() {
     category: "ground",
     source: "assets/source/land.mjs + world.json",
   });
+  for(const actor of ["mira"]) for(const expression of ["neutral","happy","thoughtful","surprised"]) for(let blink=0;blink<2;blink++)
+    add(`portrait-${actor}-${expression}-${blink}`,portrait(actor,expression,blink),[48,128],{category:"portrait",actor,expression,index:blink,source:"assets/source/portraits.mjs"});
+  for(const map of [WORLD.havenport,WORLD.saltglass])for(const f of cliffFrames(map))add(f.id,f.image,f.anchor,{category:"cliff",island:map.id,world:f.world,...(f.pixelOffset?{pixelOffset:f.pixelOffset,depthY:f.depthY}:{}),source:"assets/source/land.mjs + world.json"});
   add("water", water(), [0, 0], {
     category: "sea",
     source: "assets/source/land.mjs",
@@ -90,7 +95,7 @@ export function makeFrames() {
         );
     }
   for (const kind of ["shop", "cafe", "hut", "cottage"])
-    add(kind, art.house(kind), [80, 171], {
+    add(kind, (kind === "cafe" ? cafe() : art.house(kind)), [80, 171], {
       category: "building",
       footprint: {
         units: "world",
@@ -264,7 +269,7 @@ export function compile() {
 }
 export function contacts(frames) {
   const chosen = frames.filter((f) =>
-    f.category === "character"
+    f.category === "portrait" ? true : f.category === "character"
       ? (f.animation === "idle" && f.index === 0) ||
         (f.direction === "s" && f.animation === "walk") ||
         (f.direction === "e" && f.animation === "sit" && f.index === 0)
