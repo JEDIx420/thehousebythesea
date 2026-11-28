@@ -1,3 +1,5 @@
+**CURRENT PRIORITY (2026-11-28):** Read [docs/pixel-isometric-reboot.md](docs/pixel-isometric-reboot.md) and [prompts/pixel-reboot-kickoff.md](prompts/pixel-reboot-kickoff.md) BEFORE older rendering instructions. The preferred implementation is browser-based Phaser/TypeScript/Vite 2.5D pixel art, not Three.js/Polyfork/ProceduralTerrains; confirm in a real spike. The visual-tech override does NOT change the story, play loop, initial two-island checkpoint, quality gates or creator approval stop. No code exists yet on main. Preserve all existing documents and assets until reviewed.
+
 # Agent operating contract
 
 Read README.md, docs/vision.md, docs/roadmap.md and docs/first-voyage.md before changing code. The stage-specific briefs in prompts/ are executable assignments, not suggestions.
