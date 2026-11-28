@@ -321,6 +321,11 @@ export class View {
     const e = this.root.querySelector<HTMLElement>("#fishing")!;
     e.hidden = false;
     if (this.fishPhase !== state.phase) {
+      // A new cast supersedes a previous cancellation or catch notification.
+      if (state.phase === "waiting") {
+        clearTimeout(this.toastTimer);
+        this.root.querySelector<HTMLElement>("#toast")!.hidden = true;
+      }
       this.fishPhase = state.phase;
       e.innerHTML = `<small>LINE IN THE WATER</small><h2>${state.phase === "bite" ? "A bite!" : state.phase === "waiting" ? "Watching the float…" : state.phase === "caught" ? "Safely in your creel" : "The bite slipped away"}</h2><p>${state.phase === "bite" ? "Press Space while the line is lively." : "Let the water do its work. F puts the rod away."}</p><div class="bite-track"><i></i></div>${this.button("F · Put away the rod", "cancel-fishing", true)}`;
     }

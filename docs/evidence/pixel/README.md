@@ -33,3 +33,8 @@ The complete suite then ran against the real public URL with `CI=1 PIXEL_TEST_BA
 **WAITING FOR CREATOR VISUAL AND GAMEPLAY APPROVAL.** No later-stage content was implemented.
 
 Historical failed discovery/video-dependency/queued-input logs are retained honestly. They are not relabelled passing runs. No private Polyfork credential was used in this reboot; exact-byte scan of all120 source/candidate files passed without printing values.
+
+
+### Final UI review correction
+
+Independent final five-frame review accepted the public art but found a lingering “Rod put away” cancellation toast in the active waiting screenshot. Starting a fresh waiting phase now dismisses the obsolete transient toast; the full keyboard test asserts it is hidden before fishing evidence capture. This changes presentation only, not fish timing, species, rewards or saves. The historical native/public screenshots and metrics above retain their original source identity; the final CI/runtime bundle records this tiny UI correction separately. Final public post-deploy checks and latest-head workflow status are linked in PR #7. Creator visual/gameplay approval is still required.
