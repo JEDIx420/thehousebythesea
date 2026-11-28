@@ -1,3 +1,5 @@
+**NOV 28, 2026 ART-DIRECTION UPDATE:** The current authoring plan is now [the isometric pixel-art reboot](docs/pixel-isometric-reboot.md) with [agent kickoff](prompts/pixel-reboot-kickoff.md). Its Phaser/2.5D asset and rendering direction overrides older Three.js, Polyfork and terrain instructions below. The original story, gameplay, twelve-island vision and Stage 0/1 approval gate remain binding. This repository does not yet contain playable implementation. The older sections below remain as historical planning context until the implementation PR updates them.
+
 # The House by the Sea
 
 *A cosy single-player sailing, fishing, island-life and romance adventure.*
