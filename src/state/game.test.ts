@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
 import { homeFund, initialState, reduce, type GameState } from "./game";
-import { loadGame, parseSave, migrateLegacy, saveGame, SaveError } from "./persistence";
+import {
+  loadGame,
+  parseSave,
+  migrateLegacy,
+  saveGame,
+  SaveError,
+} from "./persistence";
 
 function atSaltglass(state: GameState): GameState {
   return reduce(state, {
@@ -116,22 +122,57 @@ describe("the First Voyage domain", () => {
 
 describe("versioned snapshots", () => {
   it("copies a legacy voyage without reinterpreting 3D coordinates or paying rewards", () => {
-    const original=atSaltglass(initialState());original.wallet=195;original.delivery='complete';original.inventory.bream=2;original.story.metMira=true;original.player.x=999;
-    const {worldVersion:_world,...legacy}=original;
-    const raw={...legacy,schemaVersion:1,settings:{muted:true,volume:.6}};
-    const before=JSON.stringify(raw),copy=migrateLegacy(raw);
-    expect(copy.schemaVersion).toBe(2);expect(copy.worldVersion).toBe('pixel-first-voyage-v1');
-    expect(copy.player).toEqual({x:48,z:-220,heading:0,mode:'walk',island:'saltglass-bay'});
-    expect(copy.boat).toEqual({x:63,z:-220,heading:0,docked:'saltglass-bay'});
-    expect(copy.wallet).toBe(195);expect(copy.inventory.bream).toBe(2);expect(copy.story.metMira).toBe(true);
-    expect(copy.settings).toEqual({muted:true,volume:.6,reducedMotion:false});expect(JSON.stringify(raw)).toBe(before);
-    expect(migrateLegacy(raw)).toEqual(copy);expect(reduce(copy,{type:'DELIVER_PARCEL'}).wallet).toBe(195);
-    expect(()=>parseSave(raw)).toThrow(SaveError);expect(()=>migrateLegacy(copy)).toThrow(SaveError);
+    const original = atSaltglass(initialState());
+    original.wallet = 195;
+    original.delivery = "complete";
+    original.inventory.bream = 2;
+    original.story.metMira = true;
+    original.player.x = 999;
+    const { worldVersion: _world, ...legacy } = original;
+    const raw = {
+      ...legacy,
+      schemaVersion: 1,
+      settings: { muted: true, volume: 0.6 },
+    };
+    const before = JSON.stringify(raw),
+      copy = migrateLegacy(raw);
+    expect(copy.schemaVersion).toBe(2);
+    expect(copy.worldVersion).toBe("pixel-first-voyage-v1");
+    expect(copy.player).toEqual({
+      x: 48,
+      z: -220,
+      heading: 0,
+      mode: "walk",
+      island: "saltglass-bay",
+    });
+    expect(copy.boat).toEqual({
+      x: 63,
+      z: -220,
+      heading: 0,
+      docked: "saltglass-bay",
+    });
+    expect(copy.wallet).toBe(195);
+    expect(copy.inventory.bream).toBe(2);
+    expect(copy.story.metMira).toBe(true);
+    expect(copy.settings).toEqual({
+      muted: true,
+      volume: 0.6,
+      reducedMotion: false,
+    });
+    expect(JSON.stringify(raw)).toBe(before);
+    expect(migrateLegacy(raw)).toEqual(copy);
+    expect(reduce(copy, { type: "DELIVER_PARCEL" }).wallet).toBe(195);
+    expect(() => parseSave(raw)).toThrow(SaveError);
+    expect(() => migrateLegacy(copy)).toThrow(SaveError);
   });
 
-  it("rejects another world version and retains the accessibility preference",()=>{
-    expect(()=>parseSave({...initialState(),worldVersion:'future-map'})).toThrow(SaveError);
-    const s=initialState();s.settings.reducedMotion=true;expect(parseSave(s).settings.reducedMotion).toBe(true);
+  it("rejects another world version and retains the accessibility preference", () => {
+    expect(() =>
+      parseSave({ ...initialState(), worldVersion: "future-map" }),
+    ).toThrow(SaveError);
+    const s = initialState();
+    s.settings.reducedMotion = true;
+    expect(parseSave(s).settings.reducedMotion).toBe(true);
   });
   it("round-trips every persisted field without sharing object references", () => {
     const state = atSaltglass(initialState());
@@ -144,7 +185,11 @@ describe("versioned snapshots", () => {
   });
 
   it("migrates the explicit v0 foundation fixture", () => {
-    const { settings: _settings, worldVersion: _world, ...state } = initialState();
+    const {
+      settings: _settings,
+      worldVersion: _world,
+      ...state
+    } = initialState();
     const restored = migrateLegacy({ ...state, schemaVersion: 0 });
     expect(restored.schemaVersion).toBe(2);
     expect(restored.settings).toEqual(initialState().settings);

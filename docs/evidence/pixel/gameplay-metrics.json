@@ -1,0 +1,548 @@
+{
+  "01-havenport": {
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 29,
+      "sampleKind": "raw render callback interval",
+      "p50": 16.69999998807907,
+      "p95": 18.30000001192093,
+      "stallsOver50ms": 1,
+      "assets": 280,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 799843,
+      "heap": 17130978
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v1",
+      "wallet": 25,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "available",
+      "discoveries": [
+        "havenport"
+      ],
+      "story": {
+        "metMira": false,
+        "outingInvited": false,
+        "outingVisitedSaltglass": false,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 48,
+        "z": 0,
+        "heading": 0,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": 0,
+        "heading": 0,
+        "docked": "havenport"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "reducedMotion": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-DF9pH0Nz.js"
+  },
+  "02-mira-dialogue": {
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 402,
+      "sampleKind": "raw render callback interval",
+      "p50": 16.69999998807907,
+      "p95": 18.5,
+      "stallsOver50ms": 1,
+      "assets": 280,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 799843,
+      "heap": 16240088
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v1",
+      "wallet": 25,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "active",
+      "discoveries": [
+        "havenport"
+      ],
+      "story": {
+        "metMira": false,
+        "outingInvited": false,
+        "outingVisitedSaltglass": false,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 33.870157800632995,
+        "z": -11.744736772186823,
+        "heading": 0.7853981633974483,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": 0,
+        "heading": 0,
+        "docked": "havenport"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "reducedMotion": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-DF9pH0Nz.js"
+  },
+  "03-sailing": {
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 16.69999998807907,
+      "p95": 18.299999952316284,
+      "stallsOver50ms": 1,
+      "assets": 280,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 799843,
+      "heap": 20618486
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v1",
+      "wallet": 25,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "active",
+      "discoveries": [
+        "havenport"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": true,
+        "outingVisitedSaltglass": false,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 63,
+        "z": -96.78301515709994,
+        "heading": 0,
+        "mode": "boat",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": -96.78301515709994,
+        "heading": 0,
+        "docked": null
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "reducedMotion": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-DF9pH0Nz.js"
+  },
+  "04-docking": {
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 16.69999998807907,
+      "p95": 17.80000001192093,
+      "stallsOver50ms": 1,
+      "assets": 280,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 799843,
+      "heap": 14913371
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v1",
+      "wallet": 25,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "active",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": true,
+        "outingVisitedSaltglass": true,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 55,
+        "z": -220,
+        "heading": 0,
+        "mode": "walk",
+        "island": "saltglass-bay"
+      },
+      "boat": {
+        "x": 63,
+        "z": -220,
+        "heading": 0,
+        "docked": "saltglass-bay"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "reducedMotion": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-DF9pH0Nz.js"
+  },
+  "05-fishing": {
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 16.69999998807907,
+      "p95": 16.899999976158142,
+      "stallsOver50ms": 1,
+      "assets": 280,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 799843,
+      "heap": 15157702
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v1",
+      "wallet": 145,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "complete",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": true,
+        "outingVisitedSaltglass": true,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 52.96848472537387,
+        "z": -219.9420748621958,
+        "heading": 0.7853981633974483,
+        "mode": "walk",
+        "island": "saltglass-bay"
+      },
+      "boat": {
+        "x": 63,
+        "z": -220,
+        "heading": 0,
+        "docked": "saltglass-bay"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "reducedMotion": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-DF9pH0Nz.js"
+  },
+  "06-saltglass": {
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 16.69999998807907,
+      "p95": 16.899999976158142,
+      "stallsOver50ms": 1,
+      "assets": 280,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 799843,
+      "heap": 15098195
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v1",
+      "wallet": 195,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "complete",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": true,
+        "outingVisitedSaltglass": true,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 9.625325327187285,
+        "z": -253.02720753164397,
+        "heading": -0.3217505543966422,
+        "mode": "walk",
+        "island": "saltglass-bay"
+      },
+      "boat": {
+        "x": 63,
+        "z": -220,
+        "heading": 0,
+        "docked": "saltglass-bay"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "reducedMotion": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-DF9pH0Nz.js"
+  },
+  "07-home-fund": {
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 16.69999998807907,
+      "p95": 18.5,
+      "stallsOver50ms": 1,
+      "assets": 280,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 799843,
+      "heap": 18753884
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v1",
+      "wallet": 195,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "complete",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": false,
+        "outingVisitedSaltglass": true,
+        "outingComplete": true,
+        "homeSeen": true,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 23.622806840092853,
+        "z": -30.90595276785494,
+        "heading": -0.3217505543966422,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": 0,
+        "heading": 0,
+        "docked": "havenport"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "reducedMotion": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-DF9pH0Nz.js"
+  },
+  "08-journal": {
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 16.69999998807907,
+      "p95": 18.5,
+      "stallsOver50ms": 1,
+      "assets": 280,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 799843,
+      "heap": 19988226
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v1",
+      "wallet": 195,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "complete",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": false,
+        "outingVisitedSaltglass": true,
+        "outingComplete": true,
+        "homeSeen": true,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 23.622806840092853,
+        "z": -30.90595276785494,
+        "heading": -0.3217505543966422,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": 0,
+        "heading": 0,
+        "docked": "havenport"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "reducedMotion": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-DF9pH0Nz.js"
+  },
+  "09-credits": {
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 26,
+      "sampleKind": "raw render callback interval",
+      "p50": 16.399999976158142,
+      "p95": 18.100000023841858,
+      "stallsOver50ms": 0,
+      "assets": 280,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 1932,
+      "heap": 18832712
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v1",
+      "wallet": 195,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "complete",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": false,
+        "outingVisitedSaltglass": true,
+        "outingComplete": true,
+        "homeSeen": true,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 23.622806840092853,
+        "z": -30.90595276785494,
+        "heading": -0.3217505543966422,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": 0,
+        "heading": 0,
+        "docked": "havenport"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "reducedMotion": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-DF9pH0Nz.js"
+  }
+}

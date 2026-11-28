@@ -1,0 +1,14 @@
+
+> thehousebythesea-pixel@0.2.0 test:e2e
+> playwright test --output=test-results/pixel-first-run
+
+[2m[WebServer] [22m(node:27479) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+TypeError: Module "file:///Users/vincyvincent/3dfun/thehousebythesea-pixel/assets/source/world.json" needs an import attribute of "type: json"
+Error: No tests found
+
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m

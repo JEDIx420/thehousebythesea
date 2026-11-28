@@ -1,10 +1,51 @@
-**NOV 28, 2026 ART-DIRECTION UPDATE:** The current authoring plan is now [the isometric pixel-art reboot](docs/pixel-isometric-reboot.md) with [agent kickoff](prompts/pixel-reboot-kickoff.md). Its Phaser/2.5D asset and rendering direction overrides older Three.js, Polyfork and terrain instructions below. The original story, gameplay, twelve-island vision and Stage 0/1 approval gate remain binding. This repository does not yet contain playable implementation. The older sections below remain as historical planning context until the implementation PR updates them.
+# The House by the Sea — pixel First Voyage
 
-# The House by the Sea
+A Phaser/TypeScript pixel-isometric reboot implementing [PR #6's direction](docs/pixel-isometric-reboot.md). Only **Havenport ↔ Saltglass Bay** is built. Rowan owns his first boat, earns a living, meets Mira on her own creative path, and starts saving for a beach home. Main and earlier3D PRs remain untouched.
 
-Pixel reboot implementation in progress on `feat/pixel-first-voyage`: Phaser/TypeScript/Vite, original offline-generated sprites, bounded PixelFX water effects and a real in-engine golden sample. **The complete First Voyage is not yet ready.** See [current progress](docs/progress.md), [style guide](assets/style-guide.md) and [independent review](docs/review-pixel.md). Earlier planning statements below remain historical until checkpoint completion.
+**Review build in progress:** [implementation PR #7](https://github.com/JEDIx420/thehousebythesea/pull/7). Current tests, screenshots, review findings and publishing status are in [progress](docs/progress.md). A planned URL is not a live deployment; use the verified link there once published. Stop after the First Voyage for creator visual and gameplay approval; further islands and construction remain locked.
 
-Reproducible local commands (Node22.12+): `npm ci --ignore-scripts`, `npm run assets:build`, `npm run assets:check`, `npm run typecheck`, `npm test`, `npm run build`, `npm run preview -- --port 4190`. Preview: `http://localhost:4190/thehousebythesea/`. No credentials or external runtime services. Real browser sample: `node tools/capture-sample.mjs`. Initial dependency audit: zero reported vulnerabilities. Pages publishing is not yet claimed.
+## Run locally
+
+Node22.12+ and npm. No credentials, accounts, paid APIs or external runtime services.
+
+```sh
+npm ci --ignore-scripts
+npm run assets:build
+npm run assets:check
+npm run typecheck
+npm test
+npm run build
+npm run preview -- --port 4190
+```
+
+Open `http://localhost:4190/thehousebythesea/`. Original art sources, palette, contact sheets and recipes are checked in; compiled art is deterministic. Read the [style guide](assets/style-guide.md), [free-tool audit](docs/pixel-tool-audit.md), [architecture](docs/architecture.md) and [notices](public/THIRD_PARTY_NOTICES.txt).
+
+## Play the checkpoint
+
+WASD/arrows walk relative to the screen. E talks, boards or ties up. At sea W accelerates, A/D steer and S slows; leave the pier straight ahead before turning. M opens the chart, J the journal, F casts/puts away the rod, Space reels during a bite, Esc pauses. Mouse wheel toggles integer zoom. R or pause recovery returns both Rowan and boat safely to the current island's pier, preserving progress.
+
+Skip or watch the30-second childhood memory. Take Ellis's120-coin parcel at Havenport, talk with Mira and optionally invite her across. Board at the pier and wait for her to walk aboard. Sail north through the continuous channel; slow beside Saltglass's pier and E to step ashore. Give Nessa the parcel once, fish/sell a catch, and follow the pale path to the shell arch. Return to Havenport, share the crossing with Mira and read the beachfront plot notice. The wallet/home-fund tracker and journal record progress. No romance purchase or mandatory affection grind.
+
+Saving is local IndexedDB, automatic after story/economy changes and periodically during movement; manual Save is in pause. Only confirmed commits report saved. Unknown/corrupt snapshots are protected and offer temporary play. The optional original3D save import makes a COPY into a separate pixel database, retaining progress and resetting only coordinates to safe pixel docks. Saves are specific to your browser/device/origin; there is no cloud service.
+
+## Browser tests and Pages package
+
+```sh
+npx --no-install playwright install chromium ffmpeg
+npm run test:e2e
+PIXEL_PAGES_PREVIEW=1 npm run build
+node tools/package-pages.mjs
+```
+
+Local tests use installed Google Chrome; CI uses Playwright Chromium (`CI=1` locally selects it). Recording requires Playwright's ffmpeg dependency. Eight isolated browser cases exercise native menus/layout, protected corrupt/future saves, stalled/missing/malformed art, legacy COPY import, failed writes and the full journey through both fish species and exact save/reload. They drive real keys and buttons; only storage-fault tests seed their own disposable IndexedDB fixtures. Screenshots/metrics are saved alongside checkpoint evidence; videos/traces are under ignored `test-results/` and uploaded by CI. `PIXEL_TEST_BASE_URL` runs the same journey against a verified remote/static nested base without starting a local server.
+
+The exact implementation branch's workflow verifies assets,41 unit tests, build and all browser tests before deploying a complete Pages landing plus `/thehousebythesea/preview/pixel/` review game. PRs run checks with read-only permissions. No merge to main is needed for review publishing. See [independent source/review records](docs/review-pixel.md) and [deployment review](docs/review-pixel-deployment.md). Chromium/Chrome are tested; Firefox/Safari and touch-only play are not claimed.
+
+---
+
+## Original planning context (preserved)
+
+The following reflects the original pre-implementation brief. The current pixel rendering and asset direction above supersedes its3D instructions; its story and approval gates still apply.
 
 *A cosy single-player sailing, fishing, island-life and romance adventure.*
 

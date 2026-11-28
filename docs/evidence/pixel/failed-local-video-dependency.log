@@ -1,0 +1,225 @@
+
+> thehousebythesea-pixel@0.2.0 test:e2e
+> playwright test --output=test-results/pixel-integration
+
+[2m[WebServer] [22m(node:28045) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:28047) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28047) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/browser/resilience.spec.ts:49:1 › title credits return, native keyboard menus, settings, picking and laptop layout (149ms)
+(node:28063) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28063) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 tests/browser/resilience.spec.ts:125:3 › future snapshot survives temporary play, recovery and autosave (142ms)
+(node:28077) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28077) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 tests/browser/resilience.spec.ts:125:3 › corrupt snapshot survives temporary play, recovery and autosave (130ms)
+(node:28093) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28093) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 tests/browser/resilience.spec.ts:141:1 › missing and stalled art are bounded, input-locked and recover through retry (131ms)
+(node:28106) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28106) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  5 tests/browser/resilience.spec.ts:176:1 › malformed metadata and a missing required animated frame show an honest retry state (133ms)
+(node:28119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  6 tests/browser/resilience.spec.ts:237:1 › explicit legacy import copies progress to a safe pixel dock and preserves its source (136ms)
+(node:28132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  7 tests/browser/resilience.spec.ts:274:1 › a failed import write says temporary and never reports durable success (133ms)
+(node:28147) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28147) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  8 tests/browser/voyage.spec.ts:4:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return (132ms)
+
+
+  1) tests/browser/resilience.spec.ts:49:1 › title credits return, native keyboard menus, settings, picking and laptop layout 
+
+    Error: browserContext.newPage: Executable doesn't exist at /Users/vincyvincent/Library/Caches/ms-playwright/ffmpeg-1011/ffmpeg-mac
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/pixel-integration/resilience-title-credits-r-eb440-s-picking-and-laptop-layout/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/pixel-integration/resilience-title-credits-r-eb440-s-picking-and-laptop-layout/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests/browser/resilience.spec.ts:125:3 › future snapshot survives temporary play, recovery and autosave 
+
+    Error: browserContext.newPage: Executable doesn't exist at /Users/vincyvincent/Library/Caches/ms-playwright/ffmpeg-1011/ffmpeg-mac
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/pixel-integration/resilience-future-snapshot-6005c--play-recovery-and-autosave/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/pixel-integration/resilience-future-snapshot-6005c--play-recovery-and-autosave/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) tests/browser/resilience.spec.ts:125:3 › corrupt snapshot survives temporary play, recovery and autosave 
+
+    Error: browserContext.newPage: Executable doesn't exist at /Users/vincyvincent/Library/Caches/ms-playwright/ffmpeg-1011/ffmpeg-mac
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/pixel-integration/resilience-corrupt-snapsho-8c49a--play-recovery-and-autosave/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/pixel-integration/resilience-corrupt-snapsho-8c49a--play-recovery-and-autosave/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) tests/browser/resilience.spec.ts:141:1 › missing and stalled art are bounded, input-locked and recover through retry 
+
+    Error: browserContext.newPage: Executable doesn't exist at /Users/vincyvincent/Library/Caches/ms-playwright/ffmpeg-1011/ffmpeg-mac
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/pixel-integration/resilience-missing-and-sta-500e0-d-and-recover-through-retry/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/pixel-integration/resilience-missing-and-sta-500e0-d-and-recover-through-retry/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) tests/browser/resilience.spec.ts:176:1 › malformed metadata and a missing required animated frame show an honest retry state 
+
+    Error: browserContext.newPage: Executable doesn't exist at /Users/vincyvincent/Library/Caches/ms-playwright/ffmpeg-1011/ffmpeg-mac
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/pixel-integration/resilience-malformed-metad-d8d77--show-an-honest-retry-state/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/pixel-integration/resilience-malformed-metad-d8d77--show-an-honest-retry-state/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) tests/browser/resilience.spec.ts:237:1 › explicit legacy import copies progress to a safe pixel dock and preserves its source 
+
+    Error: browserContext.newPage: Executable doesn't exist at /Users/vincyvincent/Library/Caches/ms-playwright/ffmpeg-1011/ffmpeg-mac
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/pixel-integration/resilience-explicit-legacy-1ab2e-ck-and-preserves-its-source/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/pixel-integration/resilience-explicit-legacy-1ab2e-ck-and-preserves-its-source/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) tests/browser/resilience.spec.ts:274:1 › a failed import write says temporary and never reports durable success 
+
+    Error: browserContext.newPage: Executable doesn't exist at /Users/vincyvincent/Library/Caches/ms-playwright/ffmpeg-1011/ffmpeg-mac
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/pixel-integration/resilience-a-failed-import-07978-ver-reports-durable-success/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/pixel-integration/resilience-a-failed-import-07978-ver-reports-durable-success/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) tests/browser/voyage.spec.ts:4:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return 
+
+    Error: browserContext.newPage: Executable doesn't exist at /Users/vincyvincent/Library/Caches/ms-playwright/ffmpeg-1011/ffmpeg-mac
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/pixel-integration/voyage-First-Voyage-real-w-b52e7-shing-Mira-and-saved-return/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/pixel-integration/voyage-First-Voyage-real-w-b52e7-shing-Mira-and-saved-return/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8 failed
+    tests/browser/resilience.spec.ts:49:1 › title credits return, native keyboard menus, settings, picking and laptop layout 
+    tests/browser/resilience.spec.ts:125:3 › future snapshot survives temporary play, recovery and autosave 
+    tests/browser/resilience.spec.ts:125:3 › corrupt snapshot survives temporary play, recovery and autosave 
+    tests/browser/resilience.spec.ts:141:1 › missing and stalled art are bounded, input-locked and recover through retry 
+    tests/browser/resilience.spec.ts:176:1 › malformed metadata and a missing required animated frame show an honest retry state 
+    tests/browser/resilience.spec.ts:237:1 › explicit legacy import copies progress to a safe pixel dock and preserves its source 
+    tests/browser/resilience.spec.ts:274:1 › a failed import write says temporary and never reports durable success 
+    tests/browser/voyage.spec.ts:4:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return 
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m

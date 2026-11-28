@@ -83,3 +83,33 @@ f8b8c86e9fb45de7b548b3710df6d5ff41fdb1ee46d3f7306f159480af988885 src/state/game.
 ### Domain follow-up — transaction bounds / fishing regressions
 
 Independently reread changed `src/state/persistence.ts` and new `src/activities/fishing.test.ts`; reran the suite: **31 PASS across 3 files**. Read/write transaction timers now abort after 5 seconds, settle once and ignore late completion; a late database upgrade after the open timeout is aborted. The earlier unbounded transaction observation is **CLOSED on source review**. Opening and transaction phases each have their own 5-second bound (not a single 5-second total operation). Added fishing regressions cover both species, precise bite/expiry boundaries, early/late retry, terminal idempotence and invalid delta handling. Automated fishing-coverage observation is **CLOSED**. Browser IndexedDB failure/success paths and protected-save scene integration remain NOT TESTED/pending; no application integration approval added.
+
+
+## Session/UI/people/audio batch 3 — source review
+
+Reviewed exactly `src/game/session.ts`, `src/game/dialogue.ts`, `src/ui/view.ts`, `src/world/people.ts`, `src/audio/ambience.ts`; scene call sites read only for API context. Independently reproduced **37 unit tests PASS / typecheck PASS**. No browser launched while the implementation owner rebuilds. **No P0/P1 found; one P2 below remains open.**
+
+**P2 — distinguish an imported in-memory copy from a persisted import.** `Session.importOriginal()` sets `existing` and awaits `save()` but discards its boolean failure result. The scene success toast therefore follows quota/denied-write failures too. Source progress is safely readonly, and the warning remains visible, but the completion result is ambiguous. Return the save result or throw with an explicit “loaded temporarily, not saved” explanation; retain the copy in memory so retry is possible. Do not imply successful durable import until transaction completion succeeds.
+
+The protected-save guard returns before any persistence call. Save requests coalesce into one in-flight loop; revision checks retain dirty movement changes and autosave can retry them, while errors preserve dirty state and surface warnings. Snapshot reads clone state. Dialogue preserves Mira’s independent coastal-art work, optional invitation, return conversation and non-purchasable affection; parcel/sale amounts match content. UI escapes interpolated text, uses native buttons/range/checkbox controls, traps modal Tab boundaries, restores focus, marks background controls inert and surfaces save warnings. Actual keyboard interaction/focus and held-key clearing remain browser integration checks.
+
+People source explicitly walks Mira along a route, interpolates boarding/unboarding, hides the shore copy while aboard and reconstructs invitation state on load/recovery. Passenger positioning, actual collision-free route completion, reload/recovery and voluntary solo sailing remain NOT TESTED in browser here. Audio is original deterministic local synthesis with adjustable gain, user-initiated resume and disposal; scene context catches unavailable-audio construction. Actual audible mix/loop seam/mute and lifecycle remain NOT TESTED.
+
+Minor feedback refinement: the single `missed` fishing view says “A little too soon” even for an expired bite; use neutral missed-bite wording unless early/late reason is tracked. This does not block gameplay integration.
+
+Reviewed SHA-256:
+
+```text
+d60cede2fc7d859e757e907ac19c68b6f210448e86573a87878ed33e94a2f1fc src/game/session.ts
+73d05bce0e7aa359a8b0e48e8c9bacb0b642e8b8601ad382397e0fdfccfdcfa1 src/game/dialogue.ts
+b8715254f2205fecf301350a4ec95996a4db8dd3265927cf13d2aa545a6b4100 src/ui/view.ts
+f464342945708f8e09e95425ca7189a002c54c6ee4831cca5395e37d2ced9aae src/world/people.ts
+0f2f0f28175afafb752f5218f00666a82ac7df24401318e9726844fba0f645ed src/audio/ambience.ts
+```
+
+
+### Batch 3 follow-up — five-file narrow correction PASS
+
+Reviewed `src/game/session.ts`, the import action only in `src/scenes/VoyageScene.ts`, the missed-bite wording only in `src/ui/view.ts`, waypoint arrival only in `src/world/people.ts`, and new `src/game/session.test.ts`. Import now returns the persistence boolean; UI explicitly reports a tab-only unsaved copy on failure and keeps the original unchanged. **Import P2 CLOSED.** Neutral missed-bite wording also resolves the feedback note. People arrival uses `max(0.2, dt * speed)` rather than a fixed radius, avoiding overshoot/oscillation at normal frame-step distances; actual authored route/long-frame collision safety still requires integrated observation.
+
+Independently ran **41 tests PASS**. Four new mocked session regressions verify protected-save no-write behavior, serial/coalesced snapshots, import failure result and retained dirty progress with throttled failed autosaves. These prove session control flow against mocks; they do not prove IndexedDB browser behavior. No GPU/browser run and no broad scene approval claimed.

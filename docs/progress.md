@@ -2,18 +2,23 @@
 
 ## Current pixel reboot — 2026-11-28
 
-Working branch `feat/pixel-first-voyage`, separate worktree and future implementation PR based on plan PR #6. Main and earlier3D implementation branches remain untouched. **P0 ACTIVE; P1 NOT YET COMPLETE. No creator approval. No P2 expansion.**
+Implementation [PR #7](https://github.com/JEDIx420/thehousebythesea/pull/7), branch `feat/pixel-first-voyage`, based on the unmerged PR #6 plan. Main and prior3D branches remain untouched. **P0 complete; P1 gameplay integrated and locally verified. Final hosted checks/publishing underway; no creator approval and no P2 expansion.**
 
-| Task | Owner | Acceptance / observed state |
+| Task | Owner | Observed outcome |
 | --- | --- | --- |
-| P0a engine / projection | Coordinator | Phaser3.90 WebGL production spike works;4 unit tests and typecheck/build pass. D-008 records tested versions. |
-| P0b art golden sample | Coordinator + independent reviewer | v1 rejected; v2 independently accepted for checkpoint direction; final v3 actual-engine screenshot/raw metrics recorded, final lamp placement independently closed; golden sample GO for First Voyage production. No town mass production yet. |
-| P0c asset factory | Coordinator + tool auditor |199 original/credited frames, four facings, distinct animation, shared foot anchors, padded atlas, paginated source contacts. Deterministic asset audit passes; actual PixelFX subset runs offline. |
-| P0d state / save | Coordinator + preservation auditor | Existing domain/economy/IDs audited; pixel-world migration must preserve legacy progress without overwriting old saves. Implementation follows golden sample. |
-| P1 integrated voyage | Coordinator | Pending: two authored islands, complete walk/sail/dock/work/fish/Mira/save route and regression proof. |
-| Browser / deployment / approval | Independent reviewer + coordinator | Local sample4190 works; no public pixel game claimed. Pages branch policy and full-site artifact require explicit configuration before verified publishing. |
+| P0 renderer / golden | Coordinator + independent agents | Tested Phaser3.90 WebGL; rejected golden-v1, accepted v3 direction before full towns. Golden evidence retained. |
+| Asset factory | Coordinator + tool auditor / visual reviewer |280 deterministic frames; five adult actors, four facings, idle/walk/seated; eight boat headings. Offline PixelFX subset genuinely used, audited tools/pins/licences documented. Exact-byte asset check PASS. |
+| Domain / storage | Coordinator + state reviewer | Stable IDs/economy/story preserved;41 unit tests PASS. Separate protected schema2 saves, explicit original-save COPY migration, bounded storage errors and serialized writes. Browser corruption/future/import/write-failure cases PASS on native Chrome before final input delta. |
+| Authored world / controls | Coordinator + independent geometry reviewer | Two complete islands on continuous sea, shared ground/collision data, reachable landmark and docks. Four path findings fixed; independent4,634 route samples/30,000 controller steps. Native input replay bug discovered in actual journey and fixed. Independent14-check real-browser controls/recovery smoke PASS, zero page errors. |
+| Full First Voyage | Coordinator | Actual keyboard/UI route PASS2.4min accelerated automation: Ellis parcel, optional physical Mira boarding/crossing, sail/dock, once-only120 payout, cancel and catch both fish/sell→195, shell arch, return, Mira memory, home notice, journal/credits and exact save/reload equality. This skips the30s memory/reading and is NOT a measured10–15-minute human playtime. |
+| Visual review | Independent visual agent | Nine actual engine screenshots reviewed in batches≤5, no blocking appearance finding. Source art and tools reviewed; animation/feel remains creator judgement.40s silent actual browser excerpt retained. |
+| CI / Pages | Coordinator + independent deployment reviewer | Workflow source passes review: full tests before exact-branch deployment, read-only PRs, complete root landing+nested review game. Added only implementation branch to Pages environment alongside main. Root was404 before publishing. Hosted run and public live verification pending; no live link yet claimed. |
 
-Current proof: [golden-v3](evidence/pixel/golden-v3.png), [raw metrics](evidence/pixel/golden-v3.json), [independent review](review-pixel.md), [tool audit](pixel-tool-audit.md), [preservation/deployment audit](pixel-preservation-audit.md). Renderer sample raw render-callback p50/p95≈16.70/16.80ms on Chrome158, not a complete-session performance claim. `npm run assets:build`, `npm run assets:check`, `npm test`(4), `npm run build` pass. Full-game browser and live-deployment tests have **not** run yet. Standard Phaser chunk-size warning disclosed.
+Evidence: [full keyboard journey log](evidence/pixel/local-voyage-pass.log), [actual screenshots and raw metrics](evidence/pixel/), [engine review + independent browser checks](review-pixel-engine.md), [visual review](review-pixel-visual.md), [world review](review-pixel-world.md), [domain/UI review](review-pixel.md), [deployment source review](review-pixel-deployment.md), [tool audit](pixel-tool-audit.md). Retained failed logs show test discovery/video dependency and genuine queued-input bugs; these are historical failures, not passes. Latest native production bundle `index-DF9pH0Nz.js`.
+
+Raw render-callback samples in native Chrome158/M4/1440×900,640×360 logical2×, show p50≈16.7ms and normal route p95≈16.9ms, with one cold-start>50ms stall. Each later checkpoint keeps a rolling1,200-sample window; not disjoint/full-session FPS samples. Heap after viewport-water fix is≈15–26MB at sampled checkpoints (earlier giant-water209MB is historical). Initial same-origin resource transfer counter≈800KB; navigation/headers and cold-cache conditions differ, see final deployment evidence for public payload. Standard Phaser>500KB chunk warning remains. Firefox/Safari/mobile-touch are untested; no universal performance claim.
+
+Next: finish the complete eight-case bundled-Chromium regression run, hosted GitHub Actions, nested Pages live browser run, then mark **WAITING FOR CREATOR VISUAL AND GAMEPLAY APPROVAL**. No later-stage implementation is authorised.
 
 The older planning status below is retained as history. Its3D rendering direction is superseded by PR #6. Stop after the complete First Voyage for creator hands-on approval.
 

@@ -44,7 +44,7 @@
   "source": "assets/source/sprites.mjs",
   "frames": [
     {
-      "id": "sample-ground",
+      "id": "havenport-ground",
       "anchor": [
         512,
         256
@@ -58,6 +58,20 @@
       "height": 512
     },
     {
+      "id": "saltglass-ground",
+      "anchor": [
+        512,
+        256
+      ],
+      "license": "MIT",
+      "source": "assets/source/land.mjs + world.json",
+      "category": "ground",
+      "x": 2,
+      "y": 518,
+      "width": 1024,
+      "height": 512
+    },
+    {
       "id": "water",
       "anchor": [
         0,
@@ -67,9 +81,23 @@
       "source": "assets/source/land.mjs",
       "category": "sea",
       "x": 1030,
-      "y": 2,
+      "y": 518,
       "width": 512,
       "height": 256
+    },
+    {
+      "id": "young-rowan",
+      "anchor": [
+        16,
+        43
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "memory",
+      "x": 1546,
+      "y": 518,
+      "width": 32,
+      "height": 48
     },
     {
       "id": "grass-0",
@@ -81,8 +109,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1546,
-      "y": 2,
+      "x": 1582,
+      "y": 518,
       "width": 64,
       "height": 40
     },
@@ -96,8 +124,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1614,
-      "y": 2,
+      "x": 1650,
+      "y": 518,
       "width": 64,
       "height": 40
     },
@@ -111,8 +139,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1682,
-      "y": 2,
+      "x": 1718,
+      "y": 518,
       "width": 64,
       "height": 40
     },
@@ -126,8 +154,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1750,
-      "y": 2,
+      "x": 1786,
+      "y": 518,
       "width": 64,
       "height": 40
     },
@@ -141,8 +169,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1818,
-      "y": 2,
+      "x": 1854,
+      "y": 518,
       "width": 64,
       "height": 40
     },
@@ -156,8 +184,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1886,
-      "y": 2,
+      "x": 1922,
+      "y": 518,
       "width": 64,
       "height": 40
     },
@@ -171,8 +199,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 1954,
-      "y": 2,
+      "x": 2,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -186,8 +214,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 2,
-      "y": 518,
+      "x": 70,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -201,8 +229,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 70,
-      "y": 518,
+      "x": 138,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -216,8 +244,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 138,
-      "y": 518,
+      "x": 206,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -231,8 +259,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 206,
-      "y": 518,
+      "x": 274,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -246,8 +274,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "land",
-      "x": 274,
-      "y": 518,
+      "x": 342,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -261,8 +289,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "dock",
-      "x": 342,
-      "y": 518,
+      "x": 410,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -276,8 +304,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "dock",
-      "x": 410,
-      "y": 518,
+      "x": 478,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -291,8 +319,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "dock",
-      "x": 478,
-      "y": 518,
+      "x": 546,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -306,8 +334,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "ground",
       "collision": "dock",
-      "x": 546,
-      "y": 518,
+      "x": 614,
+      "y": 1034,
       "width": 64,
       "height": 40
     },
@@ -325,8 +353,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 614,
-      "y": 518,
+      "x": 682,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -344,8 +372,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 666,
-      "y": 518,
+      "x": 734,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -363,8 +391,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 718,
-      "y": 518,
+      "x": 786,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -382,8 +410,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 770,
-      "y": 518,
+      "x": 838,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -401,8 +429,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 822,
-      "y": 518,
+      "x": 890,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -420,8 +448,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 874,
-      "y": 518,
+      "x": 942,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -439,8 +467,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 926,
-      "y": 518,
+      "x": 994,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -458,8 +486,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 978,
-      "y": 518,
+      "x": 1046,
+      "y": 1034,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "rowan-s-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "rowan",
+      "direction": "s",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 1098,
+      "y": 1034,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "rowan-s-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "rowan",
+      "direction": "s",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 1150,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -477,8 +543,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1030,
-      "y": 518,
+      "x": 1202,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -496,8 +562,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1082,
-      "y": 518,
+      "x": 1254,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -515,8 +581,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1134,
-      "y": 518,
+      "x": 1306,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -534,8 +600,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1186,
-      "y": 518,
+      "x": 1358,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -553,8 +619,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1238,
-      "y": 518,
+      "x": 1410,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -572,8 +638,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1290,
-      "y": 518,
+      "x": 1462,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -591,8 +657,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1342,
-      "y": 518,
+      "x": 1514,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -610,8 +676,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1394,
-      "y": 518,
+      "x": 1566,
+      "y": 1034,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "rowan-w-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "rowan",
+      "direction": "w",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 1618,
+      "y": 1034,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "rowan-w-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "rowan",
+      "direction": "w",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 1670,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -629,8 +733,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1446,
-      "y": 518,
+      "x": 1722,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -648,8 +752,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1498,
-      "y": 518,
+      "x": 1774,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -667,8 +771,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1550,
-      "y": 518,
+      "x": 1826,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -686,8 +790,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1602,
-      "y": 518,
+      "x": 1878,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -705,8 +809,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1654,
-      "y": 518,
+      "x": 1930,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -724,8 +828,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1706,
-      "y": 518,
+      "x": 1982,
+      "y": 1034,
       "width": 48,
       "height": 72
     },
@@ -743,8 +847,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1758,
-      "y": 518,
+      "x": 2,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -762,8 +866,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1810,
-      "y": 518,
+      "x": 54,
+      "y": 1110,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "rowan-n-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "rowan",
+      "direction": "n",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 106,
+      "y": 1110,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "rowan-n-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "rowan",
+      "direction": "n",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 158,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -781,8 +923,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1862,
-      "y": 518,
+      "x": 210,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -800,8 +942,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1914,
-      "y": 518,
+      "x": 262,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -819,8 +961,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1966,
-      "y": 518,
+      "x": 314,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -838,8 +980,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 2,
-      "y": 594,
+      "x": 366,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -857,8 +999,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 54,
-      "y": 594,
+      "x": 418,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -876,8 +1018,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 106,
-      "y": 594,
+      "x": 470,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -895,8 +1037,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 158,
-      "y": 594,
+      "x": 522,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -914,8 +1056,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 210,
-      "y": 594,
+      "x": 574,
+      "y": 1110,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "rowan-e-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "rowan",
+      "direction": "e",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 626,
+      "y": 1110,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "rowan-e-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "rowan",
+      "direction": "e",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 678,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -933,8 +1113,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 262,
-      "y": 594,
+      "x": 730,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -952,8 +1132,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 314,
-      "y": 594,
+      "x": 782,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -971,8 +1151,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 366,
-      "y": 594,
+      "x": 834,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -990,8 +1170,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 418,
-      "y": 594,
+      "x": 886,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1009,8 +1189,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 470,
-      "y": 594,
+      "x": 938,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1028,8 +1208,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 522,
-      "y": 594,
+      "x": 990,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1047,8 +1227,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 574,
-      "y": 594,
+      "x": 1042,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1066,8 +1246,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 626,
-      "y": 594,
+      "x": 1094,
+      "y": 1110,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "mira-s-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "mira",
+      "direction": "s",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 1146,
+      "y": 1110,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "mira-s-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "mira",
+      "direction": "s",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 1198,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1085,8 +1303,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 678,
-      "y": 594,
+      "x": 1250,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1104,8 +1322,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 730,
-      "y": 594,
+      "x": 1302,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1123,8 +1341,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 782,
-      "y": 594,
+      "x": 1354,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1142,8 +1360,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 834,
-      "y": 594,
+      "x": 1406,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1161,8 +1379,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 886,
-      "y": 594,
+      "x": 1458,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1180,8 +1398,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 938,
-      "y": 594,
+      "x": 1510,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1199,8 +1417,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 990,
-      "y": 594,
+      "x": 1562,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1218,8 +1436,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1042,
-      "y": 594,
+      "x": 1614,
+      "y": 1110,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "mira-w-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "mira",
+      "direction": "w",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 1666,
+      "y": 1110,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "mira-w-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "mira",
+      "direction": "w",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 1718,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1237,8 +1493,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1094,
-      "y": 594,
+      "x": 1770,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1256,8 +1512,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1146,
-      "y": 594,
+      "x": 1822,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1275,8 +1531,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1198,
-      "y": 594,
+      "x": 1874,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1294,8 +1550,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1250,
-      "y": 594,
+      "x": 1926,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1313,8 +1569,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1302,
-      "y": 594,
+      "x": 1978,
+      "y": 1110,
       "width": 48,
       "height": 72
     },
@@ -1332,8 +1588,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1354,
-      "y": 594,
+      "x": 2,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1351,8 +1607,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1406,
-      "y": 594,
+      "x": 54,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1370,8 +1626,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1458,
-      "y": 594,
+      "x": 106,
+      "y": 1186,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "mira-n-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "mira",
+      "direction": "n",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 158,
+      "y": 1186,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "mira-n-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "mira",
+      "direction": "n",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 210,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1389,8 +1683,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1510,
-      "y": 594,
+      "x": 262,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1408,8 +1702,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1562,
-      "y": 594,
+      "x": 314,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1427,8 +1721,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1614,
-      "y": 594,
+      "x": 366,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1446,8 +1740,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1666,
-      "y": 594,
+      "x": 418,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1465,8 +1759,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1718,
-      "y": 594,
+      "x": 470,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1484,8 +1778,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1770,
-      "y": 594,
+      "x": 522,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1503,8 +1797,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1822,
-      "y": 594,
+      "x": 574,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1522,8 +1816,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1874,
-      "y": 594,
+      "x": 626,
+      "y": 1186,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "mira-e-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "mira",
+      "direction": "e",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 678,
+      "y": 1186,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "mira-e-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "mira",
+      "direction": "e",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 730,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1541,8 +1873,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1926,
-      "y": 594,
+      "x": 782,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1560,8 +1892,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1978,
-      "y": 594,
+      "x": 834,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1579,8 +1911,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 2,
-      "y": 670,
+      "x": 886,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1598,8 +1930,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 54,
-      "y": 670,
+      "x": 938,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1617,8 +1949,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 106,
-      "y": 670,
+      "x": 990,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1636,8 +1968,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 158,
-      "y": 670,
+      "x": 1042,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1655,8 +1987,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 210,
-      "y": 670,
+      "x": 1094,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1674,8 +2006,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 262,
-      "y": 670,
+      "x": 1146,
+      "y": 1186,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "ellis-s-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "ellis",
+      "direction": "s",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 1198,
+      "y": 1186,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "ellis-s-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "ellis",
+      "direction": "s",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 1250,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1693,8 +2063,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 314,
-      "y": 670,
+      "x": 1302,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1712,8 +2082,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 366,
-      "y": 670,
+      "x": 1354,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1731,8 +2101,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 418,
-      "y": 670,
+      "x": 1406,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1750,8 +2120,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 470,
-      "y": 670,
+      "x": 1458,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1769,8 +2139,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 522,
-      "y": 670,
+      "x": 1510,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1788,8 +2158,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 574,
-      "y": 670,
+      "x": 1562,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1807,8 +2177,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 626,
-      "y": 670,
+      "x": 1614,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1826,8 +2196,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 678,
-      "y": 670,
+      "x": 1666,
+      "y": 1186,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "ellis-w-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "ellis",
+      "direction": "w",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 1718,
+      "y": 1186,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "ellis-w-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "ellis",
+      "direction": "w",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 1770,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1845,8 +2253,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 730,
-      "y": 670,
+      "x": 1822,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1864,8 +2272,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 782,
-      "y": 670,
+      "x": 1874,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1883,8 +2291,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 834,
-      "y": 670,
+      "x": 1926,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1902,8 +2310,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 886,
-      "y": 670,
+      "x": 1978,
+      "y": 1186,
       "width": 48,
       "height": 72
     },
@@ -1921,8 +2329,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 938,
-      "y": 670,
+      "x": 2,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -1940,8 +2348,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 990,
-      "y": 670,
+      "x": 54,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -1959,8 +2367,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1042,
-      "y": 670,
+      "x": 106,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -1978,8 +2386,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1094,
-      "y": 670,
+      "x": 158,
+      "y": 1262,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "ellis-n-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "ellis",
+      "direction": "n",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 210,
+      "y": 1262,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "ellis-n-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "ellis",
+      "direction": "n",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 262,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -1997,8 +2443,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1146,
-      "y": 670,
+      "x": 314,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2016,8 +2462,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1198,
-      "y": 670,
+      "x": 366,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2035,8 +2481,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1250,
-      "y": 670,
+      "x": 418,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2054,8 +2500,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1302,
-      "y": 670,
+      "x": 470,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2073,8 +2519,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1354,
-      "y": 670,
+      "x": 522,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2092,8 +2538,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1406,
-      "y": 670,
+      "x": 574,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2111,8 +2557,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1458,
-      "y": 670,
+      "x": 626,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2130,8 +2576,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1510,
-      "y": 670,
+      "x": 678,
+      "y": 1262,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "ellis-e-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "ellis",
+      "direction": "e",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 730,
+      "y": 1262,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "ellis-e-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "ellis",
+      "direction": "e",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 782,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2149,8 +2633,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1562,
-      "y": 670,
+      "x": 834,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2168,8 +2652,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 1614,
-      "y": 670,
+      "x": 886,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2187,8 +2671,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 1666,
-      "y": 670,
+      "x": 938,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2206,8 +2690,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 1718,
-      "y": 670,
+      "x": 990,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2225,8 +2709,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 1770,
-      "y": 670,
+      "x": 1042,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2244,8 +2728,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1822,
-      "y": 670,
+      "x": 1094,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2263,8 +2747,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1874,
-      "y": 670,
+      "x": 1146,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2282,8 +2766,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 1926,
-      "y": 670,
+      "x": 1198,
+      "y": 1262,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "nessa-s-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "nessa",
+      "direction": "s",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 1250,
+      "y": 1262,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "nessa-s-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "nessa",
+      "direction": "s",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 1302,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2301,8 +2823,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 1978,
-      "y": 670,
+      "x": 1354,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2320,8 +2842,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 2,
-      "y": 746,
+      "x": 1406,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2339,8 +2861,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 54,
-      "y": 746,
+      "x": 1458,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2358,8 +2880,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 106,
-      "y": 746,
+      "x": 1510,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2377,8 +2899,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 158,
-      "y": 746,
+      "x": 1562,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2396,8 +2918,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 210,
-      "y": 746,
+      "x": 1614,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2415,8 +2937,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 262,
-      "y": 746,
+      "x": 1666,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2434,8 +2956,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 314,
-      "y": 746,
+      "x": 1718,
+      "y": 1262,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "nessa-w-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "nessa",
+      "direction": "w",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 1770,
+      "y": 1262,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "nessa-w-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "nessa",
+      "direction": "w",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 1822,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2453,8 +3013,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 366,
-      "y": 746,
+      "x": 1874,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2472,8 +3032,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 418,
-      "y": 746,
+      "x": 1926,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2491,8 +3051,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 470,
-      "y": 746,
+      "x": 1978,
+      "y": 1262,
       "width": 48,
       "height": 72
     },
@@ -2510,8 +3070,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 522,
-      "y": 746,
+      "x": 2,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2529,8 +3089,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 574,
-      "y": 746,
+      "x": 54,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2548,8 +3108,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 626,
-      "y": 746,
+      "x": 106,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2567,8 +3127,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 678,
-      "y": 746,
+      "x": 158,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2586,8 +3146,46 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
-      "x": 730,
-      "y": 746,
+      "x": 210,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "nessa-n-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "nessa",
+      "direction": "n",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 262,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "nessa-n-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "nessa",
+      "direction": "n",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 314,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2605,8 +3203,8 @@
       "animation": "idle",
       "index": 0,
       "fps": 2,
-      "x": 782,
-      "y": 746,
+      "x": 366,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2624,8 +3222,8 @@
       "animation": "idle",
       "index": 1,
       "fps": 2,
-      "x": 834,
-      "y": 746,
+      "x": 418,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2643,8 +3241,8 @@
       "animation": "walk",
       "index": 0,
       "fps": 8,
-      "x": 886,
-      "y": 746,
+      "x": 470,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2662,8 +3260,8 @@
       "animation": "walk",
       "index": 1,
       "fps": 8,
-      "x": 938,
-      "y": 746,
+      "x": 522,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2681,8 +3279,8 @@
       "animation": "walk",
       "index": 2,
       "fps": 8,
-      "x": 990,
-      "y": 746,
+      "x": 574,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2700,8 +3298,8 @@
       "animation": "walk",
       "index": 3,
       "fps": 8,
-      "x": 1042,
-      "y": 746,
+      "x": 626,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2719,8 +3317,8 @@
       "animation": "walk",
       "index": 4,
       "fps": 8,
-      "x": 1094,
-      "y": 746,
+      "x": 678,
+      "y": 1338,
       "width": 48,
       "height": 72
     },
@@ -2738,8 +3336,806 @@
       "animation": "walk",
       "index": 5,
       "fps": 8,
+      "x": 730,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "nessa-e-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "nessa",
+      "direction": "e",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 782,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "nessa-e-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "nessa",
+      "direction": "e",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 834,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-s-idle-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "s",
+      "animation": "idle",
+      "index": 0,
+      "fps": 2,
+      "x": 886,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-s-idle-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "s",
+      "animation": "idle",
+      "index": 1,
+      "fps": 2,
+      "x": 938,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-s-walk-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "s",
+      "animation": "walk",
+      "index": 0,
+      "fps": 8,
+      "x": 990,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-s-walk-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "s",
+      "animation": "walk",
+      "index": 1,
+      "fps": 8,
+      "x": 1042,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-s-walk-2",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "s",
+      "animation": "walk",
+      "index": 2,
+      "fps": 8,
+      "x": 1094,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-s-walk-3",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "s",
+      "animation": "walk",
+      "index": 3,
+      "fps": 8,
       "x": 1146,
-      "y": 746,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-s-walk-4",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "s",
+      "animation": "walk",
+      "index": 4,
+      "fps": 8,
+      "x": 1198,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-s-walk-5",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "s",
+      "animation": "walk",
+      "index": 5,
+      "fps": 8,
+      "x": 1250,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-s-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "s",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 1302,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-s-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "s",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 1354,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-w-idle-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "w",
+      "animation": "idle",
+      "index": 0,
+      "fps": 2,
+      "x": 1406,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-w-idle-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "w",
+      "animation": "idle",
+      "index": 1,
+      "fps": 2,
+      "x": 1458,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-w-walk-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "w",
+      "animation": "walk",
+      "index": 0,
+      "fps": 8,
+      "x": 1510,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-w-walk-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "w",
+      "animation": "walk",
+      "index": 1,
+      "fps": 8,
+      "x": 1562,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-w-walk-2",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "w",
+      "animation": "walk",
+      "index": 2,
+      "fps": 8,
+      "x": 1614,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-w-walk-3",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "w",
+      "animation": "walk",
+      "index": 3,
+      "fps": 8,
+      "x": 1666,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-w-walk-4",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "w",
+      "animation": "walk",
+      "index": 4,
+      "fps": 8,
+      "x": 1718,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-w-walk-5",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "w",
+      "animation": "walk",
+      "index": 5,
+      "fps": 8,
+      "x": 1770,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-w-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "w",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 1822,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-w-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "w",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 1874,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-n-idle-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "n",
+      "animation": "idle",
+      "index": 0,
+      "fps": 2,
+      "x": 1926,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-n-idle-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "n",
+      "animation": "idle",
+      "index": 1,
+      "fps": 2,
+      "x": 1978,
+      "y": 1338,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-n-walk-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "n",
+      "animation": "walk",
+      "index": 0,
+      "fps": 8,
+      "x": 2,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-n-walk-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "n",
+      "animation": "walk",
+      "index": 1,
+      "fps": 8,
+      "x": 54,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-n-walk-2",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "n",
+      "animation": "walk",
+      "index": 2,
+      "fps": 8,
+      "x": 106,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-n-walk-3",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "n",
+      "animation": "walk",
+      "index": 3,
+      "fps": 8,
+      "x": 158,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-n-walk-4",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "n",
+      "animation": "walk",
+      "index": 4,
+      "fps": 8,
+      "x": 210,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-n-walk-5",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "n",
+      "animation": "walk",
+      "index": 5,
+      "fps": 8,
+      "x": 262,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-n-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "n",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 314,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-n-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "n",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 366,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-e-idle-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "e",
+      "animation": "idle",
+      "index": 0,
+      "fps": 2,
+      "x": 418,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-e-idle-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "e",
+      "animation": "idle",
+      "index": 1,
+      "fps": 2,
+      "x": 470,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-e-walk-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "e",
+      "animation": "walk",
+      "index": 0,
+      "fps": 8,
+      "x": 522,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-e-walk-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "e",
+      "animation": "walk",
+      "index": 1,
+      "fps": 8,
+      "x": 574,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-e-walk-2",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "e",
+      "animation": "walk",
+      "index": 2,
+      "fps": 8,
+      "x": 626,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-e-walk-3",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "e",
+      "animation": "walk",
+      "index": 3,
+      "fps": 8,
+      "x": 678,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-e-walk-4",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "e",
+      "animation": "walk",
+      "index": 4,
+      "fps": 8,
+      "x": 730,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-e-walk-5",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "e",
+      "animation": "walk",
+      "index": 5,
+      "fps": 8,
+      "x": 782,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-e-sit-0",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "e",
+      "animation": "sit",
+      "index": 0,
+      "fps": 2,
+      "x": 834,
+      "y": 1414,
+      "width": 48,
+      "height": 72
+    },
+    {
+      "id": "tomas-e-sit-1",
+      "anchor": [
+        24,
+        64
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "character",
+      "actor": "tomas",
+      "direction": "e",
+      "animation": "sit",
+      "index": 1,
+      "fps": 2,
+      "x": 886,
+      "y": 1414,
       "width": 48,
       "height": 72
     },
@@ -2747,55 +4143,115 @@
       "id": "shop",
       "anchor": [
         80,
-        147
+        171
       ],
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "building",
-      "footprint": [
-        12,
-        10
-      ],
-      "x": 1198,
-      "y": 746,
+      "footprint": {
+        "units": "world",
+        "origin": "front corner; local x/z extend negative; units logical world",
+        "width": 15,
+        "depth": 15
+      },
+      "x": 938,
+      "y": 1414,
       "width": 160,
-      "height": 176
+      "height": 200
     },
     {
       "id": "cafe",
       "anchor": [
         80,
-        147
+        171
       ],
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "building",
-      "footprint": [
-        12,
-        10
-      ],
-      "x": 1362,
-      "y": 746,
+      "footprint": {
+        "units": "world",
+        "origin": "front corner; local x/z extend negative; units logical world",
+        "width": 15,
+        "depth": 15
+      },
+      "x": 1102,
+      "y": 1414,
       "width": 160,
-      "height": 176
+      "height": 200
     },
     {
       "id": "hut",
       "anchor": [
         80,
-        147
+        171
       ],
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "building",
-      "footprint": [
-        12,
-        10
-      ],
-      "x": 1526,
-      "y": 746,
+      "footprint": {
+        "units": "world",
+        "origin": "front corner; local x/z extend negative; units logical world",
+        "width": 15,
+        "depth": 15
+      },
+      "x": 1266,
+      "y": 1414,
       "width": 160,
+      "height": 200
+    },
+    {
+      "id": "cottage",
+      "anchor": [
+        80,
+        171
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "building",
+      "footprint": {
+        "units": "world",
+        "origin": "front corner; local x/z extend negative; units logical world",
+        "width": 15,
+        "depth": 15
+      },
+      "x": 1430,
+      "y": 1414,
+      "width": 160,
+      "height": 200
+    },
+    {
+      "id": "fishing-hut",
+      "anchor": [
+        64,
+        152
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "building",
+      "footprint": {
+        "units": "world",
+        "origin": "front corner; local x/z extend negative; units logical world",
+        "width": 12,
+        "depth": 12
+      },
+      "x": 1594,
+      "y": 1414,
+      "width": 128,
       "height": 176
+    },
+    {
+      "id": "arch",
+      "anchor": [
+        96,
+        139
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "landmark",
+      "x": 1726,
+      "y": 1414,
+      "width": 192,
+      "height": 160
     },
     {
       "id": "tree-0",
@@ -2807,8 +4263,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "foliage",
       "fps": 1,
-      "x": 1690,
-      "y": 746,
+      "x": 1922,
+      "y": 1414,
       "width": 96,
       "height": 128
     },
@@ -2822,8 +4278,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "foliage",
       "fps": 1,
-      "x": 1790,
-      "y": 746,
+      "x": 2,
+      "y": 1618,
       "width": 96,
       "height": 128
     },
@@ -2836,8 +4292,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 1890,
-      "y": 746,
+      "x": 102,
+      "y": 1618,
       "width": 64,
       "height": 80
     },
@@ -2850,8 +4306,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 1958,
-      "y": 746,
+      "x": 170,
+      "y": 1618,
       "width": 64,
       "height": 80
     },
@@ -2864,8 +4320,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 2,
-      "y": 926,
+      "x": 238,
+      "y": 1618,
       "width": 64,
       "height": 80
     },
@@ -2878,8 +4334,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 70,
-      "y": 926,
+      "x": 306,
+      "y": 1618,
       "width": 64,
       "height": 80
     },
@@ -2892,8 +4348,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 138,
-      "y": 926,
+      "x": 374,
+      "y": 1618,
       "width": 64,
       "height": 80
     },
@@ -2906,8 +4362,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 206,
-      "y": 926,
+      "x": 442,
+      "y": 1618,
       "width": 64,
       "height": 80
     },
@@ -2920,8 +4376,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 274,
-      "y": 926,
+      "x": 510,
+      "y": 1618,
       "width": 64,
       "height": 80
     },
@@ -2934,8 +4390,8 @@
       "license": "MIT",
       "source": "assets/source/sprites.mjs",
       "category": "prop",
-      "x": 342,
-      "y": 926,
+      "x": 578,
+      "y": 1618,
       "width": 64,
       "height": 80
     },
@@ -2950,12 +4406,42 @@
       "category": "boat",
       "direction": 0,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 410,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 646,
+      "y": 1618,
       "width": 128,
       "height": 144
     },
@@ -2970,12 +4456,42 @@
       "category": "boat",
       "direction": 0,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 542,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 778,
+      "y": 1618,
       "width": 128,
       "height": 144
     },
@@ -2990,12 +4506,42 @@
       "category": "boat",
       "direction": 1,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 674,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 910,
+      "y": 1618,
       "width": 128,
       "height": 144
     },
@@ -3010,12 +4556,42 @@
       "category": "boat",
       "direction": 1,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 806,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 1042,
+      "y": 1618,
       "width": 128,
       "height": 144
     },
@@ -3030,12 +4606,42 @@
       "category": "boat",
       "direction": 2,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 938,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 1174,
+      "y": 1618,
       "width": 128,
       "height": 144
     },
@@ -3050,12 +4656,42 @@
       "category": "boat",
       "direction": 2,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 1070,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 1306,
+      "y": 1618,
       "width": 128,
       "height": 144
     },
@@ -3070,12 +4706,42 @@
       "category": "boat",
       "direction": 3,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 1202,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 1438,
+      "y": 1618,
       "width": 128,
       "height": 144
     },
@@ -3090,12 +4756,42 @@
       "category": "boat",
       "direction": 3,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 1334,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 1570,
+      "y": 1618,
       "width": 128,
       "height": 144
     },
@@ -3110,12 +4806,42 @@
       "category": "boat",
       "direction": 4,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 1466,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 1702,
+      "y": 1618,
       "width": 128,
       "height": 144
     },
@@ -3130,12 +4856,42 @@
       "category": "boat",
       "direction": 4,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 1598,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 1834,
+      "y": 1618,
       "width": 128,
       "height": 144
     },
@@ -3150,12 +4906,42 @@
       "category": "boat",
       "direction": 5,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 1730,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 2,
+      "y": 1766,
       "width": 128,
       "height": 144
     },
@@ -3170,12 +4956,42 @@
       "category": "boat",
       "direction": 5,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 1862,
-      "y": 926,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 134,
+      "y": 1766,
       "width": 128,
       "height": 144
     },
@@ -3190,12 +5006,42 @@
       "category": "boat",
       "direction": 6,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 2,
-      "y": 1074,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 266,
+      "y": 1766,
       "width": 128,
       "height": 144
     },
@@ -3210,12 +5056,42 @@
       "category": "boat",
       "direction": 6,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 134,
-      "y": 1074,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 398,
+      "y": 1766,
       "width": 128,
       "height": 144
     },
@@ -3230,12 +5106,42 @@
       "category": "boat",
       "direction": 7,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 266,
-      "y": 1074,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 530,
+      "y": 1766,
       "width": 128,
       "height": 144
     },
@@ -3250,14 +5156,104 @@
       "category": "boat",
       "direction": 7,
       "fps": 2,
-      "footprint": [
-        6,
-        10
-      ],
-      "x": 398,
-      "y": 1074,
+      "footprint": {
+        "units": "world",
+        "origin": "hull pivot; fore positive, right positive; units logical world",
+        "points": [
+          [
+            7.875,
+            0
+          ],
+          [
+            4.725,
+            -3.15
+          ],
+          [
+            -6.825,
+            -3.675
+          ],
+          [
+            -8.925,
+            -1.575
+          ],
+          [
+            -8.925,
+            1.575
+          ],
+          [
+            -6.825,
+            3.675
+          ],
+          [
+            4.725,
+            3.15
+          ]
+        ]
+      },
+      "x": 662,
+      "y": 1766,
       "width": 128,
       "height": 144
+    },
+    {
+      "id": "fish-sardine-0",
+      "anchor": [
+        20,
+        17
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "effect",
+      "fps": 2,
+      "x": 794,
+      "y": 1766,
+      "width": 40,
+      "height": 32
+    },
+    {
+      "id": "fish-sardine-1",
+      "anchor": [
+        20,
+        17
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "effect",
+      "fps": 2,
+      "x": 838,
+      "y": 1766,
+      "width": 40,
+      "height": 32
+    },
+    {
+      "id": "fish-bream-0",
+      "anchor": [
+        20,
+        17
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "effect",
+      "fps": 2,
+      "x": 882,
+      "y": 1766,
+      "width": 40,
+      "height": 32
+    },
+    {
+      "id": "fish-bream-1",
+      "anchor": [
+        20,
+        17
+      ],
+      "license": "MIT",
+      "source": "assets/source/sprites.mjs",
+      "category": "effect",
+      "fps": 2,
+      "x": 926,
+      "y": 1766,
+      "width": 40,
+      "height": 32
     },
     {
       "id": "gull-0",
@@ -3269,8 +5265,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 5,
-      "x": 530,
-      "y": 1074,
+      "x": 970,
+      "y": 1766,
       "width": 32,
       "height": 24
     },
@@ -3284,8 +5280,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 4,
-      "x": 566,
-      "y": 1074,
+      "x": 1006,
+      "y": 1766,
       "width": 24,
       "height": 16
     },
@@ -3299,8 +5295,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 5,
-      "x": 594,
-      "y": 1074,
+      "x": 1034,
+      "y": 1766,
       "width": 32,
       "height": 24
     },
@@ -3314,8 +5310,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 4,
-      "x": 630,
-      "y": 1074,
+      "x": 1070,
+      "y": 1766,
       "width": 24,
       "height": 16
     },
@@ -3329,8 +5325,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 5,
-      "x": 658,
-      "y": 1074,
+      "x": 1098,
+      "y": 1766,
       "width": 32,
       "height": 24
     },
@@ -3344,8 +5340,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 4,
-      "x": 694,
-      "y": 1074,
+      "x": 1134,
+      "y": 1766,
       "width": 24,
       "height": 16
     },
@@ -3359,8 +5355,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 5,
-      "x": 722,
-      "y": 1074,
+      "x": 1162,
+      "y": 1766,
       "width": 32,
       "height": 24
     },
@@ -3374,8 +5370,8 @@
       "source": "assets/source/sprites.mjs",
       "category": "effect",
       "fps": 4,
-      "x": 758,
-      "y": 1074,
+      "x": 1198,
+      "y": 1766,
       "width": 24,
       "height": 16
     },
@@ -3389,8 +5385,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 786,
-      "y": 1074,
+      "x": 1226,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3404,8 +5400,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 854,
-      "y": 1074,
+      "x": 1294,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3419,8 +5415,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 922,
-      "y": 1074,
+      "x": 1362,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3434,8 +5430,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 990,
-      "y": 1074,
+      "x": 1430,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3449,8 +5445,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1058,
-      "y": 1074,
+      "x": 1498,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3464,8 +5460,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1126,
-      "y": 1074,
+      "x": 1566,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3479,8 +5475,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1194,
-      "y": 1074,
+      "x": 1634,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3494,8 +5490,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1262,
-      "y": 1074,
+      "x": 1702,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3509,8 +5505,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1330,
-      "y": 1074,
+      "x": 1770,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3524,8 +5520,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1398,
-      "y": 1074,
+      "x": 1838,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3539,8 +5535,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1466,
-      "y": 1074,
+      "x": 1906,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3554,8 +5550,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1534,
-      "y": 1074,
+      "x": 1974,
+      "y": 1766,
       "width": 64,
       "height": 32
     },
@@ -3569,8 +5565,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1602,
-      "y": 1074,
+      "x": 2,
+      "y": 1914,
       "width": 64,
       "height": 32
     },
@@ -3584,8 +5580,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1670,
-      "y": 1074,
+      "x": 70,
+      "y": 1914,
       "width": 64,
       "height": 32
     },
@@ -3599,8 +5595,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1738,
-      "y": 1074,
+      "x": 138,
+      "y": 1914,
       "width": 64,
       "height": 32
     },
@@ -3614,8 +5610,8 @@
       "source": "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
       "category": "effect",
       "fps": 8,
-      "x": 1806,
-      "y": 1074,
+      "x": 206,
+      "y": 1914,
       "width": 64,
       "height": 32
     }
@@ -3637,5 +5633,5 @@
       "modifications": "Offline core export adapter; project palette, seed and frame encoder. No remote/API runtime."
     }
   ],
-  "atlasSha256": "ff0b2aa8893734c543f85d2f1846b8e8268b1a2c3651ced058828f7d08ea7fb0"
+  "atlasSha256": "ec89f37d20475113903897877c3a936718a7b502af5e1cfbf6941af671abaa5f"
 }

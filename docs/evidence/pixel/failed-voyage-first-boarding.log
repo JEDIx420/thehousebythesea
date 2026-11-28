@@ -1,0 +1,68 @@
+
+> thehousebythesea-pixel@0.2.0 test:e2e
+> playwright test --output=test-results/pixel-integration
+
+[2m[WebServer] [22m(node:28279) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:28281) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28281) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/resilience.spec.ts:49:1 › title credits return, native keyboard menus, settings, picking and laptop layout (1.2s)
+  ✓  2 tests/browser/resilience.spec.ts:125:3 › future snapshot survives temporary play, recovery and autosave (11.6s)
+  ✓  3 tests/browser/resilience.spec.ts:125:3 › corrupt snapshot survives temporary play, recovery and autosave (11.6s)
+  ✓  4 tests/browser/resilience.spec.ts:141:1 › missing and stalled art are bounded, input-locked and recover through retry (13.6s)
+  ✓  5 tests/browser/resilience.spec.ts:176:1 › malformed metadata and a missing required animated frame show an honest retry state (839ms)
+  ✓  6 tests/browser/resilience.spec.ts:237:1 › explicit legacy import copies progress to a safe pixel dock and preserves its source (560ms)
+  ✓  7 tests/browser/resilience.spec.ts:274:1 › a failed import write says temporary and never reports durable success (623ms)
+  ✘  8 tests/browser/voyage.spec.ts:4:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return (34.0s)
+
+
+  1) tests/browser/voyage.spec.ts:4:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"boat"[39m
+    Received: [31m"walk"[39m
+
+    Call Log:
+    - Timeout 15000ms exceeded while waiting on the predicate
+
+      56 |   await walk(page, 55, 0);
+      57 |   await page.keyboard.press("e");
+    > 58 |   await expect.poll(async () => (await state(page)).player.mode).toBe("boat");
+         |   ^
+      59 |   await expect
+      60 |     .poll(
+      61 |       () =>
+        at /Users/vincyvincent/3dfun/thehousebythesea-pixel/tests/browser/voyage.spec.ts:58:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/pixel-integration/voyage-First-Voyage-real-w-b52e7-shing-Mira-and-saved-return/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/pixel-integration/voyage-First-Voyage-real-w-b52e7-shing-Mira-and-saved-return/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/pixel-integration/voyage-First-Voyage-real-w-b52e7-shing-Mira-and-saved-return/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/pixel-integration/voyage-First-Voyage-real-w-b52e7-shing-Mira-and-saved-return/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/pixel-integration/voyage-First-Voyage-real-w-b52e7-shing-Mira-and-saved-return/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/browser/voyage.spec.ts:4:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return 
+  7 passed (1.3m)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m
