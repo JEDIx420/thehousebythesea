@@ -1,0 +1,1669 @@
+{
+  "01-havenport": {
+    "capturedAt": "2026-11-28T11:22:59.068Z",
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 57,
+      "sampleKind": "raw render callback interval",
+      "p50": 22.79999999998836,
+      "p95": 33.399999999965075,
+      "stallsOver50ms": 2,
+      "assets": 541,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 2018101,
+      "heap": 18200000,
+      "npcs": [
+        {
+          "id": "ellis",
+          "x": 44,
+          "z": 3,
+          "walking": false
+        },
+        {
+          "id": "mira",
+          "x": 35,
+          "z": -12,
+          "walking": false
+        },
+        {
+          "id": "seller",
+          "x": 25,
+          "z": 18,
+          "walking": false
+        },
+        {
+          "id": "nessa",
+          "x": 44,
+          "z": -337,
+          "walking": false
+        }
+      ],
+      "audio": {
+        "rms": 0.006880305299376884,
+        "musicRms": 0.016447514388419453,
+        "musicLooping": true,
+        "musicTime": 0.6211337868480726,
+        "musicPosition": 0.6211337868480726,
+        "gains": {
+          "master": 0.3499999940395355,
+          "music": 0.699644148349762,
+          "ambience": 0.08751070499420166,
+          "sfx": 0.2199999988079071
+        },
+        "state": "running",
+        "track": "havenport",
+        "target": "havenport",
+        "status": "Music follows the coast",
+        "error": null,
+        "voices": 1,
+        "decodedTracks": 1,
+        "retryAfter": null,
+        "loopSeconds": 96,
+        "settings": {
+          "muted": false,
+          "volume": 0.35,
+          "music": 0.7,
+          "ambience": 0.35,
+          "sfx": 0.55,
+          "reducedMotion": false,
+          "instantText": false
+        }
+      },
+      "screenActors": [
+        {
+          "x": 328,
+          "y": 181,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 300,
+          "y": 179,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 324,
+          "y": 131,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 164,
+          "y": 171,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 1660,
+          "y": -501,
+          "width": 32,
+          "height": 64
+        }
+      ],
+      "locomotion": {
+        "phase": "idle",
+        "speed": 0,
+        "distance": 0,
+        "direction": "s",
+        "velocity": [
+          0,
+          0
+        ]
+      },
+      "gangway": null,
+      "elevation": 0
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v2",
+      "wallet": 25,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "available",
+      "discoveries": [
+        "havenport"
+      ],
+      "story": {
+        "metMira": false,
+        "outingInvited": false,
+        "outingVisitedSaltglass": false,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 48,
+        "z": 0,
+        "heading": 0,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": 0,
+        "heading": 0,
+        "docked": "havenport"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-CEto77Ge.js"
+  },
+  "02-mira-dialogue": {
+    "capturedAt": "2026-11-28T11:23:13.202Z",
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 718,
+      "sampleKind": "raw render callback interval",
+      "p50": 21.20000000001164,
+      "p95": 25.29999999998836,
+      "stallsOver50ms": 3,
+      "assets": 541,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 2018401,
+      "heap": 18200000,
+      "npcs": [
+        {
+          "id": "ellis",
+          "x": 42.87303783902957,
+          "z": 2.4365189195147727,
+          "walking": false
+        },
+        {
+          "id": "mira",
+          "x": 35,
+          "z": -12,
+          "walking": false
+        },
+        {
+          "id": "seller",
+          "x": 25,
+          "z": 18,
+          "walking": false
+        },
+        {
+          "id": "nessa",
+          "x": 44,
+          "z": -337,
+          "walking": false
+        }
+      ],
+      "audio": {
+        "rms": 0.01070690871968643,
+        "musicRms": 0.029917783475631368,
+        "musicLooping": true,
+        "musicTime": 14.770793650793651,
+        "musicPosition": 14.770793650793651,
+        "gains": {
+          "master": 0.3499999940395355,
+          "music": 0.4482886493206024,
+          "ambience": 0.08749999850988388,
+          "sfx": 0.2199999988079071
+        },
+        "state": "running",
+        "track": "havenport",
+        "target": "havenport",
+        "status": "Music follows the coast",
+        "error": null,
+        "voices": 1,
+        "decodedTracks": 1,
+        "retryAfter": null,
+        "loopSeconds": 96,
+        "settings": {
+          "muted": false,
+          "volume": 0.35,
+          "music": 0.7,
+          "ambience": 0.35,
+          "sfx": 0.55,
+          "reducedMotion": false,
+          "instantText": false
+        }
+      },
+      "screenActors": [
+        {
+          "x": 327,
+          "y": 176,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 296,
+          "y": 217,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 322,
+          "y": 172,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 162,
+          "y": 212,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 1658,
+          "y": -460,
+          "width": 32,
+          "height": 64
+        }
+      ],
+      "locomotion": {
+        "phase": "idle",
+        "speed": 0,
+        "distance": 56.104753749396906,
+        "direction": "w",
+        "velocity": [
+          0,
+          0
+        ]
+      },
+      "gangway": null,
+      "elevation": 0
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v2",
+      "wallet": 25,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "active",
+      "discoveries": [
+        "havenport"
+      ],
+      "story": {
+        "metMira": false,
+        "outingInvited": false,
+        "outingVisitedSaltglass": false,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 36.68407778087917,
+        "z": -11.47876990571729,
+        "heading": 2.0906369026229115,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": 0,
+        "heading": 0,
+        "docked": "havenport"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-CEto77Ge.js"
+  },
+  "03-sailing": {
+    "capturedAt": "2026-11-28T11:23:51.496Z",
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 17.899999999965075,
+      "p95": 22,
+      "stallsOver50ms": 3,
+      "assets": 541,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 2787371,
+      "heap": 18200000,
+      "npcs": [
+        {
+          "id": "ellis",
+          "x": 40,
+          "z": 1,
+          "walking": false
+        },
+        {
+          "id": "mira",
+          "x": 64.6,
+          "z": -5,
+          "walking": false
+        },
+        {
+          "id": "seller",
+          "x": 24,
+          "z": 21,
+          "walking": false
+        },
+        {
+          "id": "nessa",
+          "x": 42,
+          "z": -338,
+          "walking": false
+        }
+      ],
+      "audio": {
+        "rms": 0.026578677100222783,
+        "musicRms": 0.07525686223221827,
+        "musicLooping": true,
+        "musicTime": 15.609614512471651,
+        "musicPosition": 15.609614512471651,
+        "gains": {
+          "master": 0.3499999940395355,
+          "music": 0.699999988079071,
+          "ambience": 0.08749999850988388,
+          "sfx": 0.2199999988079071
+        },
+        "state": "running",
+        "track": "sailing",
+        "target": "sailing",
+        "status": "Music follows the coast",
+        "error": null,
+        "voices": 1,
+        "decodedTracks": 2,
+        "retryAfter": null,
+        "loopSeconds": 96,
+        "settings": {
+          "muted": false,
+          "volume": 0.35,
+          "music": 0.7,
+          "ambience": 0.35,
+          "sfx": 0.55,
+          "reducedMotion": false,
+          "instantText": false
+        }
+      },
+      "screenActors": [
+        {
+          "x": 304,
+          "y": 173,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 338,
+          "y": 170,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -176,
+          "y": 332,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -320,
+          "y": 340,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 1188,
+          "y": -342,
+          "width": 32,
+          "height": 64
+        }
+      ],
+      "locomotion": {
+        "phase": "idle",
+        "speed": 0,
+        "distance": 145.75782411746042,
+        "direction": "n",
+        "velocity": [
+          0,
+          0
+        ]
+      },
+      "gangway": null,
+      "elevation": 0
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v2",
+      "wallet": 25,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "active",
+      "discoveries": [
+        "havenport"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": true,
+        "outingVisitedSaltglass": false,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 63,
+        "z": -97.99907928262948,
+        "heading": 0,
+        "mode": "boat",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": -97.99907928262948,
+        "heading": 0,
+        "docked": null
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-CEto77Ge.js"
+  },
+  "04-docking": {
+    "capturedAt": "2026-11-28T11:24:25.755Z",
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 16.70000000001164,
+      "p95": 18.5,
+      "stallsOver50ms": 3,
+      "assets": 541,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 3556341,
+      "heap": 18200000,
+      "npcs": [
+        {
+          "id": "ellis",
+          "x": 41.08537295867487,
+          "z": 2.0284576528916216,
+          "walking": true
+        },
+        {
+          "id": "mira",
+          "x": 64.6,
+          "z": -5,
+          "walking": false
+        },
+        {
+          "id": "seller",
+          "x": 23,
+          "z": 18,
+          "walking": false
+        },
+        {
+          "id": "nessa",
+          "x": 43,
+          "z": -339,
+          "walking": false
+        }
+      ],
+      "audio": {
+        "rms": 0.014721524856634093,
+        "musicRms": 0.04242547056491563,
+        "musicLooping": true,
+        "musicTime": 0.2699319727891236,
+        "musicPosition": 0.2699319727891236,
+        "gains": {
+          "master": 0.3499999940395355,
+          "music": 0.699999988079071,
+          "ambience": 0.08749999850988388,
+          "sfx": 0.2199999988079071
+        },
+        "state": "running",
+        "track": "saltglass",
+        "target": "saltglass",
+        "status": "Music follows the coast",
+        "error": null,
+        "voices": 2,
+        "decodedTracks": 2,
+        "retryAfter": null,
+        "loopSeconds": 96,
+        "settings": {
+          "muted": false,
+          "volume": 0.35,
+          "music": 0.7,
+          "ambience": 0.35,
+          "sfx": 0.55,
+          "reducedMotion": false,
+          "instantText": false
+        }
+      },
+      "screenActors": [
+        {
+          "x": 319,
+          "y": 173,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 377,
+          "y": 179,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -1105,
+          "y": 829,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -1241,
+          "y": 825,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 267,
+          "y": 151,
+          "width": 32,
+          "height": 64
+        }
+      ],
+      "locomotion": {
+        "phase": "idle",
+        "speed": 0,
+        "distance": 145.75782411746042,
+        "direction": "n",
+        "velocity": [
+          0,
+          0
+        ]
+      },
+      "gangway": null,
+      "elevation": 0
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v2",
+      "wallet": 25,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "active",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": true,
+        "outingVisitedSaltglass": true,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 55,
+        "z": -340,
+        "heading": 0,
+        "mode": "walk",
+        "island": "saltglass-bay"
+      },
+      "boat": {
+        "x": 63,
+        "z": -340,
+        "heading": 0,
+        "docked": "saltglass-bay"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-CEto77Ge.js"
+  },
+  "05-fishing": {
+    "capturedAt": "2026-11-28T11:24:38.375Z",
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 18.099999999976717,
+      "p95": 21.29999999998836,
+      "stallsOver50ms": 4,
+      "assets": 541,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 3556641,
+      "heap": 18200000,
+      "npcs": [
+        {
+          "id": "ellis",
+          "x": 44,
+          "z": 3,
+          "walking": false
+        },
+        {
+          "id": "mira",
+          "x": 64.6,
+          "z": -5,
+          "walking": false
+        },
+        {
+          "id": "seller",
+          "x": 25,
+          "z": 18,
+          "walking": false
+        },
+        {
+          "id": "nessa",
+          "x": 43.70031837840246,
+          "z": -337.59936324319483,
+          "walking": true
+        }
+      ],
+      "audio": {
+        "rms": 0.01864441658892078,
+        "musicRms": 0.05255636321102219,
+        "musicLooping": true,
+        "musicTime": 12.849342403628114,
+        "musicPosition": 12.849342403628114,
+        "gains": {
+          "master": 0.3499999940395355,
+          "music": 0.699999988079071,
+          "ambience": 0.08749999850988388,
+          "sfx": 0.2199999988079071
+        },
+        "state": "running",
+        "track": "saltglass",
+        "target": "saltglass",
+        "status": "Music follows the coast",
+        "error": null,
+        "voices": 1,
+        "decodedTracks": 2,
+        "retryAfter": null,
+        "loopSeconds": 96,
+        "settings": {
+          "muted": false,
+          "volume": 0.35,
+          "music": 0.7,
+          "ambience": 0.35,
+          "sfx": 0.55,
+          "reducedMotion": false,
+          "instantText": false
+        }
+      },
+      "screenActors": [
+        {
+          "x": 322,
+          "y": 176,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 389,
+          "y": 182,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -1085,
+          "y": 840,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -1221,
+          "y": 832,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 276,
+          "y": 158,
+          "width": 32,
+          "height": 64
+        }
+      ],
+      "locomotion": {
+        "phase": "idle",
+        "speed": 0,
+        "distance": 178.41933766506907,
+        "direction": "s",
+        "velocity": [
+          0,
+          0
+        ]
+      },
+      "gangway": null,
+      "elevation": 0
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v2",
+      "wallet": 145,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "complete",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": true,
+        "outingVisitedSaltglass": true,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 53.80347944886776,
+        "z": -338.8839532032689,
+        "heading": 2.4666534122422274,
+        "mode": "walk",
+        "island": "saltglass-bay"
+      },
+      "boat": {
+        "x": 63,
+        "z": -340,
+        "heading": 0,
+        "docked": "saltglass-bay"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-CEto77Ge.js"
+  },
+  "06-saltglass": {
+    "capturedAt": "2026-11-28T11:25:23.510Z",
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 20.400000000023283,
+      "p95": 24.400000000023283,
+      "stallsOver50ms": 4,
+      "assets": 541,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 3556641,
+      "heap": 18200000,
+      "npcs": [
+        {
+          "id": "ellis",
+          "x": 41,
+          "z": 2,
+          "walking": false
+        },
+        {
+          "id": "mira",
+          "x": 64.6,
+          "z": -5,
+          "walking": false
+        },
+        {
+          "id": "seller",
+          "x": 23,
+          "z": 18,
+          "walking": false
+        },
+        {
+          "id": "nessa",
+          "x": 42,
+          "z": -338,
+          "walking": false
+        }
+      ],
+      "audio": {
+        "rms": 0.008723509981404306,
+        "musicRms": 0.026452833455869736,
+        "musicLooping": true,
+        "musicTime": 58.00925170068027,
+        "musicPosition": 58.00925170068027,
+        "gains": {
+          "master": 0.3499999940395355,
+          "music": 0.44832849502563477,
+          "ambience": 0.08749999850988388,
+          "sfx": 0.2199999988079071
+        },
+        "state": "running",
+        "track": "saltglass",
+        "target": "saltglass",
+        "status": "Music follows the coast",
+        "error": null,
+        "voices": 1,
+        "decodedTracks": 2,
+        "retryAfter": null,
+        "loopSeconds": 96,
+        "settings": {
+          "muted": false,
+          "volume": 0.35,
+          "music": 0.7,
+          "ambience": 0.35,
+          "sfx": 0.55,
+          "reducedMotion": false,
+          "instantText": false
+        }
+      },
+      "screenActors": [
+        {
+          "x": 326,
+          "y": 174,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 396,
+          "y": 430,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -1086,
+          "y": 1080,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -1222,
+          "y": 1076,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 278,
+          "y": 402,
+          "width": 32,
+          "height": 64
+        }
+      ],
+      "locomotion": {
+        "phase": "idle",
+        "speed": 0,
+        "distance": 365.2452007316469,
+        "direction": "n",
+        "velocity": [
+          0,
+          0
+        ]
+      },
+      "gangway": null,
+      "elevation": 28
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v2",
+      "wallet": 195,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "complete",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": true,
+        "outingVisitedSaltglass": true,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": -2.050543531806718,
+        "z": -394.13403335682614,
+        "heading": -0.48881364809750505,
+        "mode": "walk",
+        "island": "saltglass-bay"
+      },
+      "boat": {
+        "x": 63,
+        "z": -340,
+        "heading": 0,
+        "docked": "saltglass-bay"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-CEto77Ge.js"
+  },
+  "06b-saltglass-vista": {
+    "capturedAt": "2026-11-28T11:25:24.088Z",
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 20.29999999993015,
+      "p95": 24.400000000023283,
+      "stallsOver50ms": 4,
+      "assets": 541,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 3556641,
+      "heap": 18200000,
+      "npcs": [
+        {
+          "id": "ellis",
+          "x": 41,
+          "z": 2,
+          "walking": false
+        },
+        {
+          "id": "mira",
+          "x": 64.6,
+          "z": -5,
+          "walking": false
+        },
+        {
+          "id": "seller",
+          "x": 23,
+          "z": 18,
+          "walking": false
+        },
+        {
+          "id": "nessa",
+          "x": 42,
+          "z": -338,
+          "walking": false
+        }
+      ],
+      "audio": {
+        "rms": 0.017738817688064266,
+        "musicRms": 0.04796968889111359,
+        "musicLooping": true,
+        "musicTime": 58.56943310657596,
+        "musicPosition": 58.56943310657596,
+        "gains": {
+          "master": 0.3499999940395355,
+          "music": 0.6988822817802429,
+          "ambience": 0.08749999850988388,
+          "sfx": 0.2199999988079071
+        },
+        "state": "running",
+        "track": "saltglass",
+        "target": "saltglass",
+        "status": "Music follows the coast",
+        "error": null,
+        "voices": 1,
+        "decodedTracks": 2,
+        "retryAfter": null,
+        "loopSeconds": 96,
+        "settings": {
+          "muted": false,
+          "volume": 0.35,
+          "music": 0.7,
+          "ambience": 0.35,
+          "sfx": 0.55,
+          "reducedMotion": false,
+          "instantText": false
+        }
+      },
+      "screenActors": [
+        {
+          "x": 326,
+          "y": 174,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 396,
+          "y": 430,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -1086,
+          "y": 1080,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -1222,
+          "y": 1076,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 278,
+          "y": 402,
+          "width": 32,
+          "height": 64
+        }
+      ],
+      "locomotion": {
+        "phase": "idle",
+        "speed": 0,
+        "distance": 365.2452007316469,
+        "direction": "n",
+        "velocity": [
+          0,
+          0
+        ]
+      },
+      "gangway": null,
+      "elevation": 28
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v2",
+      "wallet": 195,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "complete",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": true,
+        "outingVisitedSaltglass": true,
+        "outingComplete": false,
+        "homeSeen": false,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": -2.050543531806718,
+        "z": -394.13403335682614,
+        "heading": -0.48881364809750505,
+        "mode": "walk",
+        "island": "saltglass-bay"
+      },
+      "boat": {
+        "x": 63,
+        "z": -340,
+        "heading": 0,
+        "docked": "saltglass-bay"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-CEto77Ge.js"
+  },
+  "07-home-fund": {
+    "capturedAt": "2026-11-28T11:27:50.700Z",
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 19.400000000023283,
+      "p95": 23.099999999976717,
+      "stallsOver50ms": 6,
+      "assets": 541,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 3557241,
+      "heap": 18200000,
+      "npcs": [
+        {
+          "id": "ellis",
+          "x": 40,
+          "z": 1,
+          "walking": false
+        },
+        {
+          "id": "mira",
+          "x": 36.69105948690879,
+          "z": -12.676423794763517,
+          "walking": false
+        },
+        {
+          "id": "seller",
+          "x": 25,
+          "z": 18,
+          "walking": false
+        },
+        {
+          "id": "nessa",
+          "x": 43,
+          "z": -339,
+          "walking": false
+        }
+      ],
+      "audio": {
+        "rms": 0.010584056832862631,
+        "musicRms": 0.029817035645702813,
+        "musicLooping": true,
+        "musicTime": 36.19120181405896,
+        "musicPosition": 36.19120181405896,
+        "gains": {
+          "master": 0.3499999940395355,
+          "music": 0.448625773191452,
+          "ambience": 0.08749999850988388,
+          "sfx": 0.2199999988079071
+        },
+        "state": "running",
+        "track": "havenport",
+        "target": "havenport",
+        "status": "Music follows the coast",
+        "error": null,
+        "voices": 1,
+        "decodedTracks": 2,
+        "retryAfter": null,
+        "loopSeconds": 96,
+        "settings": {
+          "muted": false,
+          "volume": 0.35,
+          "music": 0.7,
+          "ambience": 0.35,
+          "sfx": 0.55,
+          "reducedMotion": false,
+          "instantText": false
+        }
+      },
+      "screenActors": [
+        {
+          "x": 323,
+          "y": 174,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 107,
+          "y": 366,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 148,
+          "y": 332,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -21,
+          "y": 370,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 1479,
+          "y": -308,
+          "width": 32,
+          "height": 64
+        }
+      ],
+      "locomotion": {
+        "phase": "idle",
+        "speed": 0,
+        "distance": 819.133823606452,
+        "direction": "w",
+        "velocity": [
+          0,
+          0
+        ]
+      },
+      "gangway": null,
+      "elevation": 0
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v2",
+      "wallet": 195,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "complete",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": false,
+        "outingVisitedSaltglass": true,
+        "outingComplete": true,
+        "homeSeen": true,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 19.028024716381303,
+        "z": -73.9427011327303,
+        "heading": -2.356194490192377,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": 0,
+        "heading": 0,
+        "docked": "havenport"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-CEto77Ge.js"
+  },
+  "08-journal": {
+    "capturedAt": "2026-11-28T11:27:51.441Z",
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 1200,
+      "sampleKind": "raw render callback interval",
+      "p50": 19.20000000006985,
+      "p95": 23,
+      "stallsOver50ms": 6,
+      "assets": 541,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 3557241,
+      "heap": 18200000,
+      "npcs": [
+        {
+          "id": "ellis",
+          "x": 40,
+          "z": 1,
+          "walking": false
+        },
+        {
+          "id": "mira",
+          "x": 36.62212009261056,
+          "z": -12.648848037044223,
+          "walking": false
+        },
+        {
+          "id": "seller",
+          "x": 25,
+          "z": 18,
+          "walking": false
+        },
+        {
+          "id": "nessa",
+          "x": 43,
+          "z": -339,
+          "walking": false
+        }
+      ],
+      "audio": {
+        "rms": 0.011900941913940824,
+        "musicRms": 0.03371840966519217,
+        "musicLooping": true,
+        "musicTime": 36.93133786848074,
+        "musicPosition": 36.93133786848074,
+        "gains": {
+          "master": 0.3499999940395355,
+          "music": 0.44830799102783203,
+          "ambience": 0.08749999850988388,
+          "sfx": 0.2199999988079071
+        },
+        "state": "running",
+        "track": "havenport",
+        "target": "havenport",
+        "status": "Music follows the coast",
+        "error": null,
+        "voices": 1,
+        "decodedTracks": 2,
+        "retryAfter": null,
+        "loopSeconds": 96,
+        "settings": {
+          "muted": false,
+          "volume": 0.35,
+          "music": 0.7,
+          "ambience": 0.35,
+          "sfx": 0.55,
+          "reducedMotion": false,
+          "instantText": false
+        }
+      },
+      "screenActors": [
+        {
+          "x": 323,
+          "y": 174,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 107,
+          "y": 366,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 148,
+          "y": 332,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -21,
+          "y": 370,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 1479,
+          "y": -308,
+          "width": 32,
+          "height": 64
+        }
+      ],
+      "locomotion": {
+        "phase": "idle",
+        "speed": 0,
+        "distance": 819.133823606452,
+        "direction": "w",
+        "velocity": [
+          0,
+          0
+        ]
+      },
+      "gangway": null,
+      "elevation": 0
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v2",
+      "wallet": 195,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "complete",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": false,
+        "outingVisitedSaltglass": true,
+        "outingComplete": true,
+        "homeSeen": true,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 19.028024716381303,
+        "z": -73.9427011327303,
+        "heading": -2.356194490192377,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": 0,
+        "heading": 0,
+        "docked": "havenport"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-CEto77Ge.js"
+  },
+  "09-credits": {
+    "capturedAt": "2026-11-28T11:27:53.960Z",
+    "metrics": {
+      "renderer": "WebGL",
+      "frames": 81,
+      "sampleKind": "raw render callback interval",
+      "p50": 18.300000000046566,
+      "p95": 29.900000000023283,
+      "stallsOver50ms": 1,
+      "assets": 541,
+      "viewport": [
+        640,
+        360
+      ],
+      "scene": "first-voyage",
+      "zoom": 1,
+      "companionReady": true,
+      "loadBytes": 1800,
+      "heap": 18200000,
+      "npcs": [
+        {
+          "id": "ellis",
+          "x": 44,
+          "z": 3,
+          "walking": false
+        },
+        {
+          "id": "mira",
+          "x": 35,
+          "z": -12,
+          "walking": false
+        },
+        {
+          "id": "seller",
+          "x": 25,
+          "z": 18,
+          "walking": false
+        },
+        {
+          "id": "nessa",
+          "x": 44,
+          "z": -337,
+          "walking": false
+        }
+      ],
+      "audio": {
+        "rms": 0.005023559217832427,
+        "musicRms": 0.015141456543968762,
+        "musicLooping": true,
+        "musicTime": 0.8881632653061224,
+        "musicPosition": 0.8881632653061224,
+        "gains": {
+          "master": 0.3499999940395355,
+          "music": 0.4480000138282776,
+          "ambience": 0.08749999850988388,
+          "sfx": 0.2199999988079071
+        },
+        "state": "running",
+        "track": "havenport",
+        "target": "havenport",
+        "status": "Music follows the coast",
+        "error": null,
+        "voices": 1,
+        "decodedTracks": 1,
+        "retryAfter": null,
+        "loopSeconds": 96,
+        "settings": {
+          "muted": false,
+          "volume": 0.35,
+          "music": 0.7,
+          "ambience": 0.35,
+          "sfx": 0.55,
+          "reducedMotion": false,
+          "instantText": false
+        }
+      },
+      "screenActors": [
+        {
+          "x": 332,
+          "y": 191,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 124,
+          "y": 395,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 148,
+          "y": 347,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": -12,
+          "y": 387,
+          "width": 32,
+          "height": 64
+        },
+        {
+          "x": 1484,
+          "y": -285,
+          "width": 32,
+          "height": 64
+        }
+      ],
+      "locomotion": {
+        "phase": "idle",
+        "speed": 0,
+        "distance": 0,
+        "direction": "s",
+        "velocity": [
+          0,
+          0
+        ]
+      },
+      "gangway": null,
+      "elevation": 0
+    },
+    "state": {
+      "schemaVersion": 2,
+      "worldVersion": "pixel-first-voyage-v2",
+      "wallet": 195,
+      "inventory": {
+        "sardine": 0,
+        "bream": 0
+      },
+      "delivery": "complete",
+      "discoveries": [
+        "havenport",
+        "saltglass-bay"
+      ],
+      "story": {
+        "metMira": true,
+        "outingInvited": false,
+        "outingVisitedSaltglass": true,
+        "outingComplete": true,
+        "homeSeen": true,
+        "prologueSeen": true
+      },
+      "player": {
+        "x": 19.028024716381303,
+        "z": -73.9427011327303,
+        "heading": -2.356194490192377,
+        "mode": "walk",
+        "island": "havenport"
+      },
+      "boat": {
+        "x": 63,
+        "z": 0,
+        "heading": 0,
+        "docked": "havenport"
+      },
+      "settings": {
+        "muted": false,
+        "volume": 0.35,
+        "music": 0.7,
+        "ambience": 0.35,
+        "sfx": 0.55,
+        "reducedMotion": false,
+        "instantText": false
+      }
+    },
+    "bundle": "/thehousebythesea/assets/index-CEto77Ge.js"
+  }
+}

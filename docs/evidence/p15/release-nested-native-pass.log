@@ -1,0 +1,22 @@
+
+Running 1 test using 1 worker
+
+(node:50404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:50404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+{
+  hud: { coverage: [33m0.048521715799967446[39m, app: { width: [33m1280[39m, height: [33m720[39m } },
+  expressions: [
+    [32m'mira · neutral'[39m,
+    [32m'rowan · happy'[39m,
+    [32m'mira · thoughtful'[39m,
+    [32m'mira · thoughtful'[39m,
+    [32m'mira · happy'[39m,
+    [32m'mira · happy'[39m
+  ],
+  errors: []
+}
+  ✓  1 tools/capture-p15-final.spec.ts:6:1 › final viewport, prompt and expressive dialogue recording (40.0s)
+
+  1 passed (45.7s)

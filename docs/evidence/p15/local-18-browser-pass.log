@@ -1,0 +1,44 @@
+
+> thehousebythesea-pixel@0.2.0 test:e2e
+> playwright test --output=test-results/p15-release
+
+[WebServer] (node:49409) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 18 tests using 1 worker
+
+(node:49411) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49411) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Warm-cache upgrade retained 195 coins and loaded 541 coherent frames; canonical cache still280.
+  ✓   1 tests/browser/cache.spec.ts:7:1 › returning P1 player keeps real progress while a warm old art cache upgrades coherently (6.5s)
+  ✓   2 tests/browser/polish.spec.ts:51:3 › historical world-v1 walk migration preserves progress and first-only backup (1.9s)
+  ✓   3 tests/browser/polish.spec.ts:51:3 › historical world-v1 midsea migration preserves progress and first-only backup (1.9s)
+  ✓   4 tests/browser/polish.spec.ts:51:3 › historical world-v1 saltglass migration preserves progress and first-only backup (1.8s)
+  ✓   5 tests/browser/polish.spec.ts:51:3 › historical world-v1 complete migration preserves progress and first-only backup (1.8s)
+  ✓   6 tests/browser/polish.spec.ts:111:1 › missing music retries are bounded and surfaced while gameplay and ambience survive (3.5s)
+  ✓   7 tests/browser/polish.spec.ts:131:1 › mixer, continuous96s loop, ducking and two-state crossfade are real browser audio (1.8m)
+  ✓   8 tests/browser/polish.spec.ts:197:1 › portraits, release-debounced dialogue, raised walking and compact responsive HUD (35.5s)
+  ✓   9 tests/browser/polish.spec.ts:307:1 › actual IndexedDBv1 upgrade retains snapshots and failed migration write rolls back backup too (737ms)
+  ✓  10 tests/browser/polish.spec.ts:366:1 › safe pier step cannot replay E or fishing and recovery clears transient motion (5.7s)
+  ✓  11 tests/browser/resilience.spec.ts:49:1 › title credits return, native keyboard menus, settings, picking and laptop layout (3.5s)
+  ✓  12 tests/browser/resilience.spec.ts:170:3 › future snapshot survives temporary play, recovery and autosave (11.9s)
+  ✓  13 tests/browser/resilience.spec.ts:170:3 › corrupt snapshot survives temporary play, recovery and autosave (11.8s)
+  ✓  14 tests/browser/resilience.spec.ts:186:1 › missing and stalled art are bounded, input-locked and recover through retry (13.7s)
+  ✓  15 tests/browser/resilience.spec.ts:221:1 › malformed metadata and a missing required animated frame show an honest retry state (793ms)
+  ✓  16 tests/browser/resilience.spec.ts:282:1 › explicit legacy import copies progress to a safe pixel dock and preserves its source (646ms)
+  ✓  17 tests/browser/resilience.spec.ts:319:1 › a failed import write says temporary and never reports durable success (598ms)
+Checkpoint 01-havenport
+Checkpoint 02-mira-dialogue
+Checkpoint 03-sailing
+Checkpoint 04-docking
+Checkpoint 05-fishing
+Checkpoint 06-saltglass
+Checkpoint 06b-saltglass-vista
+Checkpoint 07-home-fund
+Checkpoint 08-journal
+Checkpoint 09-credits
+  ✓  18 tests/browser/voyage.spec.ts:6:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return (3.4m)
+
+  18 passed (7.0m)

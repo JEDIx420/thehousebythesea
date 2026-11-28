@@ -1,0 +1,20 @@
+
+> thehousebythesea-pixel@0.2.0 test:e2e
+> playwright test --grep returning P1 player|missing music|missing and stalled art|malformed metadata --output=test-results/p15-cache-after
+
+[WebServer] (node:49093) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:49100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Warm-cache upgrade retained 195 coins and loaded 541 coherent frames; canonical cache still280.
+  ✓  1 tests/browser/cache.spec.ts:7:1 › returning P1 player keeps real progress while a warm old art cache upgrades coherently (6.2s)
+  ✓  2 tests/browser/polish.spec.ts:111:1 › missing music retries are bounded and surfaced while gameplay and ambience survive (3.5s)
+  ✓  3 tests/browser/resilience.spec.ts:186:1 › missing and stalled art are bounded, input-locked and recover through retry (13.7s)
+  ✓  4 tests/browser/resilience.spec.ts:221:1 › malformed metadata and a missing required animated frame show an honest retry state (794ms)
+
+  4 passed (25.5s)

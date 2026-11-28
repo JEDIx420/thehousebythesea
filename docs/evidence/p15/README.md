@@ -48,6 +48,16 @@ Both plateaus and all interaction targets are connected from the pier; all paint
 
 Independent batches≤5 files/coherent systems: [world/controller/UI](../../review-p15-world.md), [state/audio/tests](../../review-p15-state.md), [art/actual screenshots](../../review-p15-art.md). Fixed findings include version coercion, atomic first-only backup, preserve valid Saltglass position, true DB1 upgrade coverage, audio timeout/retry/source ownership, happy/blink duplicates, idle facing, Mira boarding distance, valid pier endpoint/replay/recovery/fresh throttle, NPC-overlapping prompt and chart autofocus clipping. Subjective art/music/game feel stays the creator's gate.
 
+## Final release regression and hosted diagnosis
+
+[All18 local cases PASS](local-18-browser-pass.log),7.0min, include the new real warm-cache/save upgrade plus every original scenario. [Final195-wallet raw checkpoint states](release-local/gameplay-metrics.json) and [home-fund screenshot](release-local/07-home-fund195.png) retain the full two-fish/job/outing result.
+
+Hosted303 baseline: [PR success proof](hosted/303e1d8-pr-proof.json),60units/17cases9.8min; the separate push runner timed out the portrait/hill test at120s while its other16 cases/fullvoyage passed. It did not deploy. The old failing artifact491MB and Playwright's pinned source exposed continuous trace JPEG capture despite video being off. CI tracing now retains DOM/action/network/source diagnostics with explicit failure/checkpoint PNGs, while disabling continuous screencast screenshots; assertions and budgets are unchanged. [Actual retained diagnostic trace summary](trace-without-screencast.json), [selected regression PASS](trace-profile-pass.log):1.52MB,0JPEG,3510 DOM snapshots and3910 actions. This is a diagnostic policy change, not a claim of local speedup. Final hosted18-case verification remains a release gate.
+
+## Returning-player cache regression
+
+Actual Pages art/metadata headers have600s freshness. [Before-fix failure](cache-before-failure.log) and [actual error screenshot](cache-before-failure.png) reproduce a warm cached P1 atlas/metadata breaking the new loader. [Four targeted cache/fault cases PASS](cache-upgrade-pass.log) after a shared content-derived resource revision. The real HTTP fixture keeps old canonical metadata280 while loading coherent current541 frames; completed v1 save195 coins/story, walking, recovery and Mira portrait survive. No Playwright routing disables this cache. The18th case passes in the final [full local18 run](local-18-browser-pass.log); hosted verification remains separately gated. [Latest versioned nested4 cases](release-nested-browser-pass.log) and [native layout/audio/network smoke](release-nested-native-pass.log) also PASS; [current nested proof](release-nested/final-smoke.json). Vite's normal JS/CSS fingerprinting and Pages architecture remain intact.
+
 ## Reproduce
 
 ```sh

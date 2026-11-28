@@ -1,0 +1,80 @@
+{
+  "commit": "303e1d86723316d8da38c64d53e62a1fbf9017a2",
+  "run": 46139119871,
+  "url": "https://github.com/JEDIx420/thehousebythesea/actions/runs/46139119871",
+  "conclusion": "success",
+  "deploy": "skipped (PR)",
+  "units": 60,
+  "browserCases": 17,
+  "browserDuration": "9.8m",
+  "fullRouteDuration": "5.0m",
+  "artifact": {
+    "id": 15261402448,
+    "bytes": 2561210,
+    "name": "pixel-browser-evidence-46139119871",
+    "downloadedAndInspected": true,
+    "files": [
+      {
+        "file": "playwright-report/index.html",
+        "bytes": 705360,
+        "sha256": "ab26b3ef81e32bc2c5c85483671cdb06940f20864488631893b5dc052762162c"
+      },
+      {
+        "file": "test-results/checkpoints/08-journal.png",
+        "bytes": 234239,
+        "sha256": "0a6b310765d60223b78d8b04dc88845e6b94eefc3bf88862ad659870091eb024"
+      },
+      {
+        "file": "test-results/checkpoints/02-mira-dialogue.png",
+        "bytes": 225071,
+        "sha256": "7a4c6481c7bf2ddab1cda678f0ae81d6c2b147707e37d7387f86be07b2d1f01b"
+      },
+      {
+        "file": "test-results/checkpoints/01-havenport.png",
+        "bytes": 244014,
+        "sha256": "f2fb2f2a7d75708481f72c77ed9970aa605fa944654fe134b5e531463c610067"
+      },
+      {
+        "file": "test-results/checkpoints/03-sailing.png",
+        "bytes": 192070,
+        "sha256": "6e4fc7a4fa956e0181439588395a88899270a7729a52f3a4378f8a2206b5e5a1"
+      },
+      {
+        "file": "test-results/checkpoints/06b-saltglass-vista.png",
+        "bytes": 209717,
+        "sha256": "7269e21ef3b3f8b514cb4803374b2520a85aedc0d7866beeb54dbdb411d3b800"
+      },
+      {
+        "file": "test-results/checkpoints/06-saltglass.png",
+        "bytes": 203839,
+        "sha256": "d4a768fc040830dd5f4a37c3125b41e1a16cae81db63838466d32cc9fb826007"
+      },
+      {
+        "file": "test-results/checkpoints/04-docking.png",
+        "bytes": 230255,
+        "sha256": "ac84d41f216387d44d44cbabd25a8fbef157d8eb5761e75980a1a030a8735087"
+      },
+      {
+        "file": "test-results/checkpoints/05-fishing.png",
+        "bytes": 231802,
+        "sha256": "58ecf8ba10919e72ea679a8d119fc0bedb8a7fb3ddec61b2a0089c42921777cf"
+      },
+      {
+        "file": "test-results/checkpoints/07-home-fund.png",
+        "bytes": 229287,
+        "sha256": "1740e5b3968789f0a18b72b292686d8d909fa0048b765e921a8f3f8dbadc73ec"
+      },
+      {
+        "file": "test-results/checkpoints/gameplay-metrics.json",
+        "bytes": 37261,
+        "sha256": "6d487697e24521d106e61e34583dba46a16a81b22dd9c78703372ff844c14eb5"
+      },
+      {
+        "file": "test-results/checkpoints/09-credits.png",
+        "bytes": 268327,
+        "sha256": "c212471019ab80158f1941ecca3aa5e6e0d887a5eb967507b50867c0123c4fae"
+      }
+    ]
+  },
+  "scope": "Historical303 implementation; later returning-cache fix/18th case not covered. No final readiness claim."
+}

@@ -1,0 +1,45 @@
+
+> thehousebythesea-pixel@0.2.0 test:e2e
+> playwright test --grep returning P1 player --output=test-results/p15-cache-before
+
+[WebServer] (node:48936) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:48938) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48938) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/browser/cache.spec.ts:7:1 › returning P1 player keeps real progress while a warm old art cache upgrades coherently (8.6s)
+
+
+  1) tests/browser/cache.spec.ts:7:1 › returning P1 player keeps real progress while a warm old art cache upgrades coherently 
+
+    TimeoutError: page.waitForFunction: Timeout 8000ms exceeded.
+
+      121 |     ).toBe(1);
+      122 |     await page.goto(base);
+    > 123 |     await page.waitForFunction(() => Boolean((window as any).voyage), null, {
+          |                ^
+      124 |       timeout: 8000,
+      125 |     });
+      126 |     await begin(page);
+        at /Users/vincyvincent/3dfun/thehousebythesea-pixel/tests/browser/cache.spec.ts:123:16
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/p15-cache-before/cache-returning-P1-player--f07c7-t-cache-upgrades-coherently/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/p15-cache-before/cache-returning-P1-player--f07c7-t-cache-upgrades-coherently/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/p15-cache-before/cache-returning-P1-player--f07c7-t-cache-upgrades-coherently/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/p15-cache-before/cache-returning-P1-player--f07c7-t-cache-upgrades-coherently/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/browser/cache.spec.ts:7:1 › returning P1 player keeps real progress while a warm old art cache upgrades coherently 
