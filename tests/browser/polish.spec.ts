@@ -234,7 +234,11 @@ test("portraits, release-debounced dialogue, raised walking and compact responsi
   await npc(page, "ellis");
   await page.keyboard.press("e");
   await page.keyboard.down("Enter");
-  await page.waitForTimeout(350);
+  for (let n = 0; n < 8; n++) {
+    await page.waitForTimeout(20);
+    await page.keyboard.down("Enter");
+  } // actual repeated keydowns while held
+  await page.waitForTimeout(190);
   await page.keyboard.up("Enter");
   expect((await state(page)).delivery).toBe("available");
   await choose(page, "Take the parcel · 120 coins");
@@ -271,6 +275,14 @@ test("portraits, release-debounced dialogue, raised walking and compact responsi
   const b = await page.locator("#dialogue").boundingBox();
   expect(b!.x).toBeGreaterThanOrEqual(0);
   expect(b!.x + b!.width).toBeLessThanOrEqual(1280);
+  await page.setViewportSize({ width: 840, height: 640 });
+  await expect(page.locator("#app")).toHaveAttribute("data-narrow", "true");
+  const nameBounds = await page.evaluate(() => ({
+    name: document.querySelector("#dialogue-name")!.getBoundingClientRect().y,
+    strip: document.querySelector(".dialogue-strip")!.getBoundingClientRect().y,
+  }));
+  expect(nameBounds.name).toBeGreaterThanOrEqual(nameBounds.strip);
+  await page.setViewportSize({ width: 1280, height: 720 });
   await page.keyboard.press("Escape");
   for (const [x, z] of [
     [32, -12],

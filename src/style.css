@@ -520,3 +520,5 @@ canvas:focus-visible {outline:1px solid #d6bd87;outline-offset:-1px}
 .panel[data-panel="chart"] .actions {margin-top:8px}
 
 .panel:focus-visible {outline:1px solid #d6bd87;outline-offset:1px}
+
+#app[data-narrow="true"] #dialogue h1 {position:static;display:table;margin:-2px 0 7px}
