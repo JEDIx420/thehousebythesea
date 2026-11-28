@@ -17,6 +17,10 @@ Current proof: [golden-v3](evidence/pixel/golden-v3.png), [raw metrics](evidence
 
 The older planning status below is retained as history. Its3D rendering direction is superseded by PR #6. Stop after the complete First Voyage for creator hands-on approval.
 
+### Domain checkpoint
+
+Golden sample is frozen at `aa6cc99` in [implementation PR #7](https://github.com/JEDIx420/thehousebythesea/pull/7), which targets the plan branch and keeps main untouched. Pure economy/story rules are ported from the prior implementation; pixel schema2 and a separate IndexedDB namespace prevent accidental legacy overwrites. Explicit legacy COPY migration resets only world positions. Independent five-file domain review and transaction-deadline follow-up pass. `npm test`:31 tests PASS, including fishing timing/terminal guards; typecheck PASS. These modules are not yet wired to the new full scene, so browser storage and complete voyage remain pending.
+
 ---
 
 **Last updated: 2026-11-27.** Planning playbook initialised in GitHub. **No game implementation, demo, automated tests or GitHub Pages deployment are claimed completed.**

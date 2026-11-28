@@ -57,3 +57,29 @@ Independently inspected the actual `docs/evidence/pixel/golden-v3.png`: the lamp
 Read v3 evidence JSON: bundle `index-BXS9RwYF.js`, Chromium 158.0.8127.37, WebGL, 199 assets, 107 **raw render-callback interval** samples, median 16.70 ms / p95 16.80 ms, zero intervals over 50 ms, empty recorded errors. This is implementer-captured evidence inspected by the reviewer; no duplicate GPU run performed. Earlier v1/v2 timing figures (including the reviewer short metrics readback) came from Phaser-smoothed update deltas and must not be interpreted as raw frame-time measurements or proof of absent stalls. V3 remains a short sample, not sustained performance evidence.
 
 All five reviewed asset-source SHA-256 values above remain unchanged at this final visual inspection. No implementation edits by reviewer.
+
+
+## Domain batch 2 — pure state / persistence / fishing
+
+Reviewed exactly `src/data/content.ts`, `src/state/game.ts`, `src/state/persistence.ts`, `src/state/game.test.ts`, `src/activities/fishing.ts` on the uncommitted working tree after the golden-sample foundation. **No P0/P1 found; PASS for pure API scope**, conditional on the integration obligations below. No scene/autosave/browser-storage implementation is claimed by this batch.
+
+Independently reproduced `npm test`: 28 PASS (24 domain/snapshot and 4 projection); strict typecheck PASS. Also ran a read-only transpiled fishing-module probe: species alternation, early reel miss, just-before/exact bite boundary, exact/after expiry boundary, caught terminal identity on reel/tick, negative/nonfinite delta and fresh cast all PASS (12 assertions). These fishing probes are reviewer evidence, not checked-in regression tests; automated fishing regression coverage should be added by the implementation owner.
+
+Economy payment and sale idempotence, invitation/travel/return flags, recovery and snapshot validation are covered. Current schema 2 explicitly identifies `pixel-first-voyage-v1`, uses a separate pixel database and rejects unsupported worlds. Legacy schema0/1 import clones progress then resets both player/boat to the appropriate pixel dock without paying rewards. Verified the original database/store/slot names against the previous implementation; legacy loading uses a readonly transaction and aborts creation if absent. Parsing clones object references; malformed delivery arrays, invalid numbers/settings, duplicated discoveries and unsupported schemas are rejected. IndexedDB reads resolve after transaction completion; writes likewise wait for completion, with abort/error rejection and database closure.
+
+Integration obligations: the caller must honour `loadGame().protected` and inhibit autosave until an explicit safe reset/import, because `saveGame` itself does not enforce that protection. The 5-second deadline bounds database opening only; read/write transactions after successful open have no deadline, so do not advertise a bounded total save/load operation. Add bounded transaction failure/retry handling if the integrated loading UI awaits these operations. Actual IndexedDB success/quota/blocked/abort/legacy-copy behavior and scene reward/fishing-session cancellation are **NOT TESTED in a browser** here. Domain actions assume trusted scene dispatch (island visit and fish award guards belong to that integration).
+
+Reviewed SHA-256:
+
+```text
+819fab1b115568f33690a82665ea2da600c9c8114a1b0466a9f49cfecf4c166a src/data/content.ts
+40a06958d03bc0f2275e7aaace045465ebca4ad29f3b1531a0f609ac6ba02c88 src/state/game.ts
+3eca8d93d27502bedf9c47c000356a7c2536b64930e635797c3c057c6750949d src/state/persistence.ts
+f8b8c86e9fb45de7b548b3710df6d5ff41fdb1ee46d3f7306f159480af988885 src/state/game.test.ts
+5c616704ecd68a22e935fe0acc02776c2f714442bcaab85081b140ee71e24456 src/activities/fishing.ts
+```
+
+
+### Domain follow-up — transaction bounds / fishing regressions
+
+Independently reread changed `src/state/persistence.ts` and new `src/activities/fishing.test.ts`; reran the suite: **31 PASS across 3 files**. Read/write transaction timers now abort after 5 seconds, settle once and ignore late completion; a late database upgrade after the open timeout is aborted. The earlier unbounded transaction observation is **CLOSED on source review**. Opening and transaction phases each have their own 5-second bound (not a single 5-second total operation). Added fishing regressions cover both species, precise bite/expiry boundaries, early/late retry, terminal idempotence and invalid delta handling. Automated fishing-coverage observation is **CLOSED**. Browser IndexedDB failure/success paths and protected-save scene integration remain NOT TESTED/pending; no application integration approval added.
