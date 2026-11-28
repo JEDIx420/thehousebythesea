@@ -188,6 +188,49 @@ export class View {
       "HAVENPORT · MANY SUMMERS AGO",
     );
   }
+  contextPosition(
+    x: number,
+    y: number,
+    avoid: { x: number; y: number; width: number; height: number }[] = [],
+  ) {
+    const node = this.root.querySelector<HTMLElement>("#context")!,
+      w = node.offsetWidth || 160,
+      h = node.offsetHeight || 22;
+    const logicalWidth = this.root.clientWidth,
+      logicalHeight = this.root.clientHeight;
+    // Find a nearby clear slot; never lay an interaction label over another face.
+    const candidates = [
+      [0, 0],
+      [-110, 0],
+      [110, 0],
+      [0, -40],
+      [-110, 45],
+      [110, 45],
+      [0, 110],
+    ].map(([dx, dy]) => ({
+      x: Math.max(w / 2 + 8, Math.min(logicalWidth - w / 2 - 8, x + dx)),
+      y: Math.max(h + 8, Math.min(logicalHeight - 38, y + dy)),
+    }));
+    const overlap = (p: { x: number; y: number }) =>
+      avoid.reduce(
+        (sum, b) =>
+          sum +
+          Math.max(
+            0,
+            Math.min(p.x + w / 2, b.x + b.width) - Math.max(p.x - w / 2, b.x),
+          ) *
+            Math.max(0, Math.min(p.y, b.y + b.height) - Math.max(p.y - h, b.y)),
+        0,
+      );
+    const point = candidates.reduce((best, p) =>
+      overlap(p) < overlap(best) ? p : best,
+    );
+    node.style.left = `${point.x}px`;
+    node.style.top = `${point.y}px`;
+  }
+  arrive() {
+    this.lastPlace = "";
+  }
   audioStatus(message: string) {
     const e = this.root.querySelector("#audio-status");
     if (e) e.textContent = message;
@@ -285,22 +328,29 @@ export class View {
     );
   }
   chart(s: GameState) {
-    const scale = 0.23,
-      ox = 70,
-      oy = 180,
+    const points = MAPS.flatMap((m) =>
+        m.shore.map(([x, z]) => project(x, z + m.offsetZ)),
+      ),
+      minX = Math.min(...points.map((p) => p.x)),
+      maxX = Math.max(...points.map((p) => p.x)),
+      minY = Math.min(...points.map((p) => p.y)),
+      maxY = Math.max(...points.map((p) => p.y)),
+      scale = Math.min(370 / (maxX - minX), 220 / (maxY - minY)),
       draw = (x: number, z: number) => {
         const p = project(x, z);
-        return [ox + p.x * scale, oy + p.y * scale];
+        return [25 + (p.x - minX) * scale, 25 + (p.y - minY) * scale];
       };
     const land = MAPS.map((m) => {
-      const p = draw(0, m.offsetZ);
-      return `<polygon points="${m.shore.map(([x, z]) => draw(x, z + m.offsetZ).join(",")).join(" ")}" fill="${m.id === "havenport" ? "#93a16b" : "#b2aa8d"}" stroke="#e8d7a7" stroke-width="1"/><text x="${p[0]}" y="${p[1] - 38}">${m.name}</text>`;
-    }).join("");
-    const p = draw(s.player.x, s.player.z);
+        const label = draw(-20, m.offsetZ + 45);
+        return `<polygon points="${m.shore.map(([x, z]) => draw(x, z + m.offsetZ).join(",")).join(" ")}" fill="${m.id === "havenport" ? "#93a16b" : "#b2aa8d"}" stroke="#e8d7a7" stroke-width="1"/>${m.levels.map((l) => `<polygon points="${l.polygon.map(([x, z]) => draw(x, z + m.offsetZ).join(",")).join(" ")}" fill="#526c52" stroke="#d6ac66" stroke-width=".6"/>`).join("")}${m.paths.map((path) => `<polyline points="${path.map(([x, z]) => draw(x, z + m.offsetZ).join(",")).join(" ")}" fill="none" stroke="#e8d7a7" stroke-width=".5"/>`).join("")}<text x="${label[0]}" y="${label[1]}">${m.name}</text>`;
+      }).join(""),
+      p = draw(s.player.x, s.player.z),
+      from = draw(MAPS[0].dock.x, MAPS[0].dock.z),
+      to = draw(MAPS[1].dock.x, MAPS[1].dock.z + MAPS[1].offsetZ);
     this.show(
       "chart",
       "The Saltglass channel",
-      `<svg class="chart" viewBox="0 0 340 235" role="img" aria-label="Chart showing Havenport to the southwest, Saltglass to the northeast and your location"><path d="M125 205 Q235 165 310 110" fill="none" stroke="#78a3a5" stroke-dasharray="3 4"/>${land}<circle cx="${p[0]}" cy="${p[1]}" r="3" fill="#f1e1b4" stroke="#b96d58" stroke-width="2"/><text x="35" y="18">N</text><path d="M10 35 L34 23 M27 24 L34 23 L31 29" stroke="#a1d4c4" fill="none"/></svg><p>Saltglass is north along the channel. Its pier is on the east shore. Approach slowly, then E to tie up and step ashore.</p><p class="minor">Discovered: ${s.discoveries.map((id) => (id === "havenport" ? "Havenport" : "Saltglass Bay")).join(" · ")}. R returns you and your boat to the last harbour.</p>`,
+      `<svg class="chart" viewBox="0 0 420 280" role="img" aria-label="Chart showing Havenport to the southwest, Saltglass to the northeast and your location"><path d="M${from[0]} ${from[1]} L${to[0]} ${to[1]}" fill="none" stroke="#78a3a5" stroke-dasharray="3 4"/>${land}<circle cx="${p[0]}" cy="${p[1]}" r="3" fill="#f1e1b4" stroke="#b96d58" stroke-width="2"/><text x="35" y="18">N</text><path d="M10 35 L34 23 M27 24 L34 23 L31 29" stroke="#a1d4c4" fill="none"/></svg><p>Saltglass is north along the channel. Its pier is on the east shore. Approach slowly, then E to tie up and step ashore.</p><p class="minor">Discovered: ${s.discoveries.map((id) => (id === "havenport" ? "Havenport" : "Saltglass Bay")).join(" · ")}. R returns you and your boat to the last harbour.</p>`,
       this.button("Fold the chart", "close"),
     );
   }
@@ -357,6 +407,7 @@ export class View {
         context && actionable
           ? `<button data-action="interact" ${actionable ? "" : "disabled"}><kbd>${actionable ? "E" : "W"}</kbd> ${escapeHTML(context)}</button>`
           : "";
+    e.hidden = this.open || !html;
     if (e.innerHTML !== html) e.innerHTML = html;
   }
   fishing(state: FishingState) {

@@ -4,12 +4,23 @@ export type Track = "havenport" | "sailing" | "saltglass";
 /** Own original score + procedural ambience/SFX, mixed through one master. */
 export class Ambience {
   private context?: AudioContext;
+  private analyser?: AnalyserNode;
+  private musicMeter?: AnalyserNode;
+  private musicSamples = new Float32Array(1024);
+  private samples = new Float32Array(1024);
+  private startedAt = 0;
+  private ambientFilter?: BiquadFilterNode;
+  private nextBird = 12;
   private master?: GainNode;
   private music?: GainNode;
   private ambient?: GainNode;
   private effects?: GainNode;
   private surf?: AudioBufferSourceNode;
-  private voices: { source: AudioBufferSourceNode; gain: GainNode; stopAt?:number }[] = [];
+  private voices: {
+    source: AudioBufferSourceNode;
+    gain: GainNode;
+    stopAt?: number;
+  }[] = [];
   private failedUntil = new Map<Track, number>();
   private buffers = new Map<Track, AudioBuffer>();
   private pending = new Map<Track, Promise<AudioBuffer>>();
@@ -34,10 +45,16 @@ export class Ambience {
       this.music = ctx.createGain();
       this.ambient = ctx.createGain();
       this.effects = ctx.createGain();
-      this.music.connect(this.master);
+      this.musicMeter = ctx.createAnalyser();
+      this.musicMeter.fftSize = 1024;
+      this.music.connect(this.musicMeter);
+      this.musicMeter.connect(this.master);
       this.ambient.connect(this.master);
       this.effects.connect(this.master);
-      this.master.connect(ctx.destination);
+      this.analyser = ctx.createAnalyser();
+      this.analyser.fftSize = 1024;
+      this.master.connect(this.analyser);
+      this.analyser.connect(ctx.destination);
       const buffer = ctx.createBuffer(1, ctx.sampleRate * 8, ctx.sampleRate),
         data = buffer.getChannelData(0);
       let previous = 0,
@@ -54,7 +71,7 @@ export class Ambience {
           (0.65 + 0.35 * Math.sin((i / data.length) * Math.PI * 2));
       }
       const source = (this.surf = ctx.createBufferSource()),
-        filter = ctx.createBiquadFilter();
+        filter = (this.ambientFilter = ctx.createBiquadFilter());
       source.buffer = buffer;
       source.loop = true;
       filter.type = "lowpass";
@@ -83,11 +100,50 @@ export class Ambience {
     this.settings.volume = volume;
     this.apply();
   }
-  update(settings: Settings, track: Track, duck: boolean) {
+  update(settings: Settings, track: Track, duck: boolean, district = "") {
     this.settings = { ...settings };
     this.duck = duck;
     this.target = track;
     this.apply();
+    if (this.context && this.ambientFilter) {
+      this.ambientFilter.frequency.setTargetAtTime(
+        district.includes("meadow") || district.includes("cliffs")
+          ? 1100
+          : district.includes("square")
+            ? 500
+            : district.includes("garden")
+              ? 720
+              : track === "sailing"
+                ? 400
+                : track === "saltglass"
+                  ? 850
+                  : 600,
+        this.context.currentTime,
+        0.8,
+      );
+      if (this.context.currentTime > this.nextBird) {
+        this.nextBird =
+          this.context.currentTime +
+          (district.includes("garden") || district.includes("meadow")
+            ? 11
+            : track === "sailing"
+              ? 23
+              : 17);
+        const o = this.context.createOscillator(),
+          g = this.context.createGain(),
+          at = this.context.currentTime;
+        o.type = "sine";
+        o.frequency.setValueAtTime(1200, at);
+        o.frequency.linearRampToValueAtTime(1850, at + 0.08);
+        o.frequency.linearRampToValueAtTime(1380, at + 0.19);
+        g.gain.setValueAtTime(0.0001, at);
+        g.gain.linearRampToValueAtTime(0.045, at + 0.03);
+        g.gain.exponentialRampToValueAtTime(0.0001, at + 0.22);
+        o.connect(g).connect(this.ambient!);
+        o.start();
+        o.stop(at + 0.24);
+      }
+    }
     if (this.context && this.active !== track) void this.switchTrack(track);
   }
   private apply() {
@@ -176,8 +232,12 @@ export class Ambience {
         voice.gain.gain.setValueAtTime(voice.gain.gain.value, now);
         const fade =
           this.voices.indexOf(voice) < this.voices.length - 1 ? 0.025 : 2;
-        const stopAt=Math.min(voice.stopAt??Infinity,now+fade+.01);voice.stopAt=stopAt;
-        voice.gain.gain.linearRampToValueAtTime(0, Math.max(now,stopAt-.01));
+        const stopAt = Math.min(voice.stopAt ?? Infinity, now + fade + 0.01);
+        voice.stopAt = stopAt;
+        voice.gain.gain.linearRampToValueAtTime(
+          0,
+          Math.max(now, stopAt - 0.01),
+        );
         try {
           voice.source.stop(stopAt);
         } catch {}
@@ -190,6 +250,7 @@ export class Ambience {
         this.voices = this.voices.filter((v) => v !== voice);
       };
       this.active = track;
+      this.startedAt = now;
       this.status = "Music follows the coast";
       this.error = null;
       this.failedUntil.delete(track);
@@ -250,7 +311,30 @@ export class Ambience {
     else tone(523.25, 0, 0.12, 0.07);
   }
   metrics() {
+    if (this.analyser) this.analyser.getFloatTimeDomainData(this.samples);
+    if (this.musicMeter)
+      this.musicMeter.getFloatTimeDomainData(this.musicSamples);
+    const rms = Math.sqrt(
+        this.samples.reduce((n, v) => n + v * v, 0) / this.samples.length,
+      ),
+      time = this.context ? this.context.currentTime - this.startedAt : 0;
     return {
+      rms,
+      musicRms: Math.sqrt(
+        this.musicSamples.reduce((n, v) => n + v * v, 0) /
+          this.musicSamples.length,
+      ),
+      musicLooping: this.voices.some((v) => v.source.loop),
+      musicTime: time,
+      musicPosition: this.active
+        ? time % (this.buffers.get(this.active)?.duration ?? 96)
+        : 0,
+      gains: {
+        master: this.master?.gain.value,
+        music: this.music?.gain.value,
+        ambience: this.ambient?.gain.value,
+        sfx: this.effects?.gain.value,
+      },
       state: this.context?.state ?? "not-started",
       track: this.active ?? null,
       target: this.target,

@@ -11,7 +11,9 @@
     "test": "vitest run",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "music:build": "node tools/generate-music.mjs --all",
+    "music:check": "node tools/check-music.mjs"
   },
   "dependencies": {
     "phaser": "3.90.0"

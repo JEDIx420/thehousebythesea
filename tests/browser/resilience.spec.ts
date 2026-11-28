@@ -5,7 +5,7 @@ async function put(page: Page, database: string, value: unknown) {
   await page.evaluate(
     ({ database, value }) =>
       new Promise<void>((resolve, reject) => {
-        const r = indexedDB.open(database, 1);
+        const r = indexedDB.open(database);
         r.onupgradeneeded = () => r.result.createObjectStore("snapshots");
         r.onerror = () => reject(r.error);
         r.onsuccess = () => {
@@ -26,7 +26,7 @@ async function read(page: Page, database: string) {
   return page.evaluate(
     (database) =>
       new Promise<unknown>((resolve, reject) => {
-        const r = indexedDB.open(database, 1);
+        const r = indexedDB.open(database);
         r.onerror = () => reject(r.error);
         r.onsuccess = () => {
           const db = r.result,
@@ -86,7 +86,7 @@ test("title credits return, native keyboard menus, settings, picking and laptop 
     .getByRole("checkbox", { name: "Reduced decorative motion", exact: true })
     .check();
   await page
-    .getByRole("slider", { name: "Sea and harbour volume", exact: true })
+    .getByRole("slider", { name: "Master volume", exact: true })
     .focus();
   await page.keyboard.press("Home");
   await page.keyboard.press("ArrowRight");
@@ -94,6 +94,10 @@ test("title credits return, native keyboard menus, settings, picking and laptop 
     muted: true,
     volume: 0.05,
     reducedMotion: true,
+    music: 0.7,
+    ambience: 0.35,
+    sfx: 0.55,
+    instantText: false,
   });
   await page.setViewportSize({ width: 1024, height: 720 });
   const bounds = await page.locator("#panel").boundingBox();
@@ -122,8 +126,18 @@ test("title credits return, native keyboard menus, settings, picking and laptop 
   expect((await state(page)).player.mode).toBe("boat");
   await page.waitForTimeout(150);
   expect((await state(page)).player.mode).toBe("boat");
+  await expect
+    .poll(() =>
+      page.evaluate(() => (window as any).voyage.getMetrics().gangway),
+    )
+    .toBeNull();
   await page.keyboard.press("e");
   expect((await state(page)).player.mode).toBe("walk");
+  await expect
+    .poll(() =>
+      page.evaluate(() => (window as any).voyage.getMetrics().gangway),
+    )
+    .toBeNull();
   await page.keyboard.press("e");
   expect((await state(page)).player.mode).toBe("boat");
   await page.keyboard.press("r");
@@ -274,14 +288,14 @@ test("explicit legacy import copies progress to a safe pixel dock and preserves 
   expect(s.inventory).toEqual({ sardine: 2, bream: 1 });
   expect(s.player).toEqual({
     x: 48,
-    z: -220,
+    z: -340,
     heading: 0,
     mode: "walk",
     island: "saltglass-bay",
   });
   expect(s.boat).toEqual({
     x: 63,
-    z: -220,
+    z: -340,
     heading: 0,
     docked: "saltglass-bay",
   });

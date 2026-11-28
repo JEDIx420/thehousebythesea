@@ -1,3 +1,6 @@
+import { navigation } from "../data/navigation";
+import WORLD from "../../assets/source/world.json" with { type: "json" };
+import { Locomotion } from "../player/locomotion";
 import Phaser from "phaser";
 import { Session } from "../game/session";
 import { View } from "../ui/view";
@@ -22,6 +25,10 @@ import {
   hullPoints,
   elevationAt,
   surfaceDepth,
+  pickSurface,
+  districtAt,
+  materialAt,
+  canStep,
 } from "../world/world";
 import { People, deckSeat } from "../world/people";
 import {
@@ -67,6 +74,7 @@ export class VoyageScene extends Phaser.Scene {
   private readonly nativeKeyUp = (event: KeyboardEvent) =>
     this.keys.delete(event.key.toLowerCase());
   private speed = 0;
+  private locomotion = new Locomotion();
   private elapsed = 0;
   private visualElapsed = 0;
   private fish?: FishingState;
@@ -79,6 +87,7 @@ export class VoyageScene extends Phaser.Scene {
   };
   private memory = -1;
   private memoryElapsed = 0;
+  private gangway?: { from: Point; to: Point; age: number };
   private cameraPoint = { x: 152, y: -12 };
   private samples: number[] = [];
   private rawLast = 0;
@@ -208,7 +217,9 @@ export class VoyageScene extends Phaser.Scene {
       "saltglass-ground",
       "young-rowan",
       "tree-1",
-      ...MAPS.flatMap(m=>(m.levels??[]).map(l=>`top-${m.id}-${l.id}`)),
+      ...MAPS.flatMap((m) =>
+        (m.levels ?? []).map((l) => `top-${m.id}-${l.id}`),
+      ),
       ...MAPS.flatMap((map) =>
         map.landmarks.map((p) => (p.kind === "tree" ? "tree-0" : p.kind)),
       ),
@@ -216,12 +227,20 @@ export class VoyageScene extends Phaser.Scene {
     for (const actor of ["rowan", "mira", "ellis", "nessa", "tomas"])
       for (const dir of ["s", "n", "w", "e"])
         for (const [pose, count] of [
-          ["idle", 2],
-          ["walk", 6],
+          ["idle", 4],
+          ["walk", 12],
           ["sit", 2],
         ] as const)
           for (let i = 0; i < count; i++)
             required.push(`${actor}-${dir}-${pose}-${i}`);
+    for (const actor of ["rowan", "mira", "ellis", "tomas", "nessa"])
+      for (const expression of actor === "rowan" || actor === "mira"
+        ? ["neutral", "happy", "thoughtful", "surprised"]
+        : ["neutral", "happy", "thoughtful"])
+        for (let i = 0; i < 2; i++)
+          required.push(`portrait-${actor}-${expression}-${i}`);
+    for (const dir of ["s", "n", "e", "w"])
+      for (let i = 0; i < 2; i++) required.push(`rowan-${dir}-fish-${i}`);
     for (let i = 0; i < 16; i++) required.push(`ripple-${i}`);
     for (let i = 0; i < 8; i++)
       for (let j = 0; j < 2; j++) required.push(`boat-${i}-${j}`);
@@ -275,7 +294,7 @@ export class VoyageScene extends Phaser.Scene {
               x,
               z + island.offsetZ,
               frame.depthY !== undefined
-                ? frame.depthY + project(0,island.offsetZ).y
+                ? frame.depthY + project(0, island.offsetZ).y
                 : depth(x, z + island.offsetZ) + 0.1,
             );
           if (frame.pixelOffset)
@@ -291,6 +310,10 @@ export class VoyageScene extends Phaser.Scene {
         if (
           [
             "shop",
+            "market-stall",
+            "garden-house",
+            "beacon",
+            "net-shed",
             "cafe",
             "hut",
             "cottage",
@@ -319,8 +342,14 @@ export class VoyageScene extends Phaser.Scene {
         this.seaFx.push(image);
       }
     }
-    this.art("boat-2-0", 78, -28, -1000).setAlpha(0.8);
-    this.art("boat-6-0", 83, -230, -1000).setAlpha(0.8);
+    for (const boat of WORLD.decorativeBoats)
+      this.art(
+        `boat-${boat.direction}-0`,
+        boat.x,
+        boat.z +
+          navigation(boat.island as import("../state/game").IslandId).offsetZ,
+        -1000,
+      ).setAlpha(0.8);
     this.vessel = this.art(
       "boat-0-0",
       this.session.state.boat.x,
@@ -355,20 +384,36 @@ export class VoyageScene extends Phaser.Scene {
     // replayed between immediate input and frame polling, toggling board/dock.
     window.addEventListener("keydown", this.nativeKeyDown);
     window.addEventListener("keyup", this.nativeKeyUp);
-    this.game.events.on(Phaser.Core.Events.BLUR, () => this.keys.clear());
+    this.game.events.on(Phaser.Core.Events.BLUR, () => {
+      this.keys.clear();
+      this.locomotion.reset();
+    });
     this.input.on(
       "wheel",
       (_p: unknown, _o: unknown, _x: number, dy: number) => {
         if (this.view.open) return;
-        this.zoom = dy < 0 ? 2 : 1;
-        this.cameras.main.setZoom(this.zoom);
+        const next = dy < 0 ? 2 : 1,
+          camera = this.cameras.main;
+        const screen = {
+          x: (this.rowan.x - camera.worldView.x) * this.zoom,
+          y: (this.rowan.y - camera.worldView.y) * this.zoom,
+        };
+        this.zoom = next;
+        this.cameraPoint = {
+          x: this.rowan.x + (this.scale.width / 2 - screen.x) / next,
+          y: this.rowan.y + (this.scale.height / 2 - screen.y) / next,
+        };
+        camera.setZoom(next).centerOn(this.cameraPoint.x, this.cameraPoint.y);
       },
     );
     this.input.on("pointerdown", (p: Phaser.Input.Pointer) => {
       const world = this.cameras.main.getWorldPoint(p.x, p.y);
-      this.registry.set("lastPick", unproject(world.x, world.y));
+      this.registry.set("lastPick", pickSurface(world.x, world.y));
     });
-    this.view.onOpen = () => this.keys.clear();
+    this.view.onOpen = () => {
+      this.keys.clear();
+      this.locomotion.reset();
+    };
     this.view.onAction = (action, value) => {
       void this.action(action, value);
     };
@@ -427,7 +472,33 @@ export class VoyageScene extends Phaser.Scene {
         performance as Performance & { memory?: { usedJSHeapSize: number } }
       ).memory?.usedJSHeapSize,
       lastPick: this.registry.get("lastPick"),
+      npcs: this.people.persons.map((p) => ({
+        id: p.id,
+        x: p.point.x,
+        z: p.point.z,
+        walking: p.walking,
+      })),
       audio: this.audio.metrics(),
+      screenActors: [this.rowan, this.passenger, ...this.personImages.values()]
+        .filter((i) => i.visible)
+        .map((i) => ({
+          x: (i.x - this.cameras.main.worldView.x - 16) * this.zoom,
+          y: (i.y - this.cameras.main.worldView.y - 63) * this.zoom,
+          width: 32 * this.zoom,
+          height: 64 * this.zoom,
+        })),
+      locomotion: this.locomotion.metrics(),
+      gangway: this.gangway
+        ? {
+            age: this.gangway.age,
+            from: { ...this.gangway.from },
+            to: { ...this.gangway.to },
+          }
+        : null,
+      elevation: elevationAt(
+        this.session.state.player.x,
+        this.session.state.player.z,
+      ),
     };
   }
   private keyDown(e: KeyboardEvent) {
@@ -541,14 +612,37 @@ export class VoyageScene extends Phaser.Scene {
         s.player.mode === "boat" &&
         s.story.outingInvited &&
         !this.people.aboard;
+    const camera = this.cameras.main;
+    this.view.contextPosition(
+      Math.max(
+        80,
+        Math.min(
+          this.scale.width - 80,
+          (this.rowan.x - camera.worldView.x) * camera.zoom,
+        ),
+      ),
+      Math.max(
+        35,
+        Math.min(
+          this.scale.height - 25,
+          (this.rowan.y - camera.worldView.y) * camera.zoom - 74 * camera.zoom,
+        ),
+      ),
+      [this.rowan, this.passenger, ...this.personImages.values()]
+        .filter((image) => image.visible)
+        .map((image) => ({
+          x: (image.x - camera.worldView.x - 16) * camera.zoom,
+          y: (image.y - camera.worldView.y - 63) * camera.zoom,
+          width: 32 * camera.zoom,
+          height: 64 * camera.zoom,
+        })),
+    );
     this.view.update(
       this.session,
       this.objective(),
       s.player.mode === "boat"
         ? "The Saltglass channel"
-        : s.player.island === "havenport"
-          ? "Havenport"
-          : "Saltglass Bay",
+        : districtAt(s.player.x, s.player.z),
       this.fish
         ? ""
         : waiting
@@ -564,7 +658,12 @@ export class VoyageScene extends Phaser.Scene {
     this.memory = -1;
     this.session.dispatch({ type: "FINISH_PROLOGUE" });
     this.view.close();
-    this.view.toast("Welcome home, Rowan. Ellis is waiting beside the pier.");
+    this.view.arrive();
+    this.view.toast(
+      "WASD to walk · E to talk. Ellis is beside the pier. · M opens your chart.",
+    );
+    // A new arrival replays only the brief location tab.
+    /*this.view.toast("Welcome home, Rowan. Ellis is waiting beside the pier.");*/
   }
   private startAmbience() {
     try {
@@ -575,6 +674,7 @@ export class VoyageScene extends Phaser.Scene {
   }
   private async action(action: string, value?: string) {
     const s = this.session.state;
+    if (this.gangway && ["interact", "fish", "reel"].includes(action)) return;
     if (action === "dialogue-next") {
       this.view.advanceDialogue();
       return;
@@ -692,11 +792,13 @@ export class VoyageScene extends Phaser.Scene {
       return;
     }
     if (action === "recover") {
+      this.gangway = undefined;
       this.fish = undefined;
       this.view.clearFishing();
       this.line.clear();
       this.ripple.setVisible(false);
       this.speed = 0;
+      this.locomotion.reset();
       this.session.dispatch({ type: "RECOVER" });
       this.people = new People(this.session.state);
       this.view.close();
@@ -723,6 +825,7 @@ export class VoyageScene extends Phaser.Scene {
         if (result.phase === "caught") {
           const fish = this.fish.species;
           this.session.dispatch({ type: "CATCH_FISH", fish });
+          this.audio.sfx("catch");
           this.catchEffect = {
             species: fish,
             age: 0,
@@ -811,10 +914,27 @@ export class VoyageScene extends Phaser.Scene {
     const target = this.target();
     if (!target) return;
     this.audio.sfx("interact");
+    const person = this.people.persons.find((p) => p.id === target.id);
+    if (person) {
+      this.locomotion.direction = facing(
+        person.point.x - this.session.state.player.x,
+        person.point.z - this.session.state.player.z,
+      );
+      person.direction = facing(
+        this.session.state.player.x - person.point.x,
+        this.session.state.player.z - person.point.z,
+      );
+    }
+
     const s = this.session.state;
     if (target.id === "board") {
       const player = board(s.player, s.boat);
       if (player) {
+        this.locomotion.reset();
+        this.stepGangway(s.player, {
+          x: MAPS.find((m) => m.id === s.player.island)!.dock.maxX - 1,
+          z: navigation(s.player.island).dock.z,
+        });
         this.session.checkpoint(player, s.boat);
         if (s.story.outingInvited) this.people.prepareBoarding();
         this.speed = 0;
@@ -831,6 +951,14 @@ export class VoyageScene extends Phaser.Scene {
       const result = disembark(s.player, s.boat, this.speed);
       if (result) {
         this.speed = 0;
+        this.locomotion.reset();
+        this.stepGangway(
+          {
+            x: MAPS.find((m) => m.id === result.player.island)!.dock.maxX - 1,
+            z: result.boat.z,
+          },
+          result.player,
+        );
         this.session.checkpoint(result.player, result.boat);
         this.session.dispatch({
           type: "VISIT_ISLAND",
@@ -899,6 +1027,7 @@ export class VoyageScene extends Phaser.Scene {
         return;
       }
       this.keys.clear();
+      this.locomotion.reset();
       this.game.canvas.focus();
       this.speed = 0;
       this.audio.sfx("cast");
@@ -922,6 +1051,34 @@ export class VoyageScene extends Phaser.Scene {
     this.line.clear();
     if (message)
       this.view.toast("Rod put away. Your catch and progress are kept.");
+  }
+  private stepGangway(from: Point, to: Point) {
+    // Only animate an actual clear pier path. Persistent checkpoint is already valid.
+    let previous = from;
+    for (let i = 1; i <= 40; i++) {
+      const next = {
+        x: from.x + ((to.x - from.x) * i) / 40,
+        z: from.z + ((to.z - from.z) * i) / 40,
+      };
+      if (
+        !walkable(next.x, next.z) ||
+        !canStep(previous.x, previous.z, next.x, next.z)
+      )
+        return;
+      previous = next;
+    }
+    this.gangway = { from: { ...from }, to: { ...to }, age: 0 };
+    this.keys.clear();
+  }
+  private idleFrame(time: number, offset = 0) {
+    const t = (time + offset) % 9;
+    return t > 7.8 && t < 7.96
+      ? 2
+      : t > 6.4 && t < 7.1
+        ? 3
+        : t > 2.5 && t < 5
+          ? 1
+          : 0;
   }
   private renderActors(time: number, walking: boolean) {
     const s = this.session.state,
@@ -948,24 +1105,41 @@ export class VoyageScene extends Phaser.Scene {
         dir = facing(Math.sin(s.boat.heading), -Math.cos(s.boat.heading));
       this.setFrame(
         this.rowan,
-        `rowan-${dir}-sit-${Math.floor(visual * 2) % 2}`,
+        `rowan-${dir}-${this.fish ? "fish-" + (Math.floor(visual) % 2) : "sit-" + (Math.floor(visual * 0.7) % 2)}`,
       );
       this.rowan
         .setPosition(Math.round(foot.x), Math.round(foot.y - 3))
         .setDepth(vesselDepth + 1);
     } else {
       p.y -= elevationAt(s.player.x, s.player.z);
-      const dir = facing(
-        Math.sin(s.player.heading),
-        -Math.cos(s.player.heading),
-      );
+      const dir = this.locomotion.direction;
       this.setFrame(
         this.rowan,
-        `rowan-${dir}-${walking ? "walk-" + (Math.floor(time * 8) % 6) : "idle-" + (Math.floor(visual * 2) % 2)}`,
+        `rowan-${dir}-${this.fish ? "fish-" + (Math.floor(visual) % 2) : walking ? "walk-" + this.locomotion.frame() : "idle-" + this.idleFrame(visual)}`,
       );
       this.rowan
         .setPosition(Math.round(p.x), Math.round(p.y))
-        .setDepth(surfaceDepth(s.player.x, s.player.z) + .001);
+        .setDepth(surfaceDepth(s.player.x, s.player.z) + 0.001);
+    }
+    if (this.gangway) {
+      const g = this.gangway,
+        t = Math.min(1, g.age / 0.48),
+        q = {
+          x: g.from.x + (g.to.x - g.from.x) * t,
+          z: g.from.z + (g.to.z - g.from.z) * t,
+        },
+        foot = project(q.x, q.z);
+      const dir = facing(g.to.x - g.from.x, g.to.z - g.from.z);
+      this.setFrame(
+        this.rowan,
+        `rowan-${dir}-walk-${Math.floor(((t * Math.hypot(g.to.x - g.from.x, g.to.z - g.from.z)) / 3.3) * 12) % 12}`,
+      );
+      this.rowan
+        .setPosition(
+          Math.round(foot.x),
+          Math.round(foot.y - elevationAt(q.x, q.z)),
+        )
+        .setDepth(surfaceDepth(q.x, q.z) + 0.001);
     }
     for (const person of this.people.persons) {
       const image = this.personImages.get(person.id)!;
@@ -975,7 +1149,7 @@ export class VoyageScene extends Phaser.Scene {
       foot.y -= elevationAt(person.point.x, person.point.z);
       this.setFrame(
         image,
-        `${person.actor}-${person.direction}-${person.walking ? "walk-" + (Math.floor(time * 8) % 6) : "idle-" + (Math.floor(visual * 2) % 2)}`,
+        `${person.actor}-${person.direction}-${person.walking ? "walk-" + (Math.floor((person.distance / 3.3) * 12) % 12) : "idle-" + this.idleFrame(visual, person.id.length * 1.37 + person.actor.charCodeAt(0) * 0.17)}`,
       );
       image
         .setPosition(Math.round(foot.x), Math.round(foot.y))
@@ -1073,8 +1247,16 @@ export class VoyageScene extends Phaser.Scene {
             ? "havenport"
             : "saltglass",
         this.view.open,
+        districtAt(this.session.state.player.x, this.session.state.player.z),
       );
-    if (!paused && !this.fish) {
+    if (this.gangway && !paused) {
+      this.gangway.age += dt;
+      if (this.gangway.age >= 0.48) {
+        this.gangway = undefined;
+        this.locomotion.reset();
+      }
+    }
+    if (!paused && !this.fish && !this.gangway) {
       const s = this.session.state,
         h =
           Number(this.keys.has("d") || this.keys.has("arrowright")) -
@@ -1083,9 +1265,11 @@ export class VoyageScene extends Phaser.Scene {
           Number(this.keys.has("s") || this.keys.has("arrowdown")) -
           Number(this.keys.has("w") || this.keys.has("arrowup"));
       if (s.player.mode === "walk") {
-        const p = moveFoot(s.player, h, v, dt);
-        walking = Math.hypot(p.x - s.player.x, p.z - s.player.z) > 0.001;
-        this.session.checkpoint(p, s.boat);
+        const moved = this.locomotion.update(s.player, h, v, dt);
+        walking = moved.travel > 0.00001;
+        if (moved.footstep && walking)
+          this.audio.sfx("step", materialAt(s.player.x, s.player.z));
+        this.session.checkpoint(moved.player, s.boat);
       } else {
         const waiting = s.story.outingInvited && !this.people.aboard,
           r = moveVessel(
@@ -1183,20 +1367,28 @@ export class VoyageScene extends Phaser.Scene {
                 Math.sin(s.boat.heading) * 5,
                 -Math.cos(s.boat.heading) * 5,
               )
-            : { x: 0, y: 0 },
+            : project(this.locomotion.vx * 0.22, this.locomotion.vz * 0.22),
         target = {
           x: p.x + look.x - 20,
-          y: p.y + look.y - Math.min(85, this.scale.height * 0.26),
+          y:
+            p.y -
+            elevationAt(s.player.x, s.player.z) +
+            look.y -
+            Math.min(58, this.scale.height * 0.18),
         };
-      const lerp = s.settings.reducedMotion ? 1 : Math.min(1, dt * 4);
+      const lerp = s.settings.reducedMotion ? 1 : 1 - Math.exp(-dt / 0.18);
       this.cameraPoint.x = Phaser.Math.Linear(
         this.cameraPoint.x,
-        target.x,
+        Math.abs(target.x - this.cameraPoint.x) < 3
+          ? this.cameraPoint.x
+          : target.x - Math.sign(target.x - this.cameraPoint.x) * 3,
         lerp,
       );
       this.cameraPoint.y = Phaser.Math.Linear(
         this.cameraPoint.y,
-        target.y,
+        Math.abs(target.y - this.cameraPoint.y) < 2
+          ? this.cameraPoint.y
+          : target.y - Math.sign(target.y - this.cameraPoint.y) * 2,
         lerp,
       );
       this.cameras.main.centerOn(

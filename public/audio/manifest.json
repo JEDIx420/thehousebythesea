@@ -14,6 +14,24 @@
       "sha256": "941a3951d9d1ced64f700198f6ce2d9293b2bfa152d6147a54099c53ff7f025c",
       "loop": "32 bars, original circular room tail, 3ms de-click",
       "license": "MIT"
+    },
+    {
+      "id": "sailing",
+      "file": "audio/sailing.mp3",
+      "duration": 96,
+      "bytes": 768670,
+      "sha256": "87fba47463dc57821d5e2272c89b37c8eb42316477adf18a8a829f9eec8143d0",
+      "loop": "32 bars, original circular room tail, 3ms de-click",
+      "license": "MIT"
+    },
+    {
+      "id": "saltglass",
+      "file": "audio/saltglass.mp3",
+      "duration": 96,
+      "bytes": 768670,
+      "sha256": "2bff35a58077ac3917ea365ab0c1603a203ccc7055cc6f4e76c25e1c94836919",
+      "loop": "32 bars, original circular room tail, 3ms de-click",
+      "license": "MIT"
     }
   ]
 }

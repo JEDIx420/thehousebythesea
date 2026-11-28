@@ -48,9 +48,15 @@ const options = [
   ],
 }));
 async function modal(page: Page) {
-  return page.locator("#cover").isVisible();
+  return (
+    (await page.locator("#cover").isVisible()) ||
+    (await page.locator("#dialogue").isVisible())
+  );
 }
-export async function walk(page: Page, x: number, z: number, tolerance = 1.3) {
+export async function walk(page: Page, x: number, z: number, tolerance = 0.75) {
+  const origin = (await state(page)).player,
+    segment = { x: x - origin.x, z: z - origin.z },
+    length = Math.hypot(segment.x, segment.z);
   let held: string[] = [],
     previous: { x: number; z: number } | undefined,
     blocked = 0;
@@ -74,8 +80,25 @@ export async function walk(page: Page, x: number, z: number, tolerance = 1.3) {
           `Blocked walking to ${x},${z}: ${JSON.stringify(s.player)}`,
         );
       previous = s.player;
+      // Follow the actual lane rather than steering at a far goal and cutting
+      // across corners: only real key presses are issued.
+      const progress = Math.max(
+          0,
+          Math.min(
+            length,
+            ((s.player.x - origin.x) * segment.x +
+              (s.player.z - origin.z) * segment.z) /
+              Math.max(length, 0.001),
+          ),
+        ),
+        ahead = Math.min(length, progress + 2.2),
+        steerX =
+          origin.x + (segment.x / Math.max(length, 0.001)) * ahead - s.player.x,
+        steerZ =
+          origin.z + (segment.z / Math.max(length, 0.001)) * ahead - s.player.z;
       const choice = options.reduce((best, o) =>
-        o.unit.x * dx + o.unit.z * dz > best.unit.x * dx + best.unit.z * dz
+        o.unit.x * steerX + o.unit.z * steerZ >
+        best.unit.x * steerX + best.unit.z * steerZ
           ? o
           : best,
       );
@@ -144,4 +167,34 @@ export async function sail(page: Page, x: number, z: number, tolerance = 6) {
 }
 export async function brake(page: Page) {
   await page.keyboard.press("s", { delay: 1500 });
+}
+
+export async function choices(page: Page) {
+  for (let i = 0; i < 30; i++) {
+    const next = page.getByRole("button", {
+      name: "Continue dialogue",
+      exact: true,
+    });
+    if (!(await next.isVisible())) return;
+    await next.click();
+    await page.waitForTimeout(25);
+  }
+  throw Error("Dialogue never reached choices");
+}
+export async function choose(page: Page, name: string) {
+  await choices(page);
+  await page.getByRole("button", { name, exact: true }).click();
+}
+export async function npc(page: Page, id: string) {
+  for (let i = 0; i < 8; i++) {
+    const target = await page.evaluate(
+      (id) =>
+        (window as any).voyage.getMetrics().npcs.find((p: any) => p.id === id),
+      id,
+    );
+    await walk(page, target.x, target.z, 1.6);
+    const p = (await state(page)).player;
+    if (Math.hypot(p.x - target.x, p.z - target.z) < 3) return;
+  }
+  throw Error(`Cannot approach NPC ${id}`);
 }

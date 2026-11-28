@@ -4,9 +4,13 @@ export interface Choice {
   label: string;
   action: string;
 }
-export interface Beat { speakerId:string; expressionId:'neutral'|'happy'|'thoughtful'|'surprised'; text:string; }
+export interface Beat {
+  speakerId: string;
+  expressionId: "neutral" | "happy" | "thoughtful" | "surprised";
+  text: string;
+}
 export interface Dialogue {
-  beats:Beat[];
+  beats: Beat[];
   speaker: string;
   role: string;
   title: string;
@@ -14,7 +18,7 @@ export interface Dialogue {
   choices: Choice[];
 }
 const close: Choice = { label: "See you soon", action: "close" };
-function conversationData(id: string, s: GameState): Omit<Dialogue,"beats"> {
+function conversationData(id: string, s: GameState): Omit<Dialogue, "beats"> {
   if (id === "ellis")
     return {
       speaker: "Ellis",
@@ -153,8 +157,31 @@ function conversationData(id: string, s: GameState): Omit<Dialogue,"beats"> {
   };
 }
 
-export function conversation(id:string,s:GameState):Dialogue {
- const d=conversationData(id,s),speakerId=id==='seller'?'tomas':id;
- const expressions:Beat['expressionId'][]= id==='mira' ? (s.story.outingVisitedSaltglass?['happy','thoughtful','happy']:['neutral','thoughtful','happy']) : ['neutral','thoughtful','happy'];
- return {...d,beats:d.paragraphs.map((text,i)=>({speakerId,expressionId:expressions[i%expressions.length],text}))};
+export function conversation(id: string, s: GameState): Dialogue {
+  const d = conversationData(id, s),
+    speakerId = id === "seller" ? "tomas" : id;
+  const expressions: Beat["expressionId"][] =
+    id === "mira"
+      ? s.story.outingVisitedSaltglass
+        ? ["happy", "thoughtful", "happy"]
+        : ["neutral", "thoughtful", "happy"]
+      : ["neutral", "thoughtful", "happy"];
+  const beats: Beat[] = d.paragraphs.map((text, i) => ({
+    speakerId,
+    expressionId: expressions[i % expressions.length],
+    text,
+  }));
+  if (id === "mira" && !s.story.metMira)
+    beats.splice(1, 0, {
+      speakerId: "rowan",
+      expressionId: "happy",
+      text: "“I used to know every scratch on her hull from the quay. It feels strange to have the key in my pocket now.”",
+    });
+  if (id === "ellis" && s.delivery === "available")
+    beats.splice(2, 0, {
+      speakerId: "rowan",
+      expressionId: "happy",
+      text: "“Net needles, the north channel, and no hurry. I think I can make a good first day of that.”",
+    });
+  return { ...d, beats };
 }
