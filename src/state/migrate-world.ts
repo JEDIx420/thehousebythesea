@@ -21,6 +21,17 @@ export function migrateWorld(source: GameState): GameState {
     if (!boatClear(b)) Object.assign(b, navigation(p.island).dock);
     Object.assign(p, { x: b.x, z: b.z, heading: b.heading });
   } else {
+    if (source.player.island === "saltglass-bay") {
+      const translated = {
+        x: p.x,
+        z: p.z + navigation(p.island).offsetZ - -220,
+      };
+      if (
+        walkable(translated.x, translated.z) &&
+        groundAt(translated.x, translated.z) === p.island
+      )
+        Object.assign(p, translated);
+    }
     if (!walkable(p.x, p.z) || groundAt(p.x, p.z) !== p.island)
       Object.assign(p, navigation(p.island).safe, { heading: 0 });
     if (!boatClear(b) || b.docked !== p.island)

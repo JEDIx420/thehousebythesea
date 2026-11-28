@@ -1,5 +1,11 @@
-import {cafe} from "../assets/source/architecture.mjs";
-import {portrait} from "../assets/source/portraits.mjs";
+import {
+  cafe,
+  market,
+  gardenHouse,
+  beacon,
+  netShed,
+} from "../assets/source/architecture.mjs";
+import { portrait } from "../assets/source/portraits.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -12,7 +18,7 @@ import { Painter } from "./vendor/pixelfx/src/core/painter.js";
 import { hex } from "./vendor/pixelfx/src/core/color.js";
 import { ring } from "./vendor/pixelfx/src/fx/water/_lib.js";
 import { rasterText, textWidth } from "./vendor/pixelfx/src/core/font.js";
-import { land, water, cliffFrames } from "../assets/source/land.mjs";
+import { land, water, cliffFrames, landSpec } from "../assets/source/land.mjs";
 export const ROOT = fileURLToPath(new URL("../", import.meta.url));
 const PAD = 2,
   WIDTH = 2048;
@@ -27,17 +33,52 @@ export function makeFrames() {
       source: "assets/source/sprites.mjs",
       ...extra,
     });
-  add("havenport-ground", land(WORLD.havenport), [512, 256], {
-    category: "ground",
-    source: "assets/source/land.mjs + world.json",
-  });
-  add("saltglass-ground", land(WORLD.saltglass), [512, 256], {
-    category: "ground",
-    source: "assets/source/land.mjs + world.json",
-  });
-  for(const actor of ["mira"]) for(const expression of ["neutral","happy","thoughtful","surprised"]) for(let blink=0;blink<2;blink++)
-    add(`portrait-${actor}-${expression}-${blink}`,portrait(actor,expression,blink),[48,128],{category:"portrait",actor,expression,index:blink,source:"assets/source/portraits.mjs"});
-  for(const map of [WORLD.havenport,WORLD.saltglass])for(const f of cliffFrames(map))add(f.id,f.image,f.anchor,{category:"cliff",island:map.id,world:f.world,...(f.pixelOffset?{pixelOffset:f.pixelOffset,depthY:f.depthY}:{}),source:"assets/source/land.mjs + world.json"});
+  add(
+    "havenport-ground",
+    land(WORLD.havenport),
+    landSpec(WORLD.havenport).anchor,
+    {
+      category: "ground",
+      source: "assets/source/land.mjs + world.json",
+    },
+  );
+  add(
+    "saltglass-ground",
+    land(WORLD.saltglass),
+    landSpec(WORLD.saltglass).anchor,
+    {
+      category: "ground",
+      source: "assets/source/land.mjs + world.json",
+    },
+  );
+  for (const actor of ["rowan", "mira", "ellis", "tomas", "nessa"])
+    for (const expression of actor === "rowan" || actor === "mira"
+      ? ["neutral", "happy", "thoughtful", "surprised"]
+      : ["neutral", "happy", "thoughtful"])
+      for (let blink = 0; blink < 2; blink++)
+        add(
+          `portrait-${actor}-${expression}-${blink}`,
+          portrait(actor, expression, blink),
+          [48, 128],
+          {
+            category: "portrait",
+            actor,
+            expression,
+            index: blink,
+            source: "assets/source/portraits.mjs",
+          },
+        );
+  for (const map of [WORLD.havenport, WORLD.saltglass])
+    for (const f of cliffFrames(map))
+      add(f.id, f.image, f.anchor, {
+        category: "cliff",
+        island: map.id,
+        world: f.world,
+        ...(f.pixelOffset
+          ? { pixelOffset: f.pixelOffset, depthY: f.depthY }
+          : {}),
+        source: "assets/source/land.mjs + world.json",
+      });
   add("water", water(), [0, 0], {
     category: "sea",
     source: "assets/source/land.mjs",
@@ -49,9 +90,19 @@ export function makeFrames() {
         category: "ground",
         collision: kind === "deck" ? "dock" : "land",
       });
+  for (const direction of ["s", "w", "n", "e"])
+    for (let i = 0; i < 2; i++)
+      add(`rowan-${direction}-fish-${i}`, art.fishing(direction, i), [24, 64], {
+        category: "character",
+        actor: "rowan",
+        direction,
+        animation: "fish",
+        index: i,
+        fps: 1,
+      });
   for (const name of ["rowan", "mira", "ellis", "nessa", "tomas"])
     for (const direction of ["s", "w", "n", "e"]) {
-      for (let i = 0; i < 2; i++)
+      for (let i = 0; i < 4; i++)
         add(
           `${name}-${direction}-idle-${i}`,
           art.character(name, direction, i, false),
@@ -65,7 +116,7 @@ export function makeFrames() {
             fps: 2,
           },
         );
-      for (let i = 0; i < 6; i++)
+      for (let i = 0; i < 12; i++)
         add(
           `${name}-${direction}-walk-${i}`,
           art.character(name, direction, i, true),
@@ -76,7 +127,7 @@ export function makeFrames() {
             direction,
             animation: "walk",
             index: i,
-            fps: 8,
+            fps: 12,
           },
         );
       for (let i = 0; i < 2; i++)
@@ -95,13 +146,24 @@ export function makeFrames() {
         );
     }
   for (const kind of ["shop", "cafe", "hut", "cottage"])
-    add(kind, (kind === "cafe" ? cafe() : art.house(kind)), [80, 171], {
+    add(kind, kind === "cafe" ? cafe() : art.house(kind), [80, 171], {
       category: "building",
       footprint: {
         units: "world",
         origin: WORLD.buildingOrigin,
         ...WORLD.buildings[kind],
       },
+    });
+  for (const [id, image, anchor] of [
+    ["market-stall", market(), [72, 151]],
+    ["garden-house", gardenHouse(), [80, 171]],
+    ["beacon", beacon(), [48, 156]],
+    ["net-shed", netShed(), [72, 155]],
+  ])
+    add(id, image, anchor, {
+      category: "building",
+      footprint: WORLD.buildings[id],
+      source: "assets/source/architecture.mjs",
     });
   add("fishing-hut", art.fishingHut(), [64, 152], {
     category: "building",
@@ -119,9 +181,14 @@ export function makeFrames() {
     "pot",
     "crate",
     "lamp",
+    "tidepool",
     "bollard",
     "bench",
     "sign",
+    "sign-home",
+    "sign-light",
+    "sign-market",
+    "sign-cliff",
     "net",
   ])
     add(kind, art.prop(kind), [32, 68], { category: "prop" });
@@ -183,7 +250,7 @@ export function makeFrames() {
     // Phase zero contains the second, half-life ring; every exported frame has visible ink.
     add(`ripple-${i}`, image, [32, 16], {
       category: "effect",
-      fps: 8,
+      fps: 12,
       license: "MIT",
       source:
         "PixelFX water/ring @5294518ce7c72e48b6100a744596e0acf57f2826; original palette/seed/adaptation",
@@ -269,40 +336,47 @@ export function compile() {
 }
 export function contacts(frames) {
   const chosen = frames.filter((f) =>
-    f.category === "portrait" ? true : f.category === "character"
-      ? (f.animation === "idle" && f.index === 0) ||
-        (f.direction === "s" && f.animation === "walk") ||
-        (f.direction === "e" && f.animation === "sit" && f.index === 0)
-      : f.category === "boat"
-        ? f.id.endsWith("-0")
-        : [
-            "shop",
-            "cafe",
-            "hut",
-            "cottage",
-            "fishing-hut",
-            "arch",
-            "young-rowan",
-            "fish-sardine-0",
-            "fish-bream-0",
-            "tree-0",
-            "grass-0",
-            "deck-0",
-            "rock",
-            "pot",
-            "crate",
-            "lamp",
-            "bollard",
-            "bench",
-            "sign",
-            "net",
-            "ripple-0",
-            "ripple-4",
-            "ripple-8",
-            "ripple-12",
-            "gull-0",
-            "glint-2",
-          ].includes(f.id),
+    f.category === "portrait"
+      ? true
+      : f.category === "character"
+        ? (f.animation === "idle" && f.index === 0) ||
+          (f.direction === "s" && f.animation === "walk") ||
+          (f.direction === "e" && f.animation === "sit" && f.index === 0)
+        : f.category === "boat"
+          ? f.id.endsWith("-0")
+          : [
+              "shop",
+              "market-stall",
+              "garden-house",
+              "beacon",
+              "net-shed",
+              "cafe",
+              "hut",
+              "cottage",
+              "fishing-hut",
+              "arch",
+              "young-rowan",
+              "fish-sardine-0",
+              "fish-bream-0",
+              "tree-0",
+              "grass-0",
+              "deck-0",
+              "tidepool",
+              "rock",
+              "pot",
+              "crate",
+              "lamp",
+              "bollard",
+              "bench",
+              "sign",
+              "net",
+              "ripple-0",
+              "ripple-4",
+              "ripple-8",
+              "ripple-12",
+              "gull-0",
+              "glint-2",
+            ].includes(f.id),
   );
   const pages = [],
     layout = [];
@@ -354,11 +428,17 @@ export function write() {
   );
   // Editable source sheets contain exactly the same logical pixels as the runtime frames.
   for (const name of ["rowan", "mira", "ellis", "nessa", "tomas"]) {
-    const sheet = new PixelCanvas(48 * 10, 72 * 4);
+    const poses = [
+      ...[0, 1, 2, 3].map((i) => `idle-${i}`),
+      ...Array.from({ length: 12 }, (_, i) => `walk-${i}`),
+      "sit-0",
+      "sit-1",
+      ...(name === "rowan" ? ["fish-0", "fish-1"] : []),
+    ];
+    const sheet = new PixelCanvas(48 * poses.length, 72 * 4);
     for (let d = 0; d < 4; d++)
-      for (let i = 0; i < 10; i++) {
-        const dir = ["s", "w", "n", "e"][d],
-          id = `${name}-${dir}-${i < 2 ? "idle" : i < 8 ? "walk" : "sit"}-${i < 2 ? i : i < 8 ? i - 2 : i - 8}`;
+      for (let i = 0; i < poses.length; i++) {
+        const id = `${name}-${["s", "w", "n", "e"][d]}-${poses[i]}`;
         sheet.blit(frames.find((f) => f.id === id).image, i * 48, d * 72);
       }
     fs.writeFileSync(path.join(ROOT, `assets/source/${name}.png`), sheet.png());

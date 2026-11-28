@@ -2,7 +2,7 @@ import { heightAtLocal, traversable } from "../../assets/source/surface.mjs";
 import { navigation } from "../data/navigation";
 import WORLD from "../../assets/source/world.json" with { type: "json" };
 import type { IslandId, BoatCheckpoint } from "../state/game";
-import { contains, type Point } from "./projection";
+import { contains, project, unproject, type Point } from "./projection";
 export interface Prop extends Point {
   kind: string;
   solid?: number;
@@ -15,6 +15,7 @@ export interface Island {
   grass: number[][];
   paths: number[][][];
   landmarks: Prop[];
+  districts: { name: string; rect: number[] }[];
   levels: { id: string; height: number; polygon: number[][] }[];
   ramps: {
     id: string;
@@ -68,6 +69,30 @@ export function groundAt(x: number, z: number): IslandId | null {
       return m.id;
   }
   return null;
+}
+export function districtAt(x: number, z: number) {
+  const map = MAPS.find((m) => groundAt(x, z) === m.id);
+  const local = z - (map?.offsetZ ?? 0);
+  return (
+    map?.districts.find(
+      (d) =>
+        x >= d.rect[0] &&
+        x <= d.rect[2] &&
+        local >= d.rect[1] &&
+        local <= d.rect[3],
+    )?.name ??
+    map?.name ??
+    "The Saltglass channel"
+  );
+}
+export function materialAt(x: number, z: number) {
+  const map = MAPS.find((m) => groundAt(x, z) === m.id);
+  if (!map) return "sand";
+  const local = z - map.offsetZ,
+    d = map.dock;
+  if (x >= d.minX && x <= d.maxX && local >= d.minZ && local <= d.maxZ)
+    return "wood";
+  return contains(x, local, map.grass) ? "grass" : "sand";
 }
 export function obstacleAt(x: number, z: number, radius = 0) {
   for (const m of MAPS) {
@@ -199,8 +224,44 @@ export function surfaceDepth(x: number, z: number) {
       result = Math.max(
         result,
         ...level.polygon.map(
-          ([a, b]) => (a + b + map.offsetZ) * WORLD.projection.y + 0.5 + (flat-(a+b+map.offsetZ)*WORLD.projection.y)*0.001,
+          ([a, b]) =>
+            (a + b + map.offsetZ) * WORLD.projection.y +
+            0.5 +
+            Math.max(
+              -0.35,
+              Math.min(
+                0,
+                (flat - (a + b + map.offsetZ) * WORLD.projection.y) * 0.001,
+              ),
+            ),
         ),
       );
   return result;
+}
+
+/** Invert the same projected height surface, considering occluding upper planes. */
+export function pickSurface(screenX: number, screenY: number) {
+  const seeds = [0, ...MAPS.flatMap((m) => m.levels.map((l) => l.height))],
+    candidates: { x: number; z: number; height: number }[] = [];
+  for (const seed of seeds) {
+    let p = unproject(screenX, screenY + seed);
+    for (let i = 0; i < 16; i++) {
+      const h = elevationAt(p.x, p.z),
+        next = unproject(screenX, screenY + h);
+      if (Math.hypot(next.x - p.x, next.z - p.z) < 0.001) {
+        p = next;
+        break;
+      }
+      p = next;
+    }
+    const h = elevationAt(p.x, p.z),
+      projected = project(p.x, p.z);
+    if (groundAt(p.x, p.z) && Math.abs(projected.y - h - screenY) < 0.1)
+      candidates.push({ ...p, height: h });
+  }
+  return (
+    candidates.sort(
+      (a, b) => surfaceDepth(b.x, b.z) - surfaceDepth(a.x, a.z),
+    )[0] ?? { ...unproject(screenX, screenY), height: 0 }
+  );
 }

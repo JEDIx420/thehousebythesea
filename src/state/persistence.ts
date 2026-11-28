@@ -157,7 +157,10 @@ function openDatabase(
     );
     let request: IDBOpenDBRequest;
     try {
-      request = indexedDB.open(name, 1);
+      request = indexedDB.open(
+        name,
+        name === STORAGE.database && create ? 2 : 1,
+      );
     } catch {
       finish(
         new SaveError(
@@ -171,7 +174,8 @@ function openDatabase(
         request.transaction?.abort();
         return;
       }
-      request.result.createObjectStore(STORAGE.store);
+      if (!request.result.objectStoreNames.contains(STORAGE.store))
+        request.result.createObjectStore(STORAGE.store);
     };
     request.onblocked = () =>
       finish(
@@ -301,28 +305,29 @@ export async function saveGame(state: GameState): Promise<void> {
       const store = transaction.objectStore(STORAGE.store),
         previous = store.get(STORAGE.slot);
       previous.onsuccess = () => {
-        if (previous.result !== undefined) {
-          // Validation happens before the put: protect a future/corrupt snapshot
-          // written by another tab since this session loaded.
-          try {
+        try {
+          if (previous.result !== undefined) {
             parseSave(previous.result);
-          } catch {
-            transaction.abort();
-            return;
+            const old =
+              typeof previous.result === "string"
+                ? JSON.parse(previous.result)
+                : previous.result;
+            if (old.worldVersion === "pixel-first-voyage-v1") {
+              const backup = store.get("before-world-v2");
+              backup.onsuccess = () => {
+                try {
+                  if (backup.result === undefined)
+                    store.put(previous.result, "before-world-v2");
+                } catch {
+                  transaction.abort();
+                }
+              };
+            }
           }
-          const old =
-            typeof previous.result === "string"
-              ? JSON.parse(previous.result)
-              : previous.result;
-          if (old.worldVersion === "pixel-first-voyage-v1") {
-            const backup = store.get("before-world-v2");
-            backup.onsuccess = () => {
-              if (backup.result === undefined)
-                store.put(previous.result, "before-world-v2");
-            };
-          }
+          store.put(snapshot, STORAGE.slot);
+        } catch {
+          transaction.abort();
         }
-        store.put(snapshot, STORAGE.slot);
       };
       transaction.oncomplete = () => finish();
       transaction.onabort = transaction.onerror = () =>

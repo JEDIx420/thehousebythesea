@@ -1,3 +1,4 @@
+import {navigation} from "../data/navigation";
 import { describe, expect, it } from "vitest";
 import { homeFund, initialState, reduce, type GameState } from "./game";
 import {
@@ -13,12 +14,12 @@ function atSaltglass(state: GameState): GameState {
     type: "CHECKPOINT",
     player: {
       x: 48,
-      z: -220,
+      z: navigation("saltglass-bay").dock.z,
       heading: 0,
       mode: "walk",
       island: "saltglass-bay",
     },
-    boat: { x: 63, z: -220, heading: 0, docked: "saltglass-bay" },
+    boat: { x: 63, z: navigation("saltglass-bay").dock.z, heading: 0, docked: "saltglass-bay" },
   });
 }
 
@@ -98,10 +99,10 @@ describe("the First Voyage domain", () => {
     state.boat.z = -999;
     const safe = reduce(state, { type: "RECOVER" });
     expect(safe.player.x).toBe(48);
-    expect(safe.player.z).toBe(-220);
+    expect(safe.player.z).toBe(navigation("saltglass-bay").safe.z);
     expect(safe.boat).toEqual({
       x: 63,
-      z: -220,
+      z: navigation("saltglass-bay").dock.z,
       heading: 0,
       docked: "saltglass-bay",
     });
@@ -140,14 +141,14 @@ describe("versioned snapshots", () => {
     expect(copy.worldVersion).toBe("pixel-first-voyage-v2");
     expect(copy.player).toEqual({
       x: 48,
-      z: -220,
+      z: navigation("saltglass-bay").dock.z,
       heading: 0,
       mode: "walk",
       island: "saltglass-bay",
     });
     expect(copy.boat).toEqual({
       x: 63,
-      z: -220,
+      z: navigation("saltglass-bay").dock.z,
       heading: 0,
       docked: "saltglass-bay",
     });

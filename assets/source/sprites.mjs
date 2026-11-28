@@ -81,8 +81,23 @@ export function character(name, dir, frame, walking) {
   const back = dir === "n",
     side = dir === "e" || dir === "w",
     mirror = dir === "w" ? -1 : 1;
-  const step = walking ? Math.sin((frame * Math.PI) / 3) : 0,
-    bob = walking ? [-1, 0, 1, -1, 0, 1][frame % 6] : frame === 1 ? -1 : 0;
+  // Twelve authored contact/passing poses: planted stance, compression, swing.
+  const gait = [
+    [-1, 0, 0, 1],
+    [0, 1, -1, 0],
+    [1, 2, -1, -1],
+    [2, 1, 0, 0],
+    [2, 0, 1, 1],
+    [1, 0, 2, 0],
+    [0, -1, 2, -1],
+    [-1, -2, 1, 0],
+    [-2, -1, 0, 1],
+    [-2, 0, -1, 0],
+    [-2, 0, -2, -1],
+    [-1, 0, -1, 0],
+  ][frame % 12];
+  const step = walking ? gait[0] / 2 : 0,
+    bob = walking ? gait[3] : frame === 1 ? -1 : frame === 2 ? 1 : 0;
   const x = 24,
     y = 64,
     skin = isNessa ? P.skinShade : P.skin,
@@ -106,9 +121,9 @@ export function character(name, dir, frame, walking) {
   c.ellipse(26, 65, 10, 3, rgba(P.deep, 72));
   // Shoes and independently planted legs, knees alternate with arms.
   const stride = Math.round(step * 3),
-    leftLift = Math.max(0, stride),
-    rightLift = Math.max(0, -stride),
-    strideX = side ? stride * mirror : 0;
+    leftLift = walking ? Math.max(0, gait[1]) : 0,
+    rightLift = walking ? Math.max(0, gait[2]) : 0,
+    strideX = side ? Math.round(step * 5) * mirror : 0;
   poly(
     c,
     [
@@ -157,7 +172,7 @@ export function character(name, dir, frame, walking) {
     c.line(x - 2, y - 29 + bob, x - 2 + stride, y - 15, P.coralLight);
   }
   // Sleeves behind the tailored torso, cuffs/hands articulate in the walk.
-  const swing = walking ? Math.round(-step * 3) : 0;
+  const swing = walking ? Math.round(-step * 3) : frame === 3 ? -3 : 0;
   poly(
     c,
     [
@@ -239,14 +254,21 @@ export function character(name, dir, frame, walking) {
   else if (side) {
     const face = x + mirror * 6;
     c.rect(x - mirror * 4 - 2, y - 54 + bob, 5, 8, hair);
-    c.pixel(face - mirror, y - 52 + bob, P.ink);
+    if (!walking && frame === 2)
+      c.line(face - mirror * 2, y - 52 + bob, face, y - 52 + bob, P.skinShade);
+    else c.pixel(face - mirror, y - 52 + bob, P.ink);
     c.pixel(face + mirror, y - 50 + bob, P.skinLight);
     c.pixel(face, y - 47 + bob, P.skinShade);
   } else {
     c.rect(x - 6, y - 54 + bob, 2, isMira ? 11 : 6, hair);
     c.rect(x + 6, y - 54 + bob, isMira ? 3 : 1, isMira ? 11 : 5, hair);
-    c.pixel(x - 2, y - 52 + bob, P.ink);
-    c.pixel(x + 4, y - 52 + bob, P.ink);
+    if (!walking && frame === 2) {
+      c.line(x - 3, y - 52 + bob, x - 1, y - 52 + bob, P.skinShade);
+      c.line(x + 3, y - 52 + bob, x + 5, y - 52 + bob, P.skinShade);
+    } else {
+      c.pixel(x - 2, y - 52 + bob, P.ink);
+      c.pixel(x + 4, y - 52 + bob, P.ink);
+    }
     c.pixel(x + 1, y - 50 + bob, P.skinLight);
     c.line(x, y - 47 + bob, x + 2, y - 47 + bob, P.skinShade);
   }
@@ -284,6 +306,18 @@ export function character(name, dir, frame, walking) {
   }
   return c;
 }
+// Dedicated hands-together rod grip, feet stay planted on the shared anchor.
+export function fishing(dir, frame) {
+  const c = character("rowan", dir, 0, false),
+    left = dir === "w" || dir === "n",
+    hand = left ? 16 : 32;
+  c.line(24, 29, hand, 37, P.cream, 4);
+  c.line(24, 33, hand, 37, P.teal, 2);
+  c.rect(hand - 2, 35, 5, 4, P.skin);
+  c.line(hand, 38, hand + (left ? -10 : 10), 21 - frame, P.woodDark, 2);
+  c.pixel(hand + (left ? -10 : 10), 21 - frame, P.gold);
+  return c;
+}
 export function seated(name, dir, frame) {
   const original = character(name, dir, frame, false),
     c = new PixelCanvas(48, 72);
@@ -298,9 +332,19 @@ export function seated(name, dir, frame) {
   c.rect(28, 57, 6, 5, P.ink);
   c.rect(15, 61, 9, 3, P.woodDark);
   c.rect(28, 61, 9, 3, P.woodDark);
-  if(name==='mira'&&dir!=='n'){
-    c.poly([[18,52],[31,52],[34,58],[20,58]],P.cream,P.sandShade);
-    c.line(23,54,29,55,P.blue);c.line(17,51+frame,27,55,P.woodDark);
+  if (name === "mira" && dir !== "n") {
+    c.poly(
+      [
+        [18, 52],
+        [31, 52],
+        [34, 58],
+        [20, 58],
+      ],
+      P.cream,
+      P.sandShade,
+    );
+    c.line(23, 54, 29, 55, P.blue);
+    c.line(17, 51 + frame, 27, 55, P.woodDark);
   }
   return c;
 }
@@ -600,6 +644,27 @@ export function tree(frame = 0) {
 export function prop(kind) {
   const c = new PixelCanvas(64, 80);
   c.ellipse(36, 68, 22, 6, rgba(P.deep, 72));
+  if (kind === "tidepool") {
+    c.ellipse(32, 65, 27, 10, P.blueDark);
+    c.ellipse(31, 63, 24, 8, P.wallShade);
+    c.ellipse(32, 62, 20, 6, P.teal);
+    c.ellipse(31, 61, 16, 4, P.teal);
+    c.line(20, 61, 30, 59, P.foam);
+    c.line(35, 64, 42, 63, P.blueLight);
+    for (const [x, y] of [
+      [9, 63],
+      [18, 56],
+      [48, 61],
+      [41, 69],
+    ]) {
+      c.ellipse(x, y, 5, 3, P.blueDark);
+      c.line(x - 3, y - 2, x + 2, y - 2, P.plaster);
+    }
+    c.line(28, 65, 25, 61, P.leafDark);
+    c.line(28, 65, 29, 60, P.leafDark);
+    c.pixel(36, 60, P.coral);
+    c.pixel(37, 61, P.coralLight);
+  }
   if (kind === "rock") {
     poly(
       c,
@@ -771,11 +836,17 @@ export function prop(kind) {
     c.line(52, 54, 52, 69, P.woodDark, 2);
     c.line(31, 65, 31, 77, P.woodDark, 2);
   }
-  if (kind === "sign") {
+  if (kind === "sign" || kind.startsWith("sign-")) {
     c.rect(30, 35, 4, 37, P.woodDark);
     c.rect(12, 29, 42, 20, P.woodDark);
     c.rect(14, 31, 38, 16, P.cream);
-    lettering(c, "HOME", 16, 35, P.blueDark);
+    lettering(
+      c,
+      kind.includes("-") ? kind.split("-")[1].toUpperCase() : "HOME",
+      16,
+      35,
+      P.blueDark,
+    );
     c.rect(16, 44, 21, 1, P.coral);
   }
   if (kind === "net") {

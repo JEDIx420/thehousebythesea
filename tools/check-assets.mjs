@@ -84,8 +84,14 @@ for (const f of m.frames) {
     }
   }
 }
-for (const [key, hashes] of actorHashes)
-  assert.ok(hashes.size > 1, "Static fake animation " + key);
+for (const [key, hashes] of actorHashes) {
+  const expected = key.endsWith("-walk") ? 12 : key.endsWith("-idle") ? 4 : 2;
+  assert.equal(
+    hashes.size,
+    expected,
+    "Missing or duplicated authored animation poses " + key,
+  );
+}
 for (const name of ["rowan", "mira", "ellis", "nessa", "tomas"])
   for (const d of ["s", "w", "n", "e"])
     assert.ok(
@@ -127,6 +133,37 @@ for (let i = 0; i < contact.pages.length; i++)
     "Contact sheet out of date",
   );
 assert.equal(m.attributions.length, 2);
+
+// P1.5 authored expressions are complete and distinct; never scaled walking art.
+for (const actor of ["rowan", "mira", "ellis", "tomas", "nessa"]) {
+  const expressions =
+    actor === "rowan" || actor === "mira"
+      ? ["neutral", "happy", "thoughtful", "surprised"]
+      : ["neutral", "happy", "thoughtful"];
+  const hashes = new Set();
+  for (const expression of expressions)
+    for (let blink = 0; blink < 2; blink++) {
+      const f = generated.frames.find(
+        (f) => f.id === `portrait-${actor}-${expression}-${blink}`,
+      );
+      assert.ok(f, "Missing portrait expression");
+      assert.deepEqual(
+        [f.image.width, f.image.height, ...f.anchor],
+        [96, 128, 48, 128],
+      );
+      hashes.add(Buffer.from(f.image.data).toString("base64"));
+    }
+  assert.equal(
+    hashes.size,
+    expressions.length * 2,
+    "Duplicate portrait expression/blink",
+  );
+}
+assert.ok(
+  atlas.width <= 4096 && atlas.height <= 4096,
+  "Texture exceeds declared4096 maximum",
+);
+
 console.log(
   `PASS: ${m.frames.length} frames; bounds, alpha, four facings, shared anchors, distinct animations, sources and exact-byte reproducibility.`,
 );

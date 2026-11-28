@@ -1,6 +1,6 @@
 [
   {
-    "id": "portrait-mira-neutral-0",
+    "id": "portrait-rowan-neutral-0",
     "page": 1,
     "width": 96,
     "height": 128,
@@ -8,7 +8,7 @@
     "y": 12
   },
   {
-    "id": "portrait-mira-neutral-1",
+    "id": "portrait-rowan-neutral-1",
     "page": 1,
     "width": 96,
     "height": 128,
@@ -16,7 +16,7 @@
     "y": 12
   },
   {
-    "id": "portrait-mira-happy-0",
+    "id": "portrait-rowan-happy-0",
     "page": 1,
     "width": 96,
     "height": 128,
@@ -24,7 +24,7 @@
     "y": 12
   },
   {
-    "id": "portrait-mira-happy-1",
+    "id": "portrait-rowan-happy-1",
     "page": 1,
     "width": 96,
     "height": 128,
@@ -32,7 +32,7 @@
     "y": 12
   },
   {
-    "id": "portrait-mira-thoughtful-0",
+    "id": "portrait-rowan-thoughtful-0",
     "page": 1,
     "width": 96,
     "height": 128,
@@ -40,739 +40,1227 @@
     "y": 12
   },
   {
-    "id": "portrait-mira-thoughtful-1",
+    "id": "portrait-rowan-thoughtful-1",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 563,
+    "y": 12
+  },
+  {
+    "id": "portrait-rowan-surprised-0",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 682,
+    "y": 12
+  },
+  {
+    "id": "portrait-rowan-surprised-1",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 12,
+    "y": 165
+  },
+  {
+    "id": "portrait-mira-neutral-0",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 127,
+    "y": 165
+  },
+  {
+    "id": "portrait-mira-neutral-1",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 235,
+    "y": 165
+  },
+  {
+    "id": "portrait-mira-happy-0",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 343,
+    "y": 165
+  },
+  {
+    "id": "portrait-mira-happy-1",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 451,
+    "y": 165
+  },
+  {
+    "id": "portrait-mira-thoughtful-0",
     "page": 1,
     "width": 96,
     "height": 128,
     "x": 559,
-    "y": 12
+    "y": 165
+  },
+  {
+    "id": "portrait-mira-thoughtful-1",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 674,
+    "y": 165
   },
   {
     "id": "portrait-mira-surprised-0",
     "page": 1,
     "width": 96,
     "height": 128,
-    "x": 674,
-    "y": 12
+    "x": 12,
+    "y": 318
   },
   {
     "id": "portrait-mira-surprised-1",
     "page": 1,
     "width": 96,
     "height": 128,
+    "x": 123,
+    "y": 318
+  },
+  {
+    "id": "portrait-ellis-neutral-0",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 234,
+    "y": 318
+  },
+  {
+    "id": "portrait-ellis-neutral-1",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 342,
+    "y": 318
+  },
+  {
+    "id": "portrait-ellis-happy-0",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 450,
+    "y": 318
+  },
+  {
+    "id": "portrait-ellis-happy-1",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 558,
+    "y": 318
+  },
+  {
+    "id": "portrait-ellis-thoughtful-0",
+    "page": 1,
+    "width": 96,
+    "height": 128,
+    "x": 666,
+    "y": 318
+  },
+  {
+    "id": "portrait-ellis-thoughtful-1",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 12,
+    "y": 12
+  },
+  {
+    "id": "portrait-tomas-neutral-0",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 131,
+    "y": 12
+  },
+  {
+    "id": "portrait-tomas-neutral-1",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 239,
+    "y": 12
+  },
+  {
+    "id": "portrait-tomas-happy-0",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 347,
+    "y": 12
+  },
+  {
+    "id": "portrait-tomas-happy-1",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 455,
+    "y": 12
+  },
+  {
+    "id": "portrait-tomas-thoughtful-0",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 563,
+    "y": 12
+  },
+  {
+    "id": "portrait-tomas-thoughtful-1",
+    "page": 2,
+    "width": 96,
+    "height": 128,
     "x": 12,
     "y": 165
+  },
+  {
+    "id": "portrait-nessa-neutral-0",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 131,
+    "y": 165
+  },
+  {
+    "id": "portrait-nessa-neutral-1",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 239,
+    "y": 165
+  },
+  {
+    "id": "portrait-nessa-happy-0",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 347,
+    "y": 165
+  },
+  {
+    "id": "portrait-nessa-happy-1",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 455,
+    "y": 165
+  },
+  {
+    "id": "portrait-nessa-thoughtful-0",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 563,
+    "y": 165
+  },
+  {
+    "id": "portrait-nessa-thoughtful-1",
+    "page": 2,
+    "width": 96,
+    "height": 128,
+    "x": 12,
+    "y": 318
   },
   {
     "id": "young-rowan",
-    "page": 1,
+    "page": 2,
     "width": 32,
     "height": 48,
-    "x": 123,
-    "y": 165
+    "x": 131,
+    "y": 318
   },
   {
     "id": "grass-0",
-    "page": 1,
+    "page": 2,
     "width": 64,
     "height": 40,
-    "x": 178,
-    "y": 165
+    "x": 186,
+    "y": 318
   },
   {
     "id": "deck-0",
-    "page": 1,
+    "page": 2,
     "width": 64,
     "height": 40,
-    "x": 254,
-    "y": 165
+    "x": 262,
+    "y": 318
   },
   {
     "id": "rowan-s-idle-0",
-    "page": 1,
+    "page": 2,
     "width": 48,
     "height": 72,
-    "x": 330,
-    "y": 165
+    "x": 338,
+    "y": 318
   },
   {
     "id": "rowan-s-walk-0",
-    "page": 1,
+    "page": 2,
     "width": 48,
     "height": 72,
-    "x": 397,
-    "y": 165
+    "x": 405,
+    "y": 318
   },
   {
     "id": "rowan-s-walk-1",
-    "page": 1,
+    "page": 2,
     "width": 48,
     "height": 72,
-    "x": 464,
-    "y": 165
+    "x": 472,
+    "y": 318
   },
   {
     "id": "rowan-s-walk-2",
-    "page": 1,
+    "page": 2,
     "width": 48,
     "height": 72,
-    "x": 531,
-    "y": 165
+    "x": 539,
+    "y": 318
   },
   {
     "id": "rowan-s-walk-3",
-    "page": 1,
+    "page": 2,
     "width": 48,
     "height": 72,
-    "x": 598,
-    "y": 165
+    "x": 606,
+    "y": 318
   },
   {
     "id": "rowan-s-walk-4",
-    "page": 1,
+    "page": 2,
     "width": 48,
     "height": 72,
-    "x": 665,
-    "y": 165
+    "x": 673,
+    "y": 318
   },
   {
     "id": "rowan-s-walk-5",
-    "page": 1,
-    "width": 48,
-    "height": 72,
-    "x": 732,
-    "y": 165
-  },
-  {
-    "id": "rowan-w-idle-0",
-    "page": 1,
+    "page": 2,
     "width": 48,
     "height": 72,
     "x": 12,
-    "y": 318
+    "y": 471
   },
   {
-    "id": "rowan-n-idle-0",
-    "page": 1,
+    "id": "rowan-s-walk-6",
+    "page": 2,
     "width": 48,
     "height": 72,
     "x": 79,
-    "y": 318
+    "y": 471
   },
   {
-    "id": "rowan-e-idle-0",
-    "page": 1,
+    "id": "rowan-s-walk-7",
+    "page": 2,
     "width": 48,
     "height": 72,
     "x": 146,
-    "y": 318
+    "y": 471
   },
   {
-    "id": "rowan-e-sit-0",
-    "page": 1,
+    "id": "rowan-s-walk-8",
+    "page": 2,
     "width": 48,
     "height": 72,
     "x": 213,
-    "y": 318
+    "y": 471
+  },
+  {
+    "id": "rowan-s-walk-9",
+    "page": 2,
+    "width": 48,
+    "height": 72,
+    "x": 280,
+    "y": 471
+  },
+  {
+    "id": "rowan-s-walk-10",
+    "page": 2,
+    "width": 48,
+    "height": 72,
+    "x": 347,
+    "y": 471
+  },
+  {
+    "id": "rowan-s-walk-11",
+    "page": 2,
+    "width": 48,
+    "height": 72,
+    "x": 418,
+    "y": 471
+  },
+  {
+    "id": "rowan-w-idle-0",
+    "page": 2,
+    "width": 48,
+    "height": 72,
+    "x": 489,
+    "y": 471
+  },
+  {
+    "id": "rowan-n-idle-0",
+    "page": 2,
+    "width": 48,
+    "height": 72,
+    "x": 556,
+    "y": 471
+  },
+  {
+    "id": "rowan-e-idle-0",
+    "page": 2,
+    "width": 48,
+    "height": 72,
+    "x": 623,
+    "y": 471
+  },
+  {
+    "id": "rowan-e-sit-0",
+    "page": 2,
+    "width": 48,
+    "height": 72,
+    "x": 690,
+    "y": 471
   },
   {
     "id": "mira-s-idle-0",
-    "page": 1,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 276,
-    "y": 318
+    "x": 12,
+    "y": 12
   },
   {
     "id": "mira-s-walk-0",
-    "page": 1,
-    "width": 48,
-    "height": 72,
-    "x": 339,
-    "y": 318
-  },
-  {
-    "id": "mira-s-walk-1",
-    "page": 1,
-    "width": 48,
-    "height": 72,
-    "x": 402,
-    "y": 318
-  },
-  {
-    "id": "mira-s-walk-2",
-    "page": 1,
-    "width": 48,
-    "height": 72,
-    "x": 465,
-    "y": 318
-  },
-  {
-    "id": "mira-s-walk-3",
-    "page": 1,
-    "width": 48,
-    "height": 72,
-    "x": 528,
-    "y": 318
-  },
-  {
-    "id": "mira-s-walk-4",
-    "page": 1,
-    "width": 48,
-    "height": 72,
-    "x": 591,
-    "y": 318
-  },
-  {
-    "id": "mira-s-walk-5",
-    "page": 1,
-    "width": 48,
-    "height": 72,
-    "x": 654,
-    "y": 318
-  },
-  {
-    "id": "mira-w-idle-0",
-    "page": 1,
-    "width": 48,
-    "height": 72,
-    "x": 717,
-    "y": 318
-  },
-  {
-    "id": "mira-n-idle-0",
-    "page": 1,
-    "width": 48,
-    "height": 72,
-    "x": 12,
-    "y": 415
-  },
-  {
-    "id": "mira-e-idle-0",
-    "page": 1,
+    "page": 3,
     "width": 48,
     "height": 72,
     "x": 75,
-    "y": 415
+    "y": 12
   },
   {
-    "id": "mira-e-sit-0",
-    "page": 1,
+    "id": "mira-s-walk-1",
+    "page": 3,
     "width": 48,
     "height": 72,
     "x": 138,
-    "y": 415
+    "y": 12
+  },
+  {
+    "id": "mira-s-walk-2",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 201,
+    "y": 12
+  },
+  {
+    "id": "mira-s-walk-3",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 264,
+    "y": 12
+  },
+  {
+    "id": "mira-s-walk-4",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 327,
+    "y": 12
+  },
+  {
+    "id": "mira-s-walk-5",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 390,
+    "y": 12
+  },
+  {
+    "id": "mira-s-walk-6",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 453,
+    "y": 12
+  },
+  {
+    "id": "mira-s-walk-7",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 516,
+    "y": 12
+  },
+  {
+    "id": "mira-s-walk-8",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 579,
+    "y": 12
+  },
+  {
+    "id": "mira-s-walk-9",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 642,
+    "y": 12
+  },
+  {
+    "id": "mira-s-walk-10",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 705,
+    "y": 12
+  },
+  {
+    "id": "mira-s-walk-11",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 12,
+    "y": 109
+  },
+  {
+    "id": "mira-w-idle-0",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 79,
+    "y": 109
+  },
+  {
+    "id": "mira-n-idle-0",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 142,
+    "y": 109
+  },
+  {
+    "id": "mira-e-idle-0",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 205,
+    "y": 109
+  },
+  {
+    "id": "mira-e-sit-0",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 268,
+    "y": 109
   },
   {
     "id": "ellis-s-idle-0",
-    "page": 1,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 198,
-    "y": 415
+    "x": 328,
+    "y": 109
   },
   {
     "id": "ellis-s-walk-0",
-    "page": 1,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 265,
-    "y": 415
+    "x": 395,
+    "y": 109
   },
   {
     "id": "ellis-s-walk-1",
-    "page": 1,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 332,
-    "y": 415
+    "x": 462,
+    "y": 109
   },
   {
     "id": "ellis-s-walk-2",
-    "page": 1,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 399,
-    "y": 415
+    "x": 529,
+    "y": 109
   },
   {
     "id": "ellis-s-walk-3",
-    "page": 1,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 466,
-    "y": 415
+    "x": 596,
+    "y": 109
   },
   {
     "id": "ellis-s-walk-4",
-    "page": 1,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 533,
-    "y": 415
+    "x": 663,
+    "y": 109
   },
   {
     "id": "ellis-s-walk-5",
-    "page": 1,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 600,
-    "y": 415
+    "x": 730,
+    "y": 109
+  },
+  {
+    "id": "ellis-s-walk-6",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 12,
+    "y": 206
+  },
+  {
+    "id": "ellis-s-walk-7",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 79,
+    "y": 206
+  },
+  {
+    "id": "ellis-s-walk-8",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 146,
+    "y": 206
+  },
+  {
+    "id": "ellis-s-walk-9",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 213,
+    "y": 206
+  },
+  {
+    "id": "ellis-s-walk-10",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 280,
+    "y": 206
+  },
+  {
+    "id": "ellis-s-walk-11",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 351,
+    "y": 206
   },
   {
     "id": "ellis-w-idle-0",
-    "page": 1,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 667,
-    "y": 415
+    "x": 422,
+    "y": 206
   },
   {
     "id": "ellis-n-idle-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 12,
-    "y": 12
+    "x": 489,
+    "y": 206
   },
   {
     "id": "ellis-e-idle-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 79,
-    "y": 12
+    "x": 556,
+    "y": 206
   },
   {
     "id": "ellis-e-sit-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 146,
-    "y": 12
+    "x": 623,
+    "y": 206
   },
   {
     "id": "nessa-s-idle-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 209,
-    "y": 12
+    "x": 686,
+    "y": 206
   },
   {
     "id": "nessa-s-walk-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 276,
-    "y": 12
+    "x": 12,
+    "y": 303
   },
   {
     "id": "nessa-s-walk-1",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 343,
-    "y": 12
+    "x": 79,
+    "y": 303
   },
   {
     "id": "nessa-s-walk-2",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 410,
-    "y": 12
+    "x": 146,
+    "y": 303
   },
   {
     "id": "nessa-s-walk-3",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 477,
-    "y": 12
+    "x": 213,
+    "y": 303
   },
   {
     "id": "nessa-s-walk-4",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 544,
-    "y": 12
+    "x": 280,
+    "y": 303
   },
   {
     "id": "nessa-s-walk-5",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 611,
-    "y": 12
+    "x": 347,
+    "y": 303
+  },
+  {
+    "id": "nessa-s-walk-6",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 414,
+    "y": 303
+  },
+  {
+    "id": "nessa-s-walk-7",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 481,
+    "y": 303
+  },
+  {
+    "id": "nessa-s-walk-8",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 548,
+    "y": 303
+  },
+  {
+    "id": "nessa-s-walk-9",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 615,
+    "y": 303
+  },
+  {
+    "id": "nessa-s-walk-10",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 682,
+    "y": 303
+  },
+  {
+    "id": "nessa-s-walk-11",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 12,
+    "y": 400
   },
   {
     "id": "nessa-w-idle-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 678,
-    "y": 12
+    "x": 83,
+    "y": 400
   },
   {
     "id": "nessa-n-idle-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 12,
-    "y": 109
+    "x": 150,
+    "y": 400
   },
   {
     "id": "nessa-e-idle-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 79,
-    "y": 109
+    "x": 217,
+    "y": 400
   },
   {
     "id": "nessa-e-sit-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 146,
-    "y": 109
+    "x": 284,
+    "y": 400
   },
   {
     "id": "tomas-s-idle-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 209,
-    "y": 109
+    "x": 347,
+    "y": 400
   },
   {
     "id": "tomas-s-walk-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 276,
-    "y": 109
+    "x": 414,
+    "y": 400
   },
   {
     "id": "tomas-s-walk-1",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 343,
-    "y": 109
+    "x": 481,
+    "y": 400
   },
   {
     "id": "tomas-s-walk-2",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 410,
-    "y": 109
+    "x": 548,
+    "y": 400
   },
   {
     "id": "tomas-s-walk-3",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 477,
-    "y": 109
+    "x": 615,
+    "y": 400
   },
   {
     "id": "tomas-s-walk-4",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
-    "x": 544,
-    "y": 109
+    "x": 682,
+    "y": 400
   },
   {
     "id": "tomas-s-walk-5",
-    "page": 2,
-    "width": 48,
-    "height": 72,
-    "x": 611,
-    "y": 109
-  },
-  {
-    "id": "tomas-w-idle-0",
-    "page": 2,
-    "width": 48,
-    "height": 72,
-    "x": 678,
-    "y": 109
-  },
-  {
-    "id": "tomas-n-idle-0",
-    "page": 2,
+    "page": 3,
     "width": 48,
     "height": 72,
     "x": 12,
-    "y": 206
+    "y": 497
   },
   {
-    "id": "tomas-e-idle-0",
-    "page": 2,
+    "id": "tomas-s-walk-6",
+    "page": 3,
     "width": 48,
     "height": 72,
     "x": 79,
-    "y": 206
+    "y": 497
   },
   {
-    "id": "tomas-e-sit-0",
-    "page": 2,
+    "id": "tomas-s-walk-7",
+    "page": 3,
     "width": 48,
     "height": 72,
     "x": 146,
-    "y": 206
+    "y": 497
+  },
+  {
+    "id": "tomas-s-walk-8",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 213,
+    "y": 497
+  },
+  {
+    "id": "tomas-s-walk-9",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 280,
+    "y": 497
+  },
+  {
+    "id": "tomas-s-walk-10",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 347,
+    "y": 497
+  },
+  {
+    "id": "tomas-s-walk-11",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 418,
+    "y": 497
+  },
+  {
+    "id": "tomas-w-idle-0",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 489,
+    "y": 497
+  },
+  {
+    "id": "tomas-n-idle-0",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 556,
+    "y": 497
+  },
+  {
+    "id": "tomas-e-idle-0",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 623,
+    "y": 497
+  },
+  {
+    "id": "tomas-e-sit-0",
+    "page": 3,
+    "width": 48,
+    "height": 72,
+    "x": 690,
+    "y": 497
   },
   {
     "id": "shop",
-    "page": 2,
-    "width": 160,
-    "height": 200,
-    "x": 209,
-    "y": 206
-  },
-  {
-    "id": "cafe",
-    "page": 2,
-    "width": 160,
-    "height": 200,
-    "x": 381,
-    "y": 206
-  },
-  {
-    "id": "hut",
-    "page": 2,
-    "width": 160,
-    "height": 200,
-    "x": 553,
-    "y": 206
-  },
-  {
-    "id": "cottage",
-    "page": 3,
+    "page": 4,
     "width": 160,
     "height": 200,
     "x": 12,
     "y": 12
   },
   {
-    "id": "fishing-hut",
-    "page": 3,
-    "width": 128,
-    "height": 176,
+    "id": "cafe",
+    "page": 4,
+    "width": 160,
+    "height": 200,
     "x": 184,
     "y": 12
   },
   {
-    "id": "arch",
-    "page": 3,
-    "width": 192,
-    "height": 160,
-    "x": 324,
+    "id": "hut",
+    "page": 4,
+    "width": 160,
+    "height": 200,
+    "x": 356,
     "y": 12
   },
   {
-    "id": "tree-0",
-    "page": 3,
-    "width": 96,
-    "height": 128,
+    "id": "cottage",
+    "page": 4,
+    "width": 160,
+    "height": 200,
     "x": 528,
     "y": 12
   },
   {
+    "id": "market-stall",
+    "page": 4,
+    "width": 144,
+    "height": 160,
+    "x": 12,
+    "y": 237
+  },
+  {
+    "id": "garden-house",
+    "page": 4,
+    "width": 160,
+    "height": 200,
+    "x": 168,
+    "y": 237
+  },
+  {
+    "id": "beacon",
+    "page": 4,
+    "width": 96,
+    "height": 176,
+    "x": 340,
+    "y": 237
+  },
+  {
+    "id": "net-shed",
+    "page": 4,
+    "width": 144,
+    "height": 176,
+    "x": 448,
+    "y": 237
+  },
+  {
+    "id": "fishing-hut",
+    "page": 4,
+    "width": 128,
+    "height": 176,
+    "x": 604,
+    "y": 237
+  },
+  {
+    "id": "arch",
+    "page": 5,
+    "width": 192,
+    "height": 160,
+    "x": 12,
+    "y": 12
+  },
+  {
+    "id": "tree-0",
+    "page": 5,
+    "width": 96,
+    "height": 128,
+    "x": 216,
+    "y": 12
+  },
+  {
     "id": "rock",
-    "page": 3,
+    "page": 5,
     "width": 64,
     "height": 80,
-    "x": 636,
+    "x": 324,
     "y": 12
   },
   {
     "id": "pot",
-    "page": 3,
+    "page": 5,
     "width": 64,
     "height": 80,
-    "x": 712,
+    "x": 400,
     "y": 12
   },
   {
     "id": "crate",
-    "page": 3,
+    "page": 5,
     "width": 64,
     "height": 80,
-    "x": 12,
-    "y": 237
+    "x": 476,
+    "y": 12
   },
   {
     "id": "lamp",
-    "page": 3,
+    "page": 5,
     "width": 64,
     "height": 80,
-    "x": 88,
-    "y": 237
+    "x": 552,
+    "y": 12
+  },
+  {
+    "id": "tidepool",
+    "page": 5,
+    "width": 64,
+    "height": 80,
+    "x": 628,
+    "y": 12
   },
   {
     "id": "bollard",
-    "page": 3,
+    "page": 5,
     "width": 64,
     "height": 80,
-    "x": 164,
-    "y": 237
+    "x": 704,
+    "y": 12
   },
   {
     "id": "bench",
-    "page": 3,
+    "page": 5,
     "width": 64,
     "height": 80,
-    "x": 240,
-    "y": 237
+    "x": 12,
+    "y": 197
   },
   {
     "id": "sign",
-    "page": 3,
+    "page": 5,
     "width": 64,
     "height": 80,
-    "x": 316,
-    "y": 237
+    "x": 88,
+    "y": 197
   },
   {
     "id": "net",
-    "page": 3,
+    "page": 5,
     "width": 64,
     "height": 80,
-    "x": 392,
-    "y": 237
+    "x": 164,
+    "y": 197
   },
   {
     "id": "boat-0-0",
-    "page": 3,
+    "page": 5,
     "width": 128,
     "height": 144,
-    "x": 468,
-    "y": 237
+    "x": 240,
+    "y": 197
   },
   {
     "id": "boat-1-0",
-    "page": 3,
+    "page": 5,
     "width": 128,
     "height": 144,
-    "x": 608,
-    "y": 237
+    "x": 380,
+    "y": 197
   },
   {
     "id": "boat-2-0",
-    "page": 3,
+    "page": 5,
     "width": 128,
     "height": 144,
-    "x": 12,
-    "y": 406
+    "x": 520,
+    "y": 197
   },
   {
     "id": "boat-3-0",
-    "page": 3,
+    "page": 5,
     "width": 128,
     "height": 144,
-    "x": 152,
-    "y": 406
+    "x": 660,
+    "y": 197
   },
   {
     "id": "boat-4-0",
-    "page": 3,
-    "width": 128,
-    "height": 144,
-    "x": 292,
-    "y": 406
-  },
-  {
-    "id": "boat-5-0",
-    "page": 3,
-    "width": 128,
-    "height": 144,
-    "x": 432,
-    "y": 406
-  },
-  {
-    "id": "boat-6-0",
-    "page": 3,
-    "width": 128,
-    "height": 144,
-    "x": 572,
-    "y": 406
-  },
-  {
-    "id": "boat-7-0",
-    "page": 4,
+    "page": 5,
     "width": 128,
     "height": 144,
     "x": 12,
-    "y": 12
+    "y": 366
+  },
+  {
+    "id": "boat-5-0",
+    "page": 5,
+    "width": 128,
+    "height": 144,
+    "x": 152,
+    "y": 366
+  },
+  {
+    "id": "boat-6-0",
+    "page": 5,
+    "width": 128,
+    "height": 144,
+    "x": 292,
+    "y": 366
+  },
+  {
+    "id": "boat-7-0",
+    "page": 5,
+    "width": 128,
+    "height": 144,
+    "x": 432,
+    "y": 366
   },
   {
     "id": "fish-sardine-0",
-    "page": 4,
+    "page": 5,
     "width": 40,
     "height": 32,
-    "x": 152,
-    "y": 12
+    "x": 572,
+    "y": 366
   },
   {
     "id": "fish-bream-0",
-    "page": 4,
+    "page": 5,
     "width": 40,
     "height": 32,
-    "x": 219,
-    "y": 12
+    "x": 639,
+    "y": 366
   },
   {
     "id": "gull-0",
-    "page": 4,
+    "page": 5,
     "width": 32,
     "height": 24,
-    "x": 278,
-    "y": 12
+    "x": 698,
+    "y": 366
   },
   {
     "id": "glint-2",
-    "page": 4,
+    "page": 5,
     "width": 24,
     "height": 16,
-    "x": 322,
-    "y": 12
+    "x": 742,
+    "y": 366
   },
   {
     "id": "ripple-0",
-    "page": 4,
+    "page": 5,
     "width": 64,
     "height": 32,
-    "x": 361,
-    "y": 12
+    "x": 12,
+    "y": 535
   },
   {
     "id": "ripple-4",
-    "page": 4,
+    "page": 5,
     "width": 64,
     "height": 32,
-    "x": 437,
-    "y": 12
+    "x": 88,
+    "y": 535
   },
   {
     "id": "ripple-8",
-    "page": 4,
+    "page": 5,
     "width": 64,
     "height": 32,
-    "x": 513,
-    "y": 12
+    "x": 164,
+    "y": 535
   },
   {
     "id": "ripple-12",
-    "page": 4,
+    "page": 5,
     "width": 64,
     "height": 32,
-    "x": 589,
-    "y": 12
+    "x": 240,
+    "y": 535
   }
 ]

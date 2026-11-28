@@ -26,11 +26,9 @@ function edge(x, z, points, closed = true) {
     d = Math.min(d, segment(x, z, points[i], points[(i + 1) % points.length]));
   return d;
 }
+export function landSpec(map){const ps=[...map.shore,[map.dock.minX,map.dock.minZ],[map.dock.minX,map.dock.maxZ],[map.dock.maxX,map.dock.minZ],[map.dock.maxX,map.dock.maxZ]].map(([x,z])=>[(x-z)*WORLD.projection.x,(x+z)*WORLD.projection.y]),minX=Math.floor(Math.min(...ps.map(p=>p[0])))-40,minY=Math.floor(Math.min(...ps.map(p=>p[1])))-40,maxX=Math.ceil(Math.max(...ps.map(p=>p[0])))+40,maxY=Math.ceil(Math.max(...ps.map(p=>p[1])))+40;return {width:Math.ceil((maxX-minX)/32)*32,height:Math.ceil((maxY-minY)/32)*32,anchor:[-minX,-minY]};}
 export function land(map = WORLD.havenport) {
-  const c = new PixelCanvas(1024, 512),
-    anchor = [512, 256],
-    sx = WORLD.projection.x,
-    sy = WORLD.projection.y;
+  const spec=landSpec(map),c=new PixelCanvas(spec.width,spec.height),anchor=spec.anchor,sx=WORLD.projection.x,sy=WORLD.projection.y;
   for (let py = 0; py < c.height; py++)
     for (let px = 0; px < c.width; px++) {
       const u = (px - anchor[0]) / sx,
@@ -181,6 +179,11 @@ export function cliffFrames(map) {
         points[(i + 1) % points.length][1] - minY,
         P.grassLight,
       );
+    for(let y=1;y<c.height-1;y++)for(let x=1;x<c.width-1;x++)if(c.data[(y*c.width+x)*4+3]){
+      const u=(x+minX)/WORLD.projection.x,v=(y+minY+level.height)/WORLD.projection.y,wx=mid[0]+(u+v)/2,wz=mid[1]+(v-u)/2,n=noise(x,y,1128);
+      if(map.paths.some(points=>edge(wx,wz,points,false)<2.6))c.pixel(x,y,n<.03?P.sandShade:P.sandLight);
+      else if(n<.026)c.pixel(x,y,n<.012?P.grassLight:P.grass);
+    }
     // Use image centre as placement anchor and store explicit projected offset for this top.
     frames.push({
       id: `top-${map.id}-${level.id}`,

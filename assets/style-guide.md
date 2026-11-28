@@ -15,3 +15,10 @@ Visual approval belongs to the creator. An independent golden-sample review perm
 ## P1.5 direction approved for production
 
 Original96×128 three-quarter busts, shared face anatomy across expression/blink frames; four lead expressions and three per supporting adult. Distinct hair/jaw/cheek silhouettes rather than enlarged walk sprites. A compact navy/cream pixel kit replaces the old HUD panels. Raised terrain uses shared authored height zones/ramps and separately foot-sorted top/front-wall images, not a flat painted illusion. The reviewed urban18px terrace is a prototype; final islands need natural coastal forms, paths, planting and open districts. Music is an original96s32-barAABA coastal arrangement; no game-theme copying or external samples. Renderer/input/music source review is not creator acceptance.
+
+
+## P1.5 final asset family
+
+540 character/terrain/portrait frames grew to541 with the original Saltglass tide-pool tile. Twelve planted walk poses; four quiet idle poses with independent blink/gesture timing; two seated and two rod-grip poses, four facings. Distinct96×128 busts maintain world identities across34 expression/blink frames. Buildings include an asymmetric cafe, striped fish stall, porch house, beacon and weathered net shed. Havenport has warm garden/market/meadow motifs; Saltglass cooler timber, shell stone, tide pools and a sheltered working cove. Natural raised24/28px surfaces have explicit ramps and layered cliffs. Portrait speakers retain their side of the strip; no scaled walk-sprite faces. Pixel focus rings use the established warm palette.
+
+The score is original music under the project MIT license, not a tool-license inference or a borrowed game theme. Three96s arrangements share a composed motif and32-bar form. Only creator listening can approve pleasantness and perceived looping/transition quality.

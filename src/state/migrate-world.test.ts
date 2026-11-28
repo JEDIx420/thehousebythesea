@@ -87,3 +87,9 @@ test("old master zero stays zero and current malformed mixer or future saves are
   expect(() => parseSave(current)).toThrow();
   expect(() => parseSave({ ...s, worldVersion: "future" })).toThrow();
 });
+
+test("preserves valid Saltglass local walking location when its island moves", () => {
+  const m = parseSave(saltFixture);
+  expect(m.player.x).toBe(saltFixture.player.x);
+  expect(m.player.z).toBe(saltFixture.player.z - 120);
+});
