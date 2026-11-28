@@ -1,0 +1,39 @@
+Independent gh run46140958679 log excerpt; fullrunURL in proof JSON.
+verify	Run npm run assets:check && npm run music:check	2026-11-28T11:40:37.3532994Z PASS: 541 frames; bounds, alpha, four facings, shared anchors, distinct animations, sources and exact-byte reproducibility.
+verify	Run npm run assets:check && npm run music:check	2026-11-28T11:40:37.4598190Z PASS: three original96s loops, 2306010 bytes total, SHA256/score provenance/seek-header presence (decoded looping verified separately).
+verify	Run npm run typecheck && npm test	2026-11-28T11:40:39.9086927Z  ✓ src/state/migrate-world.test.ts (11 tests) 16ms
+verify	Run npm run typecheck && npm test	2026-11-28T11:40:39.9105590Z  ✓ src/state/game.test.ts (24 tests) 15ms
+verify	Run npm run typecheck && npm test	2026-11-28T11:40:40.0603306Z  ✓ src/game/session.test.ts (4 tests) 6ms
+verify	Run npm run typecheck && npm test	2026-11-28T11:40:40.1091081Z  ✓ src/player/locomotion.test.ts (4 tests) 53ms
+verify	Run npm run typecheck && npm test	2026-11-28T11:40:40.2285289Z  ✓ src/world/height.test.ts (4 tests) 32ms
+verify	Run npm run typecheck && npm test	2026-11-28T11:40:40.2355635Z  ✓ src/world/projection.test.ts (4 tests) 27ms
+verify	Run npm run typecheck && npm test	2026-11-28T11:40:40.3376954Z  ✓ src/activities/fishing.test.ts (3 tests) 4ms
+verify	Run npm run typecheck && npm test	2026-11-28T11:40:40.3666393Z  ✓ src/player/movement.test.ts (6 tests) 477ms
+verify	Run npm run typecheck && npm test	2026-11-28T11:40:40.3667387Z    ✓ normalizes foot travel and keeps stable headings over extended turns 366ms
+verify	Run npm run typecheck && npm test	2026-11-28T11:40:40.3730480Z       Tests  60 passed (60)
+verify	Run npm run build	2026-11-28T11:40:45.0570663Z ✓ 28 modules transformed.
+verify	Run npm run build	2026-11-28T11:40:45.6601525Z ✓ built in 3.24s
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:41:51.5914743Z   ✓   1 tests/browser/cache.spec.ts:7:1 › returning P1 player keeps real progress while a warm old art cache upgrades coherently (25.1s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:41:57.2603210Z   ✓   2 tests/browser/polish.spec.ts:51:3 › historical world-v1 walk migration preserves progress and first-only backup (5.6s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:42:01.5079758Z   ✓   3 tests/browser/polish.spec.ts:51:3 › historical world-v1 midsea migration preserves progress and first-only backup (4.2s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:42:06.9437920Z   ✓   4 tests/browser/polish.spec.ts:51:3 › historical world-v1 saltglass migration preserves progress and first-only backup (5.4s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:42:12.8374441Z   ✓   5 tests/browser/polish.spec.ts:51:3 › historical world-v1 complete migration preserves progress and first-only backup (5.9s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:42:17.5184722Z   ✓   6 tests/browser/polish.spec.ts:111:1 › missing music retries are bounded and surfaced while gameplay and ambience survive (4.7s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:44:10.7604487Z   ✓   7 tests/browser/polish.spec.ts:131:1 › mixer, continuous96s loop, ducking and two-state crossfade are real browser audio (1.9m)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:45:11.6114265Z   ✓   8 tests/browser/polish.spec.ts:197:1 › portraits, release-debounced dialogue, raised walking and compact responsive HUD (1.0m)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:45:13.5038512Z   ✓   9 tests/browser/polish.spec.ts:308:1 › actual IndexedDBv1 upgrade retains snapshots and failed migration write rolls back backup too (1.9s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:45:23.9702209Z   ✓  10 tests/browser/polish.spec.ts:367:1 › safe pier step cannot replay E or fishing and recovery clears transient motion (10.5s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:45:31.2292148Z   ✓  11 tests/browser/resilience.spec.ts:49:1 › title credits return, native keyboard menus, settings, picking and laptop layout (7.2s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:45:44.8884339Z   ✓  12 tests/browser/resilience.spec.ts:170:3 › future snapshot survives temporary play, recovery and autosave (13.6s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:45:58.2362567Z   ✓  13 tests/browser/resilience.spec.ts:170:3 › corrupt snapshot survives temporary play, recovery and autosave (13.3s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:46:12.4812264Z   ✓  14 tests/browser/resilience.spec.ts:186:1 › missing and stalled art are bounded, input-locked and recover through retry (14.2s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:46:13.7514889Z   ✓  15 tests/browser/resilience.spec.ts:221:1 › malformed metadata and a missing required animated frame show an honest retry state (1.3s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:46:15.5824004Z   ✓  16 tests/browser/resilience.spec.ts:282:1 › explicit legacy import copies progress to a safe pixel dock and preserves its source (1.8s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:46:17.2911571Z   ✓  17 tests/browser/resilience.spec.ts:319:1 › a failed import write says temporary and never reports durable success (1.7s)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:50:54.1899151Z   ✓  18 tests/browser/voyage.spec.ts:6:1 › First Voyage: real walking, continuous sailing, work, fishing, Mira and saved return (4.6m)
+verify	Run npm run test:e2e -- --output=test-results/pixel-ci	2026-11-28T11:50:54.2361015Z   18 passed (9.5m)
+verify	Run PIXEL_PAGES_PREVIEW=1 npm run build && node tools/package-pages.mjs	2026-11-28T11:51:01.1498917Z ✓ 28 modules transformed.
+verify	Run PIXEL_PAGES_PREVIEW=1 npm run build && node tools/package-pages.mjs	2026-11-28T11:51:01.7827378Z dist/assets/index-CEY2Ra4G.js   1,298.76 kB │ gzip: 363.79 kB
+verify	Run PIXEL_PAGES_PREVIEW=1 npm run build && node tools/package-pages.mjs	2026-11-28T11:51:01.7828021Z ✓ built in 3.31s
+verify	Run actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa	2026-11-28T11:51:01.8780792Z ./preview/pixel/assets/index-CEY2Ra4G.js
+deploy	Deploy reviewed branch preview	2026-11-28T11:51:23.7903433Z Reported success!

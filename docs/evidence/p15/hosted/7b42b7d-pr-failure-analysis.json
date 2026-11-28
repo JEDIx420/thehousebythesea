@@ -1,0 +1,851 @@
+{
+  "run": 46140963625,
+  "commit": "7b42b7d1efd81e26492f0206bcb31761b5b34b10",
+  "conclusion": "failure",
+  "passed": 14,
+  "failed": 4,
+  "artifactId": 15262755218,
+  "artifactBytes": 9707588,
+  "traces": [
+    {
+      "trace": "61ba93aa907411e7f091c9b938fd2b8758045bd3.zip",
+      "bytes": 1809193,
+      "jpegCount": 0,
+      "domSnapshots": 383,
+      "actionMedianMs": 77.19700000000012,
+      "actionP95Ms": 110.45000000000073,
+      "last20": [
+        {
+          "traceSeconds": 16.219855,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 16.689700000000002,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 17.167883999999997,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 17.746897,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 18.232987,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 18.720830999999997,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 19.205067,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 19.673298,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 20.133218,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 20.615753,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 21.095447,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 21.572061,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 22.053717,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 22.515627000000002,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 22.9939,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 23.471517,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 23.966145,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 24.45102,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 24.937018,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 25.424793,
+          "player": {
+            "x": 36.78221475345789,
+            "z": -3.414199738789938,
+            "heading": 2.2587944200316437,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        }
+      ]
+    },
+    {
+      "trace": "a908289c7bde4e358b6f1a1d62bab6d5cf3f0d2d.zip",
+      "bytes": 2263239,
+      "jpegCount": 0,
+      "domSnapshots": 9272,
+      "actionMedianMs": 56.882999999972526,
+      "actionP95Ms": 98.56200000003446,
+      "last20": [
+        {
+          "traceSeconds": 906.5765749999999,
+          "player": {
+            "x": 41.416496138112045,
+            "z": -0.652097762761718,
+            "heading": -0.7853981633974324,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 907.140536,
+          "player": {
+            "x": 39.27446228032139,
+            "z": -1.3285071504250472,
+            "heading": -2.356194490192345,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 907.614384,
+          "player": {
+            "x": 38.09129361562489,
+            "z": 1.1417356120502355,
+            "heading": 2.8198420991931465,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 908.268507,
+          "player": {
+            "x": 39.87501979754207,
+            "z": 2.556712537675551,
+            "heading": 0.7853981633974483,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 908.7382,
+          "player": {
+            "x": 41.045719690946754,
+            "z": 0.14127009892192122,
+            "heading": -0.32175055439665196,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 909.295139,
+          "player": {
+            "x": 38.88379128819744,
+            "z": -2.458825395288897,
+            "heading": -1.2490457723982487,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 909.866983,
+          "player": {
+            "x": 36.72703428607279,
+            "z": -1.8170318101549126,
+            "heading": 2.819842099193205,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 910.3408939999999,
+          "player": {
+            "x": 38.21386888416251,
+            "z": 0.9009433939722546,
+            "heading": 2.3561944901923533,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 910.902226,
+          "player": {
+            "x": 40.34771093702838,
+            "z": 1.6012388648791522,
+            "heading": 0.7853981633974261,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 911.3790690000001,
+          "player": {
+            "x": 41.52613746107712,
+            "z": -0.8220131450483668,
+            "heading": -0.32175055439662337,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 912.0681040000001,
+          "player": {
+            "x": 39.59414252831649,
+            "z": -2.5626717318094685,
+            "heading": -2.3561944901923577,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 912.542216,
+          "player": {
+            "x": 38.41851488926083,
+            "z": -0.10028235590576717,
+            "heading": 2.819842099193205,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 913.1181899999999,
+          "player": {
+            "x": 40.64043739399671,
+            "z": 2.5248254117586284,
+            "heading": 1.8925468811915247,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 913.6655509999999,
+          "player": {
+            "x": 42.8407088563796,
+            "z": 1.9966736433325314,
+            "heading": -0.3217505543965945,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 914.13151,
+          "player": {
+            "x": 41.398141910488626,
+            "z": -0.6354678288029069,
+            "heading": -0.7853981633974466,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 914.6881360000001,
+          "player": {
+            "x": 39.26381807647203,
+            "z": -1.319773981396029,
+            "heading": -2.356194490192345,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 915.163632,
+          "player": {
+            "x": 38.099649869034515,
+            "z": 1.1454936576987667,
+            "heading": 2.819842099193096,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 915.804339,
+          "player": {
+            "x": 39.86999739430439,
+            "z": 2.5775213452052874,
+            "heading": 0.7853981633974416,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 916.270881,
+          "player": {
+            "x": 41.02942489981493,
+            "z": 0.15912942606372948,
+            "heading": -0.3217505543966778,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 916.8340420000001,
+          "player": {
+            "x": 38.86661609074354,
+            "z": -2.427779623313371,
+            "heading": -1.2490457723982686,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        }
+      ]
+    },
+    {
+      "trace": "a18d867f2e08535c8899f836615c89c8f41655a0.zip",
+      "bytes": 1723160,
+      "jpegCount": 0,
+      "domSnapshots": 2303,
+      "actionMedianMs": 59.096999999979744,
+      "actionP95Ms": 99.86600000003818,
+      "last20": [
+        {
+          "traceSeconds": 338.83538699999997,
+          "player": {
+            "x": 30.897184955368623,
+            "z": 0.14473117112007777,
+            "heading": 2.8198420991931696,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 339.50563400000004,
+          "player": {
+            "x": 32.7793887452052,
+            "z": 1.7683918887612895,
+            "heading": 0.7853981633974324,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 339.992778,
+          "player": {
+            "x": 33.99443840041367,
+            "z": -0.7617021753486212,
+            "heading": -0.32175055439669753,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 340.572669,
+          "player": {
+            "x": 31.758705125207236,
+            "z": -3.4286738058013113,
+            "heading": -1.2490457723982686,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 341.151621,
+          "player": {
+            "x": 29.560563977756885,
+            "z": -2.773126303759564,
+            "heading": 2.8198420991931457,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 341.646529,
+          "player": {
+            "x": 31.08551369949215,
+            "z": -0.0029689000433526097,
+            "heading": 2.3561944901923604,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 342.22790100000003,
+          "player": {
+            "x": 33.32807032522424,
+            "z": 0.7271676351821388,
+            "heading": 0.7853981633974324,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 342.795035,
+          "player": {
+            "x": 34.05149529655299,
+            "z": -1.4615814103427713,
+            "heading": -0.7853981633974324,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 343.277485,
+          "player": {
+            "x": 31.503358545520694,
+            "z": -3.2234647604421074,
+            "heading": -1.2490457723982686,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 343.864635,
+          "player": {
+            "x": 29.284797408316116,
+            "z": -2.5305719803783537,
+            "heading": 2.8198420991931226,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 344.45037,
+          "player": {
+            "x": 31.56885459649916,
+            "z": 0.1764734649684252,
+            "heading": 1.8925468811915322,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 344.94387900000004,
+          "player": {
+            "x": 34.39837727073918,
+            "z": 0.10715387933809814,
+            "heading": 0.7853981633974146,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 345.582988,
+          "player": {
+            "x": 34.31991650101581,
+            "z": -1.1827932418352296,
+            "heading": -1.2490457723982744,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 345.98146299999996,
+          "player": {
+            "x": 31.8258489814735,
+            "z": -2.014149081682641,
+            "heading": -1.2490457723982569,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 346.5698,
+          "player": {
+            "x": 29.624765424336207,
+            "z": -1.3207369539558336,
+            "heading": 2.8198420991931443,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 347.15963400000004,
+          "player": {
+            "x": 31.903373976435795,
+            "z": 1.4020979801914915,
+            "heading": 1.892546881191529,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 347.73566700000003,
+          "player": {
+            "x": 34.15337613118633,
+            "z": 0.7674120615568418,
+            "heading": -0.32175055439661737,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 348.21882500000004,
+          "player": {
+            "x": 32.65788325402106,
+            "z": -1.9453630560279007,
+            "heading": -0.7853981633974324,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 348.80028100000004,
+          "player": {
+            "x": 30.438279000583442,
+            "z": -2.637180729180989,
+            "heading": -2.356194490192333,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 349.395527,
+          "player": {
+            "x": 29.739888387973245,
+            "z": -0.3618290921991829,
+            "heading": 2.356194490192352,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        }
+      ]
+    },
+    {
+      "trace": "e77ff9e223ec675e80f83023622fddad180d370b.zip",
+      "bytes": 1785867,
+      "jpegCount": 0,
+      "domSnapshots": 3611,
+      "actionMedianMs": 52.6195000000007,
+      "actionP95Ms": 96.42799999999988,
+      "last20": [
+        {
+          "traceSeconds": 218.222815,
+          "player": {
+            "x": 54.66493774609135,
+            "z": -2.2611638859623535,
+            "heading": 1.892546881191557,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 218.74406299999998,
+          "player": {
+            "x": 57.093456019249544,
+            "z": -0.2668274273720552,
+            "heading": 2.819842099193133,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 219.25725500000001,
+          "player": {
+            "x": 56.6172219732521,
+            "z": 1.8071401873588662,
+            "heading": -1.2490457723982735,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 219.69999600000003,
+          "player": {
+            "x": 54.1535422817126,
+            "z": 0.45829545054366916,
+            "heading": -0.7853981633974086,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 220.235263,
+          "player": {
+            "x": 53.4561137740746,
+            "z": -1.609130917241297,
+            "heading": 0.7853981633974483,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 220.76161199999999,
+          "player": {
+            "x": 55.474545882070785,
+            "z": -2.338082236789111,
+            "heading": 2.356194490192388,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 221.199083,
+          "player": {
+            "x": 57.10135927813119,
+            "z": 0.00432097388960305,
+            "heading": 2.819842099193133,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 221.71602299999998,
+          "player": {
+            "x": 56.63194418413497,
+            "z": 2.07137202371205,
+            "heading": -1.2490457723982735,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 222.15447899999998,
+          "player": {
+            "x": 54.14768029114473,
+            "z": 0.7151469006164033,
+            "heading": -0.7853981633973962,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 222.67850700000002,
+          "player": {
+            "x": 53.43982581447358,
+            "z": -1.29941274012783,
+            "heading": 0.7853981633974162,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 223.205084,
+          "player": {
+            "x": 55.47782814811222,
+            "z": -2.014767798482508,
+            "heading": 2.356194490192345,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 223.72910399999998,
+          "player": {
+            "x": 56.19101992574105,
+            "z": -0.011806967334785649,
+            "heading": -2.356194490192318,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 224.17857800000002,
+          "player": {
+            "x": 53.86134581633168,
+            "z": 1.1158388855078152,
+            "heading": -1.2490457723982529,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 224.81562100000002,
+          "player": {
+            "x": 52.286503525068994,
+            "z": -0.6609599061422975,
+            "heading": 0.7853981633974466,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 225.258047,
+          "player": {
+            "x": 54.602787150973775,
+            "z": -1.803542803128362,
+            "heading": 1.8925468811915194,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 225.78260999999998,
+          "player": {
+            "x": 57.03774012698567,
+            "z": 0.196817753062859,
+            "heading": 2.8198420991931954,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 226.29978,
+          "player": {
+            "x": 56.543854385375646,
+            "z": 2.274103217896039,
+            "heading": -1.2490457723982449,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 226.73855799999998,
+          "player": {
+            "x": 54.072981124764226,
+            "z": 0.9167380301391628,
+            "heading": -0.7853981633974013,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 227.273058,
+          "player": {
+            "x": 53.39371747676967,
+            "z": -1.1321920456199752,
+            "heading": 0.7853981633974416,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        },
+        {
+          "traceSeconds": 227.797707,
+          "player": {
+            "x": 55.41236788826565,
+            "z": -1.8609806868358154,
+            "heading": 2.35619449019232,
+            "mode": "walk",
+            "island": "havenport"
+          }
+        }
+      ]
+    }
+  ]
+}

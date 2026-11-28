@@ -59,15 +59,25 @@ export async function walk(page: Page, x: number, z: number, tolerance = 0.75) {
     length = Math.hypot(segment.x, segment.z);
   let held: string[] = [],
     previous: { x: number; z: number } | undefined,
-    blocked = 0;
+    blocked = 0,
+    precision = false;
   try {
     for (let i = 0; i < 400; i++) {
       const s = await state(page);
       expect(s.player.mode).toBe("walk");
-      if (await modal(page)) throw new Error("A modal paused walking");
       const dx = x - s.player.x,
         dz = z - s.player.z,
         distance = Math.hypot(dx, dz);
+      // Near a waypoint, do not hold movement across asynchronous readbacks.
+      // Slow traced runners otherwise receive a stale position and orbit the goal.
+      if (!precision && distance <= 6) {
+        for (const key of held) await page.keyboard.up(key);
+        held = [];
+        precision = true;
+        await page.waitForTimeout(130);
+        continue;
+      }
+      if (await modal(page)) throw new Error("A modal paused walking");
       if (distance < tolerance) return;
       if (
         previous &&
@@ -102,18 +112,26 @@ export async function walk(page: Page, x: number, z: number, tolerance = 0.75) {
           ? o
           : best,
       );
-      for (const key of held)
-        if (!choice.keys.includes(key)) await page.keyboard.up(key);
-      for (const key of choice.keys)
-        if (!held.includes(key)) await page.keyboard.down(key);
-      held = choice.keys;
-      await page.waitForTimeout(70);
+      if (precision) {
+        // One trusted chord/pulse is bounded inside the browser input command;
+        // all keys are released and the actual controller settles before reading.
+        await page.keyboard.press(choice.keys.join("+"), { delay: 100 });
+        await page.waitForTimeout(130);
+      } else {
+        for (const key of held)
+          if (!choice.keys.includes(key)) await page.keyboard.up(key);
+        for (const key of choice.keys)
+          if (!held.includes(key)) await page.keyboard.down(key);
+        held = choice.keys;
+        await page.waitForTimeout(70);
+      }
     }
     throw new Error(
       `Walk timed out to ${x},${z}: ${JSON.stringify((await state(page)).player)}`,
     );
   } finally {
-    for (const key of held) await page.keyboard.up(key).catch(() => {});
+    for (const key of new Set([...held, "w", "a", "s", "d"]))
+      await page.keyboard.up(key).catch(() => {});
   }
 }
 export async function sail(page: Page, x: number, z: number, tolerance = 6) {

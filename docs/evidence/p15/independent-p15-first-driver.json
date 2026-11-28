@@ -1,0 +1,69 @@
+{
+  "bundle": "/thehousebythesea/preview/pixel/assets/index-CEY2Ra4G.js",
+  "expressions": [
+    "mira · neutral",
+    "mira · neutral",
+    "rowan · happy",
+    "rowan · happy",
+    "mira · thoughtful",
+    "mira · thoughtful",
+    "mira · happy",
+    "mira · happy"
+  ],
+  "durationSeconds": 42.26,
+  "checks": [
+    "Release stops without drift",
+    "Modal clears held velocity",
+    "Real parcel acceptance persists",
+    "Keyboard dialogue has Rowan and expressive Mira beats",
+    "Narrow speaker heading stays inside strip",
+    "Chart initially focuses without scrolling heading away",
+    "Chart keyboard focus stays in panel",
+    "Walked actual connected ramp to height24"
+  ],
+  "errors": [],
+  "failure": "Error: Walked back down ramp to height0",
+  "finalState": {
+    "schemaVersion": 2,
+    "worldVersion": "pixel-first-voyage-v2",
+    "wallet": 25,
+    "inventory": {
+      "sardine": 0,
+      "bream": 0
+    },
+    "delivery": "active",
+    "discoveries": [
+      "havenport"
+    ],
+    "story": {
+      "metMira": false,
+      "outingInvited": false,
+      "outingVisitedSaltglass": false,
+      "outingComplete": false,
+      "homeSeen": false,
+      "prologueSeen": true
+    },
+    "player": {
+      "x": -27.771454925254158,
+      "z": -28.26913690397712,
+      "heading": 2.819842099193374,
+      "mode": "walk",
+      "island": "havenport"
+    },
+    "boat": {
+      "x": 63,
+      "z": 0,
+      "heading": 0,
+      "docked": "havenport"
+    },
+    "settings": {
+      "muted": false,
+      "volume": 0.35,
+      "music": 0.7,
+      "ambience": 0.35,
+      "sfx": 0.55,
+      "reducedMotion": false,
+      "instantText": false
+    }
+  }
+}
